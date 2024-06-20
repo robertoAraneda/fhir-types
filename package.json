@@ -1,0 +1,31 @@
+{
+  "name": "fhirtypes",
+  "version": "1.0.0",
+  "description": "",
+  "types": "./index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "format": "prettier --write \"src/**/*.ts\"",
+    "lint": "npx tslint -p tsconfig.json",
+    "prepare": "npm run build",
+    "version": "npm run format && git add -A src",
+    "postversion": "git push && git push --tags"
+  },
+  "devDependencies": {
+    "prettier": "^2.8.8",
+    "tslint": "^6.1.3",
+    "tslint-config-prettier": "^1.18.0",
+    "typescript": "^5.0.4"
+  },
+  "keywords": [
+    "FHIR",
+    "Types",
+    "Validator",
+    "Resource"
+  ],
+  "author": "Roberto Araneda",
+  "license": "ISC",
+  "files": [
+    "index.d.ts"
+  ]
+}
