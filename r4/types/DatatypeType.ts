@@ -1,7 +1,14 @@
-import { DatatypeEnum } from '../enums';
+export type DatatypeType =
+"Address" |
+"Attachment" |
+"CodeableConcept" |
+"Coding" |
+"ContactPoint" |
+"HumanName" |
+"Identifier" |
+"Meta" |
+"Period" |
+"Reference";
 
-export const typesArray = Object.values(DatatypeEnum).map((value: any) => {
-  return value;
-}) as string[];
 
-export type DatatypeType = (typeof typesArray)[number];
+
