@@ -1,4 +1,4 @@
-type BundleTypeType =
+export type BundleTypeType =
   | 'document'
   | 'message'
   | 'transaction'
@@ -8,5 +8,3 @@ type BundleTypeType =
   | 'history'
   | 'searchset'
   | 'collection';
-
-export default BundleTypeType;

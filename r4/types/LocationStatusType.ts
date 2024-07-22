@@ -1,3 +1,1 @@
-type LocationStatusType = 'active' | 'suspended' | 'inactive';
-
-export default LocationStatusType;
+export type LocationStatusType = 'active' | 'suspended' | 'inactive';

@@ -1,2 +1,1 @@
-type CompositionSectionListModeType = 'working' | 'snapshot' | 'changes';
-export default CompositionSectionListModeType;
+export type CompositionSectionListModeType = 'working' | 'snapshot' | 'changes';

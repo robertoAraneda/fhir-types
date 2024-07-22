@@ -1,8 +1,8 @@
 import { IElement, IResource } from '../base';
 import { IIdentifier, ISignature } from '../datatypes';
-import { BundleTypeEnum } from '../../enums';
-import { BundleTypeType } from '../../types';
 import { IBundleLink, IBundleEntry } from '../backbones';
+import { BundleTypeEnum } from '../enums';
+import { BundleTypeType } from '../types';
 
 export interface IBundle extends IResource {
   resourceType: 'Bundle';

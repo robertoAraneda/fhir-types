@@ -1,8 +1,8 @@
 import { IDomainResource, IElement } from '../base';
 import { IAddress, ICodeableConcept, ICoding, IContactPoint, IIdentifier, IReference } from '../datatypes';
-import { LocationModeEnum, LocationStatusEnum } from '../../enums';
-import { LocationModeType, LocationStatusType } from '../../types';
 import { ILocationHoursOfOperation, ILocationPosition } from '../backbones';
+import { LocationModeEnum, LocationStatusEnum } from '../enums';
+import { LocationModeType, LocationStatusType } from '../types';
 
 export interface ILocation extends IDomainResource {
   resourceType: 'Location';

@@ -1,8 +1,8 @@
 import { IDomainResource, IElement } from '../base';
 import { ICodeableConcept, IIdentifier, IReference } from '../datatypes';
-import { GroupTypeEnum } from '../../enums';
-import { GroupType } from '../../types';
 import { IGroupCharacteristic, IGroupMember } from '../backbones';
+import { GroupTypeEnum } from '../enums';
+import { GroupType } from '../types';
 
 export interface IGroup extends IDomainResource {
   resourceType: 'Group';

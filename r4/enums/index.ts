@@ -16,6 +16,7 @@ export { CompositionSectionListModeEnum } from './CompositionSectionListModeEnum
 export { CompositionStatusEnum } from './CompositionStatusEnum';
 export { ContactPointSystemEnum } from './ContactPointSystemEnum';
 export { ContactPointUseEnum } from './ContactPointUseEnum';
+export { DatatypeEnum } from './DatatypeEnum';
 export { DaysOfWeekEnum } from './DaysOfWeekEnum';
 export { EncounterLocationStatusEnum } from './EncounterLocationStatusEnum';
 export { EncounterStatusEnum } from './EncounterStatusEnum';
@@ -30,4 +31,4 @@ export { NameUseEnum } from './NameUseEnum';
 export { NarrativeStatusEnum } from './NarrativeStatusEnum';
 export { QuantityComparatorEnum } from './QuantityComparatorEnum';
 export { ResourceEnum } from './ResourceEnum';
-export { DatatypeEnum } from './DatatypeEnum';
+

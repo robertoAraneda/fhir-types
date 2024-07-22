@@ -1,3 +1,1 @@
-type LocationModeType = 'instance' | 'kind';
-
-export default LocationModeType;
+export type LocationModeType = 'instance' | 'kind';

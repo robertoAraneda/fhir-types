@@ -4,21 +4,32 @@ export { AddressUseType } from './AddressUseType';
 export { AdministrativeGenderType } from './AdministrativeGenderType';
 export { AuditEventActionType } from './AuditEventActionType';
 export { AuditEventAgentNetworkTypeType } from './AuditEventAgentNetworkTypeType';
-
-
-
+export { AuditEventOutcomeType } from './AuditEventOutcomeType';
+export { BackboneElementType } from './BackboneElementType';
+export { BundleEntryRequestMethodType } from './BundleEntryRequestMethodType';
+export { BundleEntrySearchModeType } from './BundleEntrySearchModeType';
+export { BundleTypeType } from './BundleTypeType';
+export { CompositionAttestationModeType } from './CompositionAttestationModeType';
+export { CompositionConfidentialityType } from './CompositionConfidentialityType';
+export { CompositionDocumentRelationshipType } from './CompositionDocumentRelationshipType';
+export { CompositionSectionListModeType } from './CompositionSectionListModeType';
+export { CompositionStatusType } from './CompositionStatusType';
 export { ContactPointSystemType } from './ContactPointSystemType';
 export { ContactPointUseType } from './ContactPointUseType';
+export { DatatypeType } from './DatatypeType';
 export { DaysOfWeekType } from './DaysOfWeekType';
 export { EncounterLocationStatusType } from './EncounterLocationStatusType';
 export { EncounterStatusType } from './EncounterStatusType';
 export { EndpointStatusType } from './EndpointStatusType';
+export { GroupType } from './GroupType';
 export { IdentifierUseType } from './IdentifierUseType';
 export { IdentityAssuranceLevelType } from './IdentityAssuranceLevelType';
 export { LinkTypeType } from './LinkTypeType';
+export { LocationModeType } from './LocationModeType';
+export { LocationStatusType } from './LocationStatusType';
 export { NameUseType } from './NameUseType';
 export { NarrativeStatusType } from './NarrativeStatusType';
 export { QuantityComparatorType } from './QuantityComparatorType';
+export { ResourceInstanceType } from './ResourceInstanceType';
 export { ResourceType } from './ResourceType';
-export { DatatypeType } from './DatatypeType';
-export { BackboneElementType } from './BackboneElementType';
+

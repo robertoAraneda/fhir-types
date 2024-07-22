@@ -76,4 +76,23 @@ export type ResourceType =
 "Media" |
 "Medication" |
 "MedicationAdministration" |
-"MedicationDispense" 
+"MedicationDispense" |
+"Organization" |
+"Patient" |
+"Person" |
+"Practitioner" |
+"PractitionerRole" |
+"Procedure" |
+"Provenance" |
+"Questionnaire" |
+"QuestionnaireResponse" |
+"RelatedPerson" |
+"RequestGroup" |
+"ResearchDefinition" |
+"ResearchElementDefinition" |
+"ResearchStudy" |
+"ResearchSubject" |
+"RiskAssessment" |
+"RiskEvidenceSynthesis" |
+"Schedule" |
+"RelatedPerson"
