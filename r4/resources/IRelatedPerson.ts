@@ -9,9 +9,9 @@ import {
   IPeriod,
   IReference,
 } from '../datatypes';
-import { AdministrativeGenderEnum } from '../../enums';
-import { AdministrativeGenderType } from '../../types';
 import { IRelatedPersonCommunication } from '../backbones';
+import { AdministrativeGenderEnum } from '../enums';
+import { AdministrativeGenderType } from '../types';
 
 export interface IRelatedPerson extends IDomainResource {
   resourceType: 'RelatedPerson';
