@@ -9,5 +9,5 @@
     "types": [],
     "noEmit": true,
     "forceConsistentCasingInFileNames": true
-  },
+  }
 }

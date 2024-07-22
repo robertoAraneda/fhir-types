@@ -1,18 +1,5 @@
-import { IElement } from '../base';
-import { IAddress } from './IAddress';
-import { IAttachment } from './IAttachment';
-import { ICodeableConcept } from './ICodeableConcept';
-import { ICoding } from './ICoding';
-import { IContactPoint } from './IContactPoint';
-import { IDuration } from './IDuration';
-import { IHumanName } from './IHumanName';
-import { IIdentifier } from './IIdentifier';
-import { IMeta } from './IMeta';
-import { IPeriod } from './IPeriod';
-import { IQuantity } from './IQuantity';
-import { IRange } from './IRange';
-import { IReference } from './IReference';
-import { ISignature } from './ISignature';
+import { IElement } from "./IElement";
+
 
 export interface IExtension extends IElement {
   url: string;
@@ -55,26 +42,26 @@ export interface IExtension extends IElement {
   _valueUrl?: IElement;
   valueUuid?: string;
   _valueUuid?: IElement;
-  valueAddress?: IAddress;
+ // valueAddress?: IAddress;
   // TODO missing age
   // TODO missing annotation
-  valueAttachment?: IAttachment;
-  valueCodeableConcept?: ICodeableConcept;
-  valueCoding?: ICoding;
-  valueContactPoint?: IContactPoint;
+  // valueAttachment?: IAttachment;
+  // valueCodeableConcept?: ICodeableConcept;
+  // valueCoding?: ICoding;
+  // valueContactPoint?: IContactPoint;
   // TODO missing count
   // TODO missing distance
-  valueDuration?: IDuration;
-  valueHumanName?: IHumanName;
-  valueIdentifier?: IIdentifier;
+  // valueDuration?: IDuration;
+  // valueHumanName?: IHumanName;
+  // valueIdentifier?: IIdentifier;
   // TODO missing money
-  valuePeriod?: IPeriod;
-  valueQuantity?: IQuantity;
-  valueRange?: IRange;
+  // valuePeriod?: IPeriod;
+  // valueQuantity?: IQuantity;
+  // valueRange?: IRange;
   // TODO missing ratio
-  valueReference?: IReference;
+  // valueReference?: IReference;
   // TODO missing sampledData
-  valueSignature?: ISignature;
+  // valueSignature?: ISignature;
   // TODO missing timing
   // TODO missing contactDetail
   // TODO missing contributor
@@ -85,5 +72,5 @@ export interface IExtension extends IElement {
   // TODO missing triggerDefinition
   // TODO missing usageContext
   // TODO missing dosage
-  valueMeta?: IMeta;
+  // valueMeta?: IMeta;
 }

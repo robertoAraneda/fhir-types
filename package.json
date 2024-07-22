@@ -1,21 +1,30 @@
 {
   "name": "fhirtypes",
-  "version": "1.0.0",
+  "version": "1.0.12",
   "description": "",
   "types": "./index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/robertoAraneda/fhir-types"
+  },
+  "bugs": {
+    "url": "https://github.com/robertoAraneda/fhir-types/issues",
+    "email": "robaraneda@gmail.com"
+  },
   "scripts": {
     "build": "tsc",
-    "format": "prettier --write \"src/**/*.ts\"",
+    "format": "prettier --write \"r4/**/*.ts\"",
     "lint": "npx tslint -p tsconfig.json",
     "prepare": "npm run build",
-    "version": "npm run format && git add -A src",
+    "version": "npm run format && git add -A",
     "postversion": "git push && git push --tags"
   },
   "devDependencies": {
     "prettier": "^2.8.8",
     "tslint": "^6.1.3",
     "tslint-config-prettier": "^1.18.0",
-    "typescript": "^5.0.4"
+    "typescript": "^5.0.4",
+    "fhir-types": "^1.0.3"
   },
   "keywords": [
     "FHIR",
@@ -26,6 +35,8 @@
   "author": "Roberto Araneda",
   "license": "ISC",
   "files": [
-    "index.d.ts"
+    "index.d.ts",
+    "r4/**",
+    "r5/**"
   ]
 }
