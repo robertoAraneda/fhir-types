@@ -1,7 +1,7 @@
 {
   "name": "fhirtypes",
-  "version": "1.0.12",
-  "description": "",
+  "version": "1.0.13",
+  "description": "FHIR Types",
   "types": "./index.d.ts",
   "repository": {
     "type": "git",
@@ -35,8 +35,6 @@
   "author": "Roberto Araneda",
   "license": "ISC",
   "files": [
-    "index.d.ts",
-    "r4/**",
-    "r5/**"
+    "index.d.ts"
   ]
 }

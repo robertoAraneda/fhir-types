@@ -32,4 +32,6 @@ export { NarrativeStatusType } from './NarrativeStatusType';
 export { QuantityComparatorType } from './QuantityComparatorType';
 export { ResourceInstanceType } from './ResourceInstanceType';
 export { ResourceType } from './ResourceType';
+export { EpisodeOfCareStatusHistoryCodeType } from './EpisodeOfCareStatusHistoryCodeType';
+export { EpisodeOfCareStatusType } from './EpisodeOfCareStatusType';
 

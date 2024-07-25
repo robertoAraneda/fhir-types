@@ -11,6 +11,7 @@ export { IPerson } from './IPerson';
 export { IPractitioner } from './IPractitioner';
 export { IPractitionerRole } from './IPractitionerRole';
 export { IRelatedPerson } from './IRelatedPerson';
+export { IEpisodeOfCare } from './IEpisodeOfCare';
 
 
 

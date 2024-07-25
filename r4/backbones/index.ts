@@ -26,6 +26,8 @@ export { IPractitionerQualification } from './IPractitionerQualification';
 export { IRelatedPersonCommunication } from './IRelatedPersonCommunication';
 export { IPractitionerRoleAvailableTime } from './IPractitionerRoleAvailableTime';
 export { IPractitionerRoleNotAvailable } from './IPractitionerRoleNotAvailable';
+export { IEpisodeOfCareStatusHistory } from './IEpisodeOfCareStatusHistory';
+export { IEpisodeOfCareDiagnosis } from './IEpisodeOfCareDiagnosis';
 
 
 

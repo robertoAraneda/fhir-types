@@ -31,4 +31,6 @@ export { NameUseEnum } from './NameUseEnum';
 export { NarrativeStatusEnum } from './NarrativeStatusEnum';
 export { QuantityComparatorEnum } from './QuantityComparatorEnum';
 export { ResourceEnum } from './ResourceEnum';
+export { EpisodeOfCareStatusHistoryCodeEnum } from './EpisodeOfCareStatusHistoryCodeEnum';
+export { EpisodeOfCareStatusEnum } from './EpisodeOfCareStatusEnum';
 
