@@ -3,7 +3,7 @@
     "module": "CommonJS",
     "target": "ES6",
     "declaration": true,
-    "declarationDir": "types",
+    "declarationDir": "dist",
     "emitDeclarationOnly": true
   },
   "include": ["src"],
