@@ -1,13 +1,10 @@
 {
   "compilerOptions": {
-    "lib": ["es6"],
-    "module": "Node16",
-    "noImplicitAny": true,
-    "noImplicitThis": true,
-    "strictNullChecks": true,
-    "strictFunctionTypes": true,
-    "types": [],
-    "noEmit": true,
-    "forceConsistentCasingInFileNames": true
-  }
+    "module": "CommonJS",
+    "target": "ES6",
+    "declaration": true,
+    "declarationDir": "types",
+    "emitDeclarationOnly": true
+  },
+  "include": ["src"],
 }

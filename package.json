@@ -1,8 +1,9 @@
 {
   "name": "fhirtypes",
-  "version": "1.0.17",
+  "version": "1.0.18",
   "description": "FHIR Types",
-  "types": "./index.d.ts",
+  "main": "src/index.ts",
+  "types": "types/index.d.ts",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/robertoAraneda/fhir-types"
@@ -23,8 +24,7 @@
     "prettier": "^2.8.8",
     "tslint": "^6.1.3",
     "tslint-config-prettier": "^1.18.0",
-    "typescript": "^5.0.4",
-    "fhir-types": "^1.0.3"
+    "typescript": "^5.0.4"
   },
   "keywords": [
     "FHIR",
@@ -35,7 +35,6 @@
   "author": "Roberto Araneda",
   "license": "ISC",
   "files": [
-    "index.d.ts",
-    "r4/**"
+    "types/**"
   ]
 }
