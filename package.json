@@ -1,6 +1,6 @@
 {
   "name": "fhirtypes",
-  "version": "1.0.19",
+  "version": "1.0.20",
   "description": "FHIR Types",
   "types": "dist/index.d.ts",
   "repository": {
