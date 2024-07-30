@@ -28,6 +28,7 @@ export { IPractitionerRoleAvailableTime } from './IPractitionerRoleAvailableTime
 export { IPractitionerRoleNotAvailable } from './IPractitionerRoleNotAvailable';
 export { IEpisodeOfCareStatusHistory } from './IEpisodeOfCareStatusHistory';
 export { IEpisodeOfCareDiagnosis } from './IEpisodeOfCareDiagnosis';
+export { IOperationOutcomeIssue } from './IOperationOutcomeIssue';
 
 
 

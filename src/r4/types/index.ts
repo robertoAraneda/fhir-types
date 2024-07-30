@@ -34,4 +34,6 @@ export { ResourceInstanceType } from './ResourceInstanceType';
 export { ResourceType } from './ResourceType';
 export { EpisodeOfCareStatusHistoryCodeType } from './EpisodeOfCareStatusHistoryCodeType';
 export { EpisodeOfCareStatusType } from './EpisodeOfCareStatusType';
+export { OperationOutcomeIssueCodeType } from './OperationOutcomeIssueCodeType';
+export { OperationOutcomeIssueSeverityType } from './OperationOutcomeIssueSeverityType';
 

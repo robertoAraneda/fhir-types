@@ -1,7 +1,6 @@
 import { IBackboneElement } from "../base";
 import { ICodeableConcept } from "../datatypes";
-import { OperationOutcomeIssueCodeType } from "../types/OperationOutcomeIssueCodeType";
-import { OperationOutcomeIssueSeverityType } from "../types/OperationOutcomeIssueSeverityType";
+import { OperationOutcomeIssueCodeType, OperationOutcomeIssueSeverityType } from "../types";
 
 export interface IOperationOutcomeIssue extends IBackboneElement {
   severity: OperationOutcomeIssueSeverityType;
