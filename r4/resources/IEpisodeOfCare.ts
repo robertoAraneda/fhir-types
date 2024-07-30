@@ -1,4 +1,4 @@
-import { IElement } from "../../r5/datatypes";
+import { IElement } from "../../r4/base";
 import { IEpisodeOfCareDiagnosis, IEpisodeOfCareStatusHistory } from "../backbones";
 import { IDomainResource } from "../base";
 import { ICodeableConcept, IIdentifier, IPeriod, IReference } from "../datatypes";

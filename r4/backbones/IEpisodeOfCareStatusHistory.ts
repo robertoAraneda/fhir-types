@@ -1,7 +1,6 @@
-import { IElement } from "../../r5/datatypes";
-import { IBackboneElement } from "../base";
+import { IBackboneElement, IElement } from "../base";
 import { IPeriod } from "../datatypes";
-import { EpisodeOfCareStatusEnum, EpisodeOfCareStatusHistoryCodeEnum } from "../enums";
+import { EpisodeOfCareStatusHistoryCodeEnum } from "../enums";
 import { EpisodeOfCareStatusHistoryCodeType } from "../types";
 
 export type EpisodeOfCareStatusHistoryCode = EpisodeOfCareStatusHistoryCodeType | EpisodeOfCareStatusHistoryCodeEnum
