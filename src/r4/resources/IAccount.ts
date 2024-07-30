@@ -1,15 +1,12 @@
-import { IDomainResource, IElement, IResource } from '../base';
+import { IDomainResource, IElement } from '../base';
 import { ICodeableConcept, IIdentifier, IPeriod, IReference } from '../datatypes';
 import { IAccountCoverage, IAccountGuarantor } from '../backbones';
-import { AccountStatusEnum } from '../enums';
 import { AccountStatusType } from '../types/AccountStatusType';
-
-type AccountStatus = AccountStatusEnum | AccountStatusType;
 
 export interface IAccount extends IDomainResource {
   resourceType: 'Account';
   identifier?: IIdentifier[];
-  status: AccountStatus;
+  status: AccountStatusType;
   type?: ICodeableConcept;
   name?: string;
   subject?: IReference[];

@@ -2,12 +2,10 @@ import { IElement } from '../base';
 import { QuantityComparatorEnum } from '../enums';
 import { QuantityComparatorType } from '../types';
 
-type QuantityComparator = QuantityComparatorEnum | QuantityComparatorType;
-
 export interface IQuantity extends IElement {
   value?: number;
   _value?: IElement;
-  comparator?: QuantityComparator;
+  comparator?: QuantityComparatorType;
   _comparator?: IElement;
   unit?: string;
   _unit?: IElement;

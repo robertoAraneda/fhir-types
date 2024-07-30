@@ -1,10 +1,7 @@
 
 import { IPeriod } from './IPeriod';
 import { IElement } from '../base';
-import { NameUseEnum } from '../enums';
 import { NameUseType } from '../types';
-
-type HumanNameUse = NameUseEnum | NameUseType;
 
 /**
  * @summary FHIR R4
@@ -29,7 +26,7 @@ export interface IHumanName extends IElement {
   /**
    * @description usual | official | temp | nickname | anonymous | old | maiden
    */
-  use?: HumanNameUse;
+  use?: NameUseType;
 
   /**
    * @description Text representation of the full name

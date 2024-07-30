@@ -1,9 +1,6 @@
 import { IBackboneElement, IElement } from '../base';
 import { ICodeableConcept, INarrative, IReference } from '../datatypes';
-import { CompositionSectionListModeEnum } from '../enums';
 import { CompositionSectionListModeType } from '../types';
-
-type CompositionSectionListMode = CompositionSectionListModeEnum | CompositionSectionListModeType;
 
 export interface ICompositionSection extends IBackboneElement {
   title?: string;
@@ -11,7 +8,7 @@ export interface ICompositionSection extends IBackboneElement {
   author?: IReference[];
   focus?: IReference;
   text?: INarrative;
-  mode?: CompositionSectionListMode;
+  mode?: CompositionSectionListModeType;
   orderedBy?: ICodeableConcept;
   entry?: IReference[];
   emptyReason?: ICodeableConcept;

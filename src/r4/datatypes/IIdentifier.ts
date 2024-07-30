@@ -6,8 +6,6 @@ import { IReference } from './IReference';
 import { IdentifierUseEnum } from '../enums';
 import { IdentifierUseType } from '../types';
 
-type IdentifierUse = IdentifierUseEnum | IdentifierUseType;
-
 /**
  * @summary FHIR R4
  * @description A numeric or alphanumeric string that is associated with a single object or entity within a given system. Typically, identifiers are used to connect content in resources to external content available in other frameworks or protocols. Identifiers are associated with objects and may be changed or retired due to human or system process and errors.
@@ -37,7 +35,7 @@ export interface IIdentifier extends IElement {
   /**
    * @description usual | official | temp | secondary | old (If known)
    */
-  use?: IdentifierUse;
+  use?: IdentifierUseType;
 
   /**
    * @description Description of identifier

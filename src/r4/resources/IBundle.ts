@@ -7,7 +7,7 @@ import { BundleTypeType } from '../types';
 export interface IBundle extends IResource {
   resourceType: 'Bundle';
   identifier?: IIdentifier;
-  type?: BundleTypeEnum | BundleTypeType;
+  type?: BundleTypeType;
   timestamp?: string;
   total?: number;
   link?: IBundleLink[];

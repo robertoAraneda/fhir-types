@@ -12,7 +12,7 @@ export interface IPractitioner extends IDomainResource {
   name?: IHumanName[];
   telecom?: IContactPoint[];
   address?: IAddress[];
-  gender?: AdministrativeGenderEnum | AdministrativeGenderType;
+  gender?: AdministrativeGenderType;
   _gender?: IElement;
   birthDate?: string;
   _birthDate?: IElement;

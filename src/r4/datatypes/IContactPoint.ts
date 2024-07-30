@@ -1,10 +1,6 @@
 import { IElement } from '../base';
-import { ContactPointSystemEnum, ContactPointUseEnum } from '../enums';
 import { ContactPointSystemType, ContactPointUseType } from '../types';
 import { IPeriod } from './IPeriod';
-
-type ContactPointSystem = ContactPointSystemEnum | ContactPointSystemType;
-type ContactPointUse = ContactPointUseEnum | ContactPointUseType;
 
 /**
  * @summary FHIR R4
@@ -34,7 +30,7 @@ export interface IContactPoint extends IElement {
   /**
    * @description phone | fax | email | pager | url | sms | other
    */
-  system?: ContactPointSystem;
+  system?: ContactPointSystemType;
 
   /**
    * @description The actual contact point details
@@ -44,7 +40,7 @@ export interface IContactPoint extends IElement {
   /**
    * @description home | work | temp | old | mobile - purpose of this contact point
    */
-  use?: ContactPointUse;
+  use?: ContactPointUseType;
 
   /**
    * @description Specify preferred order of use (1 = highest)

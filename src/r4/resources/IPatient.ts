@@ -27,7 +27,7 @@ export interface IPatient extends IDomainResource {
   active?: boolean;
   name?: IHumanName[];
   telecom?: IContactPoint[];
-  gender?: AdministrativeGenderEnum | AdministrativeGenderType;
+  gender?: AdministrativeGenderType;
   birthDate?: string;
   deceasedBoolean?: boolean;
   deceasedDateTime?: string;

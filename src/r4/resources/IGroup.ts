@@ -8,7 +8,7 @@ export interface IGroup extends IDomainResource {
   resourceType: 'Group';
   identifier?: IIdentifier[];
   active?: boolean;
-  type: GroupTypeEnum | GroupType;
+  type: GroupType;
   actual: boolean;
   code?: ICodeableConcept;
   name?: string;

@@ -9,7 +9,7 @@ import { ICompositionRelatesTo } from '../backbones/ICompositionRelatesTo';
 export interface IComposition extends IDomainResource {
   resourceType: 'Composition';
   identifier?: IIdentifier;
-  status?: CompositionStatusEnum | CompositionStatusType;
+  status?: CompositionStatusType;
   type: ICodeableConcept;
   category?: ICodeableConcept[];
   subject?: IReference;
@@ -17,7 +17,7 @@ export interface IComposition extends IDomainResource {
   date?: string;
   author: IReference[];
   title?: string;
-  confidentiality?: CompositionConfidentialityEnum | CompositionConfidentialityType;
+  confidentiality?: CompositionConfidentialityType;
   attester?: ICompositionAttester[];
   custodian?: IReference;
   relatesTo?: ICompositionRelatesTo[];

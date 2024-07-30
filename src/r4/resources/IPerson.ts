@@ -9,7 +9,7 @@ export interface IPerson extends IDomainResource {
   identifier?: IIdentifier[];
   name?: IHumanName[];
   telecom?: IContactPoint[];
-  gender?: AdministrativeGenderEnum | AdministrativeGenderType;
+  gender?: AdministrativeGenderType;
   birthDate?: string;
   address?: IAddress[];
   photo?: IAttachment;

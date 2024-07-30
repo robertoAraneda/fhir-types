@@ -16,7 +16,7 @@ export interface IEndpoint extends IDomainResource {
    * active | suspended | error | off | test.
    * @summary Required field
    */
-  status?: EndpointStatusEnum | EndpointStatusType;
+  status?: EndpointStatusType;
 
   /**
    * Extension for status

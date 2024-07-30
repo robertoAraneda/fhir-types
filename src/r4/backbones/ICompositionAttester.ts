@@ -1,12 +1,9 @@
 import { IBackboneElement, IElement } from '../base';
 import { IReference } from '../datatypes';
-import { CompositionAttestationModeEnum } from '../enums';
 import { CompositionAttestationModeType } from '../types';
 
-type CompositionAttesterMode = CompositionAttestationModeEnum | CompositionAttestationModeType;
-
 export interface ICompositionAttester extends IBackboneElement {
-  mode: CompositionAttesterMode;
+  mode: CompositionAttestationModeType;
   time?: string;
   party?: IReference;
   _time?: IElement;

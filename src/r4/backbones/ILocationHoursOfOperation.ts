@@ -1,11 +1,8 @@
 import { IBackboneElement, IElement } from '../base';
-import { DaysOfWeekEnum } from '../enums';
 import { DaysOfWeekType } from '../types';
 
-type LocationHoursOfOperationDaysOfWeek = DaysOfWeekEnum | DaysOfWeekType;
-
 export interface ILocationHoursOfOperation extends IBackboneElement {
-  daysOfWeek?: LocationHoursOfOperationDaysOfWeek[];
+  daysOfWeek?: DaysOfWeekType[];
   allDay?: boolean;
   openingTime?: string;
   closingTime?: string;

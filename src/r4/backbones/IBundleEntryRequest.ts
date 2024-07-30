@@ -1,11 +1,7 @@
 import { IBackboneElement, IElement } from '../base';
-import { BundleEntryRequestMethodEnum } from '../enums';
 import { BundleEntryRequestMethodType } from '../types';
-
-type BundleEntryRequestMethod = BundleEntryRequestMethodEnum | BundleEntryRequestMethodType;
-
 export interface IBundleEntryRequest extends IBackboneElement {
-  method: BundleEntryRequestMethod;
+  method: BundleEntryRequestMethodType;
   url: string;
   ifNoneMatch?: string;
   ifModifiedSince?: string;

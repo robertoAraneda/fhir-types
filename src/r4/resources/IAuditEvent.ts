@@ -8,10 +8,10 @@ export interface IAuditEvent extends IDomainResource {
   resourceType: 'AuditEvent';
   type: ICoding;
   subtype?: ICoding[];
-  action?: AuditEventActionEnum | AuditEventActionType;
+  action?: AuditEventActionType;
   period?: IPeriod;
   recorded: string;
-  outcome?: AuditEventOutcomeEnum | AuditEventOutcomeType;
+  outcome?: AuditEventOutcomeType;
   outcomeDesc?: string;
   purposeOfEvent?: ICodeableConcept[];
   agent: IAuditEventAgent[];

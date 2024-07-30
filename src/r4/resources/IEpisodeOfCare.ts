@@ -2,11 +2,8 @@ import { IElement } from "../base";
 import { IEpisodeOfCareDiagnosis, IEpisodeOfCareStatusHistory } from "../backbones";
 import { IDomainResource } from "../base";
 import { ICodeableConcept, IIdentifier, IPeriod, IReference } from "../datatypes";
-import { EpisodeOfCareStatusEnum } from "../enums";
 import { EpisodeOfCareStatusType } from "../types";
 
-
-type EpisodeOfCareStatus = EpisodeOfCareStatusEnum | EpisodeOfCareStatusType;
 /**
  * @name IEpisodeOfCare
  * @description An association of a Patient with an Organization and Healthcare Provider(s) for a period of time that the Organization assumes some level of responsibility
@@ -87,7 +84,7 @@ export interface IEpisodeOfCare extends IDomainResource {
    * @description planned | waitlist | active | onhold | finished | cancelled | entered-in-error
    * @see <a href="https://hl7.org/fhir/R4/valueset-episode-of-care-status.html">EpisodeOfCareDiagnosis</a>
    */
-  status: EpisodeOfCareStatus;
+  status: EpisodeOfCareStatusType;
 
   /**
    * @description Past list of status codes (the current status may be included to cover the start date of the status)

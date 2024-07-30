@@ -1,17 +1,13 @@
 import { IElement } from '../base';
-import { AddressTypeEnum, AddressUseEnum } from '../enums';
 import { AddressTypeType, AddressUseType } from '../types';
 import { IPeriod } from './IPeriod';
-
-type AddressType = AddressTypeEnum | AddressTypeType;
-type AddressUse = AddressUseEnum | AddressUseType;
 /**
  * @description FHIR R4
  */
 export interface IAddress extends IElement {
   // Address attributes
-  use?: AddressUse;
-  type?: AddressType;
+  use?: AddressUseType;
+  type?: AddressTypeType;
   text?: string;
   line?: string[];
   city?: string;
