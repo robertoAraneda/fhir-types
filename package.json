@@ -1,6 +1,6 @@
 {
   "name": "fhirtypes",
-  "version": "1.0.22",
+  "version": "1.0.23",
   "description": "FHIR Types",
   "types": "dist/index.d.ts",
   "repository": {
@@ -34,6 +34,7 @@
   "author": "Roberto Araneda",
   "license": "ISC",
   "files": [
-    "dist/**"
+    "dist/**",
+    "src/r4/enums"
   ]
 }
