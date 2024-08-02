@@ -34,11 +34,15 @@
   "author": "Roberto Araneda",
   "license": "ISC",
   "files": [
-    "dist/r4/backbones",
-    "dist/r4/base",
-    "dist/r4/datatypes",
-    "dist/r4/resources",
-    "dist/r4/types",
-    "src/r4/enums"
+    "dist/r4/backbones/*",
+    "dist/r4/base/*",
+    "dist/r4/datatypes/*",
+    "dist/r4/resources/*",
+    "dist/r4/types/*",
+    "dist/r4/index.d.ts",
+    "src/r4/enums/*",
+    "README.md",
+    "package.json",
+    "LICENSE"
   ]
 }
