@@ -13,7 +13,7 @@ import { AdministrativeGenderEnum } from '../enums';
 import { AdministrativeGenderType } from '../types';
 
 export interface IPatient extends IDomainResource {
-  resourceType: 'Patient';
+  resourceType?: 'Patient';
   // Patient attributes
 
   /**
