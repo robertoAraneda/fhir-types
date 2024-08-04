@@ -1,4 +1,4 @@
-//import all elements as they are exported from the file
+// import all elements as they are exported from the file
 export { IAddress } from './IAddress';
 export { IAttachment } from './IAttachment';
 export { ICodeableConcept } from './ICodeableConcept';

@@ -36,4 +36,3 @@ export { EpisodeOfCareStatusHistoryCodeType } from './EpisodeOfCareStatusHistory
 export { EpisodeOfCareStatusType } from './EpisodeOfCareStatusType';
 export { OperationOutcomeIssueCodeType } from './OperationOutcomeIssueCodeType';
 export { OperationOutcomeIssueSeverityType } from './OperationOutcomeIssueSeverityType';
-

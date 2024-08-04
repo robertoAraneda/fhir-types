@@ -1,7 +1,7 @@
 /**
  * Enum for FHIR resources
  */
-export enum ResourceEnum{
+export enum ResourceEnum {
   PATIENT = 'Patient',
   ORGANIZATION = 'Organization',
   ENDPOINT = 'Endpoint',
@@ -36,5 +36,5 @@ export enum ResourceEnum{
   APPOINTMENT = 'Appointment',
   APPOINTMENT_RESPONSE = 'AppointmentResponse',
   BASIC = 'Basic',
-  BINARY = 'Binary'
+  BINARY = 'Binary',
 }

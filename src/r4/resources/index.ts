@@ -13,8 +13,3 @@ export { IPractitionerRole } from './IPractitionerRole';
 export { IRelatedPerson } from './IRelatedPerson';
 export { IEpisodeOfCare } from './IEpisodeOfCare';
 export { IOperationOutcome } from './IOperationOutcome';
-
-
-
-
-

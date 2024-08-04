@@ -5,5 +5,5 @@ export enum EpisodeOfCareStatusHistoryCodeEnum {
   ONHOLD = 'onhold',
   FINISHED = 'finished',
   CANCELLED = 'cancelled',
-  ENTERED_IN_ERROR = 'entered-in-error'
+  ENTERED_IN_ERROR = 'entered-in-error',
 }

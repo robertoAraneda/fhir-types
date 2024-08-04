@@ -1,4 +1,3 @@
-
 import { IPeriod } from './IPeriod';
 import { IElement } from '../base';
 import { NameUseType } from '../types';

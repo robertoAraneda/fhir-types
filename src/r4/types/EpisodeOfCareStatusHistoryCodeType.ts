@@ -1,1 +1,8 @@
-export type EpisodeOfCareStatusHistoryCodeType = "planned" | "waitlist" | "active" | "onhold" | "finished" | "cancelled" | "entered-in-error";
+export type EpisodeOfCareStatusHistoryCodeType =
+  | 'planned'
+  | 'waitlist'
+  | 'active'
+  | 'onhold'
+  | 'finished'
+  | 'cancelled'
+  | 'entered-in-error';

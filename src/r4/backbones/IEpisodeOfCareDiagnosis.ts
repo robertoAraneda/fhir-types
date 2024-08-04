@@ -1,5 +1,5 @@
-import { IBackboneElement } from "../base";
-import { ICodeableConcept, IReference } from "../datatypes";
+import { IBackboneElement } from '../base';
+import { ICodeableConcept, IReference } from '../datatypes';
 
 /**
  * @description The list of diagnosis relevant to this episode of care
@@ -8,19 +8,18 @@ import { ICodeableConcept, IReference } from "../datatypes";
  * @extends {IBackboneElement}
  */
 export interface IEpisodeOfCareDiagnosis extends IBackboneElement {
-  
-    /**
-     * @description Conditions/problems/diagnoses this episode of care is for
-     */
-    condition: IReference;
-  
-    /**
-     * @description Role that this diagnosis has within the episode of care (e.g. admission, billing, discharge …).
-     */
-    role?: ICodeableConcept;
-  
-    /**
-     * @description Ranking of the diagnosis (for each role type).
-     */
-    rank?: number;
+  /**
+   * @description Conditions/problems/diagnoses this episode of care is for
+   */
+  condition: IReference;
+
+  /**
+   * @description Role that this diagnosis has within the episode of care (e.g. admission, billing, discharge …).
+   */
+  role?: ICodeableConcept;
+
+  /**
+   * @description Ranking of the diagnosis (for each role type).
+   */
+  rank?: number;
 }

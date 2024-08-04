@@ -1,1 +1,1 @@
-export type ResourceInstanceType = ""
+export type ResourceInstanceType = '';

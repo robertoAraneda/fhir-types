@@ -2,7 +2,7 @@ import { IBackboneElement, IElement } from '../base';
 import { DaysOfWeekType } from '../types';
 
 export interface IPractitionerRoleAvailableTime extends IBackboneElement {
-  daysOfWeek?: DaysOfWeekType[]
+  daysOfWeek?: DaysOfWeekType[];
   allDay?: boolean;
   availableStartTime?: string;
   availableEndTime?: string;
