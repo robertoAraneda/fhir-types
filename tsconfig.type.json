@@ -1,0 +1,19 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "rootDir": "./src",
+    "outDir": "./dist",
+    "declaration": true,
+    "emitDeclarationOnly": true
+  },
+  "include": [
+    "src/r4/backbones/**/*.ts",
+    "src/r4/types/**/*.ts",
+    "src/r4/resources/**/*.ts",
+    "src/r4/datatypes/**/*.ts",
+    "src/r4/base/**/*.ts",
+    "src/r4/index.ts",
+    "src/r5/**/*.ts",
+    "src/index.ts"
+  ]
+}

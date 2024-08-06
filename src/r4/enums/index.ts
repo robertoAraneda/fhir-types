@@ -38,3 +38,4 @@ export { RequestIntentEnum } from './RequestIntentEnum';
 export { RequestPriorityEnum } from './RequestPriorityEnum';
 export { RequestStatusEnum } from './RequestStatusEnum';
 export { UnitsOfTimeEnum } from './UnitsOfTimeEnum';
+

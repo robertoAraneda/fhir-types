@@ -1,4 +1,3 @@
-
 import { IElement } from '../base';
 import { IIdentifier } from './IIdentifier';
 

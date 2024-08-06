@@ -1,6 +1,6 @@
 {
   "name": "fhirtypes",
-  "version": "1.0.26",
+  "version": "1.0.27",
   "description": "FHIR Types",
   "types": "dist/index.d.ts",
   "repository": {
@@ -12,8 +12,8 @@
     "email": "robaraneda@gmail.com"
   },
   "scripts": {
-    "build": "tsc",
-    "format": "prettier --write \"r4/**/*.ts\"",
+    "build": "tsc -p tsconfig.enum.json && tsc -p tsconfig.type.json",
+    "format": "prettier --write \"src/**/*.ts\"",
     "lint": "npx tslint -p tsconfig.json",
     "prepare": "npm run build",
     "version": "npm run format && git add -A",
@@ -34,13 +34,7 @@
   "author": "Roberto Araneda",
   "license": "ISC",
   "files": [
-    "dist/r4/backbones/*",
-    "dist/r4/base/*",
-    "dist/r4/datatypes/*",
-    "dist/r4/resources/*",
-    "dist/r4/types/*",
-    "dist/r4/index.d.ts",
-    "src/r4/enums/*",
+    "dist/*",
     "README.md",
     "package.json",
     "LICENSE"

@@ -1,8 +1,8 @@
-import { IElement } from "../base";
-import { IEpisodeOfCareDiagnosis, IEpisodeOfCareStatusHistory } from "../backbones";
-import { IDomainResource } from "../base";
-import { ICodeableConcept, IIdentifier, IPeriod, IReference } from "../datatypes";
-import { EpisodeOfCareStatusType } from "../types";
+import { IElement } from '../base';
+import { IEpisodeOfCareDiagnosis, IEpisodeOfCareStatusHistory } from '../backbones';
+import { IDomainResource } from '../base';
+import { ICodeableConcept, IIdentifier, IPeriod, IReference } from '../datatypes';
+import { EpisodeOfCareStatusType } from '../types';
 
 /**
  * @name IEpisodeOfCare
@@ -74,7 +74,6 @@ import { EpisodeOfCareStatusType } from "../types";
   @extends IDomainResource
  */
 export interface IEpisodeOfCare extends IDomainResource {
-
   /**
    * @description 	Business Identifier(s) relevant for this EpisodeOfCare
    */

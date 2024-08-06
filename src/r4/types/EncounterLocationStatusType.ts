@@ -1,7 +1,1 @@
-export type EncounterLocationStatusType = 
-  'planned' |
-  'active' |
-  'reserved' |
-  'completed';
-
-
+export type EncounterLocationStatusType = 'planned' | 'active' | 'reserved' | 'completed';

@@ -1,6 +1,6 @@
-import { IBackboneElement, IElement } from "../base";
-import { IPeriod } from "../datatypes";
-import { EpisodeOfCareStatusHistoryCodeType } from "../types";
+import { IBackboneElement, IElement } from '../base';
+import { IPeriod } from '../datatypes';
+import { EpisodeOfCareStatusHistoryCodeType } from '../types';
 
 /**
  * @description Past list of status codes (the current status may be included to cover the start date of the status)
@@ -10,13 +10,12 @@ import { EpisodeOfCareStatusHistoryCodeType } from "../types";
  * @version R4
  */
 export interface IEpisodeOfCareStatusHistory extends IBackboneElement {
-
   /**
    * @description planned | waitlist | active | onhold | finished | cancelled | entered-in-error
-   * @see <a href="https://hl7.org/fhir/R4/valueset-episode-of-care-status.html">EpisodeOfCareDiagnosis</a> 
+   * @see <a href="https://hl7.org/fhir/R4/valueset-episode-of-care-status.html">EpisodeOfCareDiagnosis</a>
    */
   status: EpisodeOfCareStatusHistoryCodeType;
-  
+
   /**
    * @description Duration the episode was in the specified status.
    */

@@ -1,4 +1,3 @@
-
 import { IElement } from '../base';
 import { IPeriod } from './IPeriod';
 import { ICodeableConcept } from './ICodeableConcept';
