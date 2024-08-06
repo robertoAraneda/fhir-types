@@ -16,3 +16,6 @@ export { ISignature } from './ISignature';
 export { IExtension } from './IExtension';
 export { INarrative } from './INarrative';
 export { ISimpleQuantity } from './ISimpleQuantity';
+export { IAnnotation } from './IAnnotation';
+export { IRatio } from './IRatio';
+export { IRepeat } from './IRepeat';
