@@ -1,7 +1,5 @@
 import { IElement } from "../base";
-import { DaysOfWeekType } from "../types";
-import { EventTimingType } from "../types/EventTimingType";
-import { UnitsOfTimeType } from "../types/UnitsOfTimeType";
+import { DaysOfWeekType, EventTimingType, UnitsOfTimeType } from "../types";
 import { IDuration } from "./IDuration";
 import { IPeriod } from "./IPeriod";
 import { IRange } from "./IRange";

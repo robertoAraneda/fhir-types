@@ -33,4 +33,8 @@ export { QuantityComparatorEnum } from './QuantityComparatorEnum';
 export { ResourceEnum } from './ResourceEnum';
 export { EpisodeOfCareStatusHistoryCodeEnum } from './EpisodeOfCareStatusHistoryCodeEnum';
 export { EpisodeOfCareStatusEnum } from './EpisodeOfCareStatusEnum';
-
+export { EventTimingEnum } from './EventTimingEnum';
+export { RequestIntentEnum } from './RequestIntentEnum';
+export { RequestPriorityEnum } from './RequestPriorityEnum';
+export { RequestStatusEnum } from './RequestStatusEnum';
+export { UnitsOfTimeEnum } from './UnitsOfTimeEnum';

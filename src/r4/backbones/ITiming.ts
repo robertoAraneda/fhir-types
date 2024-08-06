@@ -1,6 +1,5 @@
 import { IBackboneElement, IElement } from "../base";
-import { ICodeableConcept } from "../datatypes";
-import { IRepeat } from "../datatypes/IRepeat";
+import { ICodeableConcept, IRepeat } from "../datatypes";
 
 
 export interface ITiming extends IBackboneElement {

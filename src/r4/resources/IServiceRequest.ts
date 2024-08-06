@@ -1,11 +1,8 @@
 import { IDomainResource, IElement } from "../base";
-import { ICodeableConcept, IIdentifier, IPeriod, IQuantity, IRange, IReference } from "../datatypes";
-import { IAnnotation } from "../datatypes/IAnnotation";
-import { IRatio } from "../datatypes/IRatio";
-import { ITiming } from "../backbones/ITiming";
-import { RequestIntentType } from "../types/RequestIntentType";
-import { RequestPriorityType } from "../types/RequestPriorityType";
-import { RequestStatusType } from "../types/RequestStatusType";
+import { IAnnotation, ICodeableConcept, IIdentifier, IPeriod, IQuantity, IRange, IRatio, IReference } from "../datatypes";
+import { ITiming } from "../backbones";
+import { RequestIntentType, RequestPriorityType, RequestStatusType } from "../types";
+
 
 export interface IServiceRequest extends IDomainResource {
 

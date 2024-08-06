@@ -36,4 +36,8 @@ export { EpisodeOfCareStatusHistoryCodeType } from './EpisodeOfCareStatusHistory
 export { EpisodeOfCareStatusType } from './EpisodeOfCareStatusType';
 export { OperationOutcomeIssueCodeType } from './OperationOutcomeIssueCodeType';
 export { OperationOutcomeIssueSeverityType } from './OperationOutcomeIssueSeverityType';
-
+export { EventTimingType } from './EventTimingType';
+export { RequestIntentType } from './RequestIntentType';
+export { RequestPriorityType } from './RequestPriorityType';
+export { RequestStatusType } from './RequestStatusType';
+export { UnitsOfTimeType } from './UnitsOfTimeType';
