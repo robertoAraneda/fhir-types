@@ -14,3 +14,4 @@ export { IRelatedPerson } from './IRelatedPerson';
 export { IEpisodeOfCare } from './IEpisodeOfCare';
 export { IOperationOutcome } from './IOperationOutcome';
 export { IServiceRequest } from './IServiceRequest';
+export { ICoverage } from './ICoverage';

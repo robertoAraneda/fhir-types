@@ -41,3 +41,5 @@ export { RequestIntentType } from './RequestIntentType';
 export { RequestPriorityType } from './RequestPriorityType';
 export { RequestStatusType } from './RequestStatusType';
 export { UnitsOfTimeType } from './UnitsOfTimeType';
+export { FinancialResourceStatusCodesType } from './FinancialResourceStatusCodesType';
+export { CurrencyCodeType } from './CurrencyCodeType';
