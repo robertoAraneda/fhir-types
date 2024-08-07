@@ -19,3 +19,4 @@ export { ISimpleQuantity } from './ISimpleQuantity';
 export { IAnnotation } from './IAnnotation';
 export { IRatio } from './IRatio';
 export { IRepeat } from './IRepeat';
+export { IMoney } from './IMoney';
