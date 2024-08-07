@@ -15,3 +15,4 @@ export { IEpisodeOfCare } from './IEpisodeOfCare';
 export { IOperationOutcome } from './IOperationOutcome';
 export { IServiceRequest } from './IServiceRequest';
 export { ICoverage } from './ICoverage';
+export { IEncounter } from './IEncounter';

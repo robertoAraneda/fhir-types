@@ -1,11 +1,11 @@
 export enum EncounterStatusEnum {
   PLANNED = 'planned',
+  ARRIVED = 'arrived',
+  TRIAGED = 'triaged',
   IN_PROGRESS = 'in-progress',
-  ON_HOLD = 'on-hold',
-  DISCHARGED = 'discharged',
-  COMPLETED = 'completed',
+  ON_LEAVE = 'onleave',
+  FINISHED = 'finished',
   CANCELLED = 'cancelled',
-  DISCONTINUED = 'discontinued',
   ENTERED_IN_ERROR = 'entered-in-error',
-  UNKNOWN = 'unknown',
+  UNKNOWN = 'unknown'
 }
