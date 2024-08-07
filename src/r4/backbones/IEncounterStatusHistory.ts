@@ -1,4 +1,4 @@
-import { IBackboneElement } from "../base";
+import { IBackboneElement, IElement } from "../base";
 import { IPeriod } from "../datatypes";
 import { EncounterStatusType } from "../types";
 
@@ -14,4 +14,10 @@ export interface IEncounterStatusHistory extends IBackboneElement {
      * @description The time that the episode was in the specified status.
      */
     period: IPeriod;
+
+    // Extensions attributes
+    /**
+     * @description Extensions for status
+     */
+    _status?: IElement;
 }

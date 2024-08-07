@@ -1,5 +1,5 @@
 import { IEncounterClassHistory, IEncounterDiagnosis, IEncounterHospitalization, IEncounterLocation, IEncounterParticipant, IEncounterStatusHistory } from "../backbones";
-import { IDomainResource } from "../base";
+import { IDomainResource, IElement } from "../base";
 import { ICodeableConcept, ICoding, IDuration, IIdentifier, IPeriod, IReference } from "../datatypes";
 import { EncounterStatusType } from "../types";
 
@@ -120,4 +120,12 @@ export interface IEncounter extends IDomainResource {
      * @description Another Encounter of which this encounter is a part of (administratively or in time).
      */
     partOf?: IReference;
+
+    // Extensions attributes
+    /**
+     * @description Extensions for status
+     */
+    _status?: IElement;
+
+    
 }

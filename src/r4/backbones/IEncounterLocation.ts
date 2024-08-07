@@ -1,4 +1,4 @@
-import { IBackboneElement } from "../base";
+import { IBackboneElement, IElement } from "../base";
 import { ICodeableConcept, IPeriod, IReference } from "../datatypes";
 import { EncounterLocationStatusType } from "../types";
 
@@ -23,4 +23,10 @@ export interface IEncounterLocation extends IBackboneElement {
     * @description Time period during which the patient was present at the location.
     */
     period?: IPeriod;
+
+    // Extensions attributes
+    /**
+     * @description Extensions for status
+     */
+    _status?: IElement;
 }
