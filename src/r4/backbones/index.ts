@@ -33,4 +33,9 @@ export { ITiming } from './ITiming';
 export { ICoverageClass } from './ICoverageClass';
 export { ICoverageCostToBeneficiary } from './ICoverageCostToBeneficiary';
 export { ICoverageCostToBeneficiaryException } from './ICoverageCostToBeneficiaryException';
-
+export { IEncounterStatusHistory } from './IEncounterStatusHistory';
+export { IEncounterClassHistory } from './IEncounterClassHistory';
+export { IEncounterParticipant } from './IEncounterParticipant';
+export { IEncounterDiagnosis } from './IEncounterDiagnosis';
+export { IEncounterHospitalization } from './IEncounterHospitalization';
+export { IEncounterLocation } from './IEncounterLocation';
