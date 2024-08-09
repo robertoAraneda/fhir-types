@@ -95,4 +95,4 @@ export type ResourceType =
   | 'RiskAssessment'
   | 'RiskEvidenceSynthesis'
   | 'Schedule'
-  | 'RelatedPerson';
+  | 'ServiceRequest';
