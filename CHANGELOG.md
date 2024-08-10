@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.1.0](https://github.com/robertoAraneda/fhir-types/compare/v1.0.28...v1.1.0) (2024-08-10)
+
+
+### Features
+
+* add husky, commit lint and standar version ([9c7542d](https://github.com/robertoAraneda/fhir-types/commits9c7542dddefa8fe73759133df4c76ac84c1ccda7))
+
 ### 1.0.28 (2024-08-09)
 
 
