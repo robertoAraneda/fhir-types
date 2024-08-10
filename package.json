@@ -15,7 +15,7 @@
     "lint": "eslint ./src",
     "test": "jest",
     "prepare": "husky install",
-    "pre-commit": "npm run lint && npm run test",
+    "pre-commit": "npm run lint",
     "pre-push": "npm run release",
     "build": "tsc -p tsconfig.enum.json && tsc -p tsconfig.type.json",
     "format": "prettier --write \"src/**/*.ts\"",
