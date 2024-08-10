@@ -17,7 +17,7 @@
     "build": "tsc -p tsconfig.enum.json && tsc -p tsconfig.type.json",
     "format": "prettier --write \"src/**/*.ts\"",
     "version": "npm run format && git add -A",
-    "postversion": "git push && git push --tags",
+    "postversion": "git push && git push --tags"
   },
   "devDependencies": {
     "@commitlint/cli": "^19.4.0",
