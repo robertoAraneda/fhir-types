@@ -1,4 +1,4 @@
-export type DataType =
+export type DatatypeType =
   | 'Address'
   | 'Age'
   | 'Annotation'
