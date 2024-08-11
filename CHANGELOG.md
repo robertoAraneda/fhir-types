@@ -1,3 +1,10 @@
+## [1.3.2](https://github.com/robertoAraneda/fhir-types/compare/v1.3.1...v1.3.2) (2024-08-11)
+
+
+### Bug Fixes
+
+* add build script to workflow ([cc22ed0](https://github.com/robertoAraneda/fhir-types/commit/cc22ed0e0cf5808b9ace0fe7af1fe3351397350d))
+
 ## [1.3.1](https://github.com/robertoAraneda/fhir-types/compare/v1.3.0...v1.3.1) (2024-08-11)
 
 
