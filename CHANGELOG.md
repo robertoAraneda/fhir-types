@@ -1,3 +1,10 @@
+## [1.3.4](https://github.com/robertoAraneda/fhir-types/compare/v1.3.3...v1.3.4) (2024-08-11)
+
+
+### Bug Fixes
+
+* add extensions for status, intent, and priority in IServiceRequest ([be00ab7](https://github.com/robertoAraneda/fhir-types/commit/be00ab7360347e9b9f4f3d5a541eae8ab2210eb8))
+
 ## [1.3.3](https://github.com/robertoAraneda/fhir-types/compare/v1.3.2...v1.3.3) (2024-08-11)
 
 
