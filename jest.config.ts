@@ -35,7 +35,7 @@ const config: Config = {
   // The test environment that will be used for testing
   testEnvironment: 'node',
 
-  reporters: [['github-actions', { silent: false }], 'summary'],
+  reporters: ['default'],
 
   // The glob patterns Jest uses to detect test files
   testMatch: ['**/__tests__/**/*.[jt]s?(x)', '**/?(*.)+(spec|test).[tj]s?(x)'],
