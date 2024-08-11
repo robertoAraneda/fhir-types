@@ -1,3 +1,10 @@
+## [1.3.1](https://github.com/robertoAraneda/fhir-types/compare/v1.3.0...v1.3.1) (2024-08-11)
+
+
+### Bug Fixes
+
+* resourcetype in episodeofcare ([2e1b17d](https://github.com/robertoAraneda/fhir-types/commit/2e1b17deb6313b95f761dea32c2a0d1bdd2fe90a))
+
 # [1.3.0](https://github.com/robertoAraneda/fhir-types/compare/v1.2.0...v1.3.0) (2024-08-11)
 
 
