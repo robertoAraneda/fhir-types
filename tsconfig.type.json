@@ -15,5 +15,6 @@
     "src/r4/index.ts",
     "src/r5/**/*.ts",
     "src/index.ts"
-  ]
+  ],
+  "exclude": ["**/__tests__/**"]
 }
