@@ -1,3 +1,10 @@
+## [1.3.3](https://github.com/robertoAraneda/fhir-types/compare/v1.3.2...v1.3.3) (2024-08-11)
+
+
+### Bug Fixes
+
+* add resource type to service request ([6c6b137](https://github.com/robertoAraneda/fhir-types/commit/6c6b13724582b293d0062b1ed27175a2c0b3decb))
+
 ## [1.3.2](https://github.com/robertoAraneda/fhir-types/compare/v1.3.1...v1.3.2) (2024-08-11)
 
 
