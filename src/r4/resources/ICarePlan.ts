@@ -121,6 +121,16 @@ export interface ICarePlan extends IDomainResource {
 
     // Extensions attributes
     /**
+     * @description Extensions for instantiatesCanonical
+     */
+    _instantiatesCanonical?: IElement;
+
+    /**
+     * @description Extensions for instantiatesUri
+     */
+    _instantiatesUri?: IElement;
+    
+    /**
      * @description Extensions for status
      */
     _status?: IElement;

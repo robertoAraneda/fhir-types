@@ -108,6 +108,11 @@ export interface ICarePlanActivityDetail extends IBackboneElement {
 
     // Extensions attributes
     /**
+     * @description Extensions for kind
+     */
+    _kind?: IElement;
+    
+    /**
      * @description Extensions for instantiatesCanonical
      */
     _instantiatesCanonical?: IElement[];
