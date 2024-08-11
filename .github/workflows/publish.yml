@@ -3,6 +3,9 @@ on:
   push:
     branches:
       - master
+env:
+  HUSKY: 0
+
 jobs:
   build:
     runs-on: ubuntu-latest
