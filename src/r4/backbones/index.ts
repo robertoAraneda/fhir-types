@@ -39,3 +39,5 @@ export { IEncounterParticipant } from './IEncounterParticipant';
 export { IEncounterDiagnosis } from './IEncounterDiagnosis';
 export { IEncounterHospitalization } from './IEncounterHospitalization';
 export { IEncounterLocation } from './IEncounterLocation';
+export { ICarePlanActivity } from './ICarePlanActivity';
+export { ICarePlanActivityDetail } from './ICarePlanActivityDetail';

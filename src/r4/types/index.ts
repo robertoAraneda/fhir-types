@@ -43,3 +43,6 @@ export { RequestStatusType } from './RequestStatusType';
 export { UnitsOfTimeType } from './UnitsOfTimeType';
 export { FinancialResourceStatusCodesType } from './FinancialResourceStatusCodesType';
 export { CurrencyCodeType } from './CurrencyCodeType';
+export { CarePlanIntentType } from './CarePlanIntentType';
+export { CarePlanActivityKindType } from './CarePlanActivityKindType';
+export { CarePlanActivityStatusType } from './CarePlanActivityStatusType';
