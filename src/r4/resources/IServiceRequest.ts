@@ -236,4 +236,20 @@ export interface IServiceRequest extends IDomainResource {
    * @description Extension for patientInstruction.
    */
   _patientInstruction?: IElement;
+
+  /**
+   * @description Extension for status
+   */
+  _status?: IElement;
+
+  /**
+   * @description Extension for intent
+   */
+  _intent?: IElement;
+
+  /**
+   * @description Extension for priority
+   */
+
+  _priority?: IElement;
 }
