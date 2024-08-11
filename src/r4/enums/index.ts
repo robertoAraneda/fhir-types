@@ -40,3 +40,6 @@ export { RequestStatusEnum } from './RequestStatusEnum';
 export { UnitsOfTimeEnum } from './UnitsOfTimeEnum';
 export { FinancialResourceStatusCodesEnum } from './FinancialResourceStatusCodesEnum';
 export { CurrencyCodeEnum } from './CurrencyCodeEnum';
+export { CarePlanIntentEnum } from './CarePlanIntentEnum';
+export { CarePlanActivityKindEnum } from './CarePlanActivityKindEnum';
+export { CarePlanActivityStatusEnum } from './CarePlanActivityStatusEnum';
