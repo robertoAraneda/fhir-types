@@ -8,72 +8,11 @@ import { EpisodeOfCareStatusType } from '../types';
  * @name IEpisodeOfCare
  * @description An association of a Patient with an Organization and Healthcare Provider(s) for a period of time that the Organization assumes some level of responsibility
  * @see <a href="https://hl7.org/fhir/R4/episodeofcare.html">EpisodeOfCare</a>
- * @example ```json
- *  {
-      "resourceType": "EpisodeOfCare",
-      "id": "example",
-      "identifier": [
-        {
-          "system": "http://example.org/sampleepisodeofcare-identifier",
-          "value": "123"
-        }
-      ],
-      "status": "active",
-      "type": [
-        {
-          "coding": [
-            {
-              "system": "http://terminology.hl7.org/CodeSystem/episodeofcare-type",
-              "code": "hacc",
-              "display": "Home and Community Care"
-            }
-          ]
-        }
-      ],
-      "diagnosis": [
-        {
-          "condition": {
-            "reference": "Condition/stroke"
-          },
-          "rank": 1
-        }
-      ],
-      "patient": {
-        "reference": "Patient/example"
-      },
-      "managingOrganization": {
-        "reference": "Organization/hl7"
-      },
-      "period": {
-        "start": "2014-09-01"
-      },
-      "referralRequest": [
-        {
-          "display": "Referral from Example Aged Care Services"
-        }
-      ],
-      "careManager": {
-        "reference": "Practitioner/14",
-        "display": "Amanda Assigned"
-      },
-      "team": [
-        {
-          "reference": "CareTeam/example",
-          "display": "example care team"
-        }
-      ],
-      "account": [
-        {
-          "reference": "Account/example",
-          "display": "example account"
-        }
-      ]
-    }
-  ```
   @version R4
   @extends IDomainResource
  */
 export interface IEpisodeOfCare extends IDomainResource {
+  resourceType?: 'EpisodeOfCare';
   /**
    * @description 	Business Identifier(s) relevant for this EpisodeOfCare
    */
