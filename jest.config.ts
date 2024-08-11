@@ -13,13 +13,10 @@ const config: Config = {
   collectCoverage: false,
 
   // An array of glob patterns indicating a set of files for which coverage information should be collected
-  collectCoverageFrom: ['./src/**'],
+  collectCoverageFrom: ['src/**'],
 
   // The directory where Jest should output its coverage files
-  coverageDirectory: 'coverage-unit',
-
-  // An array of regexp pattern strings used to skip coverage collection
-  coveragePathIgnorePatterns: [],
+  coverageDirectory: 'coverage',
 
   // A list of reporter names that Jest uses when writing coverage reports
   coverageReporters: ['json', 'text', 'lcov', 'clover', 'text-summary'],
@@ -33,16 +30,18 @@ const config: Config = {
     },
   },
   preset: 'ts-jest',
-  roots: ['<rootDir>/src'],
+  // roots: ['<rootDir>/src'],
 
   // The test environment that will be used for testing
   testEnvironment: 'node',
+
+  reporters: [['github-actions', { silent: false }], 'summary'],
 
   // The glob patterns Jest uses to detect test files
   testMatch: ['**/__tests__/**/*.[jt]s?(x)', '**/?(*.)+(spec|test).[tj]s?(x)'],
 
   // Indicates whether each individual test should be reported during the run
-  verbose: true,
+  verbose: false,
 
   displayName: {
     name: 'UNIT',
