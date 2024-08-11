@@ -1,3 +1,10 @@
+# [1.3.0](https://github.com/robertoAraneda/fhir-types/compare/v1.2.0...v1.3.0) (2024-08-11)
+
+
+### Features
+
+* add types for datatype and resource ([cb39e25](https://github.com/robertoAraneda/fhir-types/commit/cb39e250be9e6d2bc38c296f5c1d2254ffbe951a))
+
 # [1.2.0](https://github.com/robertoAraneda/fhir-types/compare/v1.1.0...v1.2.0) (2024-08-10)
 
 
