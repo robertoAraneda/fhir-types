@@ -17,3 +17,4 @@ export { IServiceRequest } from './IServiceRequest';
 export { ICoverage } from './ICoverage';
 export { IEncounter } from './IEncounter';
 export { ICarePlan } from './ICarePlan';
+export { IHealthcareService } from './IHealthcareService';
