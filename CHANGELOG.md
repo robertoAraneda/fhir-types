@@ -1,3 +1,15 @@
+# [1.4.0](https://github.com/robertoAraneda/fhir-types/compare/v1.3.4...v1.4.0) (2024-08-12)
+
+
+### Bug Fixes
+
+* change primitive extension of daysOfWeek to array ([18a8e83](https://github.com/robertoAraneda/fhir-types/commit/18a8e8398e8f8d0f211c90e6cfbdb5d7b505ea26))
+
+
+### Features
+
+* add HealthcareService resource ([1e14279](https://github.com/robertoAraneda/fhir-types/commit/1e14279b033392f3e540de9e0038fc367a7d2fd2))
+
 ## [1.3.4](https://github.com/robertoAraneda/fhir-types/compare/v1.3.3...v1.3.4) (2024-08-11)
 
 
