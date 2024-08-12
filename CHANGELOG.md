@@ -1,3 +1,10 @@
+## [1.5.1](https://github.com/robertoAraneda/fhir-types/compare/v1.5.0...v1.5.1) (2024-08-12)
+
+
+### Bug Fixes
+
+* add primitive extensions in IRepeat datatype ([2a1cde0](https://github.com/robertoAraneda/fhir-types/commit/2a1cde04d8f076dc978895c584628f61d7673b63))
+
 # [1.5.0](https://github.com/robertoAraneda/fhir-types/compare/v1.4.1...v1.5.0) (2024-08-12)
 
 
