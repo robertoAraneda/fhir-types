@@ -4,6 +4,8 @@ import { AddressUseEnum } from '../AddressUseEnum';
 import { CurrencyCodeEnum } from '../CurrencyCodeEnum';
 import { DatatypeEnum } from '../DatatypeEnum';
 import { ResourceEnum } from '../ResourceEnum';
+import { TaskIntentEnum } from '../TaskIntentEnum';
+import { TaskStatusEnum } from '../TaskStatusEnum';
 
 describe('AccountStatusEnum', () => {
   it('should have the correct values', () => {
@@ -436,5 +438,36 @@ describe('DatatypeEnum', () => {
     expect(DatatypeEnum.URL).toEqual('url');
     expect(DatatypeEnum.UUID).toEqual('uuid');
     expect(DatatypeEnum.XHTML).toEqual('xhtml');
+  });
+});
+
+describe('TaskStatusEnum', () => {
+  it('should have the correct values', () => {
+    expect(TaskStatusEnum.DRAFT).toEqual('draft');
+    expect(TaskStatusEnum.REQUESTED).toEqual('requested');
+    expect(TaskStatusEnum.RECEIVED).toEqual('received');
+    expect(TaskStatusEnum.ACCEPTED).toEqual('accepted');
+    expect(TaskStatusEnum.REJECTED).toEqual('rejected');
+    expect(TaskStatusEnum.READY).toEqual('ready');
+    expect(TaskStatusEnum.CANCELLED).toEqual('cancelled');
+    expect(TaskStatusEnum.IN_PROGRESS).toEqual('in-progress');
+    expect(TaskStatusEnum.ON_HOLD).toEqual('on-hold');
+    expect(TaskStatusEnum.FAILED).toEqual('failed');
+    expect(TaskStatusEnum.COMPLETED).toEqual('completed');
+    expect(TaskStatusEnum.ENTERED_IN_ERROR).toEqual('entered-in-error');
+  });
+});
+
+describe('TaskIntentEnum', () => {
+  it('should have the correct values', () => {
+    expect(TaskIntentEnum.UNKNOWN).toEqual('unknown');
+    expect(TaskIntentEnum.PROPOSAL).toEqual('proposal');
+    expect(TaskIntentEnum.PLAN).toEqual('plan');
+    expect(TaskIntentEnum.ORDER).toEqual('order');
+    expect(TaskIntentEnum.ORIGINAL_ORDER).toEqual('original-order');
+    expect(TaskIntentEnum.REFLEX_ORDER).toEqual('reflex-order');
+    expect(TaskIntentEnum.FILLER_ORDER).toEqual('filler-order');
+    expect(TaskIntentEnum.INSTANCE_ORDER).toEqual('instance-order');
+    expect(TaskIntentEnum.OPTION).toEqual('option');
   });
 });

@@ -44,3 +44,6 @@ export { ICarePlanActivityDetail } from './ICarePlanActivityDetail';
 export { IHealthcareServiceEligibility } from './IHealthcareServiceEligibility';
 export { IHealthcareServiceAvailableTime } from './IHealthcareServiceAvailableTime';
 export { IHealthcareServiceNotAvailable } from './IHealthcareServiceNotAvailable';
+export { ITaskRestriction } from './ITaskRestriction';
+export { ITaskInput } from './ITaskInput';
+export { ITaskOutput } from './ITaskOutput';

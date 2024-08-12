@@ -46,3 +46,5 @@ export { CurrencyCodeType } from './CurrencyCodeType';
 export { CarePlanIntentType } from './CarePlanIntentType';
 export { CarePlanActivityKindType } from './CarePlanActivityKindType';
 export { CarePlanActivityStatusType } from './CarePlanActivityStatusType';
+export { TaskStatusType } from './TaskStatusType';
+export { TaskIntentType } from './TaskIntentType';
