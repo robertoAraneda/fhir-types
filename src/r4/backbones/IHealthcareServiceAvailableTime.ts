@@ -29,7 +29,7 @@ export interface IHealthcareServiceAvailableTime extends IBackboneElement {
         /**
          * @description Extensions for daysOfWeek
          */
-        _daysOfWeek?: IElement;
+        _daysOfWeek?: IElement[];
 
         /**
          * @description Extensions for allDay
