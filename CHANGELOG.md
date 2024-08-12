@@ -1,3 +1,10 @@
+# [1.5.0](https://github.com/robertoAraneda/fhir-types/compare/v1.4.1...v1.5.0) (2024-08-12)
+
+
+### Features
+
+* add Task resource ([40f94b9](https://github.com/robertoAraneda/fhir-types/commit/40f94b9648fdcb3646f227801321fd48552eacaa))
+
 ## [1.4.1](https://github.com/robertoAraneda/fhir-types/compare/v1.4.0...v1.4.1) (2024-08-12)
 
 
