@@ -1,3 +1,10 @@
+## [1.4.1](https://github.com/robertoAraneda/fhir-types/compare/v1.4.0...v1.4.1) (2024-08-12)
+
+
+### Bug Fixes
+
+* remove white spaces from request status enum ([f284b97](https://github.com/robertoAraneda/fhir-types/commit/f284b9751c95e0d85b11fb84dc201b98fbf9f0d5))
+
 # [1.4.0](https://github.com/robertoAraneda/fhir-types/compare/v1.3.4...v1.4.0) (2024-08-12)
 
 
