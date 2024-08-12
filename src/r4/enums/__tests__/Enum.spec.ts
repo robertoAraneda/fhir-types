@@ -1,8 +1,11 @@
 import { AccountStatusEnum } from '../AccountStatusEnum';
 import { AddressTypeEnum } from '../AddressTypeEnum';
 import { AddressUseEnum } from '../AddressUseEnum';
+import { AppointmentStatusEnum } from '../AppointmentStatusEnum';
 import { CurrencyCodeEnum } from '../CurrencyCodeEnum';
 import { DatatypeEnum } from '../DatatypeEnum';
+import { ParticipantRequiredEnum } from '../ParticipantRequiredEnum';
+import { ParticipantStatusEnum } from '../ParticipantStatusEnum';
 import { ResourceEnum } from '../ResourceEnum';
 import { TaskIntentEnum } from '../TaskIntentEnum';
 import { TaskStatusEnum } from '../TaskStatusEnum';
@@ -469,5 +472,37 @@ describe('TaskIntentEnum', () => {
     expect(TaskIntentEnum.FILLER_ORDER).toEqual('filler-order');
     expect(TaskIntentEnum.INSTANCE_ORDER).toEqual('instance-order');
     expect(TaskIntentEnum.OPTION).toEqual('option');
+  });
+});
+
+describe('AppointmentStatusEnum', () => {
+  it('should have the correct values', () => {
+    expect(AppointmentStatusEnum.PROPOSED).toEqual('proposed');
+    expect(AppointmentStatusEnum.PENDING).toEqual('pending');
+    expect(AppointmentStatusEnum.BOOKED).toEqual('booked');
+    expect(AppointmentStatusEnum.ARRIVED).toEqual('arrived');
+    expect(AppointmentStatusEnum.FULFILLED).toEqual('fulfilled');
+    expect(AppointmentStatusEnum.CANCELLED).toEqual('cancelled');
+    expect(AppointmentStatusEnum.NOSHOW).toEqual('noshow');
+    expect(AppointmentStatusEnum.ENTERED_IN_ERROR).toEqual('entered-in-error');
+    expect(AppointmentStatusEnum.CHECKED_IN).toEqual('checked-in');
+    expect(AppointmentStatusEnum.WAITLIST).toEqual('waitlist');
+  });
+});
+
+describe('ParticipantRequiredEnum', () => {
+  it('should have the correct values', () => {
+    expect(ParticipantRequiredEnum.REQUIRED).toEqual('required');
+    expect(ParticipantRequiredEnum.OPTIONAL).toEqual('optional');
+    expect(ParticipantRequiredEnum.INFORMATION_ONLY).toEqual('information-only');
+  });
+});
+
+describe('ParticipantStatusEnum', () => {
+  it('should have the correct values', () => {
+    expect(ParticipantStatusEnum.ACCEPTED).toEqual('accepted');
+    expect(ParticipantStatusEnum.DECLINED).toEqual('declined');
+    expect(ParticipantStatusEnum.TENTATIVE).toEqual('tentative');
+    expect(ParticipantStatusEnum.NEEDS_ACTION).toEqual('needs-action');
   });
 });

@@ -48,3 +48,6 @@ export { CarePlanActivityKindType } from './CarePlanActivityKindType';
 export { CarePlanActivityStatusType } from './CarePlanActivityStatusType';
 export { TaskStatusType } from './TaskStatusType';
 export { TaskIntentType } from './TaskIntentType';
+export { AppointmentStatusType } from './AppointmentStatusType';
+export { ParticipantRequiredType } from './ParticipantRequiredType';
+export { ParticipantStatusType } from './ParticipantStatusType';
