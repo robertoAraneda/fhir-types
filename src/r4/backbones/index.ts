@@ -41,3 +41,6 @@ export { IEncounterHospitalization } from './IEncounterHospitalization';
 export { IEncounterLocation } from './IEncounterLocation';
 export { ICarePlanActivity } from './ICarePlanActivity';
 export { ICarePlanActivityDetail } from './ICarePlanActivityDetail';
+export { IHealthcareServiceEligibility } from './IHealthcareServiceEligibility';
+export { IHealthcareServiceAvailableTime } from './IHealthcareServiceAvailableTime';
+export { IHealthcareServiceNotAvailable } from './IHealthcareServiceNotAvailable';
