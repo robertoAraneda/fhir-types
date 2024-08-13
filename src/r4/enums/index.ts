@@ -45,3 +45,6 @@ export { CarePlanActivityKindEnum } from './CarePlanActivityKindEnum';
 export { CarePlanActivityStatusEnum } from './CarePlanActivityStatusEnum';
 export { TaskStatusEnum } from './TaskStatusEnum';
 export { TaskIntentEnum } from './TaskIntentEnum';
+export { AppointmentStatusEnum } from './AppointmentStatusEnum';
+export { ParticipantRequiredEnum } from './ParticipantRequiredEnum';
+export { ParticipantStatusEnum } from './ParticipantStatusEnum';
