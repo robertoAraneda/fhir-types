@@ -4,6 +4,7 @@ import { AddressUseEnum } from '../AddressUseEnum';
 import { AppointmentStatusEnum } from '../AppointmentStatusEnum';
 import { CurrencyCodeEnum } from '../CurrencyCodeEnum';
 import { DatatypeEnum } from '../DatatypeEnum';
+import { EventTimingEnum } from '../EventTimingEnum';
 import { ParticipantRequiredEnum } from '../ParticipantRequiredEnum';
 import { ParticipantStatusEnum } from '../ParticipantStatusEnum';
 import { ResourceEnum } from '../ResourceEnum';
@@ -504,5 +505,36 @@ describe('ParticipantStatusEnum', () => {
     expect(ParticipantStatusEnum.DECLINED).toEqual('declined');
     expect(ParticipantStatusEnum.TENTATIVE).toEqual('tentative');
     expect(ParticipantStatusEnum.NEEDS_ACTION).toEqual('needs-action');
+  });
+});
+
+describe('EventTimingEnum', () => {
+  it('should have the correct values', () => {
+    expect(EventTimingEnum.MORN).toEqual('MORN');
+    expect(EventTimingEnum.MORN_EARLY).toEqual('MORN.early');
+    expect(EventTimingEnum.MORN_LATE).toEqual('MORN.late');
+    expect(EventTimingEnum.NOON).toEqual('NOON');
+    expect(EventTimingEnum.AFT).toEqual('AFT');
+    expect(EventTimingEnum.AFT_EARLY).toEqual('AFT.early');
+    expect(EventTimingEnum.AFT_LATE).toEqual('AFT.late');
+    expect(EventTimingEnum.EVE).toEqual('EVE');
+    expect(EventTimingEnum.EVE_EARLY).toEqual('EVE.early');
+    expect(EventTimingEnum.EVE_LATE).toEqual('EVE.late');
+    expect(EventTimingEnum.NIGHT).toEqual('NIGHT');
+    expect(EventTimingEnum.PHS).toEqual('PHS');
+    expect(EventTimingEnum.HS).toEqual('HS');
+    expect(EventTimingEnum.WAKE).toEqual('WAKE');
+    expect(EventTimingEnum.C).toEqual('C');
+    expect(EventTimingEnum.CM).toEqual('CM');
+    expect(EventTimingEnum.CD).toEqual('CD');
+    expect(EventTimingEnum.CV).toEqual('CV');
+    expect(EventTimingEnum.AC).toEqual('AC');
+    expect(EventTimingEnum.ACM).toEqual('ACM');
+    expect(EventTimingEnum.ACD).toEqual('ACD');
+    expect(EventTimingEnum.ACV).toEqual('ACV');
+    expect(EventTimingEnum.PC).toEqual('PC');
+    expect(EventTimingEnum.PCM).toEqual('PCM');
+    expect(EventTimingEnum.PCD).toEqual('PCD');
+    expect(EventTimingEnum.PCV).toEqual('PCV');
   });
 });
