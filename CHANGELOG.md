@@ -1,3 +1,10 @@
+## [1.6.1](https://github.com/robertoAraneda/fhir-types/compare/v1.6.0...v1.6.1) (2024-08-13)
+
+
+### Bug Fixes
+
+* add pending values in EventTiming type ([da683a9](https://github.com/robertoAraneda/fhir-types/commit/da683a9c3357a8b4063866e8c9978e8b31c722cb))
+
 # [1.6.0](https://github.com/robertoAraneda/fhir-types/compare/v1.5.1...v1.6.0) (2024-08-13)
 
 
