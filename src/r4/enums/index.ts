@@ -48,3 +48,4 @@ export { TaskIntentEnum } from './TaskIntentEnum';
 export { AppointmentStatusEnum } from './AppointmentStatusEnum';
 export { ParticipantRequiredEnum } from './ParticipantRequiredEnum';
 export { ParticipantStatusEnum } from './ParticipantStatusEnum';
+export { SlotStatusEnum } from './SlotStatusEnum';

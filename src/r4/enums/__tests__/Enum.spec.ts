@@ -8,6 +8,7 @@ import { EventTimingEnum } from '../EventTimingEnum';
 import { ParticipantRequiredEnum } from '../ParticipantRequiredEnum';
 import { ParticipantStatusEnum } from '../ParticipantStatusEnum';
 import { ResourceEnum } from '../ResourceEnum';
+import { SlotStatusEnum } from '../SlotStatusEnum';
 import { TaskIntentEnum } from '../TaskIntentEnum';
 import { TaskStatusEnum } from '../TaskStatusEnum';
 
@@ -536,5 +537,15 @@ describe('EventTimingEnum', () => {
     expect(EventTimingEnum.PCM).toEqual('PCM');
     expect(EventTimingEnum.PCD).toEqual('PCD');
     expect(EventTimingEnum.PCV).toEqual('PCV');
+  });
+});
+
+describe('SlotStatusEnum', () => {
+  it('should have the correct values', () => {
+    expect(SlotStatusEnum.BUSY).toEqual('busy');
+    expect(SlotStatusEnum.FREE).toEqual('free');
+    expect(SlotStatusEnum.BUSY_UNAVAILABLE).toEqual('busy-unavailable');
+    expect(SlotStatusEnum.BUSY_TENTATIVE).toEqual('busy-tentative');
+    expect(SlotStatusEnum.ENTERED_IN_ERROR).toEqual('entered-in-error');
   });
 });
