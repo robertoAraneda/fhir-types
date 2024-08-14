@@ -19,3 +19,4 @@ export { IEncounter } from './IEncounter';
 export { ICarePlan } from './ICarePlan';
 export { IHealthcareService } from './IHealthcareService';
 export { ITask } from './ITask';
+export { ISchedule } from './ISchedule';
