@@ -51,3 +51,4 @@ export { TaskIntentType } from './TaskIntentType';
 export { AppointmentStatusType } from './AppointmentStatusType';
 export { ParticipantRequiredType } from './ParticipantRequiredType';
 export { ParticipantStatusType } from './ParticipantStatusType';
+export { SlotStatusType } from './SlotStatusType';
