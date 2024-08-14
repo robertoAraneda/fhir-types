@@ -44,6 +44,11 @@ export interface ISchedule extends IDomainResource {
 
   // Extensions attributes
   /**
+   * @description Extension for active
+   */
+  _active?: IElement;
+
+  /**
    * @description Extension for comment
    */
   _comment?: IElement;
