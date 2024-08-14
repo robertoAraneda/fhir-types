@@ -1,3 +1,15 @@
+# [1.7.0](https://github.com/robertoAraneda/fhir-types/compare/v1.6.1...v1.7.0) (2024-08-14)
+
+
+### Bug Fixes
+
+* add primitive extensión for active attribute ([9128b21](https://github.com/robertoAraneda/fhir-types/commit/9128b21dd86646cd17aa99836c1e8d6f986126b4))
+
+
+### Features
+
+* add Schedule resource ([7aac1f2](https://github.com/robertoAraneda/fhir-types/commit/7aac1f274ccc532e14d9bb17d381e9b67de3bf03))
+
 ## [1.6.1](https://github.com/robertoAraneda/fhir-types/compare/v1.6.0...v1.6.1) (2024-08-13)
 
 
