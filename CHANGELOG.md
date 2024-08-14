@@ -1,3 +1,10 @@
+# [1.8.0](https://github.com/robertoAraneda/fhir-types/compare/v1.7.0...v1.8.0) (2024-08-14)
+
+
+### Features
+
+* add Slot resource ([8d89c69](https://github.com/robertoAraneda/fhir-types/commit/8d89c696510db5ff799f1db95c4f9b0e7812722b))
+
 # [1.7.0](https://github.com/robertoAraneda/fhir-types/compare/v1.6.1...v1.7.0) (2024-08-14)
 
 
