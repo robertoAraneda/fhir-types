@@ -1,3 +1,10 @@
+# [1.10.0](https://github.com/robertoAraneda/fhir-types/compare/v1.9.0...v1.10.0) (2024-08-16)
+
+
+### Features
+
+* add Condition resource ([5e77804](https://github.com/robertoAraneda/fhir-types/commit/5e778044c9915f9d61554be1aa5ec683712e7d89))
+
 # [1.9.0](https://github.com/robertoAraneda/fhir-types/compare/v1.8.0...v1.9.0) (2024-08-16)
 
 ### Features
