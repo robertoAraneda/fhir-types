@@ -49,3 +49,7 @@ export { AppointmentStatusEnum } from './AppointmentStatusEnum';
 export { ParticipantRequiredEnum } from './ParticipantRequiredEnum';
 export { ParticipantStatusEnum } from './ParticipantStatusEnum';
 export { SlotStatusEnum } from './SlotStatusEnum';
+export { AllergyIntoleranceTypeEnum } from './AllergyIntoleranceTypeEnum';
+export { AllergyIntoleranceCategoryEnum } from './AllergyIntoleranceCategoryEnum';
+export { AllergyIntoleranceCriticalityEnum } from './AllergyIntoleranceCriticalityEnum';
+export { AllergyIntoleranceSeverityEnum } from './AllergyIntoleranceSeverityEnum';
