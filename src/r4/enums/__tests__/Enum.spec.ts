@@ -8,6 +8,7 @@ import { AllergyIntoleranceTypeEnum } from '../AllergyIntoleranceTypeEnum';
 import { AppointmentStatusEnum } from '../AppointmentStatusEnum';
 import { CurrencyCodeEnum } from '../CurrencyCodeEnum';
 import { DatatypeEnum } from '../DatatypeEnum';
+import { EventStatusEnum } from '../EventStatusEnum';
 import { EventTimingEnum } from '../EventTimingEnum';
 import { ParticipantRequiredEnum } from '../ParticipantRequiredEnum';
 import { ParticipantStatusEnum } from '../ParticipantStatusEnum';
@@ -583,5 +584,18 @@ describe('AllergyIntoleranceSeverityEnum', () => {
     expect(AllergyIntoleranceSeverityEnum.MILD).toEqual('mild');
     expect(AllergyIntoleranceSeverityEnum.MODERATE).toEqual('moderate');
     expect(AllergyIntoleranceSeverityEnum.SEVERE).toEqual('severe');
+  });
+});
+
+describe('EventStatusEnum', () => {
+  it('should have the correct values', () => {
+    expect(EventStatusEnum.PREPARATION).toEqual('preparation');
+    expect(EventStatusEnum.IN_PROGRESS).toEqual('in-progress');
+    expect(EventStatusEnum.NOT_DONE).toEqual('not-done');
+    expect(EventStatusEnum.ON_HOLD).toEqual('on-hold');
+    expect(EventStatusEnum.STOPPED).toEqual('stopped');
+    expect(EventStatusEnum.COMPLETED).toEqual('completed');
+    expect(EventStatusEnum.ENTERED_IN_ERROR).toEqual('entered-in-error');
+    expect(EventStatusEnum.UNKNOWN).toEqual('unknown');
   });
 });
