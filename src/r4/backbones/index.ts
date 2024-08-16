@@ -49,3 +49,5 @@ export { ITaskInput } from './ITaskInput';
 export { ITaskOutput } from './ITaskOutput';
 export { IAppointmentParticipant } from './IAppointmentParticipant';
 export { IAllergyIntoleranceReaction } from './IAllergyIntoleranceReaction';
+export { IConditionStage } from './IConditionStage';
+export { IConditionEvidence } from './IConditionEvidence';
