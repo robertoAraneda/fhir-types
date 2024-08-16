@@ -48,3 +48,4 @@ export { ITaskRestriction } from './ITaskRestriction';
 export { ITaskInput } from './ITaskInput';
 export { ITaskOutput } from './ITaskOutput';
 export { IAppointmentParticipant } from './IAppointmentParticipant';
+export { IAllergyIntoleranceReaction } from './IAllergyIntoleranceReaction';

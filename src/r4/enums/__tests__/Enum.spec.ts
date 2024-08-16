@@ -1,6 +1,10 @@
 import { AccountStatusEnum } from '../AccountStatusEnum';
 import { AddressTypeEnum } from '../AddressTypeEnum';
 import { AddressUseEnum } from '../AddressUseEnum';
+import { AllergyIntoleranceCategoryEnum } from '../AllergyIntoleranceCategoryEnum';
+import { AllergyIntoleranceCriticalityEnum } from '../AllergyIntoleranceCriticalityEnum';
+import { AllergyIntoleranceSeverityEnum } from '../AllergyIntoleranceSeverityEnum';
+import { AllergyIntoleranceTypeEnum } from '../AllergyIntoleranceTypeEnum';
 import { AppointmentStatusEnum } from '../AppointmentStatusEnum';
 import { CurrencyCodeEnum } from '../CurrencyCodeEnum';
 import { DatatypeEnum } from '../DatatypeEnum';
@@ -547,5 +551,37 @@ describe('SlotStatusEnum', () => {
     expect(SlotStatusEnum.BUSY_UNAVAILABLE).toEqual('busy-unavailable');
     expect(SlotStatusEnum.BUSY_TENTATIVE).toEqual('busy-tentative');
     expect(SlotStatusEnum.ENTERED_IN_ERROR).toEqual('entered-in-error');
+  });
+});
+
+describe('AllergyIntoleranceTypeEnum', () => {
+  it('should have the correct values', () => {
+    expect(AllergyIntoleranceTypeEnum.ALLERGY).toEqual('allergy');
+    expect(AllergyIntoleranceTypeEnum.INTOLERANCE).toEqual('intolerance');
+  });
+});
+
+describe('AllergyIntoleranceCategoryEnum', () => {
+  it('should have the correct values', () => {
+    expect(AllergyIntoleranceCategoryEnum.FOOD).toEqual('food');
+    expect(AllergyIntoleranceCategoryEnum.MEDICATION).toEqual('medication');
+    expect(AllergyIntoleranceCategoryEnum.ENVIRONMENT).toEqual('environment');
+    expect(AllergyIntoleranceCategoryEnum.BIOLOGIC).toEqual('biologic');
+  });
+});
+
+describe('AllergyIntoleranceCriticalityEnum', () => {
+  it('should have the correct values', () => {
+    expect(AllergyIntoleranceCriticalityEnum.LOW).toEqual('low');
+    expect(AllergyIntoleranceCriticalityEnum.HIGH).toEqual('high');
+    expect(AllergyIntoleranceCriticalityEnum.UNABLE_TO_ASSESS).toEqual('unable-to-assess');
+  });
+});
+
+describe('AllergyIntoleranceSeverityEnum', () => {
+  it('should have the correct values', () => {
+    expect(AllergyIntoleranceSeverityEnum.MILD).toEqual('mild');
+    expect(AllergyIntoleranceSeverityEnum.MODERATE).toEqual('moderate');
+    expect(AllergyIntoleranceSeverityEnum.SEVERE).toEqual('severe');
   });
 });

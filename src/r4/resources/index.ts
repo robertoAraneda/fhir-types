@@ -21,3 +21,4 @@ export { IHealthcareService } from './IHealthcareService';
 export { ITask } from './ITask';
 export { ISchedule } from './ISchedule';
 export { ISlot } from './ISlot';
+export { IAllergyIntolerance } from './IAllergyIntolerance';

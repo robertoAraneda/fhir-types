@@ -52,3 +52,7 @@ export { AppointmentStatusType } from './AppointmentStatusType';
 export { ParticipantRequiredType } from './ParticipantRequiredType';
 export { ParticipantStatusType } from './ParticipantStatusType';
 export { SlotStatusType } from './SlotStatusType';
+export { AllergyIntoleranceTypeType } from './AllergyIntoleranceTypeType';
+export { AllergyIntoleranceCategoryType } from './AllergyIntoleranceCategoryType';
+export { AllergyIntoleranceCriticalityType } from './AllergyIntoleranceCriticalityType';
+export { AllergyIntoleranceSeverityType } from './AllergyIntoleranceSeverityType';
