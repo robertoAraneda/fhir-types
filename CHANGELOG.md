@@ -1,3 +1,10 @@
+# [1.9.0](https://github.com/robertoAraneda/fhir-types/compare/v1.8.0...v1.9.0) (2024-08-16)
+
+
+### Features
+
+* add AllergyIntolerance resource ([d4a0b0a](https://github.com/robertoAraneda/fhir-types/commit/d4a0b0a0a0b80b8b4a6363b320a9aeddb8b6f2de))
+
 # [1.8.0](https://github.com/robertoAraneda/fhir-types/compare/v1.7.0...v1.8.0) (2024-08-14)
 
 
