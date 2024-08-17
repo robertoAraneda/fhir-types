@@ -53,3 +53,4 @@ export { AllergyIntoleranceTypeEnum } from './AllergyIntoleranceTypeEnum';
 export { AllergyIntoleranceCategoryEnum } from './AllergyIntoleranceCategoryEnum';
 export { AllergyIntoleranceCriticalityEnum } from './AllergyIntoleranceCriticalityEnum';
 export { AllergyIntoleranceSeverityEnum } from './AllergyIntoleranceSeverityEnum';
+export { EventStatusEnum } from './EventStatusEnum';

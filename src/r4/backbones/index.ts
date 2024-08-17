@@ -51,3 +51,5 @@ export { IAppointmentParticipant } from './IAppointmentParticipant';
 export { IAllergyIntoleranceReaction } from './IAllergyIntoleranceReaction';
 export { IConditionStage } from './IConditionStage';
 export { IConditionEvidence } from './IConditionEvidence';
+export { IProcedurePerformer } from './IProcedurePerformer';
+export { IProcedureFocalDevice } from './IProcedureFocalDevice';

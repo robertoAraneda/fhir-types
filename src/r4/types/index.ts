@@ -56,3 +56,4 @@ export { AllergyIntoleranceTypeType } from './AllergyIntoleranceTypeType';
 export { AllergyIntoleranceCategoryType } from './AllergyIntoleranceCategoryType';
 export { AllergyIntoleranceCriticalityType } from './AllergyIntoleranceCriticalityType';
 export { AllergyIntoleranceSeverityType } from './AllergyIntoleranceSeverityType';
+export { EventStatusType } from './EventStatusType';
