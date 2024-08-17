@@ -1,3 +1,15 @@
+# [1.11.0](https://github.com/robertoAraneda/fhir-types/compare/v1.10.0...v1.11.0) (2024-08-17)
+
+
+### Bug Fixes
+
+* remove primitive extensions for performed attribute ([aa99d0e](https://github.com/robertoAraneda/fhir-types/commit/aa99d0e6e8c71fb6e8290ceeb9272e6fd5080113))
+
+
+### Features
+
+* add Procedure resource ([434b04a](https://github.com/robertoAraneda/fhir-types/commit/434b04a0b6653b315e26414f5b275a61101958b5))
+
 # [1.10.0](https://github.com/robertoAraneda/fhir-types/compare/v1.9.0...v1.10.0) (2024-08-16)
 
 
