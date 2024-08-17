@@ -181,14 +181,4 @@ export interface IProcedure extends IDomainResource {
    * @description Extension for status
    */
   _status?: IElement;
-
-  /**
-   * @description Extension for performedDateTime
-   */
-  _performedDateTime?: IElement;
-
-  /**
-   * @description Extension for performedString
-   */
-  _performedString?: IElement;
 }
