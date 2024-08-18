@@ -1,3 +1,10 @@
+# [1.12.0](https://github.com/robertoAraneda/fhir-types/compare/v1.11.0...v1.12.0) (2024-08-18)
+
+
+### Features
+
+* add FamilyMemberHistory resource ([610b077](https://github.com/robertoAraneda/fhir-types/commit/610b07733b650ef2d434081d90f711cbefb121af))
+
 # [1.11.0](https://github.com/robertoAraneda/fhir-types/compare/v1.10.0...v1.11.0) (2024-08-17)
 
 
