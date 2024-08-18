@@ -1,3 +1,10 @@
+## [1.12.1](https://github.com/robertoAraneda/fhir-types/compare/v1.12.0...v1.12.1) (2024-08-18)
+
+
+### Bug Fixes
+
+* add primitive extension for rank attribute ([4bef4cf](https://github.com/robertoAraneda/fhir-types/commit/4bef4cfbbba8ee305e158a2746d14bb78ed6d0cd))
+
 # [1.12.0](https://github.com/robertoAraneda/fhir-types/compare/v1.11.0...v1.12.0) (2024-08-18)
 
 
