@@ -1,4 +1,4 @@
-import { IBackboneElement } from '../base';
+import { IBackboneElement, IElement } from '../base';
 import { ICodeableConcept, IReference } from '../datatypes';
 
 /**
@@ -22,4 +22,10 @@ export interface IEpisodeOfCareDiagnosis extends IBackboneElement {
    * @description Ranking of the diagnosis (for each role type).
    */
   rank?: number;
+
+  // Extensions attributes
+  /**
+   * @description Extension for rank
+   */
+  _rank?: IElement;
 }
