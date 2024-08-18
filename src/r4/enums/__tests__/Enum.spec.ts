@@ -10,6 +10,7 @@ import { CurrencyCodeEnum } from '../CurrencyCodeEnum';
 import { DatatypeEnum } from '../DatatypeEnum';
 import { EventStatusEnum } from '../EventStatusEnum';
 import { EventTimingEnum } from '../EventTimingEnum';
+import { FamilyHistoryStatusEnum } from '../FamilyHistoryStatusEnum';
 import { ParticipantRequiredEnum } from '../ParticipantRequiredEnum';
 import { ParticipantStatusEnum } from '../ParticipantStatusEnum';
 import { ResourceEnum } from '../ResourceEnum';
@@ -597,5 +598,14 @@ describe('EventStatusEnum', () => {
     expect(EventStatusEnum.COMPLETED).toEqual('completed');
     expect(EventStatusEnum.ENTERED_IN_ERROR).toEqual('entered-in-error');
     expect(EventStatusEnum.UNKNOWN).toEqual('unknown');
+  });
+});
+
+describe('FamilyHistoryStatusEnum', () => {
+  it('should have the correct values', () => {
+    expect(FamilyHistoryStatusEnum.PARTIAL).toEqual('partial');
+    expect(FamilyHistoryStatusEnum.COMPLETED).toEqual('completed');
+    expect(FamilyHistoryStatusEnum.ENTERED_IN_ERROR).toEqual('entered-in-error');
+    expect(FamilyHistoryStatusEnum.HEALTH_UNKNOWN).toEqual('health-unknown');
   });
 });
