@@ -61,3 +61,4 @@ export { FamilyHistoryStatusType } from './FamilyHistoryStatusType';
 export { GoalLifecycleStatusType } from './GoalLifecycleStatusType';
 export { CareTeamStatusType } from './CareTeamStatusType';
 export { ObservationStatusType } from './ObservationStatusType';
+export { DiagnosticReportStatusType } from './DiagnosticReportStatusType';

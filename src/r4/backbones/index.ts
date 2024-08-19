@@ -58,3 +58,4 @@ export { IGoalTarget } from './IGoalTarget';
 export { ICareTeamParticipant } from './ICareTeamParticipant';
 export { IObservationReferenceRange } from './IObservationReferenceRange';
 export { IObservationComponent } from './IObservationComponent';
+export { IDiagnosticReportMedia } from './IDiagnosticReportMedia';
