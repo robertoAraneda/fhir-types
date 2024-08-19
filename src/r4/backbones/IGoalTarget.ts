@@ -7,6 +7,7 @@ import { ICodeableConcept, IDuration, IQuantity, IRange, IRatio } from '../datat
  * @see <a href="https://hl7.org/fhir/R4/goal-definitions.html#Goal.target">GoalTarget</a>
  * @version R4
  * @extends {IBackboneElement}
+ * @author Claudia Alarcón Lazo
  */
 export interface IGoalTarget extends IBackboneElement {
   /**

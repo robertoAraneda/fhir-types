@@ -9,6 +9,7 @@ import { GoalLifecycleStatusType } from '../types';
  * @see <a href="https://hl7.org/fhir/R4/goal.html">Goal</a>
  * @version R4
  * @extends {IDomainResource}
+ * @author Claudia Alarcón Lazo
  */
 export interface IGoal extends IDomainResource {
   resourceType?: 'Goal';
