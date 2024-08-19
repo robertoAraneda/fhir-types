@@ -9,6 +9,7 @@ import { AppointmentStatusEnum } from '../AppointmentStatusEnum';
 import { CareTeamStatusEnum } from '../CareTeamStatusEnum';
 import { CurrencyCodeEnum } from '../CurrencyCodeEnum';
 import { DatatypeEnum } from '../DatatypeEnum';
+import { DiagnosticReportStatusEnum } from '../DiagnosticReportStatusEnum';
 import { EventStatusEnum } from '../EventStatusEnum';
 import { EventTimingEnum } from '../EventTimingEnum';
 import { FamilyHistoryStatusEnum } from '../FamilyHistoryStatusEnum';
@@ -647,5 +648,20 @@ describe('ObservationStatusEnum', () => {
     expect(ObservationStatusEnum.CANCELLED).toEqual('cancelled');
     expect(ObservationStatusEnum.ENTERED_IN_ERROR).toEqual('entered-in-error');
     expect(ObservationStatusEnum.UNKNOWN).toEqual('unknown');
+  });
+});
+
+describe('DiagnosticReportStatusEnum', () => {
+  it('should have the correct values', () => {
+    expect(DiagnosticReportStatusEnum.REGISTERED).toEqual('registered');
+    expect(DiagnosticReportStatusEnum.PARTIAL).toEqual('partial');
+    expect(DiagnosticReportStatusEnum.PRELIMINARY).toEqual('preliminary');
+    expect(DiagnosticReportStatusEnum.FINAL).toEqual('final');
+    expect(DiagnosticReportStatusEnum.AMENDED).toEqual('amended');
+    expect(DiagnosticReportStatusEnum.CORRECTED).toEqual('corrected');
+    expect(DiagnosticReportStatusEnum.APPENDED).toEqual('appended');
+    expect(DiagnosticReportStatusEnum.CANCELLED).toEqual('cancelled');
+    expect(DiagnosticReportStatusEnum.ENTERED_IN_ERROR).toEqual('entered-in-error');
+    expect(DiagnosticReportStatusEnum.UNKNOWN).toEqual('unknown');
   });
 });
