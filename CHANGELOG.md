@@ -1,3 +1,15 @@
+# [1.13.0](https://github.com/robertoAraneda/fhir-types/compare/v1.12.1...v1.13.0) (2024-08-19)
+
+
+### Bug Fixes
+
+* add [@author](https://github.com/author) in jsdoc ([3c7de53](https://github.com/robertoAraneda/fhir-types/commit/3c7de5398413780b29846420c73c257777c81eaf))
+
+
+### Features
+
+* add Goal resource ([2ef624c](https://github.com/robertoAraneda/fhir-types/commit/2ef624c19fe28ea0417c86867a0bc044b201f7af))
+
 ## [1.12.1](https://github.com/robertoAraneda/fhir-types/compare/v1.12.0...v1.12.1) (2024-08-18)
 
 
