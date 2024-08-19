@@ -55,3 +55,4 @@ export { AllergyIntoleranceCriticalityEnum } from './AllergyIntoleranceCriticali
 export { AllergyIntoleranceSeverityEnum } from './AllergyIntoleranceSeverityEnum';
 export { EventStatusEnum } from './EventStatusEnum';
 export { FamilyHistoryStatusEnum } from './FamilyHistoryStatusEnum';
+export { GoalLifecycleStatusEnum } from './GoalLifecycleStatusEnum';
