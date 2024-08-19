@@ -21,3 +21,4 @@ export { IRatio } from './IRatio';
 export { IRepeat } from './IRepeat';
 export { IMoney } from './IMoney';
 export { IAge } from './IAge';
+export { ISampledData } from './ISampledData';
