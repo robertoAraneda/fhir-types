@@ -6,6 +6,7 @@ import { AllergyIntoleranceCriticalityEnum } from '../AllergyIntoleranceCritical
 import { AllergyIntoleranceSeverityEnum } from '../AllergyIntoleranceSeverityEnum';
 import { AllergyIntoleranceTypeEnum } from '../AllergyIntoleranceTypeEnum';
 import { AppointmentStatusEnum } from '../AppointmentStatusEnum';
+import { CareTeamStatusEnum } from '../CareTeamStatusEnum';
 import { CurrencyCodeEnum } from '../CurrencyCodeEnum';
 import { DatatypeEnum } from '../DatatypeEnum';
 import { EventStatusEnum } from '../EventStatusEnum';
@@ -622,5 +623,15 @@ describe('GoalLifecycleStatusEnum', () => {
     expect(GoalLifecycleStatusEnum.CANCELLED).toEqual('cancelled');
     expect(GoalLifecycleStatusEnum.ENTERED_IN_ERROR).toEqual('entered-in-error');
     expect(GoalLifecycleStatusEnum.REJECTED).toEqual('rejected');
+  });
+});
+
+describe('CareTeamStatusEnum', () => {
+  it('should have the correct values', () => {
+    expect(CareTeamStatusEnum.PROPOSED).toEqual('proposed');
+    expect(CareTeamStatusEnum.ACTIVE).toEqual('active');
+    expect(CareTeamStatusEnum.SUSPENDED).toEqual('suspended');
+    expect(CareTeamStatusEnum.INACTIVE).toEqual('inactive');
+    expect(CareTeamStatusEnum.ENTERED_IN_ERROR).toEqual('entered-in-error');
   });
 });
