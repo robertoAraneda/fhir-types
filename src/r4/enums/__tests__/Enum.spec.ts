@@ -11,6 +11,7 @@ import { DatatypeEnum } from '../DatatypeEnum';
 import { EventStatusEnum } from '../EventStatusEnum';
 import { EventTimingEnum } from '../EventTimingEnum';
 import { FamilyHistoryStatusEnum } from '../FamilyHistoryStatusEnum';
+import { GoalLifecycleStatusEnum } from '../GoalLifecycleStatusEnum';
 import { ParticipantRequiredEnum } from '../ParticipantRequiredEnum';
 import { ParticipantStatusEnum } from '../ParticipantStatusEnum';
 import { ResourceEnum } from '../ResourceEnum';
@@ -607,5 +608,19 @@ describe('FamilyHistoryStatusEnum', () => {
     expect(FamilyHistoryStatusEnum.COMPLETED).toEqual('completed');
     expect(FamilyHistoryStatusEnum.ENTERED_IN_ERROR).toEqual('entered-in-error');
     expect(FamilyHistoryStatusEnum.HEALTH_UNKNOWN).toEqual('health-unknown');
+  });
+});
+
+describe('GoalLifecycleStatusEnum', () => {
+  it('should have the correct values', () => {
+    expect(GoalLifecycleStatusEnum.PROPOSED).toEqual('proposed');
+    expect(GoalLifecycleStatusEnum.PLANNED).toEqual('planned');
+    expect(GoalLifecycleStatusEnum.ACCEPTED).toEqual('accepted');
+    expect(GoalLifecycleStatusEnum.ACTIVE).toEqual('active');
+    expect(GoalLifecycleStatusEnum.ON_HOLD).toEqual('on-hold');
+    expect(GoalLifecycleStatusEnum.COMPLETED).toEqual('completed');
+    expect(GoalLifecycleStatusEnum.CANCELLED).toEqual('cancelled');
+    expect(GoalLifecycleStatusEnum.ENTERED_IN_ERROR).toEqual('entered-in-error');
+    expect(GoalLifecycleStatusEnum.REJECTED).toEqual('rejected');
   });
 });

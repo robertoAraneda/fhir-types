@@ -54,3 +54,4 @@ export { IConditionEvidence } from './IConditionEvidence';
 export { IProcedurePerformer } from './IProcedurePerformer';
 export { IProcedureFocalDevice } from './IProcedureFocalDevice';
 export { IFamilyMemberHistoryCondition } from './IFamilyMemberHistoryCondition';
+export { IGoalTarget } from './IGoalTarget';
