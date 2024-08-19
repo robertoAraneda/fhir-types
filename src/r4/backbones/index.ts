@@ -56,3 +56,5 @@ export { IProcedureFocalDevice } from './IProcedureFocalDevice';
 export { IFamilyMemberHistoryCondition } from './IFamilyMemberHistoryCondition';
 export { IGoalTarget } from './IGoalTarget';
 export { ICareTeamParticipant } from './ICareTeamParticipant';
+export { IObservationReferenceRange } from './IObservationReferenceRange';
+export { IObservationComponent } from './IObservationComponent';

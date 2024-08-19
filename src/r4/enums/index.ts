@@ -57,3 +57,4 @@ export { EventStatusEnum } from './EventStatusEnum';
 export { FamilyHistoryStatusEnum } from './FamilyHistoryStatusEnum';
 export { GoalLifecycleStatusEnum } from './GoalLifecycleStatusEnum';
 export { CareTeamStatusEnum } from './CareTeamStatusEnum';
+export { ObservationStatusEnum } from './ObservationStatusEnum';

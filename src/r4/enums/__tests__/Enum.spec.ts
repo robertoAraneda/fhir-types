@@ -13,6 +13,7 @@ import { EventStatusEnum } from '../EventStatusEnum';
 import { EventTimingEnum } from '../EventTimingEnum';
 import { FamilyHistoryStatusEnum } from '../FamilyHistoryStatusEnum';
 import { GoalLifecycleStatusEnum } from '../GoalLifecycleStatusEnum';
+import { ObservationStatusEnum } from '../ObservationStatusEnum';
 import { ParticipantRequiredEnum } from '../ParticipantRequiredEnum';
 import { ParticipantStatusEnum } from '../ParticipantStatusEnum';
 import { ResourceEnum } from '../ResourceEnum';
@@ -633,5 +634,18 @@ describe('CareTeamStatusEnum', () => {
     expect(CareTeamStatusEnum.SUSPENDED).toEqual('suspended');
     expect(CareTeamStatusEnum.INACTIVE).toEqual('inactive');
     expect(CareTeamStatusEnum.ENTERED_IN_ERROR).toEqual('entered-in-error');
+  });
+});
+
+describe('ObservationStatusEnum', () => {
+  it('should have the correct values', () => {
+    expect(ObservationStatusEnum.REGISTERED).toEqual('registered');
+    expect(ObservationStatusEnum.PRELIMINARY).toEqual('preliminary');
+    expect(ObservationStatusEnum.FINAL).toEqual('final');
+    expect(ObservationStatusEnum.AMENDED).toEqual('amended');
+    expect(ObservationStatusEnum.CORRECTED).toEqual('corrected');
+    expect(ObservationStatusEnum.CANCELLED).toEqual('cancelled');
+    expect(ObservationStatusEnum.ENTERED_IN_ERROR).toEqual('entered-in-error');
+    expect(ObservationStatusEnum.UNKNOWN).toEqual('unknown');
   });
 });
