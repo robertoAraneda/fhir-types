@@ -1,3 +1,10 @@
+# [1.14.0](https://github.com/robertoAraneda/fhir-types/compare/v1.13.0...v1.14.0) (2024-08-19)
+
+
+### Features
+
+* add CareTeam resource ([80e878c](https://github.com/robertoAraneda/fhir-types/commit/80e878c2e4f9b33cc401b100a15ea99fbb0b5d0e))
+
 # [1.13.0](https://github.com/robertoAraneda/fhir-types/compare/v1.12.1...v1.13.0) (2024-08-19)
 
 
