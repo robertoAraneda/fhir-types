@@ -59,3 +59,4 @@ export { AllergyIntoleranceSeverityType } from './AllergyIntoleranceSeverityType
 export { EventStatusType } from './EventStatusType';
 export { FamilyHistoryStatusType } from './FamilyHistoryStatusType';
 export { GoalLifecycleStatusType } from './GoalLifecycleStatusType';
+export { CareTeamStatusType } from './CareTeamStatusType';
