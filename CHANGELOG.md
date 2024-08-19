@@ -1,3 +1,10 @@
+# [1.15.0](https://github.com/robertoAraneda/fhir-types/compare/v1.14.0...v1.15.0) (2024-08-19)
+
+
+### Features
+
+* add Observation resource ([edad44a](https://github.com/robertoAraneda/fhir-types/commit/edad44aca03990f1a9c93b3246d94b125dcd081c))
+
 # [1.14.0](https://github.com/robertoAraneda/fhir-types/compare/v1.13.0...v1.14.0) (2024-08-19)
 
 
