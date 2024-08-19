@@ -1,3 +1,10 @@
+# [1.16.0](https://github.com/robertoAraneda/fhir-types/compare/v1.15.0...v1.16.0) (2024-08-19)
+
+
+### Features
+
+* add DiagnosticReport resource ([3910ff8](https://github.com/robertoAraneda/fhir-types/commit/3910ff89d35abcd997f259909616dfba5b6c509d))
+
 # [1.15.0](https://github.com/robertoAraneda/fhir-types/compare/v1.14.0...v1.15.0) (2024-08-19)
 
 
