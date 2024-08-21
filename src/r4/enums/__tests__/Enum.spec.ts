@@ -17,6 +17,7 @@ import { GoalLifecycleStatusEnum } from '../GoalLifecycleStatusEnum';
 import { ObservationStatusEnum } from '../ObservationStatusEnum';
 import { ParticipantRequiredEnum } from '../ParticipantRequiredEnum';
 import { ParticipantStatusEnum } from '../ParticipantStatusEnum';
+import { ParticipationStatusEnum } from '../ParticipationStatusEnum';
 import { ResourceEnum } from '../ResourceEnum';
 import { SlotStatusEnum } from '../SlotStatusEnum';
 import { TaskIntentEnum } from '../TaskIntentEnum';
@@ -663,5 +664,14 @@ describe('DiagnosticReportStatusEnum', () => {
     expect(DiagnosticReportStatusEnum.CANCELLED).toEqual('cancelled');
     expect(DiagnosticReportStatusEnum.ENTERED_IN_ERROR).toEqual('entered-in-error');
     expect(DiagnosticReportStatusEnum.UNKNOWN).toEqual('unknown');
+  });
+});
+
+describe('ParticipationStatusEnum', () => {
+  it('should have the correct values', () => {
+    expect(ParticipationStatusEnum.ACCEPTED).toEqual('accepted');
+    expect(ParticipationStatusEnum.DECLINED).toEqual('declined');
+    expect(ParticipationStatusEnum.TENTATIVE).toEqual('tentative');
+    expect(ParticipationStatusEnum.NEEDS_ACTION).toEqual('needs-action');
   });
 });
