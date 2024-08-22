@@ -1,3 +1,10 @@
+# [1.17.0](https://github.com/robertoAraneda/fhir-types/compare/v1.16.0...v1.17.0) (2024-08-22)
+
+
+### Features
+
+* add AppointmentResponse resource ([27179c7](https://github.com/robertoAraneda/fhir-types/commit/27179c795ea1310dd0f0671e591a59f925279bbd))
+
 # [1.16.0](https://github.com/robertoAraneda/fhir-types/compare/v1.15.0...v1.16.0) (2024-08-19)
 
 
