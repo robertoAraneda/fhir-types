@@ -60,3 +60,4 @@ export { CareTeamStatusEnum } from './CareTeamStatusEnum';
 export { ObservationStatusEnum } from './ObservationStatusEnum';
 export { DiagnosticReportStatusEnum } from './DiagnosticReportStatusEnum';
 export { ParticipationStatusEnum } from './ParticipationStatusEnum';
+export { FlagStatusEnum } from './FlagStatusEnum';
