@@ -1,3 +1,10 @@
+# [1.18.0](https://github.com/robertoAraneda/fhir-types/compare/v1.17.0...v1.18.0) (2024-08-25)
+
+
+### Features
+
+* add Flag resource ([b813314](https://github.com/robertoAraneda/fhir-types/commit/b813314223466b27d7ca8c018d1f763f268b118b))
+
 # [1.17.0](https://github.com/robertoAraneda/fhir-types/compare/v1.16.0...v1.17.0) (2024-08-22)
 
 
