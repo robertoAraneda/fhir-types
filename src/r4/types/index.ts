@@ -63,3 +63,4 @@ export { CareTeamStatusType } from './CareTeamStatusType';
 export { ObservationStatusType } from './ObservationStatusType';
 export { DiagnosticReportStatusType } from './DiagnosticReportStatusType';
 export { ParticipationStatusType } from './ParticipationStatusType';
+export { FlagStatusType } from './FlagStatusType';
