@@ -1,3 +1,10 @@
+## [1.18.1](https://github.com/robertoAraneda/fhir-types/compare/v1.18.0...v1.18.1) (2024-08-26)
+
+
+### Bug Fixes
+
+* add optional field in coverage cost to beneficiary ([aa77c6d](https://github.com/robertoAraneda/fhir-types/commit/aa77c6d98c4425376cde335d28df4c8e5d85bfc3))
+
 # [1.18.0](https://github.com/robertoAraneda/fhir-types/compare/v1.17.0...v1.18.0) (2024-08-25)
 
 
