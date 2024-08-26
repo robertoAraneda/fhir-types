@@ -1,3 +1,10 @@
+## [1.18.2](https://github.com/robertoAraneda/fhir-types/compare/v1.18.1...v1.18.2) (2024-08-26)
+
+
+### Bug Fixes
+
+* add optional field in coverage class ([71a3d34](https://github.com/robertoAraneda/fhir-types/commit/71a3d3441e47f39f917263e050ee713acb6878a1))
+
 ## [1.18.1](https://github.com/robertoAraneda/fhir-types/compare/v1.18.0...v1.18.1) (2024-08-26)
 
 
