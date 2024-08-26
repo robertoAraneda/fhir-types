@@ -1,3 +1,10 @@
+## [1.18.4](https://github.com/robertoAraneda/fhir-types/compare/v1.18.3...v1.18.4) (2024-08-26)
+
+
+### Bug Fixes
+
+* add all types to BackboneElementType ([a144122](https://github.com/robertoAraneda/fhir-types/commit/a144122b4e5b56ecba24325260c24bf9f33c954c))
+
 ## [1.18.3](https://github.com/robertoAraneda/fhir-types/compare/v1.18.2...v1.18.3) (2024-08-26)
 
 
