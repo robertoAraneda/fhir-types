@@ -1,3 +1,10 @@
+## [1.18.3](https://github.com/robertoAraneda/fhir-types/compare/v1.18.2...v1.18.3) (2024-08-26)
+
+
+### Bug Fixes
+
+* fix attribute names ([6916184](https://github.com/robertoAraneda/fhir-types/commit/691618453f57d7a715c6fe3131788a44369609a0))
+
 ## [1.18.2](https://github.com/robertoAraneda/fhir-types/compare/v1.18.1...v1.18.2) (2024-08-26)
 
 
