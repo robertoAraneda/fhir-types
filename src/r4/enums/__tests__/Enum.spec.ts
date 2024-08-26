@@ -13,6 +13,7 @@ import { DiagnosticReportStatusEnum } from '../DiagnosticReportStatusEnum';
 import { EventStatusEnum } from '../EventStatusEnum';
 import { EventTimingEnum } from '../EventTimingEnum';
 import { FamilyHistoryStatusEnum } from '../FamilyHistoryStatusEnum';
+import { FinancialResourceStatusCodesEnum } from '../FinancialResourceStatusCodesEnum';
 import { FlagStatusEnum } from '../FlagStatusEnum';
 import { GoalLifecycleStatusEnum } from '../GoalLifecycleStatusEnum';
 import { ObservationStatusEnum } from '../ObservationStatusEnum';
@@ -682,5 +683,14 @@ describe('FlagStatusEnum', () => {
     expect(FlagStatusEnum.ACTIVE).toEqual('active');
     expect(FlagStatusEnum.INACTIVE).toEqual('inactive');
     expect(FlagStatusEnum.ENTERED_IN_ERROR).toEqual('entered-in-error');
+  });
+});
+
+describe('FinancialResourceStatusCodesEnum', () => {
+  it('should have the correct values', () => {
+    expect(FinancialResourceStatusCodesEnum.ACTIVE).toEqual('active');
+    expect(FinancialResourceStatusCodesEnum.CANCELLED).toEqual('cancelled');
+    expect(FinancialResourceStatusCodesEnum.DRAFT).toEqual('draft');
+    expect(FinancialResourceStatusCodesEnum.ENTERED_IN_ERROR).toEqual('entered-in-error');
   });
 });
