@@ -1,3 +1,10 @@
+## [1.18.5](https://github.com/robertoAraneda/fhir-types/compare/v1.18.4...v1.18.5) (2024-08-26)
+
+
+### Bug Fixes
+
+* add primitive extension for currency ([d80c36d](https://github.com/robertoAraneda/fhir-types/commit/d80c36d8bd614880612ecc198e8f6fedd9badd5b))
+
 ## [1.18.4](https://github.com/robertoAraneda/fhir-types/compare/v1.18.3...v1.18.4) (2024-08-26)
 
 
