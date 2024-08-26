@@ -1,6 +1,14 @@
 import { IBackboneElement, IElement } from '../base';
 import { ICodeableConcept } from '../datatypes';
 
+/**
+ * @name ICoverageClass
+ * @description A suite of underwriter specific classifiers.
+ * @see <a href="https://hl7.org/fhir/R4/coverage-definitions.html#Coverage.class">CoverageClass</a>
+ * @version R4
+ * @extends {IBackboneElement}
+ * @author Claudia Alarcón Lazo
+ */
 export interface ICoverageClass extends IBackboneElement {
   /**
    * @description The type of classification for which an insurer-specific class label or number and optional name is provided, for example may be used to identify a class of coverage or employer group, Policy, Plan.
