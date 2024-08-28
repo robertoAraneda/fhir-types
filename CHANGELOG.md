@@ -1,3 +1,10 @@
+## [1.18.8](https://github.com/robertoAraneda/fhir-types/compare/v1.18.7...v1.18.8) (2024-08-28)
+
+
+### Bug Fixes
+
+* add primitive extensios for Observaton component ([687ff27](https://github.com/robertoAraneda/fhir-types/commit/687ff27429769fde48aa9161cf43dfdc862ab011))
+
 ## [1.18.7](https://github.com/robertoAraneda/fhir-types/compare/v1.18.6...v1.18.7) (2024-08-28)
 
 
