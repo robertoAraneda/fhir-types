@@ -1,4 +1,4 @@
-import { IBackboneElement } from '../base';
+import { IBackboneElement, IElement } from '../base';
 import { ICodeableConcept, IPeriod, IQuantity, IRange, IRatio, ISampledData } from '../datatypes';
 import { IObservationReferenceRange } from './IObservationReferenceRange';
 
@@ -32,14 +32,29 @@ export interface IObservationComponent extends IBackboneElement {
   valueString?: string;
 
   /**
+   * @description Extensions for valueString
+   */
+  _valueString?: IElement;
+
+  /**
    * @description The information determined as a result of making the observation, if the information has a simple value.
    */
   valueBoolean?: boolean;
 
   /**
+   * @description Extensions for valueBoolean
+   */
+  _valueBoolean?: IElement;
+
+  /**
    * @description The information determined as a result of making the observation, if the information has a simple value.
    */
   valueInteger?: number;
+
+  /**
+   * @description Extensions for valueInteger
+   */
+  _valueInteger?: IElement;
 
   /**
    * @description The information determined as a result of making the observation, if the information has a simple value.
@@ -62,9 +77,19 @@ export interface IObservationComponent extends IBackboneElement {
   valueTime?: string;
 
   /**
+   * @description Extensions for valueTime
+   */
+  _valueTime?: IElement;
+
+  /**
    * @description The information determined as a result of making the observation, if the information has a simple value.
    */
   valueDateTime?: string;
+
+  /**
+   * @description Extensions for valueDateTime
+   */
+  _valueDateTime?: IElement;
 
   /**
    * @description The information determined as a result of making the observation, if the information has a simple value.
