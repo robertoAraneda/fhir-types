@@ -1,3 +1,10 @@
+## [1.18.7](https://github.com/robertoAraneda/fhir-types/compare/v1.18.6...v1.18.7) (2024-08-28)
+
+
+### Bug Fixes
+
+* subject in observaton ([a4c3c99](https://github.com/robertoAraneda/fhir-types/commit/a4c3c9997513ea098b912757d6198711fa84bbbd))
+
 ## [1.18.6](https://github.com/robertoAraneda/fhir-types/compare/v1.18.5...v1.18.6) (2024-08-28)
 
 
