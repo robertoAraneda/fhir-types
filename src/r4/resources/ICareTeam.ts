@@ -13,6 +13,11 @@ import { CareTeamStatusType } from '../types';
  */
 export interface ICareTeam extends IDomainResource {
   /**
+   * @description The type of resource
+   */
+  resourceType?: string;
+
+  /**
    * @description Business identifiers assigned to this care team by the performer or other systems which remain constant as the resource is updated and propagates from server to server.
    */
   identifier?: IIdentifier[];

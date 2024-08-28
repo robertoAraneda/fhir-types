@@ -12,8 +12,20 @@ import {
 import { ITiming } from '../backbones';
 import { RequestIntentType, RequestPriorityType, RequestStatusType } from '../types';
 
+/**
+ * @name IServiceRequest
+ * @description A record of a request for service such as diagnostic investigations, treatments, or operations to be performed.
+ * @see <a href="https://www.hl7.org/fhir/R4/servicerequest.html">ServiceRequest</a>
+ * @version R4
+ * @extends {IDomainResource}
+ * @author Roberto Araneda Espinoza
+ * @author Claudia Alarcón Lazo
+ */
 export interface IServiceRequest extends IDomainResource {
-  resourceType?: 'ServiceRequest';
+  /**
+   * @description The type of resource
+   */
+  resourceType?: string;
 
   /**
    * @description Identifiers assigned to this order instance by the orderer and/or the receiver and/or order fulfiller.
@@ -31,6 +43,11 @@ export interface IServiceRequest extends IDomainResource {
   instantiatesUri?: string[];
 
   /**
+   * @description Extensions for instantiatesUri
+   */
+  _instantiatesUri?: IElement[];
+
+  /**
    * @description Plan/proposal/order fulfilled by this request.
    */
   basedOn?: IReference[];
@@ -46,18 +63,24 @@ export interface IServiceRequest extends IDomainResource {
   requisition?: IIdentifier;
 
   /**
-   * @description Codes identifying the lifecycle stage of a request
-   * @description draft | active | on-hold | revoked | completed | entered-in-error | unknown
-   * @see <a href="https://hl7.org/fhir/R4/valueset-request-status.html">RequestStatus</a>
+   * @description The status of the order.
    */
   status: RequestStatusType;
 
   /**
-   * @description Codes indicating the degree of authority/intentionality associated with a request
-   * @description proposal | plan | directive | order | original-order | reflex-order | filler-order | instance-order | option
-   * @see <a href="https://hl7.org/fhir/R4/valueset-request-intent.html">RequestIntent</a>
+   * @description Extensions for status
+   */
+  _status?: IElement;
+
+  /**
+   * @description Whether the request is a proposal, plan, an original order or a reflex order.
    */
   intent: RequestIntentType;
+
+  /**
+   * @description Extensions for intent
+   */
+  _intent?: IElement;
 
   /**
    * @description A code that classifies the service for searching, sorting and display purposes (e.g. "Surgical Procedure").
@@ -66,10 +89,13 @@ export interface IServiceRequest extends IDomainResource {
 
   /**
    * @description Indicates how quickly the ServiceRequest should be addressed with respect to other requests.
-   * @description routine | urgent | asap | stat
-   * @see <a href="https://hl7.org/fhir/R4/valueset-request-priority.html">RequestPriority</a>
    */
   priority?: RequestPriorityType;
+
+  /**
+   * @description Extensions for priority
+   */
+  _priority?: IElement;
 
   /**
    * @description Set this to true if the record is saying that the service/procedure should NOT be performed.
@@ -77,32 +103,37 @@ export interface IServiceRequest extends IDomainResource {
   doNotPerform?: boolean;
 
   /**
+   * @description Extensions for doNotPerform
+   */
+  _doNotPerform?: IElement;
+
+  /**
    * @description A code that identifies a particular service (i.e., procedure, diagnostic investigation, or panel of investigations) that have been requested.
    */
   code?: ICodeableConcept;
 
   /**
-   * @description Additional details and instructions about the how the services are to be delivered.
+   * @description Additional details and instructions about the how the services are to be delivered.   For example, and order for a urinary catheter may have an order detail for an external or indwelling catheter, or an order for a bandage may require additional instructions specifying how the bandage should be applied.
    */
   orderDetail?: ICodeableConcept[];
 
   /**
-   * @description An amount of service being requested. A measured amount (or an amount that can potentially be measured).
+   * @description An amount of service being requested which can be a quantity ( for example $1,500 home modification), a ratio ( for example, 20 half day visits per month), or a range (2.0 to 1.8 Gy per fraction).
    */
   quantityQuantity?: IQuantity;
 
   /**
-   * @description An amount of service being requested. A relationship between two Quantity values expressed as a numerator and a denominator.
+   * @description An amount of service being requested which can be a quantity ( for example $1,500 home modification), a ratio ( for example, 20 half day visits per month), or a range (2.0 to 1.8 Gy per fraction).
    */
   quantityRatio?: IRatio;
 
   /**
-   * @description An amount of service being requested. A set of ordered Quantity values defined by a low and high limit.
+   * @description An amount of service being requested which can be a quantity ( for example $1,500 home modification), a ratio ( for example, 20 half day visits per month), or a range (2.0 to 1.8 Gy per fraction).
    */
   quantityRange?: IRange;
 
   /**
-   * @description On whom or what the service is to be performed.
+   * @description On whom or what the service is to be performed. This is usually a human patient, but can also be requested on animals, groups of humans or animals, devices such as dialysis machines, or even locations (typically for environmental scans).
    */
   subject: IReference;
 
@@ -112,34 +143,49 @@ export interface IServiceRequest extends IDomainResource {
   encounter?: IReference;
 
   /**
-   * @description The date/time at which the requested service should occur. A date, date-time or partial date (e.g. just year or year + month) as used in human communication.
+   * @description The date/time at which the requested service should occur.
    */
   occurrenceDateTime?: string;
 
   /**
-   * @description The date/time at which the requested service should occur. A time period defined by a start and end date/time.
+   * @description Extensions for occurrenceDateTime
+   */
+  _occurrenceDateTime?: IElement;
+
+  /**
+   * @description The date/time at which the requested service should occur.
    */
   occurrencePeriod?: IPeriod;
 
   /**
-   * @description The date/time at which the requested service should occur. Describes the occurrence of an event that may occur multiple times.
+   * @description The date/time at which the requested service should occur.
    */
   occurrenceTiming?: ITiming;
 
   /**
-   * @description Preconditions for service.
+   * @description If a CodeableConcept is present, it indicates the pre-condition for performing the service.  For example "pain", "on flare-up", etc.
    */
   asNeededBoolean?: boolean;
 
   /**
-   * @description If a CodeableConcept is present, it indicates the pre-condition for performing the service.
+   * @description Extensions for asNeededBoolean
+   */
+  _asNeededBoolean?: IElement;
+
+  /**
+   * @description If a CodeableConcept is present, it indicates the pre-condition for performing the service.  For example "pain", "on flare-up", etc.
    */
   asNeededCodeableConcept?: ICodeableConcept;
 
   /**
-   * @description When the request transitioned to being actionable..
+   * @description When the request transitioned to being actionable.
    */
   authoredOn?: string;
+
+  /**
+   * @description Extensions for authoredOn
+   */
+  _authoredOn?: IElement;
 
   /**
    * @description The individual who initiated the request and has responsibility for its activation.
@@ -152,27 +198,27 @@ export interface IServiceRequest extends IDomainResource {
   performerType?: ICodeableConcept;
 
   /**
-   * @description The desired performer for doing the requested service.
+   * @description The desired performer for doing the requested service.  For example, the surgeon, dermatopathologist, endoscopist, etc.
    */
   performer?: IReference[];
 
   /**
-   * @description The preferred location(s) where the procedure should actually happen in coded or free text form.
+   * @description The preferred location(s) where the procedure should actually happen in coded or free text form. E.g. at home or nursing day care center.
    */
   locationCode?: ICodeableConcept[];
 
   /**
-   * @description A reference to the the preferred location(s) where the procedure should actually happen.
+   * @description A reference to the the preferred location(s) where the procedure should actually happen. E.g. at home or nursing day care center.
    */
   locationReference?: IReference[];
 
   /**
-   * @description An explanation or justification for why this service is being requested in coded or textual form.
+   * @description An explanation or justification for why this service is being requested in coded or textual form.   This is often for billing purposes.  May relate to the resources referred to in `supportingInfo`.
    */
   reasonCode?: ICodeableConcept[];
 
   /**
-   * @description Indicates another resource that provides a justification for why this service is being requested.
+   * @description Indicates another resource that provides a justification for why this service is being requested.   May relate to the resources referred to in `supportingInfo`.
    */
   reasonReference?: IReference[];
 
@@ -182,7 +228,7 @@ export interface IServiceRequest extends IDomainResource {
   insurance?: IReference[];
 
   /**
-   * @description Additional clinical information about the patient or specimen that may influence the services or their interpretations.
+   * @description Additional clinical information about the patient or specimen that may influence the services or their interpretations.     This information includes diagnosis, clinical findings and other observations.  In laboratory ordering these are typically referred to as "ask at order entry questions (AOEs)".  This includes observations explicitly requested by the producer (filler) to provide context or supporting information needed to complete the order. For example,  reporting the amount of inspired oxygen for blood gas measurements.
    */
   supportingInfo?: IReference[];
 
@@ -192,12 +238,12 @@ export interface IServiceRequest extends IDomainResource {
   specimen?: IReference[];
 
   /**
-   * @description Anatomic location where the procedure should be performed.
+   * @description Anatomic location where the procedure should be performed. This is the target site.
    */
   bodySite?: ICodeableConcept[];
 
   /**
-   * @description Any other notes and comments made about the service request.
+   * @description Any other notes and comments made about the service request. For example, internal billing notes.
    */
   note?: IAnnotation[];
 
@@ -207,49 +253,12 @@ export interface IServiceRequest extends IDomainResource {
   patientInstruction?: string;
 
   /**
-   * @description Key events in the history of the request.
-   */
-  relevantHistory?: IReference[];
-
-  // Extensions attributes
-  /**
-   * @description Extension for instantiatesCanonical.
-   */
-  _instantiatesCanonical?: IElement[];
-
-  /**
-   * @description Extension for instantiatesUri.
-   */
-  _instantiatesUri?: IElement[];
-
-  /**
-   * @description Extension for doNotPerform.
-   */
-  _doNotPerform?: IElement;
-
-  /**
-   * @description Extension for authoredOn.
-   */
-  _authoredOn?: IElement;
-
-  /**
-   * @description Extension for patientInstruction.
+   * @description Extensions for patientInstruction
    */
   _patientInstruction?: IElement;
 
   /**
-   * @description Extension for status
+   * @description Key events in the history of the request.
    */
-  _status?: IElement;
-
-  /**
-   * @description Extension for intent
-   */
-  _intent?: IElement;
-
-  /**
-   * @description Extension for priority
-   */
-
-  _priority?: IElement;
+  relevantHistory?: IReference[];
 }
