@@ -1,3 +1,10 @@
+## [1.18.6](https://github.com/robertoAraneda/fhir-types/compare/v1.18.5...v1.18.6) (2024-08-28)
+
+
+### Bug Fixes
+
+* refactor some resources ([58a6178](https://github.com/robertoAraneda/fhir-types/commit/58a6178d0f78fdc3fbd57563401a10f701881c05))
+
 ## [1.18.5](https://github.com/robertoAraneda/fhir-types/compare/v1.18.4...v1.18.5) (2024-08-26)
 
 
