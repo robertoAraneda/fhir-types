@@ -1,3 +1,10 @@
+## [1.18.9](https://github.com/robertoAraneda/fhir-types/compare/v1.18.8...v1.18.9) (2024-08-28)
+
+
+### Bug Fixes
+
+* change name coverage exception ([f3a989e](https://github.com/robertoAraneda/fhir-types/commit/f3a989e9fecceee02910e8070a5a2adc113dc2ff))
+
 ## [1.18.8](https://github.com/robertoAraneda/fhir-types/compare/v1.18.7...v1.18.8) (2024-08-28)
 
 
