@@ -32,7 +32,7 @@ export { IOperationOutcomeIssue } from './IOperationOutcomeIssue';
 export { ITiming } from './ITiming';
 export { ICoverageClass } from './ICoverageClass';
 export { ICoverageCostToBeneficiary } from './ICoverageCostToBeneficiary';
-export { ICoverageCostToBeneficiaryException } from './ICoverageCostToBeneficiaryException';
+export { ICoverageException } from './ICoverageException';
 export { IEncounterStatusHistory } from './IEncounterStatusHistory';
 export { IEncounterClassHistory } from './IEncounterClassHistory';
 export { IEncounterParticipant } from './IEncounterParticipant';
