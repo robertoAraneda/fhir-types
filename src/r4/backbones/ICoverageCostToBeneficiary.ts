@@ -1,6 +1,6 @@
 import { IBackboneElement } from '../base';
 import { ICodeableConcept, IMoney, ISimpleQuantity } from '../datatypes';
-import { ICoverageCostToBeneficiaryException } from './ICoverageCostToBeneficiaryException';
+import { ICoverageException } from './ICoverageException';
 
 /**
  * @name ICoverageCostToBeneficiary
@@ -29,5 +29,5 @@ export interface ICoverageCostToBeneficiary extends IBackboneElement {
   /**
    * @description A suite of codes indicating exceptions or reductions to patient costs and their effective periods.
    */
-  exception?: ICoverageCostToBeneficiaryException[];
+  exception?: ICoverageException[];
 }
