@@ -75,6 +75,11 @@ export interface IObservation extends IDomainResource {
   effectiveDateTime?: string;
 
   /**
+   * @description Extensions for effectiveDateTime
+   */
+  _effectiveDateTime?: IElement;
+
+  /**
    * @description The time or time-period the observed value is asserted as being true. For biological subjects - e.g. human patients - this is usually called the "physiologically relevant time".
    */
   effectivePeriod?: IPeriod;
@@ -88,6 +93,11 @@ export interface IObservation extends IDomainResource {
    * @description The time or time-period the observed value is asserted as being true. For biological subjects - e.g. human patients - this is usually called the "physiologically relevant time".
    */
   effectiveInstant?: string;
+
+  /**
+   * @description Extensions for effectiveInstant
+   */
+  _effectiveInstant?: IElement;
 
   /**
    * @description The date and time this version of the observation was made available to providers, typically after the results have been reviewed and verified.
@@ -115,14 +125,29 @@ export interface IObservation extends IDomainResource {
   valueString?: string;
 
   /**
+   * @description Extensions for valueString
+   */
+  _valueString?: IElement;
+
+  /**
    * @description The information determined as a result of making the observation, if the information has a simple value.
    */
   valueBoolean?: boolean;
 
   /**
+   * @description Extensions for valueBoolean
+   */
+  _valueBoolean?: IElement;
+
+  /**
    * @description The information determined as a result of making the observation, if the information has a simple value.
    */
   valueInteger?: number;
+
+  /**
+   * @description Extensions for valueInteger
+   */
+  _valueInteger?: IElement;
 
   /**
    * @description The information determined as a result of making the observation, if the information has a simple value.
@@ -145,9 +170,19 @@ export interface IObservation extends IDomainResource {
   valueTime?: string;
 
   /**
+   * @description Extensions for valueTime
+   */
+  _valueTime?: IElement;
+
+  /**
    * @description The information determined as a result of making the observation, if the information has a simple value.
    */
   valueDateTime?: string;
+
+  /**
+   * @description Extensions for valueDateTime
+   */
+  _valueDateTime?: IElement;
 
   /**
    * @description The information determined as a result of making the observation, if the information has a simple value.
