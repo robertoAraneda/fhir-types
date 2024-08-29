@@ -1,3 +1,10 @@
+# [1.19.0](https://github.com/robertoAraneda/fhir-types/compare/v1.18.9...v1.19.0) (2024-08-29)
+
+
+### Features
+
+* add Device resource ([2e6e942](https://github.com/robertoAraneda/fhir-types/commit/2e6e942246f0e8e79d29df2985f11e5286207658))
+
 ## [1.18.9](https://github.com/robertoAraneda/fhir-types/compare/v1.18.8...v1.18.9) (2024-08-28)
 
 
