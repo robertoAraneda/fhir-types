@@ -10,10 +10,12 @@ import { BackboneElementEnum } from '../BackboneElementEnum';
 import { CareTeamStatusEnum } from '../CareTeamStatusEnum';
 import { CurrencyCodeEnum } from '../CurrencyCodeEnum';
 import { DatatypeEnum } from '../DatatypeEnum';
+import { DeviceNameTypeEnum } from '../DeviceNameTypeEnum';
 import { DiagnosticReportStatusEnum } from '../DiagnosticReportStatusEnum';
 import { EventStatusEnum } from '../EventStatusEnum';
 import { EventTimingEnum } from '../EventTimingEnum';
 import { FamilyHistoryStatusEnum } from '../FamilyHistoryStatusEnum';
+import { FHIRDeviceStatusEnum } from '../FHIRDeviceStatusEnum';
 import { FinancialResourceStatusCodesEnum } from '../FinancialResourceStatusCodesEnum';
 import { FlagStatusEnum } from '../FlagStatusEnum';
 import { GoalLifecycleStatusEnum } from '../GoalLifecycleStatusEnum';
@@ -25,6 +27,7 @@ import { ResourceEnum } from '../ResourceEnum';
 import { SlotStatusEnum } from '../SlotStatusEnum';
 import { TaskIntentEnum } from '../TaskIntentEnum';
 import { TaskStatusEnum } from '../TaskStatusEnum';
+import { UDIEntryTypeEnum } from '../UDIEntryTypeEnum';
 
 describe('AccountStatusEnum', () => {
   it('should have the correct values', () => {
@@ -757,5 +760,36 @@ describe('BackboneElementEnum', () => {
     expect(BackboneElementEnum.TASK_OUTPUT).toEqual('TaskOutput');
     expect(BackboneElementEnum.TASK_RESTRICTION).toEqual('TaskRestriction');
     expect(BackboneElementEnum.TIMING).toEqual('Timing');
+  });
+});
+
+describe('UDIEntryTypeEnum', () => {
+  it('should have the correct values', () => {
+    expect(UDIEntryTypeEnum.BARCODE).toEqual('barcode');
+    expect(UDIEntryTypeEnum.RFID).toEqual('rfid');
+    expect(UDIEntryTypeEnum.MANUAL).toEqual('manual');
+    expect(UDIEntryTypeEnum.CARD).toEqual('card');
+    expect(UDIEntryTypeEnum.SELF_REPORTED).toEqual('self-reported');
+    expect(UDIEntryTypeEnum.UNKNOWN).toEqual('unknown');
+  });
+});
+
+describe('FHIRDeviceStatusEnum', () => {
+  it('should have the correct values', () => {
+    expect(FHIRDeviceStatusEnum.ACTIVE).toEqual('active');
+    expect(FHIRDeviceStatusEnum.INACTIVE).toEqual('inactive');
+    expect(FHIRDeviceStatusEnum.ENTERED_IN_ERROR).toEqual('entered-in-error');
+    expect(FHIRDeviceStatusEnum.UNKNOWN).toEqual('unknown');
+  });
+});
+
+describe('DeviceNameTypeEnum', () => {
+  it('should have the correct values', () => {
+    expect(DeviceNameTypeEnum.UDI_LABEL_NAME).toEqual('udi-label-name');
+    expect(DeviceNameTypeEnum.USER_FRIENDLY_NAME).toEqual('user-friendly-name');
+    expect(DeviceNameTypeEnum.PATIENT_REPORTED_NAME).toEqual('patient-reported-name');
+    expect(DeviceNameTypeEnum.MANUFACTURER_NAME).toEqual('manufacturer-name');
+    expect(DeviceNameTypeEnum.MODEL_NAME).toEqual('model-name');
+    expect(DeviceNameTypeEnum.OTHER).toEqual('other');
   });
 });

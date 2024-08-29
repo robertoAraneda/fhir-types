@@ -64,3 +64,6 @@ export { ObservationStatusType } from './ObservationStatusType';
 export { DiagnosticReportStatusType } from './DiagnosticReportStatusType';
 export { ParticipationStatusType } from './ParticipationStatusType';
 export { FlagStatusType } from './FlagStatusType';
+export { UDIEntryTypeType } from './UDIEntryTypeType';
+export { FHIRDeviceStatusType } from './FHIRDeviceStatusType';
+export { DeviceNameTypeType } from './DeviceNameTypeType';

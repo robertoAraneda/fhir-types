@@ -59,3 +59,8 @@ export { ICareTeamParticipant } from './ICareTeamParticipant';
 export { IObservationReferenceRange } from './IObservationReferenceRange';
 export { IObservationComponent } from './IObservationComponent';
 export { IDiagnosticReportMedia } from './IDiagnosticReportMedia';
+export { IDeviceUdiCarrier } from './IDeviceUdiCarrier';
+export { IDeviceDeviceName } from './IDeviceDeviceName';
+export { IDeviceSpecialization } from './IDeviceSpecialization';
+export { IDeviceVersion } from './IDeviceVersion';
+export { IDeviceProperty } from './IDeviceProperty';
