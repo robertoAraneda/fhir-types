@@ -61,3 +61,6 @@ export { ObservationStatusEnum } from './ObservationStatusEnum';
 export { DiagnosticReportStatusEnum } from './DiagnosticReportStatusEnum';
 export { ParticipationStatusEnum } from './ParticipationStatusEnum';
 export { FlagStatusEnum } from './FlagStatusEnum';
+export { UDIEntryTypeEnum } from './UDIEntryTypeEnum';
+export { FHIRDeviceStatusEnum } from './FHIRDeviceStatusEnum';
+export { DeviceNameTypeEnum } from './DeviceNameTypeEnum';
