@@ -175,7 +175,7 @@ export interface IProcedure extends IDomainResource {
   /**
    * @description Extension for instantiatesUri
    */
-  _instantiatesUri?: IElement;
+  _instantiatesUri?: IElement[];
 
   /**
    * @description Extension for status
