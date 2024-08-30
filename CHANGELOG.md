@@ -1,3 +1,10 @@
+## [1.19.1](https://github.com/robertoAraneda/fhir-types/compare/v1.19.0...v1.19.1) (2024-08-30)
+
+
+### Bug Fixes
+
+* names ([d02d1b4](https://github.com/robertoAraneda/fhir-types/commit/d02d1b4a62527fdc110fcd2ca262398f83a53a2c))
+
 # [1.19.0](https://github.com/robertoAraneda/fhir-types/compare/v1.18.9...v1.19.0) (2024-08-29)
 
 
