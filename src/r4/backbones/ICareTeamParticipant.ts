@@ -18,7 +18,7 @@ export interface ICareTeamParticipant extends IBackboneElement {
   /**
    * @description The specific person or organization who is participating/expected to participate in the care team.
    */
-  member: IReference;
+  member?: IReference;
 
   /**
    * @description The organization of the practitioner.

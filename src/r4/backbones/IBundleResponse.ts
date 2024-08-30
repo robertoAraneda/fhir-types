@@ -1,6 +1,6 @@
 import { IBackboneElement, IElement } from '../base';
 
-export interface IBundleEntryResponse extends IBackboneElement {
+export interface IBundleResponse extends IBackboneElement {
   status?: string;
   location?: string;
   etag?: string;

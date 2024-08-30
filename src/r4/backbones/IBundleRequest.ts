@@ -1,6 +1,6 @@
 import { IBackboneElement, IElement } from '../base';
 import { BundleEntryRequestMethodType } from '../types';
-export interface IBundleEntryRequest extends IBackboneElement {
+export interface IBundleRequest extends IBackboneElement {
   method: BundleEntryRequestMethodType;
   url: string;
   ifNoneMatch?: string;

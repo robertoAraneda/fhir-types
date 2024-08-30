@@ -1,6 +1,6 @@
 import { IBackboneElement, IElement } from '../base';
 
-export interface IBundleEntrySearch extends IBackboneElement {
+export interface IBundleSearch extends IBackboneElement {
   mode?: string;
   score?: number;
 

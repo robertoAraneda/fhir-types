@@ -706,9 +706,9 @@ describe('BackboneElementEnum', () => {
     expect(BackboneElementEnum.AUDIT_EVENT_ENTITY).toEqual('AuditEventEntity');
     expect(BackboneElementEnum.AUDIT_EVENT_ENTITY_DETAIL).toEqual('AuditEventEntityDetail');
     expect(BackboneElementEnum.BUNDLE_ENTRY).toEqual('BundleEntry');
-    expect(BackboneElementEnum.BUNDLE_ENTRY_REQUEST).toEqual('BundleEntryRequest');
-    expect(BackboneElementEnum.BUNDLE_ENTRY_RESPONSE).toEqual('BundleEntryResponse');
-    expect(BackboneElementEnum.BUNDLE_ENTRY_SEARCH).toEqual('BundleEntrySearch');
+    expect(BackboneElementEnum.BUNDLE_REQUEST).toEqual('BundleRequest');
+    expect(BackboneElementEnum.BUNDLE_RESPONSE).toEqual('BundleResponse');
+    expect(BackboneElementEnum.BUNDLE_SEARCH).toEqual('BundleSearch');
     expect(BackboneElementEnum.BUNDLE_LINK).toEqual('BundleLink');
     expect(BackboneElementEnum.CARE_PLAN_ACTIVITY).toEqual('CarePlanActivity');
     expect(BackboneElementEnum.CARE_PLAN_ACTIVITY_DETAIL).toEqual('CarePlanActivityDetail');
@@ -721,7 +721,7 @@ describe('BackboneElementEnum', () => {
     expect(BackboneElementEnum.CONDITION_STAGE).toEqual('ConditionStage');
     expect(BackboneElementEnum.COVERAGE_CLASS).toEqual('CoverageClass');
     expect(BackboneElementEnum.COVERAGE_COST_TO_BENEFICIARY).toEqual('CoverageCostToBeneficiary');
-    expect(BackboneElementEnum.COVERAGE_COST_TO_BENEFICIARY_EXCEPTION).toEqual('CoverageCostToBeneficiaryException');
+    expect(BackboneElementEnum.COVERAGE_EXCEPTION).toEqual('CoverageException');
     expect(BackboneElementEnum.DIAGNOSTIC_REPORT_MEDIA).toEqual('DiagnosticReportMedia');
     expect(BackboneElementEnum.ENCOUNTER_CLASS_HISTORY).toEqual('EncounterClassHistory');
     expect(BackboneElementEnum.ENCOUNTER_DIAGNOSIS).toEqual('EncounterDiagnosis');
