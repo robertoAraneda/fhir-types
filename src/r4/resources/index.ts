@@ -24,3 +24,4 @@ export { ISlot } from './ISlot';
 export { IAllergyIntolerance } from './IAllergyIntolerance';
 export { IObservation } from './IObservation';
 export { ICareTeam } from './ICareTeam';
+export { IProcedure } from './IProcedure';
