@@ -1,3 +1,10 @@
+## [1.19.3](https://github.com/robertoAraneda/fhir-types/compare/v1.19.2...v1.19.3) (2024-08-30)
+
+
+### Bug Fixes
+
+* add array type to instantiatesUri ([d00062c](https://github.com/robertoAraneda/fhir-types/commit/d00062c680668e0c23ceed3414ca6fae7f613b6e))
+
 ## [1.19.2](https://github.com/robertoAraneda/fhir-types/compare/v1.19.1...v1.19.2) (2024-08-30)
 
 
