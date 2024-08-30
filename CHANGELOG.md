@@ -1,3 +1,10 @@
+## [1.19.2](https://github.com/robertoAraneda/fhir-types/compare/v1.19.1...v1.19.2) (2024-08-30)
+
+
+### Bug Fixes
+
+* add export for IProcedure in index file ([b191ae1](https://github.com/robertoAraneda/fhir-types/commit/b191ae114fe683e88aeb15725128b60f23bf2eea))
+
 ## [1.19.1](https://github.com/robertoAraneda/fhir-types/compare/v1.19.0...v1.19.1) (2024-08-30)
 
 
