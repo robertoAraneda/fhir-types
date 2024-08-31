@@ -4,7 +4,6 @@ import { ILocationHoursOfOperation, ILocationPosition } from '../backbones';
 import { LocationModeType, LocationStatusType } from '../types';
 
 export interface ILocation extends IDomainResource {
-  resourceType: 'Location';
   identifier?: IIdentifier[];
   status?: LocationStatusType;
   operationalStatus?: ICoding;

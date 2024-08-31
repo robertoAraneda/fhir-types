@@ -1,11 +1,9 @@
 import { IAuditEventAgent, IAuditEventEntity, IAuditEventSource } from '../backbones';
 import { IDomainResource, IElement } from '../base';
 import { ICodeableConcept, ICoding, IPeriod } from '../datatypes';
-import { AuditEventActionEnum, AuditEventOutcomeEnum } from '../enums';
 import { AuditEventActionType, AuditEventOutcomeType } from '../types';
 
 export interface IAuditEvent extends IDomainResource {
-  resourceType: 'AuditEvent';
   type: ICoding;
   subtype?: ICoding[];
   action?: AuditEventActionType;

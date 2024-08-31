@@ -5,7 +5,6 @@ import { GroupTypeEnum } from '../enums';
 import { GroupType } from '../types';
 
 export interface IGroup extends IDomainResource {
-  resourceType: 'Group';
   identifier?: IIdentifier[];
   active?: boolean;
   type: GroupType;

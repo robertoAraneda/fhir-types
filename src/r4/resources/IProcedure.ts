@@ -67,6 +67,11 @@ export interface IProcedure extends IDomainResource {
   performedDateTime?: string;
 
   /**
+   * @description Extensions for performedDateTime
+   */
+  _performedDateTime?: IElement;
+
+  /**
    * @description Estimated or actual date, date-time, period, or age when the procedure was performed. Allows a period to support complex procedures that span more than one date, and also allows for the length of the procedure to be captured.
    */
   performedPeriod?: IPeriod;
@@ -75,6 +80,11 @@ export interface IProcedure extends IDomainResource {
    * @description Estimated or actual date, date-time, period, or age when the procedure was performed. Allows a period to support complex procedures that span more than one date, and also allows for the length of the procedure to be captured.
    */
   performedString?: string;
+
+  /**
+   * @description Extensions for performedString
+   */
+  _performedString?: IElement;
 
   /**
    * @description Estimated or actual date, date-time, period, or age when the procedure was performed. Allows a period to support complex procedures that span more than one date, and also allows for the length of the procedure to be captured.

@@ -19,11 +19,6 @@ import { FHIRDeviceStatusType } from '../types';
  */
 export interface IDevice extends IDomainResource {
   /**
-   * @description The type of resource
-   */
-  resourceType?: string;
-
-  /**
    * @description Unique instance identifiers assigned to a device by manufacturers other organizations or owners.
    */
   identifier?: IIdentifier[];

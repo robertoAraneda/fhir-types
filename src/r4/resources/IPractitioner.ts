@@ -5,7 +5,6 @@ import { AdministrativeGenderEnum } from '../enums';
 import { AdministrativeGenderType } from '../types';
 
 export interface IPractitioner extends IDomainResource {
-  resourceType: 'Practitioner';
   identifier?: IIdentifier[];
   active?: boolean;
   _active?: IElement;

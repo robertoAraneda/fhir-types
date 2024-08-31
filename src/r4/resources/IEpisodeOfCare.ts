@@ -12,7 +12,6 @@ import { EpisodeOfCareStatusType } from '../types';
   @extends IDomainResource
  */
 export interface IEpisodeOfCare extends IDomainResource {
-  resourceType?: string;
   /**
    * @description 	Business Identifier(s) relevant for this EpisodeOfCare
    */

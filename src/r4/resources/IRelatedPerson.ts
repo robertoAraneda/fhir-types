@@ -14,7 +14,6 @@ import { AdministrativeGenderEnum } from '../enums';
 import { AdministrativeGenderType } from '../types';
 
 export interface IRelatedPerson extends IDomainResource {
-  resourceType: 'RelatedPerson';
   identifier?: IIdentifier[];
   active?: boolean;
   patient?: IReference;

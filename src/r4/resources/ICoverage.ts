@@ -13,11 +13,6 @@ import { FinancialResourceStatusCodesType } from '../types';
  */
 export interface ICoverage extends IDomainResource {
   /**
-   * @description The type of resource
-   */
-  resourceType?: string;
-
-  /**
    * @description A unique identifier assigned to this coverage.
    */
   identifier?: IIdentifier[];
