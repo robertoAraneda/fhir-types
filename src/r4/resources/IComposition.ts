@@ -6,7 +6,6 @@ import { CompositionConfidentialityType, CompositionStatusType } from '../types'
 import { ICompositionRelatesTo } from '../backbones/ICompositionRelatesTo';
 
 export interface IComposition extends IDomainResource {
-  resourceType: 'Composition';
   identifier?: IIdentifier;
   status?: CompositionStatusType;
   type: ICodeableConcept;

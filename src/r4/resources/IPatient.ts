@@ -22,11 +22,6 @@ import { AdministrativeGenderType } from '../types';
  */
 export interface IPatient extends IDomainResource {
   /**
-   * @description The type of resource
-   */
-  resourceType?: string;
-
-  /**
    * @description An identifier for this patient.
    */
   identifier?: IIdentifier[];

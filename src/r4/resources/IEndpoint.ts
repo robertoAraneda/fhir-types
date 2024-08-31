@@ -7,7 +7,6 @@ import { EndpointStatusType } from '../types';
  * @resume FHIR R4 Endpoint Resource
  */
 export interface IEndpoint extends IDomainResource {
-  resourceType: 'Endpoint';
   /**
    * Identifies this endpoint across multiple systems.
    */

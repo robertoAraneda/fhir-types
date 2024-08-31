@@ -4,8 +4,6 @@ import { IBundleLink, IBundleEntry } from '../backbones';
 import { BundleTypeType } from '../types';
 
 export interface IBundle extends IResource {
-  resourceType?: string;
-
   /**
    * @description A persistent identifier for the bundle that won't change as a bundle is copied from server to server.
    */

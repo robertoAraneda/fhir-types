@@ -12,7 +12,6 @@ import { GoalLifecycleStatusType } from '../types';
  * @author Claudia Alarcón Lazo
  */
 export interface IGoal extends IDomainResource {
-  resourceType?: 'Goal';
   /**
    * @description Business identifiers assigned to this goal by the performer or other systems which remain constant as the resource is updated and propagates from server to server.
    */

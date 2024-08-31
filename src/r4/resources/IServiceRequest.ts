@@ -23,11 +23,6 @@ import { RequestIntentType, RequestPriorityType, RequestStatusType } from '../ty
  */
 export interface IServiceRequest extends IDomainResource {
   /**
-   * @description The type of resource
-   */
-  resourceType?: string;
-
-  /**
    * @description Identifiers assigned to this order instance by the orderer and/or the receiver and/or order fulfiller.
    */
   identifier?: IIdentifier[];

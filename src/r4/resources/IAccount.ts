@@ -1,10 +1,9 @@
 import { IDomainResource, IElement } from '../base';
 import { ICodeableConcept, IIdentifier, IPeriod, IReference } from '../datatypes';
 import { IAccountCoverage, IAccountGuarantor } from '../backbones';
-import { AccountStatusType } from '../types/AccountStatusType';
+import { AccountStatusType } from '../types';
 
 export interface IAccount extends IDomainResource {
-  resourceType: 'Account';
   identifier?: IIdentifier[];
   status: AccountStatusType;
   type?: ICodeableConcept;

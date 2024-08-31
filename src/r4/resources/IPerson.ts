@@ -5,7 +5,6 @@ import { AdministrativeGenderEnum } from '../enums';
 import { AdministrativeGenderType } from '../types';
 
 export interface IPerson extends IDomainResource {
-  resourceType: 'Person';
   identifier?: IIdentifier[];
   name?: IHumanName[];
   telecom?: IContactPoint[];
