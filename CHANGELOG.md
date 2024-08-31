@@ -1,3 +1,10 @@
+## [1.19.4](https://github.com/robertoAraneda/fhir-types/compare/v1.19.3...v1.19.4) (2024-08-31)
+
+
+### Bug Fixes
+
+* add resource type key to resource interface ([c89820e](https://github.com/robertoAraneda/fhir-types/commit/c89820e1b4acc7d3ab478dd0f0911cb39d2103f5))
+
 ## [1.19.3](https://github.com/robertoAraneda/fhir-types/compare/v1.19.2...v1.19.3) (2024-08-30)
 
 
