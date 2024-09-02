@@ -1,3 +1,10 @@
+## [1.20.1](https://github.com/robertoAraneda/fhir-types/compare/v1.20.0...v1.20.1) (2024-09-02)
+
+
+### Bug Fixes
+
+* change cardinality to optional for elegibility attribute ([5258201](https://github.com/robertoAraneda/fhir-types/commit/5258201685220669c010f1ac32107cd24e8b6c70))
+
 # [1.20.0](https://github.com/robertoAraneda/fhir-types/compare/v1.19.4...v1.20.0) (2024-09-02)
 
 
