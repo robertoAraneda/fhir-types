@@ -28,11 +28,6 @@ import {
  */
 export interface IDeviceDefinition extends IDomainResource {
   /**
-   * @description The type of resource
-   */
-  resourceType?: string;
-
-  /**
    * @description Unique instance identifiers assigned to a device by the software, manufacturers, other organizations or owners. For example: handle ID.
    */
   identifier?: IIdentifier[];

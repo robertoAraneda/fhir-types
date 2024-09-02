@@ -13,11 +13,6 @@ import { FHIRSubstanceStatusType } from '../types';
  */
 export interface ISubstance extends IDomainResource {
   /**
-   * @description The type of resource
-   */
-  resourceType?: string;
-
-  /**
    * @description Unique identifier for the substance.
    */
   identifier?: IIdentifier[];
