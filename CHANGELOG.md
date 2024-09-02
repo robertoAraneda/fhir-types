@@ -1,3 +1,10 @@
+# [1.20.0](https://github.com/robertoAraneda/fhir-types/compare/v1.19.4...v1.20.0) (2024-09-02)
+
+
+### Features
+
+* add DeviceDefinition, DeviceMetric, Substance resources ([8e6bb1b](https://github.com/robertoAraneda/fhir-types/commit/8e6bb1bf81653f787c9d476c531f803f3abfcc38))
+
 ## [1.19.4](https://github.com/robertoAraneda/fhir-types/compare/v1.19.3...v1.19.4) (2024-08-31)
 
 
