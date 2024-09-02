@@ -81,17 +81,17 @@ export interface IDevice extends IDomainResource {
   deviceName?: IDeviceDeviceName[];
 
   /**
-   * @description
+   * @description The model number for the device.
    */
   modelNumber?: string;
 
   /**
-   * @description
+   * @description The part number of the device.
    */
   partNumber?: string;
 
   /**
-   * @description
+   * @description The kind or type of device.
    */
   type?: ICodeableConcept;
 
