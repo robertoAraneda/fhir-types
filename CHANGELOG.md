@@ -1,3 +1,11 @@
+## [1.20.2](https://github.com/robertoAraneda/fhir-types/compare/v1.20.1...v1.20.2) (2024-09-02)
+
+
+### Bug Fixes
+
+* add missing descriptions for device ([ed07c73](https://github.com/robertoAraneda/fhir-types/commit/ed07c73278f7fcf86333ff2e621ac15742fbd85d))
+* remove resourcetype ([78080b5](https://github.com/robertoAraneda/fhir-types/commit/78080b59633bf71a5daf57e560ebc4b952926019))
+
 ## [1.20.1](https://github.com/robertoAraneda/fhir-types/compare/v1.20.0...v1.20.1) (2024-09-02)
 
 
