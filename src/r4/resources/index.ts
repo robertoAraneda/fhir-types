@@ -25,3 +25,7 @@ export { IAllergyIntolerance } from './IAllergyIntolerance';
 export { IObservation } from './IObservation';
 export { ICareTeam } from './ICareTeam';
 export { IProcedure } from './IProcedure';
+export { IDevice } from './IDevice';
+export { IDeviceDefinition } from './IDeviceDifinition';
+export { IDeviceMetric } from './IDeviceMetric';
+export { ISubstance } from './ISubstance';
