@@ -22,3 +22,5 @@ export { IRepeat } from './IRepeat';
 export { IMoney } from './IMoney';
 export { IAge } from './IAge';
 export { ISampledData } from './ISampledData';
+export { IProductShelfLife } from './IProductShelfLife';
+export { IProdCharacteristic } from './IProdCharacteristic';

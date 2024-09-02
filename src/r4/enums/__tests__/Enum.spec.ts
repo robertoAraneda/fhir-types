@@ -10,12 +10,18 @@ import { BackboneElementEnum } from '../BackboneElementEnum';
 import { CareTeamStatusEnum } from '../CareTeamStatusEnum';
 import { CurrencyCodeEnum } from '../CurrencyCodeEnum';
 import { DatatypeEnum } from '../DatatypeEnum';
+import { DeviceMetricCalibrationStateEnum } from '../DeviceMetricCalibrationStateEnum';
+import { DeviceMetricCalibrationTypeEnum } from '../DeviceMetricCalibrationTypeEnum';
+import { DeviceMetricCategoryEnum } from '../DeviceMetricCategoryEnum';
+import { DeviceMetricColorEnum } from '../DeviceMetricColorEnum';
+import { DeviceMetricOperationalStatusEnum } from '../DeviceMetricOperationalStatusEnum';
 import { DeviceNameTypeEnum } from '../DeviceNameTypeEnum';
 import { DiagnosticReportStatusEnum } from '../DiagnosticReportStatusEnum';
 import { EventStatusEnum } from '../EventStatusEnum';
 import { EventTimingEnum } from '../EventTimingEnum';
 import { FamilyHistoryStatusEnum } from '../FamilyHistoryStatusEnum';
 import { FHIRDeviceStatusEnum } from '../FHIRDeviceStatusEnum';
+import { FHIRSubstanceStatusEnum } from '../FHIRSubstanceStatusEnum';
 import { FinancialResourceStatusCodesEnum } from '../FinancialResourceStatusCodesEnum';
 import { FlagStatusEnum } from '../FlagStatusEnum';
 import { GoalLifecycleStatusEnum } from '../GoalLifecycleStatusEnum';
@@ -791,5 +797,62 @@ describe('DeviceNameTypeEnum', () => {
     expect(DeviceNameTypeEnum.MANUFACTURER_NAME).toEqual('manufacturer-name');
     expect(DeviceNameTypeEnum.MODEL_NAME).toEqual('model-name');
     expect(DeviceNameTypeEnum.OTHER).toEqual('other');
+  });
+});
+
+describe('DeviceMetricOperationalStatusEnum', () => {
+  it('should have the correct values', () => {
+    expect(DeviceMetricOperationalStatusEnum.ON).toEqual('on');
+    expect(DeviceMetricOperationalStatusEnum.OFF).toEqual('off');
+    expect(DeviceMetricOperationalStatusEnum.STANDBY).toEqual('standby');
+    expect(DeviceMetricOperationalStatusEnum.ENTERED_IN_ERROR).toEqual('entered-in-error');
+  });
+});
+
+describe('DeviceMetricColorEnum', () => {
+  it('should have the correct values', () => {
+    expect(DeviceMetricColorEnum.BLACK).toEqual('black');
+    expect(DeviceMetricColorEnum.RED).toEqual('red');
+    expect(DeviceMetricColorEnum.GREEN).toEqual('green');
+    expect(DeviceMetricColorEnum.YELLOW).toEqual('yellow');
+    expect(DeviceMetricColorEnum.BLUE).toEqual('blue');
+    expect(DeviceMetricColorEnum.MAGENTA).toEqual('magenta');
+    expect(DeviceMetricColorEnum.CYAN).toEqual('cyan');
+    expect(DeviceMetricColorEnum.WHITE).toEqual('white');
+  });
+});
+
+describe('DeviceMetricCategoryEnum', () => {
+  it('should have the correct values', () => {
+    expect(DeviceMetricCategoryEnum.MEASUREMENT).toEqual('measurement');
+    expect(DeviceMetricCategoryEnum.SETTING).toEqual('setting');
+    expect(DeviceMetricCategoryEnum.CALCULATION).toEqual('calculation');
+    expect(DeviceMetricCategoryEnum.UNSPECIFIED).toEqual('unspecified');
+  });
+});
+
+describe('DeviceMetricCalibrationTypeEnum', () => {
+  it('should have the correct values', () => {
+    expect(DeviceMetricCalibrationTypeEnum.UNSPECIFIED).toEqual('unspecified');
+    expect(DeviceMetricCalibrationTypeEnum.OFFSET).toEqual('offset');
+    expect(DeviceMetricCalibrationTypeEnum.GAIN).toEqual('gain');
+    expect(DeviceMetricCalibrationTypeEnum.TWO_POINT).toEqual('two-point');
+  });
+});
+
+describe('DeviceMetricCalibrationStateEnum', () => {
+  it('should have the correct values', () => {
+    expect(DeviceMetricCalibrationStateEnum.NOT_CALIBRATED).toEqual('not-calibrated');
+    expect(DeviceMetricCalibrationStateEnum.CALIBRATION_REQUIRED).toEqual('calibration-required');
+    expect(DeviceMetricCalibrationStateEnum.CALIBRATED).toEqual('calibrated');
+    expect(DeviceMetricCalibrationStateEnum.UNSPECIFIED).toEqual('unspecified');
+  });
+});
+
+describe('FHIRSubstanceStatusEnum', () => {
+  it('should have the correct values', () => {
+    expect(FHIRSubstanceStatusEnum.ACTIVE).toEqual('active');
+    expect(FHIRSubstanceStatusEnum.INACTIVE).toEqual('inactive');
+    expect(FHIRSubstanceStatusEnum.ENTERED_IN_ERROR).toEqual('entered-in-error');
   });
 });
