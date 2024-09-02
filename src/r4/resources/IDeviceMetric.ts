@@ -13,11 +13,6 @@ import { DeviceMetricCategoryType, DeviceMetricColorType, DeviceMetricOperationa
  */
 export interface IDeviceMetric extends IDomainResource {
   /**
-   * @description The type of resource
-   */
-  resourceType?: string;
-
-  /**
    * @description Unique instance identifiers assigned to a device by the device or gateway software, manufacturers, other organizations or owners. For example: handle ID.
    */
   identifier?: IIdentifier[];
