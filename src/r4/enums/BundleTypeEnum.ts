@@ -1,3 +1,10 @@
+/**
+ * @name BundleType
+ * @description Indicates the purpose of this bundle - how it is intended to be used.
+ * @see <a href="https://hl7.org/fhir/R4/valueset-bundle-type.html">BundleType</a>
+ * @version R4
+ * @author Roberto Araneda Espinoza
+ */
 export enum BundleTypeEnum {
   DOCUMENT = 'document',
   MESSAGE = 'message',
@@ -8,5 +15,4 @@ export enum BundleTypeEnum {
   HISTORY = 'history',
   SEARCHSET = 'searchset',
   COLLECTION = 'collection',
-  SUBSCRIPTION_NOTIFICATION = 'subscription-notification',
 }

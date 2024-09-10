@@ -7,7 +7,11 @@ import { AllergyIntoleranceSeverityEnum } from '../AllergyIntoleranceSeverityEnu
 import { AllergyIntoleranceTypeEnum } from '../AllergyIntoleranceTypeEnum';
 import { AppointmentStatusEnum } from '../AppointmentStatusEnum';
 import { BackboneElementEnum } from '../BackboneElementEnum';
+import { BundleTypeEnum } from '../BundleTypeEnum';
 import { CareTeamStatusEnum } from '../CareTeamStatusEnum';
+import { CompositionAttestationModeEnum } from '../CompositionAttestationModeEnum';
+import { CompositionStatusEnum } from '../CompositionStatusEnum';
+import { ConfidentialityClassificationEnum } from '../ConfidentialityClassificationEnum';
 import { CurrencyCodeEnum } from '../CurrencyCodeEnum';
 import { DatatypeEnum } from '../DatatypeEnum';
 import { DeviceMetricCalibrationStateEnum } from '../DeviceMetricCalibrationStateEnum';
@@ -17,6 +21,7 @@ import { DeviceMetricColorEnum } from '../DeviceMetricColorEnum';
 import { DeviceMetricOperationalStatusEnum } from '../DeviceMetricOperationalStatusEnum';
 import { DeviceNameTypeEnum } from '../DeviceNameTypeEnum';
 import { DiagnosticReportStatusEnum } from '../DiagnosticReportStatusEnum';
+import { DocumentRelationshipTypeEnum } from '../DocumentRelationshipTypeEnum';
 import { EventStatusEnum } from '../EventStatusEnum';
 import { EventTimingEnum } from '../EventTimingEnum';
 import { FamilyHistoryStatusEnum } from '../FamilyHistoryStatusEnum';
@@ -25,11 +30,14 @@ import { FHIRSubstanceStatusEnum } from '../FHIRSubstanceStatusEnum';
 import { FinancialResourceStatusCodesEnum } from '../FinancialResourceStatusCodesEnum';
 import { FlagStatusEnum } from '../FlagStatusEnum';
 import { GoalLifecycleStatusEnum } from '../GoalLifecycleStatusEnum';
+import { HTTPVerbEnum } from '../HTTPVerbEnum';
+import { ListModeEnum } from '../ListModeEnum';
 import { ObservationStatusEnum } from '../ObservationStatusEnum';
 import { ParticipantRequiredEnum } from '../ParticipantRequiredEnum';
 import { ParticipantStatusEnum } from '../ParticipantStatusEnum';
 import { ParticipationStatusEnum } from '../ParticipationStatusEnum';
 import { ResourceEnum } from '../ResourceEnum';
+import { SearchEntryModeEnum } from '../SearchEntryModeEnum';
 import { SlotStatusEnum } from '../SlotStatusEnum';
 import { TaskIntentEnum } from '../TaskIntentEnum';
 import { TaskStatusEnum } from '../TaskStatusEnum';
@@ -854,5 +862,84 @@ describe('FHIRSubstanceStatusEnum', () => {
     expect(FHIRSubstanceStatusEnum.ACTIVE).toEqual('active');
     expect(FHIRSubstanceStatusEnum.INACTIVE).toEqual('inactive');
     expect(FHIRSubstanceStatusEnum.ENTERED_IN_ERROR).toEqual('entered-in-error');
+  });
+});
+
+describe('BundleTypeEnum', () => {
+  it('should have the correct values', () => {
+    expect(BundleTypeEnum.DOCUMENT).toEqual('document');
+    expect(BundleTypeEnum.MESSAGE).toEqual('message');
+    expect(BundleTypeEnum.TRANSACTION).toEqual('transaction');
+    expect(BundleTypeEnum.TRANSACTION_RESPONSE).toEqual('transaction-response');
+    expect(BundleTypeEnum.BATCH).toEqual('batch');
+    expect(BundleTypeEnum.BATCH_RESPONSE).toEqual('batch-response');
+    expect(BundleTypeEnum.HISTORY).toEqual('history');
+    expect(BundleTypeEnum.SEARCHSET).toEqual('searchset');
+    expect(BundleTypeEnum.COLLECTION).toEqual('collection');
+  });
+});
+
+describe('SearchEntryModeEnum', () => {
+  it('should have the correct values', () => {
+    expect(SearchEntryModeEnum.MATCH).toEqual('match');
+    expect(SearchEntryModeEnum.INCLUDE).toEqual('include');
+    expect(SearchEntryModeEnum.OUTCOME).toEqual('outcome');
+  });
+});
+
+describe('HTTPVerbEnum', () => {
+  it('should have the correct values', () => {
+    expect(HTTPVerbEnum.GET).toEqual('GET');
+    expect(HTTPVerbEnum.HEAD).toEqual('HEAD');
+    expect(HTTPVerbEnum.POST).toEqual('POST');
+    expect(HTTPVerbEnum.PUT).toEqual('PUT');
+    expect(HTTPVerbEnum.DELETE).toEqual('DELETE');
+    expect(HTTPVerbEnum.PATCH).toEqual('PATCH');
+  });
+});
+
+describe('CompositionStatusEnum', () => {
+  it('should have the correct values', () => {
+    expect(CompositionStatusEnum.PRELIMINARY).toEqual('preliminary');
+    expect(CompositionStatusEnum.FINAL).toEqual('final');
+    expect(CompositionStatusEnum.AMENDED).toEqual('amended');
+    expect(CompositionStatusEnum.ENTERED_IN_ERROR).toEqual('entered-in-error');
+  });
+});
+
+describe('ConfidentialityClassificationEnum', () => {
+  it('should have the correct values', () => {
+    expect(ConfidentialityClassificationEnum.UNRESTRICTED).toEqual('U');
+    expect(ConfidentialityClassificationEnum.LOW).toEqual('L');
+    expect(ConfidentialityClassificationEnum.MODERATE).toEqual('M');
+    expect(ConfidentialityClassificationEnum.NORMAL).toEqual('N');
+    expect(ConfidentialityClassificationEnum.RESTRICTED).toEqual('R');
+    expect(ConfidentialityClassificationEnum.VERY_RESTRICTED).toEqual('V');
+  });
+});
+
+describe('CompositionAttestationModeEnum', () => {
+  it('should have the correct values', () => {
+    expect(CompositionAttestationModeEnum.PERSONAL).toEqual('personal');
+    expect(CompositionAttestationModeEnum.PROFESSIONAL).toEqual('professional');
+    expect(CompositionAttestationModeEnum.LEGAL).toEqual('legal');
+    expect(CompositionAttestationModeEnum.OFFICIAL).toEqual('official');
+  });
+});
+
+describe('DocumentRelationshipTypeEnum', () => {
+  it('should have the correct values', () => {
+    expect(DocumentRelationshipTypeEnum.REPLACES).toEqual('replaces');
+    expect(DocumentRelationshipTypeEnum.TRANSFORMS).toEqual('transforms');
+    expect(DocumentRelationshipTypeEnum.SIGNS).toEqual('signs');
+    expect(DocumentRelationshipTypeEnum.APPENDS).toEqual('appends');
+  });
+});
+
+describe('ListModeEnum', () => {
+  it('should have the correct values', () => {
+    expect(ListModeEnum.WORKING).toEqual('working');
+    expect(ListModeEnum.SNAPSHOT).toEqual('snapshot');
+    expect(ListModeEnum.CHANGES).toEqual('changes');
   });
 });
