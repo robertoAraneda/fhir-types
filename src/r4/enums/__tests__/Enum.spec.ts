@@ -30,7 +30,10 @@ import { FHIRSubstanceStatusEnum } from '../FHIRSubstanceStatusEnum';
 import { FinancialResourceStatusCodesEnum } from '../FinancialResourceStatusCodesEnum';
 import { FlagStatusEnum } from '../FlagStatusEnum';
 import { GoalLifecycleStatusEnum } from '../GoalLifecycleStatusEnum';
+import { GroupTypeEnum } from '../GroupTypeEnum';
 import { HTTPVerbEnum } from '../HTTPVerbEnum';
+import { IssueSeverityEnum } from '../IssueSeverityEnum';
+import { IssueTypeEnum } from '../IssueTypeEnum';
 import { ListModeEnum } from '../ListModeEnum';
 import { ObservationStatusEnum } from '../ObservationStatusEnum';
 import { ParticipantRequiredEnum } from '../ParticipantRequiredEnum';
@@ -747,7 +750,7 @@ describe('BackboneElementEnum', () => {
     expect(BackboneElementEnum.ENCOUNTER_PARTICIPANT).toEqual('EncounterParticipant');
     expect(BackboneElementEnum.ENCOUNTER_STATUS_HISTORY).toEqual('EncounterStatusHistory');
     expect(BackboneElementEnum.EPISODE_OF_CARE_DIAGNOSIS).toEqual('EpisodeOfCareDiagnosis');
-    expect(BackboneElementEnum.EPISODE_OF_CARE_STATUS_HISTORY).toEqual('EpisodeOfCareStatusHistory');
+    expect(BackboneElementEnum.EPISODE_OF_CARE_STATUS).toEqual('EpisodeOfCareStatus');
     expect(BackboneElementEnum.FAMILY_MEMBER_HISTORY_CONDITION).toEqual('FamilyMemberHistoryCondition');
     expect(BackboneElementEnum.GOAL_TARGET).toEqual('GoalTarget');
     expect(BackboneElementEnum.GROUP_CHARACTERISTIC).toEqual('GroupCharacteristic');
@@ -941,5 +944,61 @@ describe('ListModeEnum', () => {
     expect(ListModeEnum.WORKING).toEqual('working');
     expect(ListModeEnum.SNAPSHOT).toEqual('snapshot');
     expect(ListModeEnum.CHANGES).toEqual('changes');
+  });
+});
+
+describe('GroupTypeEnum', () => {
+  it('should have the correct values', () => {
+    expect(GroupTypeEnum.PERSON).toEqual('person');
+    expect(GroupTypeEnum.ANIMAL).toEqual('animal');
+    expect(GroupTypeEnum.PRACTITIONER).toEqual('practitioner');
+    expect(GroupTypeEnum.DEVICE).toEqual('device');
+    expect(GroupTypeEnum.MEDICATION).toEqual('medication');
+    expect(GroupTypeEnum.SUBSTANCE).toEqual('substance');
+  });
+});
+
+describe('IssueSeverityEnum', () => {
+  it('should have the correct values', () => {
+    expect(IssueSeverityEnum.FATAL).toEqual('fatal');
+    expect(IssueSeverityEnum.ERROR).toEqual('error');
+    expect(IssueSeverityEnum.WARNING).toEqual('warning');
+    expect(IssueSeverityEnum.INFORMATION).toEqual('information');
+  });
+});
+
+describe('IssueTypeEnum', () => {
+  it('should have the correct values', () => {
+    expect(IssueTypeEnum.INVALID).toEqual('invalid');
+    expect(IssueTypeEnum.STRUCTURE).toEqual('structure');
+    expect(IssueTypeEnum.REQUIRED).toEqual('required');
+    expect(IssueTypeEnum.VALUE).toEqual('value');
+    expect(IssueTypeEnum.INVARIANT).toEqual('invariant');
+    expect(IssueTypeEnum.SECURITY).toEqual('security');
+    expect(IssueTypeEnum.LOGIN).toEqual('login');
+    expect(IssueTypeEnum.UNKNOWN).toEqual('unknown');
+    expect(IssueTypeEnum.EXPIRED).toEqual('expired');
+    expect(IssueTypeEnum.FORBIDDEN).toEqual('forbidden');
+    expect(IssueTypeEnum.SUPPRESSED).toEqual('suppressed');
+    expect(IssueTypeEnum.PROCESSING).toEqual('processing');
+    expect(IssueTypeEnum.NOT_SUPPORTED).toEqual('not-supported');
+    expect(IssueTypeEnum.DUPLICATE).toEqual('duplicate');
+    expect(IssueTypeEnum.MULTIPLE_MATCHES).toEqual('multiple-matches');
+    expect(IssueTypeEnum.NOT_FOUND).toEqual('not-found');
+    expect(IssueTypeEnum.DELETED).toEqual('deleted');
+    expect(IssueTypeEnum.TOO_LONG).toEqual('too-long');
+    expect(IssueTypeEnum.CODE_INVALID).toEqual('code-invalid');
+    expect(IssueTypeEnum.EXTENSION).toEqual('extension');
+    expect(IssueTypeEnum.TOO_COSTLY).toEqual('too-costly');
+    expect(IssueTypeEnum.BUSINESS_RULE).toEqual('business-rule');
+    expect(IssueTypeEnum.CONFLICT).toEqual('conflict');
+    expect(IssueTypeEnum.TRANSIENT).toEqual('transient');
+    expect(IssueTypeEnum.LOCK_ERROR).toEqual('lock-error');
+    expect(IssueTypeEnum.NO_STORE).toEqual('no-store');
+    expect(IssueTypeEnum.EXCEPTION).toEqual('exception');
+    expect(IssueTypeEnum.TIMEOUT).toEqual('timeout');
+    expect(IssueTypeEnum.INCOMPLETE).toEqual('incomplete');
+    expect(IssueTypeEnum.THROTTLED).toEqual('throttled');
+    expect(IssueTypeEnum.INFORMATIONAL).toEqual('informational');
   });
 });

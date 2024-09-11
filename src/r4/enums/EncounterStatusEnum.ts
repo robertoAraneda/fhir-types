@@ -7,5 +7,5 @@ export enum EncounterStatusEnum {
   FINISHED = 'finished',
   CANCELLED = 'cancelled',
   ENTERED_IN_ERROR = 'entered-in-error',
-  UNKNOWN = 'unknown'
+  UNKNOWN = 'unknown',
 }

@@ -1,6 +1,5 @@
 import { ICodeableConcept, ICoding, IContactPoint, IIdentifier, IPeriod, IReference } from '../datatypes';
 import { IDomainResource, IElement } from '../base';
-import { EndpointStatusEnum } from '../enums';
 import { EndpointStatusType } from '../types';
 
 /**

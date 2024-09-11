@@ -1,1 +1,1 @@
-export type RequestPriorityType = "routine" | "urgent" | "asap" | "stat";
+export type RequestPriorityType = 'routine' | 'urgent' | 'asap' | 'stat';

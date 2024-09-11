@@ -6,11 +6,4 @@
  * @version R4
  * @author Roberto Araneda Espinoza
  */
-export enum GroupTypeEnum {
-  PERSON = 'person',
-  ANIMAL = 'animal',
-  PRACTITIONER = 'practitioner',
-  DEVICE = 'device',
-  MEDICATION = 'medication',
-  SUBSTANCE = 'substance',
-}
+export type GroupTypeType = 'person' | 'animal' | 'practitioner' | 'device' | 'medication' | 'substance';

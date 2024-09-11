@@ -31,7 +31,6 @@ export { NameUseEnum } from './NameUseEnum';
 export { NarrativeStatusEnum } from './NarrativeStatusEnum';
 export { QuantityComparatorEnum } from './QuantityComparatorEnum';
 export { ResourceEnum } from './ResourceEnum';
-export { EpisodeOfCareStatusHistoryCodeEnum } from './EpisodeOfCareStatusHistoryCodeEnum';
 export { EpisodeOfCareStatusEnum } from './EpisodeOfCareStatusEnum';
 export { EventTimingEnum } from './EventTimingEnum';
 export { RequestIntentEnum } from './RequestIntentEnum';
@@ -71,3 +70,5 @@ export { DeviceMetricCalibrationTypeEnum } from './DeviceMetricCalibrationTypeEn
 export { DeviceMetricCalibrationStateEnum } from './DeviceMetricCalibrationStateEnum';
 export { FHIRSubstanceStatusEnum } from './FHIRSubstanceStatusEnum';
 export { SearchEntryModeEnum } from './SearchEntryModeEnum';
+export { IssueSeverityEnum } from './IssueSeverityEnum';
+export { IssueTypeEnum } from './IssueTypeEnum';
