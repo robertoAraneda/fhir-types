@@ -7,7 +7,6 @@ export { AuditEventAgentNetworkTypeType } from './AuditEventAgentNetworkTypeType
 export { AuditEventOutcomeType } from './AuditEventOutcomeType';
 export { BackboneElementType } from './BackboneElementType';
 export { HTTPVerbType } from './HTTPVerbType';
-export { BundleEntrySearchModeType } from './BundleEntrySearchModeType';
 export { BundleTypeType } from './BundleTypeType';
 export { CompositionAttestationModeType } from './CompositionAttestationModeType';
 export { ConfidentialityClassificationType } from './ConfidentialityClassificationType';
@@ -16,7 +15,7 @@ export { ListModeType } from './ListModeType';
 export { CompositionStatusType } from './CompositionStatusType';
 export { ContactPointSystemType } from './ContactPointSystemType';
 export { ContactPointUseType } from './ContactPointUseType';
-export { DatatypeType } from './DatatypeType';
+export { DataTypeType } from './DatatypeType';
 export { DaysOfWeekType } from './DaysOfWeekType';
 export { EncounterLocationStatusType } from './EncounterLocationStatusType';
 export { EncounterStatusType } from './EncounterStatusType';

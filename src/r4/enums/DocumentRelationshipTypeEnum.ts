@@ -7,8 +7,8 @@
  * @author Roberto Araneda Espinoza
  */
 export enum DocumentRelationshipTypeEnum {
-  APPENDS = 'appends',
   REPLACES = 'replaces',
   TRANSFORMS = 'transforms',
   SIGNS = 'signs',
+  APPENDS = 'appends',
 }
