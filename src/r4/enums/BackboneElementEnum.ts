@@ -49,7 +49,7 @@ export enum BackboneElementEnum {
   ENCOUNTER_PARTICIPANT = 'EncounterParticipant',
   ENCOUNTER_STATUS_HISTORY = 'EncounterStatusHistory',
   EPISODE_OF_CARE_DIAGNOSIS = 'EpisodeOfCareDiagnosis',
-  EPISODE_OF_CARE_STATUS_HISTORY = 'EpisodeOfCareStatusHistory',
+  EPISODE_OF_CARE_STATUS = 'EpisodeOfCareStatus',
   FAMILY_MEMBER_HISTORY_CONDITION = 'FamilyMemberHistoryCondition',
   GOAL_TARGET = 'GoalTarget',
   GROUP_CHARACTERISTIC = 'GroupCharacteristic',

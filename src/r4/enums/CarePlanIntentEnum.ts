@@ -1,6 +1,14 @@
+/**
+ * @name CarePlanIntent
+ * @description Codes indicating the degree of authority/intentionality associated with a care plan.
+ * @description proposal | plan | order | option
+ * @see <a href="https://hl7.org/fhir/R4/valueset-care-plan-intent.html">CarePlanIntent</a>
+ * @version R4
+ * @author Roberto Araneda Espinoza
+ */
 export enum CarePlanIntentEnum {
-    Proposal = 'proposal',
-    Plan = 'plan',
-    Order = 'order',
-    Option = 'option'
+  PROPOSAL = 'proposal',
+  PLAN = 'plan',
+  ORDER = 'order',
+  OPTION = 'option',
 }

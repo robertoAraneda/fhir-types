@@ -3,6 +3,14 @@ import { IIdentifier, ISignature } from '../datatypes';
 import { IBundleLink, IBundleEntry } from '../backbones';
 import { BundleTypeType } from '../types';
 
+/**
+ * @name IBundle
+ * @description A container for a collection of resources.
+ * @see <a href="https://hl7.org/fhir/R4/bundle.html">Bundle</a>
+ * @version R4
+ * @extends {IResource}
+ * @author Roberto Araneda Espinoza
+ */
 export interface IBundle extends IResource {
   /**
    * @description A persistent identifier for the bundle that won't change as a bundle is copied from server to server.
@@ -11,7 +19,8 @@ export interface IBundle extends IResource {
 
   /**
    * @description Indicates the purpose of this bundle - how it is intended to be used.
-   document | message | transaction | transaction-response | batch | batch-response | history | searchset | collection.
+   * @description document | message | transaction | transaction-response | batch | batch-response | history | searchset | collection.
+   * @see <a href="https://hl7.org/fhir/R4/valueset-bundle-type.html">BundleType</a>
    */
   type: BundleTypeType;
 

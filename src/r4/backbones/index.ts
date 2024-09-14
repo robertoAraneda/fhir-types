@@ -12,6 +12,7 @@ export { IBundleResponse } from './IBundleResponse';
 export { IBundleLink } from './IBundleLink';
 export { ICompositionAttester } from './ICompositionAttester';
 export { ICompositionEvent } from './ICompositionEvent';
+export { ICompositionRelatesTo } from './ICompositionRelatesTo';
 export { ICompositionSection } from './ICompositionSection';
 export { IGroupCharacteristic } from './IGroupCharacteristic';
 export { IGroupMember } from './IGroupMember';

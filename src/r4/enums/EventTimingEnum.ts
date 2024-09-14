@@ -1,16 +1,24 @@
+/**
+ * @name EventTiming
+ * @description Real world event relating to the schedule.
+ * @description MORN | MORN.early | MORN.late | NOON | AFT | AFT.early | AFT.late | EVE | EVE.early | EVE.late | NIGHT | PHS | HS | WAKE | C | CM | CD | CV | AC | ACM | ACD | ACV | PC | PCM | PCD | PCV
+ * @see <a href="https://hl7.org/fhir/R4/valueset-event-timing.html">EventTiming</a>
+ * @version R4
+ * @author Roberto Araneda Espinoza
+ */
 export enum EventTimingEnum {
-  MORN = 'MORN',
-  MORN_EARLY = 'MORN.early',
-  MORN_LATE = 'MORN.late',
+  MORNING = 'MORN',
+  EARLY_MORNING = 'MORN.early',
+  LATE_MORNING = 'MORN.late',
   NOON = 'NOON',
-  AFT = 'AFT',
-  AFT_EARLY = 'AFT.early',
-  AFT_LATE = 'AFT.late',
-  EVE = 'EVE',
-  EVE_EARLY = 'EVE.early',
-  EVE_LATE = 'EVE.late',
+  AFTERNOON = 'AFT',
+  EARLY_AFTERNOON = 'AFT.early',
+  LATE_AFTERNOON = 'AFT.late',
+  EVENING = 'EVE',
+  EARLY_EVENING = 'EVE.early',
+  LATE_EVENING = 'EVE.late',
   NIGHT = 'NIGHT',
-  PHS = 'PHS',
+  AFTER_SLEEP = 'PHS',
   HS = 'HS',
   WAKE = 'WAKE',
   C = 'C',

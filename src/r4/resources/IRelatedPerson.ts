@@ -10,7 +10,6 @@ import {
   IReference,
 } from '../datatypes';
 import { IRelatedPersonCommunication } from '../backbones';
-import { AdministrativeGenderEnum } from '../enums';
 import { AdministrativeGenderType } from '../types';
 
 export interface IRelatedPerson extends IDomainResource {
@@ -20,7 +19,7 @@ export interface IRelatedPerson extends IDomainResource {
   relationship?: ICodeableConcept[];
   name?: IHumanName[];
   telecom?: IContactPoint[];
-  gender?: AdministrativeGenderEnum | AdministrativeGenderType;
+  gender?: AdministrativeGenderType;
   birthDate?: string;
   address?: IAddress[];
   photo?: IAttachment[];

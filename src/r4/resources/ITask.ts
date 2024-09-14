@@ -60,6 +60,8 @@ export interface ITask extends IDomainResource {
 
   /**
    * @description Indicates how quickly the Task should be addressed with respect to other requests.
+   * @description routine | urgent | asap | stat
+   * @see <a href="https://hl7.org/fhir/R4/valueset-request-priority.html">RequestPriority</a>
    */
   priority?: RequestPriorityType;
 

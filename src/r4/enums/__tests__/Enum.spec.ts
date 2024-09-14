@@ -1,15 +1,29 @@
 import { AccountStatusEnum } from '../AccountStatusEnum';
 import { AddressTypeEnum } from '../AddressTypeEnum';
 import { AddressUseEnum } from '../AddressUseEnum';
+import { AdministrativeGenderEnum } from '../AdministrativeGenderEnum';
 import { AllergyIntoleranceCategoryEnum } from '../AllergyIntoleranceCategoryEnum';
 import { AllergyIntoleranceCriticalityEnum } from '../AllergyIntoleranceCriticalityEnum';
 import { AllergyIntoleranceSeverityEnum } from '../AllergyIntoleranceSeverityEnum';
 import { AllergyIntoleranceTypeEnum } from '../AllergyIntoleranceTypeEnum';
 import { AppointmentStatusEnum } from '../AppointmentStatusEnum';
+import { AuditEventActionEnum } from '../AuditEventActionEnum';
+import { AuditEventAgentNetworkTypeEnum } from '../AuditEventAgentNetworkTypeEnum';
+import { AuditEventOutcomeEnum } from '../AuditEventOutcomeEnum';
 import { BackboneElementEnum } from '../BackboneElementEnum';
+import { BundleTypeEnum } from '../BundleTypeEnum';
+import { CarePlanActivityKindEnum } from '../CarePlanActivityKindEnum';
+import { CarePlanActivityStatusEnum } from '../CarePlanActivityStatusEnum';
+import { CarePlanIntentEnum } from '../CarePlanIntentEnum';
 import { CareTeamStatusEnum } from '../CareTeamStatusEnum';
+import { CompositionAttestationModeEnum } from '../CompositionAttestationModeEnum';
+import { CompositionStatusEnum } from '../CompositionStatusEnum';
+import { ConfidentialityClassificationEnum } from '../ConfidentialityClassificationEnum';
+import { ContactPointSystemEnum } from '../ContactPointSystemEnum';
+import { ContactPointUseEnum } from '../ContactPointUseEnum';
 import { CurrencyCodeEnum } from '../CurrencyCodeEnum';
-import { DatatypeEnum } from '../DatatypeEnum';
+import { DataTypeEnum } from '../DataTypeEnum';
+import { DaysOfWeekEnum } from '../DaysOfWeekEnum';
 import { DeviceMetricCalibrationStateEnum } from '../DeviceMetricCalibrationStateEnum';
 import { DeviceMetricCalibrationTypeEnum } from '../DeviceMetricCalibrationTypeEnum';
 import { DeviceMetricCategoryEnum } from '../DeviceMetricCategoryEnum';
@@ -17,6 +31,10 @@ import { DeviceMetricColorEnum } from '../DeviceMetricColorEnum';
 import { DeviceMetricOperationalStatusEnum } from '../DeviceMetricOperationalStatusEnum';
 import { DeviceNameTypeEnum } from '../DeviceNameTypeEnum';
 import { DiagnosticReportStatusEnum } from '../DiagnosticReportStatusEnum';
+import { DocumentRelationshipTypeEnum } from '../DocumentRelationshipTypeEnum';
+import { EncounterLocationStatusEnum } from '../EncounterLocationStatusEnum';
+import { EncounterStatusEnum } from '../EncounterStatusEnum';
+import { EpisodeOfCareStatusEnum } from '../EpisodeOfCareStatusEnum';
 import { EventStatusEnum } from '../EventStatusEnum';
 import { EventTimingEnum } from '../EventTimingEnum';
 import { FamilyHistoryStatusEnum } from '../FamilyHistoryStatusEnum';
@@ -25,15 +43,32 @@ import { FHIRSubstanceStatusEnum } from '../FHIRSubstanceStatusEnum';
 import { FinancialResourceStatusCodesEnum } from '../FinancialResourceStatusCodesEnum';
 import { FlagStatusEnum } from '../FlagStatusEnum';
 import { GoalLifecycleStatusEnum } from '../GoalLifecycleStatusEnum';
+import { GroupTypeEnum } from '../GroupTypeEnum';
+import { HTTPVerbEnum } from '../HTTPVerbEnum';
+import { IdentifierUseEnum } from '../IdentifierUseEnum';
+import { IdentityAssuranceLevelEnum } from '../IdentityAssuranceLevelEnum';
+import { IssueSeverityEnum } from '../IssueSeverityEnum';
+import { IssueTypeEnum } from '../IssueTypeEnum';
+import { LinkTypeEnum } from '../LinkTypeEnum';
+import { ListModeEnum } from '../ListModeEnum';
+import { LocationModeEnum } from '../LocationModeEnum';
+import { LocationStatusEnum } from '../LocationStatusEnum';
+import { NameUseEnum } from '../NameUseEnum';
+import { NarrativeStatusEnum } from '../NarrativeStatusEnum';
 import { ObservationStatusEnum } from '../ObservationStatusEnum';
 import { ParticipantRequiredEnum } from '../ParticipantRequiredEnum';
-import { ParticipantStatusEnum } from '../ParticipantStatusEnum';
 import { ParticipationStatusEnum } from '../ParticipationStatusEnum';
+import { QuantityComparatorEnum } from '../QuantityComparatorEnum';
+import { RequestIntentEnum } from '../RequestIntentEnum';
+import { RequestPriorityEnum } from '../RequestPriorityEnum';
+import { RequestStatusEnum } from '../RequestStatusEnum';
 import { ResourceEnum } from '../ResourceEnum';
+import { SearchEntryModeEnum } from '../SearchEntryModeEnum';
 import { SlotStatusEnum } from '../SlotStatusEnum';
 import { TaskIntentEnum } from '../TaskIntentEnum';
 import { TaskStatusEnum } from '../TaskStatusEnum';
 import { UDIEntryTypeEnum } from '../UDIEntryTypeEnum';
+import { UnitsOfTimeEnum } from '../UnitsOfTimeEnum';
 
 describe('AccountStatusEnum', () => {
   it('should have the correct values', () => {
@@ -60,6 +95,265 @@ describe('AddressUseEnum', () => {
     expect(AddressUseEnum.TEMP).toEqual('temp');
     expect(AddressUseEnum.OLD).toEqual('old');
     expect(AddressUseEnum.BILLING).toEqual('billing');
+  });
+});
+
+describe('AdministrativeGenderEnum', () => {
+  it('should have the correct values', () => {
+    expect(AdministrativeGenderEnum.FEMALE).toEqual('female');
+    expect(AdministrativeGenderEnum.MALE).toEqual('male');
+    expect(AdministrativeGenderEnum.OTHER).toEqual('other');
+    expect(AdministrativeGenderEnum.UNKNOWN).toEqual('unknown');
+  });
+});
+
+describe('AllergyIntoleranceCategoryEnum', () => {
+  it('should have the correct values', () => {
+    expect(AllergyIntoleranceCategoryEnum.FOOD).toEqual('food');
+    expect(AllergyIntoleranceCategoryEnum.MEDICATION).toEqual('medication');
+    expect(AllergyIntoleranceCategoryEnum.ENVIRONMENT).toEqual('environment');
+    expect(AllergyIntoleranceCategoryEnum.BIOLOGIC).toEqual('biologic');
+  });
+});
+
+describe('AllergyIntoleranceCriticalityEnum', () => {
+  it('should have the correct values', () => {
+    expect(AllergyIntoleranceCriticalityEnum.LOW).toEqual('low');
+    expect(AllergyIntoleranceCriticalityEnum.HIGH).toEqual('high');
+    expect(AllergyIntoleranceCriticalityEnum.UNABLE_TO_ASSESS).toEqual('unable-to-assess');
+  });
+});
+
+describe('AllergyIntoleranceSeverityEnum', () => {
+  it('should have the correct values', () => {
+    expect(AllergyIntoleranceSeverityEnum.MILD).toEqual('mild');
+    expect(AllergyIntoleranceSeverityEnum.MODERATE).toEqual('moderate');
+    expect(AllergyIntoleranceSeverityEnum.SEVERE).toEqual('severe');
+  });
+});
+
+describe('AllergyIntoleranceTypeEnum', () => {
+  it('should have the correct values', () => {
+    expect(AllergyIntoleranceTypeEnum.ALLERGY).toEqual('allergy');
+    expect(AllergyIntoleranceTypeEnum.INTOLERANCE).toEqual('intolerance');
+  });
+});
+
+describe('AppointmentStatusEnum', () => {
+  it('should have the correct values', () => {
+    expect(AppointmentStatusEnum.PROPOSED).toEqual('proposed');
+    expect(AppointmentStatusEnum.PENDING).toEqual('pending');
+    expect(AppointmentStatusEnum.BOOKED).toEqual('booked');
+    expect(AppointmentStatusEnum.ARRIVED).toEqual('arrived');
+    expect(AppointmentStatusEnum.FULFILLED).toEqual('fulfilled');
+    expect(AppointmentStatusEnum.CANCELLED).toEqual('cancelled');
+    expect(AppointmentStatusEnum.NOSHOW).toEqual('noshow');
+    expect(AppointmentStatusEnum.ENTERED_IN_ERROR).toEqual('entered-in-error');
+    expect(AppointmentStatusEnum.CHECKED_IN).toEqual('checked-in');
+    expect(AppointmentStatusEnum.WAITLIST).toEqual('waitlist');
+  });
+});
+
+describe('AuditEventActionEnum', () => {
+  it('should have the correct values', () => {
+    expect(AuditEventActionEnum.CREATE).toEqual('C');
+    expect(AuditEventActionEnum.READ).toEqual('R');
+    expect(AuditEventActionEnum.VIEW).toEqual('R');
+    expect(AuditEventActionEnum.PRINT).toEqual('R');
+    expect(AuditEventActionEnum.UPDATE).toEqual('U');
+    expect(AuditEventActionEnum.DELETE).toEqual('D');
+    expect(AuditEventActionEnum.EXECUTE).toEqual('E');
+  });
+});
+
+describe('AuditEventAgentNetworkTypeEnum', () => {
+  it('should have the correct values', () => {
+    expect(AuditEventAgentNetworkTypeEnum.MACHINE_NAME).toEqual('1');
+    expect(AuditEventAgentNetworkTypeEnum.IP_ADDRESS).toEqual('2');
+    expect(AuditEventAgentNetworkTypeEnum.TELEPHONE_NUMBER).toEqual('3');
+    expect(AuditEventAgentNetworkTypeEnum.EMAIL_ADDRESS).toEqual('4');
+    expect(AuditEventAgentNetworkTypeEnum.URI).toEqual('5');
+  });
+});
+
+describe('AuditEventOutcomeEnum', () => {
+  it('should have the correct values', () => {
+    expect(AuditEventOutcomeEnum.SUCCESS).toEqual('0');
+    expect(AuditEventOutcomeEnum.MINOR_FAILURE).toEqual('4');
+    expect(AuditEventOutcomeEnum.SERIOUS_FAILURE).toEqual('8');
+    expect(AuditEventOutcomeEnum.MAJOR_FAILURE).toEqual('12');
+  });
+});
+
+describe('BackboneElementEnum', () => {
+  it('should have the correct values', () => {
+    expect(BackboneElementEnum.ACCOUNT_COVERAGE).toEqual('AccountCoverage');
+    expect(BackboneElementEnum.ACCOUNT_GUARANTOR).toEqual('AccountGuarantor');
+    expect(BackboneElementEnum.ALLERGY_INTOLERANCE_REACTION).toEqual('AllergyIntoleranceReaction');
+    expect(BackboneElementEnum.APPOINTMENT_PARTICIPANT).toEqual('AppointmentParticipant');
+    expect(BackboneElementEnum.AUDIT_EVENT_AGENT).toEqual('AuditEventAgent');
+    expect(BackboneElementEnum.AUDIT_EVENT_ENTITY).toEqual('AuditEventEntity');
+    expect(BackboneElementEnum.AUDIT_EVENT_ENTITY_DETAIL).toEqual('AuditEventEntityDetail');
+    expect(BackboneElementEnum.BUNDLE_ENTRY).toEqual('BundleEntry');
+    expect(BackboneElementEnum.BUNDLE_REQUEST).toEqual('BundleRequest');
+    expect(BackboneElementEnum.BUNDLE_RESPONSE).toEqual('BundleResponse');
+    expect(BackboneElementEnum.BUNDLE_SEARCH).toEqual('BundleSearch');
+    expect(BackboneElementEnum.BUNDLE_LINK).toEqual('BundleLink');
+    expect(BackboneElementEnum.CARE_PLAN_ACTIVITY).toEqual('CarePlanActivity');
+    expect(BackboneElementEnum.CARE_PLAN_ACTIVITY_DETAIL).toEqual('CarePlanActivityDetail');
+    expect(BackboneElementEnum.CARE_TEAM_PARTICIPANT).toEqual('CareTeamParticipant');
+    expect(BackboneElementEnum.COMPOSITION_ATTESTER).toEqual('CompositionAttester');
+    expect(BackboneElementEnum.COMPOSITION_EVENT).toEqual('CompositionEvent');
+    expect(BackboneElementEnum.COMPOSITION_RELATES_TO).toEqual('CompositionRelatesTo');
+    expect(BackboneElementEnum.COMPOSITION_SECTION).toEqual('CompositionSection');
+    expect(BackboneElementEnum.CONDITION_EVIDENCE).toEqual('ConditionEvidence');
+    expect(BackboneElementEnum.CONDITION_STAGE).toEqual('ConditionStage');
+    expect(BackboneElementEnum.COVERAGE_CLASS).toEqual('CoverageClass');
+    expect(BackboneElementEnum.COVERAGE_COST_TO_BENEFICIARY).toEqual('CoverageCostToBeneficiary');
+    expect(BackboneElementEnum.COVERAGE_EXCEPTION).toEqual('CoverageException');
+    expect(BackboneElementEnum.DIAGNOSTIC_REPORT_MEDIA).toEqual('DiagnosticReportMedia');
+    expect(BackboneElementEnum.ENCOUNTER_CLASS_HISTORY).toEqual('EncounterClassHistory');
+    expect(BackboneElementEnum.ENCOUNTER_DIAGNOSIS).toEqual('EncounterDiagnosis');
+    expect(BackboneElementEnum.ENCOUNTER_HOSPITALIZATION).toEqual('EncounterHospitalization');
+    expect(BackboneElementEnum.ENCOUNTER_LOCATION).toEqual('EncounterLocation');
+    expect(BackboneElementEnum.ENCOUNTER_PARTICIPANT).toEqual('EncounterParticipant');
+    expect(BackboneElementEnum.ENCOUNTER_STATUS_HISTORY).toEqual('EncounterStatusHistory');
+    expect(BackboneElementEnum.EPISODE_OF_CARE_DIAGNOSIS).toEqual('EpisodeOfCareDiagnosis');
+    expect(BackboneElementEnum.EPISODE_OF_CARE_STATUS).toEqual('EpisodeOfCareStatus');
+    expect(BackboneElementEnum.FAMILY_MEMBER_HISTORY_CONDITION).toEqual('FamilyMemberHistoryCondition');
+    expect(BackboneElementEnum.GOAL_TARGET).toEqual('GoalTarget');
+    expect(BackboneElementEnum.GROUP_CHARACTERISTIC).toEqual('GroupCharacteristic');
+    expect(BackboneElementEnum.GROUP_MEMBER).toEqual('GroupMember');
+    expect(BackboneElementEnum.HEALTHCARE_SERVICE_AVAILABLE_TIME).toEqual('HealthcareServiceAvailableTime');
+    expect(BackboneElementEnum.HEALTHCARE_SERVICE_ELIGIBILITY).toEqual('HealthcareServiceEligibility');
+    expect(BackboneElementEnum.HEALTHCARE_SERVICE_NOT_AVAILABLE).toEqual('HealthcareServiceNotAvailable');
+    expect(BackboneElementEnum.LOCATION_POSITION).toEqual('LocationPosition');
+    expect(BackboneElementEnum.OBSERVATION_COMPONENT).toEqual('ObservationComponent');
+    expect(BackboneElementEnum.OBSERVATION_REFERENCE_RANGE).toEqual('ObservationReferenceRange');
+    expect(BackboneElementEnum.OPERATION_OUTCOME_ISSUE).toEqual('OperationOutcomeIssue');
+    expect(BackboneElementEnum.ORGANIZATION_CONTACT).toEqual('OrganizationContact');
+    expect(BackboneElementEnum.PATIENT_COMMUNICATION).toEqual('PatientCommunication');
+    expect(BackboneElementEnum.PATIENT_CONTACT).toEqual('PatientContact');
+    expect(BackboneElementEnum.PATIENT_LINK).toEqual('PatientLink');
+    expect(BackboneElementEnum.PERSON_LINK).toEqual('PersonLink');
+    expect(BackboneElementEnum.PRACTITIONER_QUALIFICATION).toEqual('PractitionerQualification');
+    expect(BackboneElementEnum.PRACTITIONER_ROLE_AVAILABLE_TIME).toEqual('PractitionerRoleAvailableTime');
+    expect(BackboneElementEnum.PRACTITIONER_ROLE_NOT_AVAILABLE).toEqual('PractitionerRoleNotAvailable');
+    expect(BackboneElementEnum.PROCEDURE_FOCAL_DEVICE).toEqual('ProcedureFocalDevice');
+    expect(BackboneElementEnum.PROCEDURE_PERFORMER).toEqual('ProcedurePerformer');
+    expect(BackboneElementEnum.RELATED_PERSON_COMMUNICATION).toEqual('RelatedPersonCommunication');
+    expect(BackboneElementEnum.TASK_INPUT).toEqual('TaskInput');
+    expect(BackboneElementEnum.TASK_OUTPUT).toEqual('TaskOutput');
+    expect(BackboneElementEnum.TASK_RESTRICTION).toEqual('TaskRestriction');
+    expect(BackboneElementEnum.TIMING).toEqual('Timing');
+  });
+});
+
+describe('BundleTypeEnum', () => {
+  it('should have the correct values', () => {
+    expect(BundleTypeEnum.DOCUMENT).toEqual('document');
+    expect(BundleTypeEnum.MESSAGE).toEqual('message');
+    expect(BundleTypeEnum.TRANSACTION).toEqual('transaction');
+    expect(BundleTypeEnum.TRANSACTION_RESPONSE).toEqual('transaction-response');
+    expect(BundleTypeEnum.BATCH).toEqual('batch');
+    expect(BundleTypeEnum.BATCH_RESPONSE).toEqual('batch-response');
+    expect(BundleTypeEnum.HISTORY).toEqual('history');
+    expect(BundleTypeEnum.SEARCHSET).toEqual('searchset');
+    expect(BundleTypeEnum.COLLECTION).toEqual('collection');
+  });
+});
+
+describe('CarePlanActivityKindEnum', () => {
+  it('should have the correct values', () => {
+    expect(CarePlanActivityKindEnum.APPOINTMENT).toEqual('Appointment');
+    expect(CarePlanActivityKindEnum.COMMUNICATION_REQUEST).toEqual('CommunicationRequest');
+    expect(CarePlanActivityKindEnum.DEVICE_REQUEST).toEqual('DeviceRequest');
+    expect(CarePlanActivityKindEnum.MEDICATION_REQUEST).toEqual('MedicationRequest');
+    expect(CarePlanActivityKindEnum.NUTRITION_ORDER).toEqual('NutritionOrder');
+    expect(CarePlanActivityKindEnum.TASK).toEqual('Task');
+    expect(CarePlanActivityKindEnum.VISION_PRESCRIPTION).toEqual('VisionPrescription');
+  });
+});
+
+describe('CarePlanActivityStatusEnum', () => {
+  it('should have the correct values', () => {
+    expect(CarePlanActivityStatusEnum.NOT_STARTED).toEqual('not-started');
+    expect(CarePlanActivityStatusEnum.SCHEDULED).toEqual('scheduled');
+    expect(CarePlanActivityStatusEnum.IN_PROGRESS).toEqual('in-progress');
+    expect(CarePlanActivityStatusEnum.ON_HOLD).toEqual('on-hold');
+    expect(CarePlanActivityStatusEnum.COMPLETED).toEqual('completed');
+    expect(CarePlanActivityStatusEnum.STOPPED).toEqual('stopped');
+    expect(CarePlanActivityStatusEnum.UNKNOWN).toEqual('unknown');
+  });
+});
+
+describe('CarePlanIntentEnum', () => {
+  it('should have the correct values', () => {
+    expect(CarePlanIntentEnum.PROPOSAL).toEqual('proposal');
+    expect(CarePlanIntentEnum.PLAN).toEqual('plan');
+    expect(CarePlanIntentEnum.ORDER).toEqual('order');
+    expect(CarePlanIntentEnum.OPTION).toEqual('option');
+  });
+});
+
+describe('CareTeamStatusEnum', () => {
+  it('should have the correct values', () => {
+    expect(CareTeamStatusEnum.PROPOSED).toEqual('proposed');
+    expect(CareTeamStatusEnum.ACTIVE).toEqual('active');
+    expect(CareTeamStatusEnum.SUSPENDED).toEqual('suspended');
+    expect(CareTeamStatusEnum.INACTIVE).toEqual('inactive');
+    expect(CareTeamStatusEnum.ENTERED_IN_ERROR).toEqual('entered-in-error');
+  });
+});
+
+describe('CompositionAttestationModeEnum', () => {
+  it('should have the correct values', () => {
+    expect(CompositionAttestationModeEnum.PERSONAL).toEqual('personal');
+    expect(CompositionAttestationModeEnum.PROFESSIONAL).toEqual('professional');
+    expect(CompositionAttestationModeEnum.LEGAL).toEqual('legal');
+    expect(CompositionAttestationModeEnum.OFFICIAL).toEqual('official');
+  });
+});
+
+describe('CompositionStatusEnum', () => {
+  it('should have the correct values', () => {
+    expect(CompositionStatusEnum.PRELIMINARY).toEqual('preliminary');
+    expect(CompositionStatusEnum.FINAL).toEqual('final');
+    expect(CompositionStatusEnum.AMENDED).toEqual('amended');
+    expect(CompositionStatusEnum.ENTERED_IN_ERROR).toEqual('entered-in-error');
+  });
+});
+
+describe('ConfidentialityClassificationEnum', () => {
+  it('should have the correct values', () => {
+    expect(ConfidentialityClassificationEnum.UNRESTRICTED).toEqual('U');
+    expect(ConfidentialityClassificationEnum.LOW).toEqual('L');
+    expect(ConfidentialityClassificationEnum.MODERATE).toEqual('M');
+    expect(ConfidentialityClassificationEnum.NORMAL).toEqual('N');
+    expect(ConfidentialityClassificationEnum.RESTRICTED).toEqual('R');
+    expect(ConfidentialityClassificationEnum.VERY_RESTRICTED).toEqual('V');
+  });
+});
+
+describe('ContactPointSystemEnum', () => {
+  it('should have the correct values', () => {
+    expect(ContactPointSystemEnum.PHONE).toEqual('phone');
+    expect(ContactPointSystemEnum.FAX).toEqual('fax');
+    expect(ContactPointSystemEnum.EMAIL).toEqual('email');
+    expect(ContactPointSystemEnum.PAGER).toEqual('pager');
+    expect(ContactPointSystemEnum.URL).toEqual('url');
+    expect(ContactPointSystemEnum.SMS).toEqual('sms');
+    expect(ContactPointSystemEnum.OTHER).toEqual('other');
+  });
+});
+
+describe('ContactPointUseEnum', () => {
+  it('should have the correct values', () => {
+    expect(ContactPointUseEnum.HOME).toEqual('home');
+    expect(ContactPointUseEnum.WORK).toEqual('work');
+    expect(ContactPointUseEnum.TEMP).toEqual('temp');
+    expect(ContactPointUseEnum.OLD).toEqual('old');
+    expect(ContactPointUseEnum.MOBILE).toEqual('mobile');
   });
 });
 
@@ -250,6 +544,517 @@ describe('CurrencyCodeEnum', () => {
   });
 });
 
+describe('DataTypeEnum', () => {
+  it('should have the correct values', () => {
+    expect(DataTypeEnum.ADDRESS).toEqual('Address');
+    expect(DataTypeEnum.AGE).toEqual('Age');
+    expect(DataTypeEnum.ANNOTATION).toEqual('Annotation');
+    expect(DataTypeEnum.ATTACHMENT).toEqual('Attachment');
+    expect(DataTypeEnum.BACKBONE_ELEMENT).toEqual('BackboneElement');
+    expect(DataTypeEnum.CODEABLE_CONCEPT).toEqual('CodeableConcept');
+    expect(DataTypeEnum.CODING).toEqual('Coding');
+    expect(DataTypeEnum.CONTACT_DETAIL).toEqual('ContactDetail');
+    expect(DataTypeEnum.CONTACT_POINT).toEqual('ContactPoint');
+    expect(DataTypeEnum.CONTRIBUTOR).toEqual('Contributor');
+    expect(DataTypeEnum.COUNT).toEqual('Count');
+    expect(DataTypeEnum.DATA_REQUIREMENT).toEqual('DataRequirement');
+    expect(DataTypeEnum.DISTANCE).toEqual('Distance');
+    expect(DataTypeEnum.DOSAGE).toEqual('Dosage');
+    expect(DataTypeEnum.DURATION).toEqual('Duration');
+    expect(DataTypeEnum.ELEMENT).toEqual('Element');
+    expect(DataTypeEnum.ELEMENT_DEFINITION).toEqual('ElementDefinition');
+    expect(DataTypeEnum.EXPRESSION).toEqual('Expression');
+    expect(DataTypeEnum.EXTENSION).toEqual('Extension');
+    expect(DataTypeEnum.HUMAN_NAME).toEqual('HumanName');
+    expect(DataTypeEnum.IDENTIFIER).toEqual('Identifier');
+    expect(DataTypeEnum.MARKETING_STATUS).toEqual('MarketingStatus');
+    expect(DataTypeEnum.META).toEqual('Meta');
+    expect(DataTypeEnum.MONEY).toEqual('Money');
+    expect(DataTypeEnum.MONEY_QUANTITY).toEqual('MoneyQuantity');
+    expect(DataTypeEnum.NARRATIVE).toEqual('Narrative');
+    expect(DataTypeEnum.PARAMETER_DEFINITION).toEqual('ParameterDefinition');
+    expect(DataTypeEnum.PERIOD).toEqual('Period');
+    expect(DataTypeEnum.POPULATION).toEqual('Population');
+    expect(DataTypeEnum.PROD_CHARACTERISTIC).toEqual('ProdCharacteristic');
+    expect(DataTypeEnum.PRODUCT_SHELF_LIFE).toEqual('ProductShelfLife');
+    expect(DataTypeEnum.QUANTITY).toEqual('Quantity');
+    expect(DataTypeEnum.RANGE).toEqual('Range');
+    expect(DataTypeEnum.RATIO).toEqual('Ratio');
+    expect(DataTypeEnum.REFERENCE).toEqual('Reference');
+    expect(DataTypeEnum.RELATED_ARTIFACT).toEqual('RelatedArtifact');
+    expect(DataTypeEnum.SAMPLE_DATA).toEqual('SampledData');
+    expect(DataTypeEnum.SIGNATURE).toEqual('Signature');
+    expect(DataTypeEnum.SIMPLE_QUANTITY).toEqual('SimpleQuantity');
+    expect(DataTypeEnum.SUBSTANCE_AMOUNT).toEqual('SubstanceAmount');
+    expect(DataTypeEnum.TIMING).toEqual('Timing');
+    expect(DataTypeEnum.TRIGGER_DEFINITION).toEqual('TriggerDefinition');
+    expect(DataTypeEnum.USAGE_CONTEXT).toEqual('UsageContext');
+    expect(DataTypeEnum.BASE64_BINARY).toEqual('base64Binary');
+    expect(DataTypeEnum.BOOLEAN).toEqual('boolean');
+    expect(DataTypeEnum.CANONICAL).toEqual('canonical');
+    expect(DataTypeEnum.CODE).toEqual('code');
+    expect(DataTypeEnum.DATE).toEqual('date');
+    expect(DataTypeEnum.DATE_TIME).toEqual('dateTime');
+    expect(DataTypeEnum.DECIMAL).toEqual('decimal');
+    expect(DataTypeEnum.ID).toEqual('id');
+    expect(DataTypeEnum.INSTANT).toEqual('instant');
+    expect(DataTypeEnum.INTEGER).toEqual('integer');
+    expect(DataTypeEnum.MARKDOWN).toEqual('markdown');
+    expect(DataTypeEnum.OID).toEqual('oid');
+    expect(DataTypeEnum.POSITIVE_INT).toEqual('positiveInt');
+    expect(DataTypeEnum.STRING).toEqual('string');
+    expect(DataTypeEnum.TIME).toEqual('time');
+    expect(DataTypeEnum.UNSIGNED_INT).toEqual('unsignedInt');
+    expect(DataTypeEnum.URI).toEqual('uri');
+    expect(DataTypeEnum.URL).toEqual('url');
+    expect(DataTypeEnum.UUID).toEqual('uuid');
+    expect(DataTypeEnum.XHTML).toEqual('xhtml');
+  });
+});
+
+describe('DaysOfWeekEnum', () => {
+  it('should have the correct values', () => {
+    expect(DaysOfWeekEnum.MONDAY).toEqual('mon');
+    expect(DaysOfWeekEnum.TUESDAY).toEqual('tue');
+    expect(DaysOfWeekEnum.WEDNESDAY).toEqual('wed');
+    expect(DaysOfWeekEnum.THURSDAY).toEqual('thu');
+    expect(DaysOfWeekEnum.FRIDAY).toEqual('fri');
+    expect(DaysOfWeekEnum.SATURDAY).toEqual('sat');
+    expect(DaysOfWeekEnum.SUNDAY).toEqual('sun');
+  });
+});
+
+describe('DeviceMetricCalibrationStateEnum', () => {
+  it('should have the correct values', () => {
+    expect(DeviceMetricCalibrationStateEnum.NOT_CALIBRATED).toEqual('not-calibrated');
+    expect(DeviceMetricCalibrationStateEnum.CALIBRATION_REQUIRED).toEqual('calibration-required');
+    expect(DeviceMetricCalibrationStateEnum.CALIBRATED).toEqual('calibrated');
+    expect(DeviceMetricCalibrationStateEnum.UNSPECIFIED).toEqual('unspecified');
+  });
+});
+
+describe('DeviceMetricCalibrationTypeEnum', () => {
+  it('should have the correct values', () => {
+    expect(DeviceMetricCalibrationTypeEnum.UNSPECIFIED).toEqual('unspecified');
+    expect(DeviceMetricCalibrationTypeEnum.OFFSET).toEqual('offset');
+    expect(DeviceMetricCalibrationTypeEnum.GAIN).toEqual('gain');
+    expect(DeviceMetricCalibrationTypeEnum.TWO_POINT).toEqual('two-point');
+  });
+});
+
+describe('DeviceMetricCategoryEnum', () => {
+  it('should have the correct values', () => {
+    expect(DeviceMetricCategoryEnum.MEASUREMENT).toEqual('measurement');
+    expect(DeviceMetricCategoryEnum.SETTING).toEqual('setting');
+    expect(DeviceMetricCategoryEnum.CALCULATION).toEqual('calculation');
+    expect(DeviceMetricCategoryEnum.UNSPECIFIED).toEqual('unspecified');
+  });
+});
+
+describe('DeviceMetricColorEnum', () => {
+  it('should have the correct values', () => {
+    expect(DeviceMetricColorEnum.BLACK).toEqual('black');
+    expect(DeviceMetricColorEnum.RED).toEqual('red');
+    expect(DeviceMetricColorEnum.GREEN).toEqual('green');
+    expect(DeviceMetricColorEnum.YELLOW).toEqual('yellow');
+    expect(DeviceMetricColorEnum.BLUE).toEqual('blue');
+    expect(DeviceMetricColorEnum.MAGENTA).toEqual('magenta');
+    expect(DeviceMetricColorEnum.CYAN).toEqual('cyan');
+    expect(DeviceMetricColorEnum.WHITE).toEqual('white');
+  });
+});
+
+describe('DeviceMetricOperationalStatusEnum', () => {
+  it('should have the correct values', () => {
+    expect(DeviceMetricOperationalStatusEnum.ON).toEqual('on');
+    expect(DeviceMetricOperationalStatusEnum.OFF).toEqual('off');
+    expect(DeviceMetricOperationalStatusEnum.STANDBY).toEqual('standby');
+    expect(DeviceMetricOperationalStatusEnum.ENTERED_IN_ERROR).toEqual('entered-in-error');
+  });
+});
+
+describe('DeviceNameTypeEnum', () => {
+  it('should have the correct values', () => {
+    expect(DeviceNameTypeEnum.UDI_LABEL_NAME).toEqual('udi-label-name');
+    expect(DeviceNameTypeEnum.USER_FRIENDLY_NAME).toEqual('user-friendly-name');
+    expect(DeviceNameTypeEnum.PATIENT_REPORTED_NAME).toEqual('patient-reported-name');
+    expect(DeviceNameTypeEnum.MANUFACTURER_NAME).toEqual('manufacturer-name');
+    expect(DeviceNameTypeEnum.MODEL_NAME).toEqual('model-name');
+    expect(DeviceNameTypeEnum.OTHER).toEqual('other');
+  });
+});
+
+describe('DiagnosticReportStatusEnum', () => {
+  it('should have the correct values', () => {
+    expect(DiagnosticReportStatusEnum.REGISTERED).toEqual('registered');
+    expect(DiagnosticReportStatusEnum.PARTIAL).toEqual('partial');
+    expect(DiagnosticReportStatusEnum.PRELIMINARY).toEqual('preliminary');
+    expect(DiagnosticReportStatusEnum.FINAL).toEqual('final');
+    expect(DiagnosticReportStatusEnum.AMENDED).toEqual('amended');
+    expect(DiagnosticReportStatusEnum.CORRECTED).toEqual('corrected');
+    expect(DiagnosticReportStatusEnum.APPENDED).toEqual('appended');
+    expect(DiagnosticReportStatusEnum.CANCELLED).toEqual('cancelled');
+    expect(DiagnosticReportStatusEnum.ENTERED_IN_ERROR).toEqual('entered-in-error');
+    expect(DiagnosticReportStatusEnum.UNKNOWN).toEqual('unknown');
+  });
+});
+
+describe('DocumentRelationshipTypeEnum', () => {
+  it('should have the correct values', () => {
+    expect(DocumentRelationshipTypeEnum.REPLACES).toEqual('replaces');
+    expect(DocumentRelationshipTypeEnum.TRANSFORMS).toEqual('transforms');
+    expect(DocumentRelationshipTypeEnum.SIGNS).toEqual('signs');
+    expect(DocumentRelationshipTypeEnum.APPENDS).toEqual('appends');
+  });
+});
+
+describe('EncounterLocationStatusEnum', () => {
+  it('should have the correct values', () => {
+    expect(EncounterLocationStatusEnum.PLANNED).toEqual('planned');
+    expect(EncounterLocationStatusEnum.ACTIVE).toEqual('active');
+    expect(EncounterLocationStatusEnum.RESERVED).toEqual('reserved');
+    expect(EncounterLocationStatusEnum.COMPLETED).toEqual('completed');
+  });
+});
+
+describe('EncounterStatusEnum', () => {
+  it('should have the correct values', () => {
+    expect(EncounterStatusEnum.PLANNED).toEqual('planned');
+    expect(EncounterStatusEnum.ARRIVED).toEqual('arrived');
+    expect(EncounterStatusEnum.TRIAGED).toEqual('triaged');
+    expect(EncounterStatusEnum.IN_PROGRESS).toEqual('in-progress');
+    expect(EncounterStatusEnum.ON_LEAVE).toEqual('onleave');
+    expect(EncounterStatusEnum.FINISHED).toEqual('finished');
+    expect(EncounterStatusEnum.CANCELLED).toEqual('cancelled');
+    expect(EncounterStatusEnum.ENTERED_IN_ERROR).toEqual('entered-in-error');
+    expect(EncounterStatusEnum.UNKNOWN).toEqual('unknown');
+  });
+});
+
+describe('EpisodeOfCareStatusEnum', () => {
+  it('should have the correct values', () => {
+    expect(EpisodeOfCareStatusEnum.PLANNED).toEqual('planned');
+    expect(EpisodeOfCareStatusEnum.ACTIVE).toEqual('active');
+    expect(EpisodeOfCareStatusEnum.ONHOLD).toEqual('onhold');
+    expect(EpisodeOfCareStatusEnum.FINISHED).toEqual('finished');
+    expect(EpisodeOfCareStatusEnum.CANCELLED).toEqual('cancelled');
+    expect(EpisodeOfCareStatusEnum.ENTERED_IN_ERROR).toEqual('entered-in-error');
+  });
+});
+
+describe('EventStatusEnum', () => {
+  it('should have the correct values', () => {
+    expect(EventStatusEnum.PREPARATION).toEqual('preparation');
+    expect(EventStatusEnum.IN_PROGRESS).toEqual('in-progress');
+    expect(EventStatusEnum.NOT_DONE).toEqual('not-done');
+    expect(EventStatusEnum.ON_HOLD).toEqual('on-hold');
+    expect(EventStatusEnum.STOPPED).toEqual('stopped');
+    expect(EventStatusEnum.COMPLETED).toEqual('completed');
+    expect(EventStatusEnum.ENTERED_IN_ERROR).toEqual('entered-in-error');
+    expect(EventStatusEnum.UNKNOWN).toEqual('unknown');
+  });
+});
+
+describe('EventTimingEnum', () => {
+  it('should have the correct values', () => {
+    expect(EventTimingEnum.MORNING).toEqual('MORN');
+    expect(EventTimingEnum.EARLY_MORNING).toEqual('MORN.early');
+    expect(EventTimingEnum.LATE_MORNING).toEqual('MORN.late');
+    expect(EventTimingEnum.NOON).toEqual('NOON');
+    expect(EventTimingEnum.AFTERNOON).toEqual('AFT');
+    expect(EventTimingEnum.EARLY_AFTERNOON).toEqual('AFT.early');
+    expect(EventTimingEnum.LATE_AFTERNOON).toEqual('AFT.late');
+    expect(EventTimingEnum.EVENING).toEqual('EVE');
+    expect(EventTimingEnum.EARLY_EVENING).toEqual('EVE.early');
+    expect(EventTimingEnum.LATE_EVENING).toEqual('EVE.late');
+    expect(EventTimingEnum.NIGHT).toEqual('NIGHT');
+    expect(EventTimingEnum.AFTER_SLEEP).toEqual('PHS');
+    expect(EventTimingEnum.HS).toEqual('HS');
+    expect(EventTimingEnum.WAKE).toEqual('WAKE');
+    expect(EventTimingEnum.C).toEqual('C');
+    expect(EventTimingEnum.CM).toEqual('CM');
+    expect(EventTimingEnum.CD).toEqual('CD');
+    expect(EventTimingEnum.CV).toEqual('CV');
+    expect(EventTimingEnum.AC).toEqual('AC');
+    expect(EventTimingEnum.ACM).toEqual('ACM');
+    expect(EventTimingEnum.ACD).toEqual('ACD');
+    expect(EventTimingEnum.ACV).toEqual('ACV');
+    expect(EventTimingEnum.PC).toEqual('PC');
+    expect(EventTimingEnum.PCM).toEqual('PCM');
+    expect(EventTimingEnum.PCD).toEqual('PCD');
+    expect(EventTimingEnum.PCV).toEqual('PCV');
+  });
+});
+
+describe('FamilyHistoryStatusEnum', () => {
+  it('should have the correct values', () => {
+    expect(FamilyHistoryStatusEnum.PARTIAL).toEqual('partial');
+    expect(FamilyHistoryStatusEnum.COMPLETED).toEqual('completed');
+    expect(FamilyHistoryStatusEnum.ENTERED_IN_ERROR).toEqual('entered-in-error');
+    expect(FamilyHistoryStatusEnum.HEALTH_UNKNOWN).toEqual('health-unknown');
+  });
+});
+
+describe('FHIRDeviceStatusEnum', () => {
+  it('should have the correct values', () => {
+    expect(FHIRDeviceStatusEnum.ACTIVE).toEqual('active');
+    expect(FHIRDeviceStatusEnum.INACTIVE).toEqual('inactive');
+    expect(FHIRDeviceStatusEnum.ENTERED_IN_ERROR).toEqual('entered-in-error');
+    expect(FHIRDeviceStatusEnum.UNKNOWN).toEqual('unknown');
+  });
+});
+
+describe('FHIRSubstanceStatusEnum', () => {
+  it('should have the correct values', () => {
+    expect(FHIRSubstanceStatusEnum.ACTIVE).toEqual('active');
+    expect(FHIRSubstanceStatusEnum.INACTIVE).toEqual('inactive');
+    expect(FHIRSubstanceStatusEnum.ENTERED_IN_ERROR).toEqual('entered-in-error');
+  });
+});
+
+describe('FinancialResourceStatusCodesEnum', () => {
+  it('should have the correct values', () => {
+    expect(FinancialResourceStatusCodesEnum.ACTIVE).toEqual('active');
+    expect(FinancialResourceStatusCodesEnum.CANCELLED).toEqual('cancelled');
+    expect(FinancialResourceStatusCodesEnum.DRAFT).toEqual('draft');
+    expect(FinancialResourceStatusCodesEnum.ENTERED_IN_ERROR).toEqual('entered-in-error');
+  });
+});
+
+describe('FlagStatusEnum', () => {
+  it('should have the correct values', () => {
+    expect(FlagStatusEnum.ACTIVE).toEqual('active');
+    expect(FlagStatusEnum.INACTIVE).toEqual('inactive');
+    expect(FlagStatusEnum.ENTERED_IN_ERROR).toEqual('entered-in-error');
+  });
+});
+
+describe('GoalLifecycleStatusEnum', () => {
+  it('should have the correct values', () => {
+    expect(GoalLifecycleStatusEnum.PROPOSED).toEqual('proposed');
+    expect(GoalLifecycleStatusEnum.PLANNED).toEqual('planned');
+    expect(GoalLifecycleStatusEnum.ACCEPTED).toEqual('accepted');
+    expect(GoalLifecycleStatusEnum.ACTIVE).toEqual('active');
+    expect(GoalLifecycleStatusEnum.ON_HOLD).toEqual('on-hold');
+    expect(GoalLifecycleStatusEnum.COMPLETED).toEqual('completed');
+    expect(GoalLifecycleStatusEnum.CANCELLED).toEqual('cancelled');
+    expect(GoalLifecycleStatusEnum.ENTERED_IN_ERROR).toEqual('entered-in-error');
+    expect(GoalLifecycleStatusEnum.REJECTED).toEqual('rejected');
+  });
+});
+
+describe('GroupTypeEnum', () => {
+  it('should have the correct values', () => {
+    expect(GroupTypeEnum.PERSON).toEqual('person');
+    expect(GroupTypeEnum.ANIMAL).toEqual('animal');
+    expect(GroupTypeEnum.PRACTITIONER).toEqual('practitioner');
+    expect(GroupTypeEnum.DEVICE).toEqual('device');
+    expect(GroupTypeEnum.MEDICATION).toEqual('medication');
+    expect(GroupTypeEnum.SUBSTANCE).toEqual('substance');
+  });
+});
+
+describe('HTTPVerbEnum', () => {
+  it('should have the correct values', () => {
+    expect(HTTPVerbEnum.GET).toEqual('GET');
+    expect(HTTPVerbEnum.HEAD).toEqual('HEAD');
+    expect(HTTPVerbEnum.POST).toEqual('POST');
+    expect(HTTPVerbEnum.PUT).toEqual('PUT');
+    expect(HTTPVerbEnum.DELETE).toEqual('DELETE');
+    expect(HTTPVerbEnum.PATCH).toEqual('PATCH');
+  });
+});
+
+describe('IdentifierUseEnum', () => {
+  it('should have the correct values', () => {
+    expect(IdentifierUseEnum.USUAL).toEqual('usual');
+    expect(IdentifierUseEnum.OFFICIAL).toEqual('official');
+    expect(IdentifierUseEnum.TEMP).toEqual('temp');
+    expect(IdentifierUseEnum.SECONDARY).toEqual('secondary');
+    expect(IdentifierUseEnum.OLD).toEqual('old');
+  });
+});
+
+describe('IdentityAssuranceLevelEnum', () => {
+  it('should have the correct values', () => {
+    expect(IdentityAssuranceLevelEnum.LEVEL1).toEqual('level1');
+    expect(IdentityAssuranceLevelEnum.LEVEL2).toEqual('level2');
+    expect(IdentityAssuranceLevelEnum.LEVEL3).toEqual('level3');
+    expect(IdentityAssuranceLevelEnum.LEVEL4).toEqual('level4');
+  });
+});
+
+describe('IssueSeverityEnum', () => {
+  it('should have the correct values', () => {
+    expect(IssueSeverityEnum.FATAL).toEqual('fatal');
+    expect(IssueSeverityEnum.ERROR).toEqual('error');
+    expect(IssueSeverityEnum.WARNING).toEqual('warning');
+    expect(IssueSeverityEnum.INFORMATION).toEqual('information');
+  });
+});
+
+describe('IssueTypeEnum', () => {
+  it('should have the correct values', () => {
+    expect(IssueTypeEnum.INVALID).toEqual('invalid');
+    expect(IssueTypeEnum.STRUCTURE).toEqual('structure');
+    expect(IssueTypeEnum.REQUIRED).toEqual('required');
+    expect(IssueTypeEnum.VALUE).toEqual('value');
+    expect(IssueTypeEnum.INVARIANT).toEqual('invariant');
+    expect(IssueTypeEnum.SECURITY).toEqual('security');
+    expect(IssueTypeEnum.LOGIN).toEqual('login');
+    expect(IssueTypeEnum.UNKNOWN).toEqual('unknown');
+    expect(IssueTypeEnum.EXPIRED).toEqual('expired');
+    expect(IssueTypeEnum.FORBIDDEN).toEqual('forbidden');
+    expect(IssueTypeEnum.SUPPRESSED).toEqual('suppressed');
+    expect(IssueTypeEnum.PROCESSING).toEqual('processing');
+    expect(IssueTypeEnum.NOT_SUPPORTED).toEqual('not-supported');
+    expect(IssueTypeEnum.DUPLICATE).toEqual('duplicate');
+    expect(IssueTypeEnum.MULTIPLE_MATCHES).toEqual('multiple-matches');
+    expect(IssueTypeEnum.NOT_FOUND).toEqual('not-found');
+    expect(IssueTypeEnum.DELETED).toEqual('deleted');
+    expect(IssueTypeEnum.TOO_LONG).toEqual('too-long');
+    expect(IssueTypeEnum.CODE_INVALID).toEqual('code-invalid');
+    expect(IssueTypeEnum.EXTENSION).toEqual('extension');
+    expect(IssueTypeEnum.TOO_COSTLY).toEqual('too-costly');
+    expect(IssueTypeEnum.BUSINESS_RULE).toEqual('business-rule');
+    expect(IssueTypeEnum.CONFLICT).toEqual('conflict');
+    expect(IssueTypeEnum.TRANSIENT).toEqual('transient');
+    expect(IssueTypeEnum.LOCK_ERROR).toEqual('lock-error');
+    expect(IssueTypeEnum.NO_STORE).toEqual('no-store');
+    expect(IssueTypeEnum.EXCEPTION).toEqual('exception');
+    expect(IssueTypeEnum.TIMEOUT).toEqual('timeout');
+    expect(IssueTypeEnum.INCOMPLETE).toEqual('incomplete');
+    expect(IssueTypeEnum.THROTTLED).toEqual('throttled');
+    expect(IssueTypeEnum.INFORMATIONAL).toEqual('informational');
+  });
+});
+
+describe('LinkTypeEnum', () => {
+  it('should have the correct values', () => {
+    expect(LinkTypeEnum.REPLACES).toEqual('replaces');
+    expect(LinkTypeEnum.REPLACED_BY).toEqual('replaced-by');
+    expect(LinkTypeEnum.REFER).toEqual('refer');
+    expect(LinkTypeEnum.SEE_ALSO).toEqual('seealso');
+  });
+});
+
+describe('ListModeEnum', () => {
+  it('should have the correct values', () => {
+    expect(ListModeEnum.WORKING).toEqual('working');
+    expect(ListModeEnum.SNAPSHOT).toEqual('snapshot');
+    expect(ListModeEnum.CHANGES).toEqual('changes');
+  });
+});
+
+describe('LocationModeEnum', () => {
+  it('should have the correct values', () => {
+    expect(LocationModeEnum.INSTANCE).toEqual('instance');
+    expect(LocationModeEnum.KIND).toEqual('kind');
+  });
+});
+
+describe('LocationStatusEnum', () => {
+  it('should have the correct values', () => {
+    expect(LocationStatusEnum.ACTIVE).toEqual('active');
+    expect(LocationStatusEnum.SUSPENDED).toEqual('suspended');
+    expect(LocationStatusEnum.INACTIVE).toEqual('inactive');
+  });
+});
+
+describe('NameUseEnum', () => {
+  it('should have the correct values', () => {
+    expect(NameUseEnum.USUAL).toEqual('usual');
+    expect(NameUseEnum.OFFICIAL).toEqual('official');
+    expect(NameUseEnum.TEMP).toEqual('temp');
+    expect(NameUseEnum.NICKNAME).toEqual('nickname');
+    expect(NameUseEnum.ANONYMOUS).toEqual('anonymous');
+    expect(NameUseEnum.OLD).toEqual('old');
+    expect(NameUseEnum.MAIDEN).toEqual('maiden');
+  });
+});
+
+describe('NarrativeStatusEnum', () => {
+  it('should have the correct values', () => {
+    expect(NarrativeStatusEnum.GENERATED).toEqual('generated');
+    expect(NarrativeStatusEnum.EXTENSIONS).toEqual('extensions');
+    expect(NarrativeStatusEnum.ADDITIONAL).toEqual('additional');
+    expect(NarrativeStatusEnum.EMPTY).toEqual('empty');
+  });
+});
+
+describe('ObservationStatusEnum', () => {
+  it('should have the correct values', () => {
+    expect(ObservationStatusEnum.REGISTERED).toEqual('registered');
+    expect(ObservationStatusEnum.PRELIMINARY).toEqual('preliminary');
+    expect(ObservationStatusEnum.FINAL).toEqual('final');
+    expect(ObservationStatusEnum.AMENDED).toEqual('amended');
+    expect(ObservationStatusEnum.CORRECTED).toEqual('corrected');
+    expect(ObservationStatusEnum.CANCELLED).toEqual('cancelled');
+    expect(ObservationStatusEnum.ENTERED_IN_ERROR).toEqual('entered-in-error');
+    expect(ObservationStatusEnum.UNKNOWN).toEqual('unknown');
+  });
+});
+
+describe('ParticipantRequiredEnum', () => {
+  it('should have the correct values', () => {
+    expect(ParticipantRequiredEnum.REQUIRED).toEqual('required');
+    expect(ParticipantRequiredEnum.OPTIONAL).toEqual('optional');
+    expect(ParticipantRequiredEnum.INFORMATION_ONLY).toEqual('information-only');
+  });
+});
+
+describe('ParticipationStatusEnum', () => {
+  it('should have the correct values', () => {
+    expect(ParticipationStatusEnum.ACCEPTED).toEqual('accepted');
+    expect(ParticipationStatusEnum.DECLINED).toEqual('declined');
+    expect(ParticipationStatusEnum.TENTATIVE).toEqual('tentative');
+    expect(ParticipationStatusEnum.NEEDS_ACTION).toEqual('needs-action');
+  });
+});
+
+describe('QuantityComparatorEnum', () => {
+  it('should have the correct values', () => {
+    expect(QuantityComparatorEnum.LESS_THAN).toEqual('<');
+    expect(QuantityComparatorEnum.LESS_OR_EQUAL_TO).toEqual('<=');
+    expect(QuantityComparatorEnum.GREATER_OR_EQUAL_TO).toEqual('>=');
+    expect(QuantityComparatorEnum.GREATER_THAN).toEqual('>');
+  });
+});
+
+describe('RequestIntentEnum', () => {
+  it('should have the correct values', () => {
+    expect(RequestIntentEnum.PROPOSAL).toEqual('proposal');
+    expect(RequestIntentEnum.PLAN).toEqual('plan');
+    expect(RequestIntentEnum.ORDER).toEqual('order');
+    expect(RequestIntentEnum.ORIGINAL_ORDER).toEqual('original-order');
+    expect(RequestIntentEnum.REFLEX_ORDER).toEqual('reflex-order');
+    expect(RequestIntentEnum.FILLER_ORDER).toEqual('filler-order');
+    expect(RequestIntentEnum.INSTANCE_ORDER).toEqual('instance-order');
+    expect(RequestIntentEnum.OPTION).toEqual('option');
+  });
+});
+
+describe('RequestPriorityEnum', () => {
+  it('should have the correct values', () => {
+    expect(RequestPriorityEnum.ROUTINE).toEqual('routine');
+    expect(RequestPriorityEnum.URGENT).toEqual('urgent');
+    expect(RequestPriorityEnum.ASAP).toEqual('asap');
+    expect(RequestPriorityEnum.STAT).toEqual('stat');
+  });
+});
+
+describe('RequestStatusEnum', () => {
+  it('should have the correct values', () => {
+    expect(RequestStatusEnum.DRAFT).toEqual('draft');
+    expect(RequestStatusEnum.ACTIVE).toEqual('active');
+    expect(RequestStatusEnum.ON_HOLD).toEqual('on-hold');
+    expect(RequestStatusEnum.REVOKED).toEqual('revoked');
+    expect(RequestStatusEnum.COMPLETED).toEqual('completed');
+    expect(RequestStatusEnum.ENTERED_IN_ERROR).toEqual('entered-in-error');
+    expect(RequestStatusEnum.UNKNOWN).toEqual('unknown');
+  });
+});
+
 describe('ResourceEnum Enum', () => {
   it('should have the correct values', () => {
     expect(ResourceEnum.ACCOUNT).toEqual('Account');
@@ -402,70 +1207,35 @@ describe('ResourceEnum Enum', () => {
   });
 });
 
-describe('DatatypeEnum', () => {
+describe('SearchEntryModeEnum', () => {
   it('should have the correct values', () => {
-    expect(DatatypeEnum.ADDRESS).toEqual('Address');
-    expect(DatatypeEnum.AGE).toEqual('Age');
-    expect(DatatypeEnum.ANNOTATION).toEqual('Annotation');
-    expect(DatatypeEnum.ATTACHMENT).toEqual('Attachment');
-    expect(DatatypeEnum.BACKBONE_ELEMENT).toEqual('BackboneElement');
-    expect(DatatypeEnum.CODEABLE_CONCEPT).toEqual('CodeableConcept');
-    expect(DatatypeEnum.CODING).toEqual('Coding');
-    expect(DatatypeEnum.CONTACT_DETAIL).toEqual('ContactDetail');
-    expect(DatatypeEnum.CONTACT_POINT).toEqual('ContactPoint');
-    expect(DatatypeEnum.CONTRIBUTOR).toEqual('Contributor');
-    expect(DatatypeEnum.COUNT).toEqual('Count');
-    expect(DatatypeEnum.DATA_REQUIREMENT).toEqual('DataRequirement');
-    expect(DatatypeEnum.DISTANCE).toEqual('Distance');
-    expect(DatatypeEnum.DOSAGE).toEqual('Dosage');
-    expect(DatatypeEnum.DURATION).toEqual('Duration');
-    expect(DatatypeEnum.ELEMENT).toEqual('Element');
-    expect(DatatypeEnum.ELEMENT_DEFINITION).toEqual('ElementDefinition');
-    expect(DatatypeEnum.EXPRESSION).toEqual('Expression');
-    expect(DatatypeEnum.EXTENSION).toEqual('Extension');
-    expect(DatatypeEnum.HUMAN_NAME).toEqual('HumanName');
-    expect(DatatypeEnum.IDENTIFIER).toEqual('Identifier');
-    expect(DatatypeEnum.MARKETING_STATUS).toEqual('MarketingStatus');
-    expect(DatatypeEnum.META).toEqual('Meta');
-    expect(DatatypeEnum.MONEY).toEqual('Money');
-    expect(DatatypeEnum.NARRATIVE).toEqual('Narrative');
-    expect(DatatypeEnum.PARAMETER_DEFINITION).toEqual('ParameterDefinition');
-    expect(DatatypeEnum.PERIOD).toEqual('Period');
-    expect(DatatypeEnum.POPULATION).toEqual('Population');
-    expect(DatatypeEnum.PROD_CHARACTERISTIC).toEqual('ProdCharacteristic');
-    expect(DatatypeEnum.PRODUCT_SHELF_LIFE).toEqual('ProductShelfLife');
-    expect(DatatypeEnum.QUANTITY).toEqual('Quantity');
-    expect(DatatypeEnum.RANGE).toEqual('Range');
-    expect(DatatypeEnum.RATIO).toEqual('Ratio');
-    expect(DatatypeEnum.REFERENCE).toEqual('Reference');
-    expect(DatatypeEnum.RELATED_ARTIFACT).toEqual('RelatedArtifact');
-    expect(DatatypeEnum.SAMPLE_DATA).toEqual('SampledData');
-    expect(DatatypeEnum.SIGNATURE).toEqual('Signature');
-    expect(DatatypeEnum.SIMPLE_QUANTITY).toEqual('SimpleQuantity');
-    expect(DatatypeEnum.SUBSTANCE_AMOUNT).toEqual('SubstanceAmount');
-    expect(DatatypeEnum.TIMING).toEqual('Timing');
-    expect(DatatypeEnum.TRIGGER_DEFINITION).toEqual('TriggerDefinition');
-    expect(DatatypeEnum.USAGE_CONTEXT).toEqual('UsageContext');
-    expect(DatatypeEnum.BASE64_BINARY).toEqual('base64Binary');
-    expect(DatatypeEnum.BOOLEAN).toEqual('boolean');
-    expect(DatatypeEnum.CANONICAL).toEqual('canonical');
-    expect(DatatypeEnum.CODE).toEqual('code');
-    expect(DatatypeEnum.DATE).toEqual('date');
-    expect(DatatypeEnum.DATE_TIME).toEqual('dateTime');
-    expect(DatatypeEnum.DECIMAL).toEqual('decimal');
-    expect(DatatypeEnum.ID).toEqual('id');
-    expect(DatatypeEnum.INSTANT).toEqual('instant');
-    expect(DatatypeEnum.INTEGER).toEqual('integer');
-    expect(DatatypeEnum.MARKDOWN).toEqual('markdown');
-    expect(DatatypeEnum.OID).toEqual('oid');
-    expect(DatatypeEnum.POSITIVE_INT).toEqual('positiveInt');
-    expect(DatatypeEnum.STRING).toEqual('string');
-    expect(DatatypeEnum.TIME).toEqual('time');
-    expect(DatatypeEnum.UNSIGNED_INT).toEqual('unsignedInt');
-    expect(DatatypeEnum.URI).toEqual('uri');
-    expect(DatatypeEnum.URL).toEqual('url');
-    expect(DatatypeEnum.UUID).toEqual('uuid');
-    expect(DatatypeEnum.XHTML).toEqual('xhtml');
+    expect(SearchEntryModeEnum.MATCH).toEqual('match');
+    expect(SearchEntryModeEnum.INCLUDE).toEqual('include');
+    expect(SearchEntryModeEnum.OUTCOME).toEqual('outcome');
+  });
+});
+
+describe('SlotStatusEnum', () => {
+  it('should have the correct values', () => {
+    expect(SlotStatusEnum.BUSY).toEqual('busy');
+    expect(SlotStatusEnum.FREE).toEqual('free');
+    expect(SlotStatusEnum.BUSY_UNAVAILABLE).toEqual('busy-unavailable');
+    expect(SlotStatusEnum.BUSY_TENTATIVE).toEqual('busy-tentative');
+    expect(SlotStatusEnum.ENTERED_IN_ERROR).toEqual('entered-in-error');
+  });
+});
+
+describe('TaskIntentEnum', () => {
+  it('should have the correct values', () => {
+    expect(TaskIntentEnum.UNKNOWN).toEqual('unknown');
+    expect(TaskIntentEnum.PROPOSAL).toEqual('proposal');
+    expect(TaskIntentEnum.PLAN).toEqual('plan');
+    expect(TaskIntentEnum.ORDER).toEqual('order');
+    expect(TaskIntentEnum.ORIGINAL_ORDER).toEqual('original-order');
+    expect(TaskIntentEnum.REFLEX_ORDER).toEqual('reflex-order');
+    expect(TaskIntentEnum.FILLER_ORDER).toEqual('filler-order');
+    expect(TaskIntentEnum.INSTANCE_ORDER).toEqual('instance-order');
+    expect(TaskIntentEnum.OPTION).toEqual('option');
   });
 });
 
@@ -486,289 +1256,6 @@ describe('TaskStatusEnum', () => {
   });
 });
 
-describe('TaskIntentEnum', () => {
-  it('should have the correct values', () => {
-    expect(TaskIntentEnum.UNKNOWN).toEqual('unknown');
-    expect(TaskIntentEnum.PROPOSAL).toEqual('proposal');
-    expect(TaskIntentEnum.PLAN).toEqual('plan');
-    expect(TaskIntentEnum.ORDER).toEqual('order');
-    expect(TaskIntentEnum.ORIGINAL_ORDER).toEqual('original-order');
-    expect(TaskIntentEnum.REFLEX_ORDER).toEqual('reflex-order');
-    expect(TaskIntentEnum.FILLER_ORDER).toEqual('filler-order');
-    expect(TaskIntentEnum.INSTANCE_ORDER).toEqual('instance-order');
-    expect(TaskIntentEnum.OPTION).toEqual('option');
-  });
-});
-
-describe('AppointmentStatusEnum', () => {
-  it('should have the correct values', () => {
-    expect(AppointmentStatusEnum.PROPOSED).toEqual('proposed');
-    expect(AppointmentStatusEnum.PENDING).toEqual('pending');
-    expect(AppointmentStatusEnum.BOOKED).toEqual('booked');
-    expect(AppointmentStatusEnum.ARRIVED).toEqual('arrived');
-    expect(AppointmentStatusEnum.FULFILLED).toEqual('fulfilled');
-    expect(AppointmentStatusEnum.CANCELLED).toEqual('cancelled');
-    expect(AppointmentStatusEnum.NOSHOW).toEqual('noshow');
-    expect(AppointmentStatusEnum.ENTERED_IN_ERROR).toEqual('entered-in-error');
-    expect(AppointmentStatusEnum.CHECKED_IN).toEqual('checked-in');
-    expect(AppointmentStatusEnum.WAITLIST).toEqual('waitlist');
-  });
-});
-
-describe('ParticipantRequiredEnum', () => {
-  it('should have the correct values', () => {
-    expect(ParticipantRequiredEnum.REQUIRED).toEqual('required');
-    expect(ParticipantRequiredEnum.OPTIONAL).toEqual('optional');
-    expect(ParticipantRequiredEnum.INFORMATION_ONLY).toEqual('information-only');
-  });
-});
-
-describe('ParticipantStatusEnum', () => {
-  it('should have the correct values', () => {
-    expect(ParticipantStatusEnum.ACCEPTED).toEqual('accepted');
-    expect(ParticipantStatusEnum.DECLINED).toEqual('declined');
-    expect(ParticipantStatusEnum.TENTATIVE).toEqual('tentative');
-    expect(ParticipantStatusEnum.NEEDS_ACTION).toEqual('needs-action');
-  });
-});
-
-describe('EventTimingEnum', () => {
-  it('should have the correct values', () => {
-    expect(EventTimingEnum.MORN).toEqual('MORN');
-    expect(EventTimingEnum.MORN_EARLY).toEqual('MORN.early');
-    expect(EventTimingEnum.MORN_LATE).toEqual('MORN.late');
-    expect(EventTimingEnum.NOON).toEqual('NOON');
-    expect(EventTimingEnum.AFT).toEqual('AFT');
-    expect(EventTimingEnum.AFT_EARLY).toEqual('AFT.early');
-    expect(EventTimingEnum.AFT_LATE).toEqual('AFT.late');
-    expect(EventTimingEnum.EVE).toEqual('EVE');
-    expect(EventTimingEnum.EVE_EARLY).toEqual('EVE.early');
-    expect(EventTimingEnum.EVE_LATE).toEqual('EVE.late');
-    expect(EventTimingEnum.NIGHT).toEqual('NIGHT');
-    expect(EventTimingEnum.PHS).toEqual('PHS');
-    expect(EventTimingEnum.HS).toEqual('HS');
-    expect(EventTimingEnum.WAKE).toEqual('WAKE');
-    expect(EventTimingEnum.C).toEqual('C');
-    expect(EventTimingEnum.CM).toEqual('CM');
-    expect(EventTimingEnum.CD).toEqual('CD');
-    expect(EventTimingEnum.CV).toEqual('CV');
-    expect(EventTimingEnum.AC).toEqual('AC');
-    expect(EventTimingEnum.ACM).toEqual('ACM');
-    expect(EventTimingEnum.ACD).toEqual('ACD');
-    expect(EventTimingEnum.ACV).toEqual('ACV');
-    expect(EventTimingEnum.PC).toEqual('PC');
-    expect(EventTimingEnum.PCM).toEqual('PCM');
-    expect(EventTimingEnum.PCD).toEqual('PCD');
-    expect(EventTimingEnum.PCV).toEqual('PCV');
-  });
-});
-
-describe('SlotStatusEnum', () => {
-  it('should have the correct values', () => {
-    expect(SlotStatusEnum.BUSY).toEqual('busy');
-    expect(SlotStatusEnum.FREE).toEqual('free');
-    expect(SlotStatusEnum.BUSY_UNAVAILABLE).toEqual('busy-unavailable');
-    expect(SlotStatusEnum.BUSY_TENTATIVE).toEqual('busy-tentative');
-    expect(SlotStatusEnum.ENTERED_IN_ERROR).toEqual('entered-in-error');
-  });
-});
-
-describe('AllergyIntoleranceTypeEnum', () => {
-  it('should have the correct values', () => {
-    expect(AllergyIntoleranceTypeEnum.ALLERGY).toEqual('allergy');
-    expect(AllergyIntoleranceTypeEnum.INTOLERANCE).toEqual('intolerance');
-  });
-});
-
-describe('AllergyIntoleranceCategoryEnum', () => {
-  it('should have the correct values', () => {
-    expect(AllergyIntoleranceCategoryEnum.FOOD).toEqual('food');
-    expect(AllergyIntoleranceCategoryEnum.MEDICATION).toEqual('medication');
-    expect(AllergyIntoleranceCategoryEnum.ENVIRONMENT).toEqual('environment');
-    expect(AllergyIntoleranceCategoryEnum.BIOLOGIC).toEqual('biologic');
-  });
-});
-
-describe('AllergyIntoleranceCriticalityEnum', () => {
-  it('should have the correct values', () => {
-    expect(AllergyIntoleranceCriticalityEnum.LOW).toEqual('low');
-    expect(AllergyIntoleranceCriticalityEnum.HIGH).toEqual('high');
-    expect(AllergyIntoleranceCriticalityEnum.UNABLE_TO_ASSESS).toEqual('unable-to-assess');
-  });
-});
-
-describe('AllergyIntoleranceSeverityEnum', () => {
-  it('should have the correct values', () => {
-    expect(AllergyIntoleranceSeverityEnum.MILD).toEqual('mild');
-    expect(AllergyIntoleranceSeverityEnum.MODERATE).toEqual('moderate');
-    expect(AllergyIntoleranceSeverityEnum.SEVERE).toEqual('severe');
-  });
-});
-
-describe('EventStatusEnum', () => {
-  it('should have the correct values', () => {
-    expect(EventStatusEnum.PREPARATION).toEqual('preparation');
-    expect(EventStatusEnum.IN_PROGRESS).toEqual('in-progress');
-    expect(EventStatusEnum.NOT_DONE).toEqual('not-done');
-    expect(EventStatusEnum.ON_HOLD).toEqual('on-hold');
-    expect(EventStatusEnum.STOPPED).toEqual('stopped');
-    expect(EventStatusEnum.COMPLETED).toEqual('completed');
-    expect(EventStatusEnum.ENTERED_IN_ERROR).toEqual('entered-in-error');
-    expect(EventStatusEnum.UNKNOWN).toEqual('unknown');
-  });
-});
-
-describe('FamilyHistoryStatusEnum', () => {
-  it('should have the correct values', () => {
-    expect(FamilyHistoryStatusEnum.PARTIAL).toEqual('partial');
-    expect(FamilyHistoryStatusEnum.COMPLETED).toEqual('completed');
-    expect(FamilyHistoryStatusEnum.ENTERED_IN_ERROR).toEqual('entered-in-error');
-    expect(FamilyHistoryStatusEnum.HEALTH_UNKNOWN).toEqual('health-unknown');
-  });
-});
-
-describe('GoalLifecycleStatusEnum', () => {
-  it('should have the correct values', () => {
-    expect(GoalLifecycleStatusEnum.PROPOSED).toEqual('proposed');
-    expect(GoalLifecycleStatusEnum.PLANNED).toEqual('planned');
-    expect(GoalLifecycleStatusEnum.ACCEPTED).toEqual('accepted');
-    expect(GoalLifecycleStatusEnum.ACTIVE).toEqual('active');
-    expect(GoalLifecycleStatusEnum.ON_HOLD).toEqual('on-hold');
-    expect(GoalLifecycleStatusEnum.COMPLETED).toEqual('completed');
-    expect(GoalLifecycleStatusEnum.CANCELLED).toEqual('cancelled');
-    expect(GoalLifecycleStatusEnum.ENTERED_IN_ERROR).toEqual('entered-in-error');
-    expect(GoalLifecycleStatusEnum.REJECTED).toEqual('rejected');
-  });
-});
-
-describe('CareTeamStatusEnum', () => {
-  it('should have the correct values', () => {
-    expect(CareTeamStatusEnum.PROPOSED).toEqual('proposed');
-    expect(CareTeamStatusEnum.ACTIVE).toEqual('active');
-    expect(CareTeamStatusEnum.SUSPENDED).toEqual('suspended');
-    expect(CareTeamStatusEnum.INACTIVE).toEqual('inactive');
-    expect(CareTeamStatusEnum.ENTERED_IN_ERROR).toEqual('entered-in-error');
-  });
-});
-
-describe('ObservationStatusEnum', () => {
-  it('should have the correct values', () => {
-    expect(ObservationStatusEnum.REGISTERED).toEqual('registered');
-    expect(ObservationStatusEnum.PRELIMINARY).toEqual('preliminary');
-    expect(ObservationStatusEnum.FINAL).toEqual('final');
-    expect(ObservationStatusEnum.AMENDED).toEqual('amended');
-    expect(ObservationStatusEnum.CORRECTED).toEqual('corrected');
-    expect(ObservationStatusEnum.CANCELLED).toEqual('cancelled');
-    expect(ObservationStatusEnum.ENTERED_IN_ERROR).toEqual('entered-in-error');
-    expect(ObservationStatusEnum.UNKNOWN).toEqual('unknown');
-  });
-});
-
-describe('DiagnosticReportStatusEnum', () => {
-  it('should have the correct values', () => {
-    expect(DiagnosticReportStatusEnum.REGISTERED).toEqual('registered');
-    expect(DiagnosticReportStatusEnum.PARTIAL).toEqual('partial');
-    expect(DiagnosticReportStatusEnum.PRELIMINARY).toEqual('preliminary');
-    expect(DiagnosticReportStatusEnum.FINAL).toEqual('final');
-    expect(DiagnosticReportStatusEnum.AMENDED).toEqual('amended');
-    expect(DiagnosticReportStatusEnum.CORRECTED).toEqual('corrected');
-    expect(DiagnosticReportStatusEnum.APPENDED).toEqual('appended');
-    expect(DiagnosticReportStatusEnum.CANCELLED).toEqual('cancelled');
-    expect(DiagnosticReportStatusEnum.ENTERED_IN_ERROR).toEqual('entered-in-error');
-    expect(DiagnosticReportStatusEnum.UNKNOWN).toEqual('unknown');
-  });
-});
-
-describe('ParticipationStatusEnum', () => {
-  it('should have the correct values', () => {
-    expect(ParticipationStatusEnum.ACCEPTED).toEqual('accepted');
-    expect(ParticipationStatusEnum.DECLINED).toEqual('declined');
-    expect(ParticipationStatusEnum.TENTATIVE).toEqual('tentative');
-    expect(ParticipationStatusEnum.NEEDS_ACTION).toEqual('needs-action');
-  });
-});
-
-describe('FlagStatusEnum', () => {
-  it('should have the correct values', () => {
-    expect(FlagStatusEnum.ACTIVE).toEqual('active');
-    expect(FlagStatusEnum.INACTIVE).toEqual('inactive');
-    expect(FlagStatusEnum.ENTERED_IN_ERROR).toEqual('entered-in-error');
-  });
-});
-
-describe('FinancialResourceStatusCodesEnum', () => {
-  it('should have the correct values', () => {
-    expect(FinancialResourceStatusCodesEnum.ACTIVE).toEqual('active');
-    expect(FinancialResourceStatusCodesEnum.CANCELLED).toEqual('cancelled');
-    expect(FinancialResourceStatusCodesEnum.DRAFT).toEqual('draft');
-    expect(FinancialResourceStatusCodesEnum.ENTERED_IN_ERROR).toEqual('entered-in-error');
-  });
-});
-
-describe('BackboneElementEnum', () => {
-  it('should have the correct values', () => {
-    expect(BackboneElementEnum.ACCOUNT_COVERAGE).toEqual('AccountCoverage');
-    expect(BackboneElementEnum.ACCOUNT_GUARANTOR).toEqual('AccountGuarantor');
-    expect(BackboneElementEnum.ALLERGY_INTOLERANCE_REACTION).toEqual('AllergyIntoleranceReaction');
-    expect(BackboneElementEnum.APPOINTMENT_PARTICIPANT).toEqual('AppointmentParticipant');
-    expect(BackboneElementEnum.AUDIT_EVENT_AGENT).toEqual('AuditEventAgent');
-    expect(BackboneElementEnum.AUDIT_EVENT_ENTITY).toEqual('AuditEventEntity');
-    expect(BackboneElementEnum.AUDIT_EVENT_ENTITY_DETAIL).toEqual('AuditEventEntityDetail');
-    expect(BackboneElementEnum.BUNDLE_ENTRY).toEqual('BundleEntry');
-    expect(BackboneElementEnum.BUNDLE_REQUEST).toEqual('BundleRequest');
-    expect(BackboneElementEnum.BUNDLE_RESPONSE).toEqual('BundleResponse');
-    expect(BackboneElementEnum.BUNDLE_SEARCH).toEqual('BundleSearch');
-    expect(BackboneElementEnum.BUNDLE_LINK).toEqual('BundleLink');
-    expect(BackboneElementEnum.CARE_PLAN_ACTIVITY).toEqual('CarePlanActivity');
-    expect(BackboneElementEnum.CARE_PLAN_ACTIVITY_DETAIL).toEqual('CarePlanActivityDetail');
-    expect(BackboneElementEnum.CARE_TEAM_PARTICIPANT).toEqual('CareTeamParticipant');
-    expect(BackboneElementEnum.COMPOSITION_ATTESTER).toEqual('CompositionAttester');
-    expect(BackboneElementEnum.COMPOSITION_EVENT).toEqual('CompositionEvent');
-    expect(BackboneElementEnum.COMPOSITION_RELATES_TO).toEqual('CompositionRelatesTo');
-    expect(BackboneElementEnum.COMPOSITION_SECTION).toEqual('CompositionSection');
-    expect(BackboneElementEnum.CONDITION_EVIDENCE).toEqual('ConditionEvidence');
-    expect(BackboneElementEnum.CONDITION_STAGE).toEqual('ConditionStage');
-    expect(BackboneElementEnum.COVERAGE_CLASS).toEqual('CoverageClass');
-    expect(BackboneElementEnum.COVERAGE_COST_TO_BENEFICIARY).toEqual('CoverageCostToBeneficiary');
-    expect(BackboneElementEnum.COVERAGE_EXCEPTION).toEqual('CoverageException');
-    expect(BackboneElementEnum.DIAGNOSTIC_REPORT_MEDIA).toEqual('DiagnosticReportMedia');
-    expect(BackboneElementEnum.ENCOUNTER_CLASS_HISTORY).toEqual('EncounterClassHistory');
-    expect(BackboneElementEnum.ENCOUNTER_DIAGNOSIS).toEqual('EncounterDiagnosis');
-    expect(BackboneElementEnum.ENCOUNTER_HOSPITALIZATION).toEqual('EncounterHospitalization');
-    expect(BackboneElementEnum.ENCOUNTER_LOCATION).toEqual('EncounterLocation');
-    expect(BackboneElementEnum.ENCOUNTER_PARTICIPANT).toEqual('EncounterParticipant');
-    expect(BackboneElementEnum.ENCOUNTER_STATUS_HISTORY).toEqual('EncounterStatusHistory');
-    expect(BackboneElementEnum.EPISODE_OF_CARE_DIAGNOSIS).toEqual('EpisodeOfCareDiagnosis');
-    expect(BackboneElementEnum.EPISODE_OF_CARE_STATUS_HISTORY).toEqual('EpisodeOfCareStatusHistory');
-    expect(BackboneElementEnum.FAMILY_MEMBER_HISTORY_CONDITION).toEqual('FamilyMemberHistoryCondition');
-    expect(BackboneElementEnum.GOAL_TARGET).toEqual('GoalTarget');
-    expect(BackboneElementEnum.GROUP_CHARACTERISTIC).toEqual('GroupCharacteristic');
-    expect(BackboneElementEnum.GROUP_MEMBER).toEqual('GroupMember');
-    expect(BackboneElementEnum.HEALTHCARE_SERVICE_AVAILABLE_TIME).toEqual('HealthcareServiceAvailableTime');
-    expect(BackboneElementEnum.HEALTHCARE_SERVICE_ELIGIBILITY).toEqual('HealthcareServiceEligibility');
-    expect(BackboneElementEnum.HEALTHCARE_SERVICE_NOT_AVAILABLE).toEqual('HealthcareServiceNotAvailable');
-    expect(BackboneElementEnum.LOCATION_POSITION).toEqual('LocationPosition');
-    expect(BackboneElementEnum.OBSERVATION_COMPONENT).toEqual('ObservationComponent');
-    expect(BackboneElementEnum.OBSERVATION_REFERENCE_RANGE).toEqual('ObservationReferenceRange');
-    expect(BackboneElementEnum.OPERATION_OUTCOME_ISSUE).toEqual('OperationOutcomeIssue');
-    expect(BackboneElementEnum.ORGANIZATION_CONTACT).toEqual('OrganizationContact');
-    expect(BackboneElementEnum.PATIENT_COMMUNICATION).toEqual('PatientCommunication');
-    expect(BackboneElementEnum.PATIENT_CONTACT).toEqual('PatientContact');
-    expect(BackboneElementEnum.PATIENT_LINK).toEqual('PatientLink');
-    expect(BackboneElementEnum.PERSON_LINK).toEqual('PersonLink');
-    expect(BackboneElementEnum.PRACTITIONER_QUALIFICATION).toEqual('PractitionerQualification');
-    expect(BackboneElementEnum.PRACTITIONER_ROLE_AVAILABLE_TIME).toEqual('PractitionerRoleAvailableTime');
-    expect(BackboneElementEnum.PRACTITIONER_ROLE_NOT_AVAILABLE).toEqual('PractitionerRoleNotAvailable');
-    expect(BackboneElementEnum.PROCEDURE_FOCAL_DEVICE).toEqual('ProcedureFocalDevice');
-    expect(BackboneElementEnum.PROCEDURE_PERFORMER).toEqual('ProcedurePerformer');
-    expect(BackboneElementEnum.RELATED_PERSON_COMMUNICATION).toEqual('RelatedPersonCommunication');
-    expect(BackboneElementEnum.TASK_INPUT).toEqual('TaskInput');
-    expect(BackboneElementEnum.TASK_OUTPUT).toEqual('TaskOutput');
-    expect(BackboneElementEnum.TASK_RESTRICTION).toEqual('TaskRestriction');
-    expect(BackboneElementEnum.TIMING).toEqual('Timing');
-  });
-});
-
 describe('UDIEntryTypeEnum', () => {
   it('should have the correct values', () => {
     expect(UDIEntryTypeEnum.BARCODE).toEqual('barcode');
@@ -780,79 +1267,14 @@ describe('UDIEntryTypeEnum', () => {
   });
 });
 
-describe('FHIRDeviceStatusEnum', () => {
+describe('UnitsOfTimeEnum', () => {
   it('should have the correct values', () => {
-    expect(FHIRDeviceStatusEnum.ACTIVE).toEqual('active');
-    expect(FHIRDeviceStatusEnum.INACTIVE).toEqual('inactive');
-    expect(FHIRDeviceStatusEnum.ENTERED_IN_ERROR).toEqual('entered-in-error');
-    expect(FHIRDeviceStatusEnum.UNKNOWN).toEqual('unknown');
-  });
-});
-
-describe('DeviceNameTypeEnum', () => {
-  it('should have the correct values', () => {
-    expect(DeviceNameTypeEnum.UDI_LABEL_NAME).toEqual('udi-label-name');
-    expect(DeviceNameTypeEnum.USER_FRIENDLY_NAME).toEqual('user-friendly-name');
-    expect(DeviceNameTypeEnum.PATIENT_REPORTED_NAME).toEqual('patient-reported-name');
-    expect(DeviceNameTypeEnum.MANUFACTURER_NAME).toEqual('manufacturer-name');
-    expect(DeviceNameTypeEnum.MODEL_NAME).toEqual('model-name');
-    expect(DeviceNameTypeEnum.OTHER).toEqual('other');
-  });
-});
-
-describe('DeviceMetricOperationalStatusEnum', () => {
-  it('should have the correct values', () => {
-    expect(DeviceMetricOperationalStatusEnum.ON).toEqual('on');
-    expect(DeviceMetricOperationalStatusEnum.OFF).toEqual('off');
-    expect(DeviceMetricOperationalStatusEnum.STANDBY).toEqual('standby');
-    expect(DeviceMetricOperationalStatusEnum.ENTERED_IN_ERROR).toEqual('entered-in-error');
-  });
-});
-
-describe('DeviceMetricColorEnum', () => {
-  it('should have the correct values', () => {
-    expect(DeviceMetricColorEnum.BLACK).toEqual('black');
-    expect(DeviceMetricColorEnum.RED).toEqual('red');
-    expect(DeviceMetricColorEnum.GREEN).toEqual('green');
-    expect(DeviceMetricColorEnum.YELLOW).toEqual('yellow');
-    expect(DeviceMetricColorEnum.BLUE).toEqual('blue');
-    expect(DeviceMetricColorEnum.MAGENTA).toEqual('magenta');
-    expect(DeviceMetricColorEnum.CYAN).toEqual('cyan');
-    expect(DeviceMetricColorEnum.WHITE).toEqual('white');
-  });
-});
-
-describe('DeviceMetricCategoryEnum', () => {
-  it('should have the correct values', () => {
-    expect(DeviceMetricCategoryEnum.MEASUREMENT).toEqual('measurement');
-    expect(DeviceMetricCategoryEnum.SETTING).toEqual('setting');
-    expect(DeviceMetricCategoryEnum.CALCULATION).toEqual('calculation');
-    expect(DeviceMetricCategoryEnum.UNSPECIFIED).toEqual('unspecified');
-  });
-});
-
-describe('DeviceMetricCalibrationTypeEnum', () => {
-  it('should have the correct values', () => {
-    expect(DeviceMetricCalibrationTypeEnum.UNSPECIFIED).toEqual('unspecified');
-    expect(DeviceMetricCalibrationTypeEnum.OFFSET).toEqual('offset');
-    expect(DeviceMetricCalibrationTypeEnum.GAIN).toEqual('gain');
-    expect(DeviceMetricCalibrationTypeEnum.TWO_POINT).toEqual('two-point');
-  });
-});
-
-describe('DeviceMetricCalibrationStateEnum', () => {
-  it('should have the correct values', () => {
-    expect(DeviceMetricCalibrationStateEnum.NOT_CALIBRATED).toEqual('not-calibrated');
-    expect(DeviceMetricCalibrationStateEnum.CALIBRATION_REQUIRED).toEqual('calibration-required');
-    expect(DeviceMetricCalibrationStateEnum.CALIBRATED).toEqual('calibrated');
-    expect(DeviceMetricCalibrationStateEnum.UNSPECIFIED).toEqual('unspecified');
-  });
-});
-
-describe('FHIRSubstanceStatusEnum', () => {
-  it('should have the correct values', () => {
-    expect(FHIRSubstanceStatusEnum.ACTIVE).toEqual('active');
-    expect(FHIRSubstanceStatusEnum.INACTIVE).toEqual('inactive');
-    expect(FHIRSubstanceStatusEnum.ENTERED_IN_ERROR).toEqual('entered-in-error');
+    expect(UnitsOfTimeEnum.SECOND).toEqual('s');
+    expect(UnitsOfTimeEnum.MINUTE).toEqual('min');
+    expect(UnitsOfTimeEnum.HOUR).toEqual('h');
+    expect(UnitsOfTimeEnum.DAY).toEqual('d');
+    expect(UnitsOfTimeEnum.WEEK).toEqual('wk');
+    expect(UnitsOfTimeEnum.MONTH).toEqual('mo');
+    expect(UnitsOfTimeEnum.YEAR).toEqual('a');
   });
 });

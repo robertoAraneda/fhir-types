@@ -8,8 +8,8 @@ import { EpisodeOfCareStatusType } from '../types';
  * @name IEpisodeOfCare
  * @description An association of a Patient with an Organization and Healthcare Provider(s) for a period of time that the Organization assumes some level of responsibility
  * @see <a href="https://hl7.org/fhir/R4/episodeofcare.html">EpisodeOfCare</a>
-  @version R4
-  @extends IDomainResource
+ * @version R4
+ * @extends IDomainResource
  */
 export interface IEpisodeOfCare extends IDomainResource {
   /**
