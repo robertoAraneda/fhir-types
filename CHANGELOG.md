@@ -1,3 +1,19 @@
+# [1.21.0](https://github.com/robertoAraneda/fhir-types/compare/v1.20.2...v1.21.0) (2024-09-21)
+
+
+### Bug Fixes
+
+* change import for ParticipationStatusType and EndpointStatusType ([fd6a5cf](https://github.com/robertoAraneda/fhir-types/commit/fd6a5cf157bfa759761bb045d7d7fb3a1e9f92d0))
+* fix names and information for types and enums ([b0ed3f4](https://github.com/robertoAraneda/fhir-types/commit/b0ed3f4322eac0991c3ddd5c45db943243f7282c))
+* fix names, index and tests for types and enums for pendind resources ([0ed9885](https://github.com/robertoAraneda/fhir-types/commit/0ed98855ede7db12ed46729facb472a42e4b5bf9))
+* fix types and enums for Bundle and Composition resources ([afd4ac9](https://github.com/robertoAraneda/fhir-types/commit/afd4ac9e4ee2cac50a6a5b96eef7dea0ffc7be2c))
+* fix types and enums for EpisodeOfCare, Group, OperationOutcome resources ([308e605](https://github.com/robertoAraneda/fhir-types/commit/308e6059b238b2801a98106dfb518fd8715e8933))
+
+
+### Features
+
+* add ClinicalImpression resource ([74d20fd](https://github.com/robertoAraneda/fhir-types/commit/74d20fd30e43d6a63f600e0d9d5ecdc3dfcfd1ad))
+
 ## [1.20.2](https://github.com/robertoAraneda/fhir-types/compare/v1.20.1...v1.20.2) (2024-09-02)
 
 
