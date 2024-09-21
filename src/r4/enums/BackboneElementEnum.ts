@@ -6,6 +6,8 @@
 export enum BackboneElementEnum {
   ACCOUNT_COVERAGE = 'AccountCoverage',
   ACCOUNT_GUARANTOR = 'AccountGuarantor',
+  ADVERSE_EVENT_CAUSALITY = 'AdverseEventCausality',
+  ADVERSE_EVENT_SUSPECT_ENTITY = 'AdverseEventSuspectEntity',
   ALLERGY_INTOLERANCE_REACTION = 'AllergyIntoleranceReaction',
   APPOINTMENT_PARTICIPANT = 'AppointmentParticipant',
   AUDIT_EVENT_AGENT = 'AuditEventAgent',

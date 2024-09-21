@@ -1,5 +1,7 @@
 export { IAccountCoverage } from './IAccountCoverage';
 export { IAccountGuarantor } from './IAccountGuarantor';
+export { IAdverseEventCausality } from './IAdverseEventCausality';
+export { IAdverseEventSuspectEntity } from './IAdverseEventSuspectEntity';
 export { IAuditEventAgent } from './IAuditEventAgent';
 export { IAuditEventAgentNetwork } from './IAuditEventAgentNetwork';
 export { IAuditEventEntity } from './IAuditEventEntity';

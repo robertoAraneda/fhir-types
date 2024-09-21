@@ -2,6 +2,7 @@ export { AccountStatusEnum } from './AccountStatusEnum';
 export { AddressTypeEnum } from './AddressTypeEnum';
 export { AddressUseEnum } from './AddressUseEnum';
 export { AdministrativeGenderEnum } from './AdministrativeGenderEnum';
+export { AdverseEventActualityEnum } from './AdverseEventActualityEnum';
 export { AllergyIntoleranceCategoryEnum } from './AllergyIntoleranceCategoryEnum';
 export { AllergyIntoleranceCriticalityEnum } from './AllergyIntoleranceCriticalityEnum';
 export { AllergyIntoleranceSeverityEnum } from './AllergyIntoleranceSeverityEnum';

@@ -2,6 +2,7 @@ import { AccountStatusEnum } from '../AccountStatusEnum';
 import { AddressTypeEnum } from '../AddressTypeEnum';
 import { AddressUseEnum } from '../AddressUseEnum';
 import { AdministrativeGenderEnum } from '../AdministrativeGenderEnum';
+import { AdverseEventActualityEnum } from '../AdverseEventActualityEnum';
 import { AllergyIntoleranceCategoryEnum } from '../AllergyIntoleranceCategoryEnum';
 import { AllergyIntoleranceCriticalityEnum } from '../AllergyIntoleranceCriticalityEnum';
 import { AllergyIntoleranceSeverityEnum } from '../AllergyIntoleranceSeverityEnum';
@@ -109,6 +110,13 @@ describe('AdministrativeGenderEnum', () => {
   });
 });
 
+describe('AdverseEventActualityEnum', () => {
+  it('should have the correct values', () => {
+    expect(AdverseEventActualityEnum.ACTUAL).toEqual('actual');
+    expect(AdverseEventActualityEnum.POTENTIAL).toEqual('potential');
+  });
+});
+
 describe('AllergyIntoleranceCategoryEnum', () => {
   it('should have the correct values', () => {
     expect(AllergyIntoleranceCategoryEnum.FOOD).toEqual('food');
@@ -192,6 +200,8 @@ describe('BackboneElementEnum', () => {
     expect(BackboneElementEnum.ACCOUNT_COVERAGE).toEqual('AccountCoverage');
     expect(BackboneElementEnum.ACCOUNT_GUARANTOR).toEqual('AccountGuarantor');
     expect(BackboneElementEnum.ALLERGY_INTOLERANCE_REACTION).toEqual('AllergyIntoleranceReaction');
+    expect(BackboneElementEnum.ADVERSE_EVENT_CAUSALITY).toEqual('AdverseEventCausality');
+    expect(BackboneElementEnum.ADVERSE_EVENT_SUSPECT_ENTITY).toEqual('AdverseEventSuspectEntity');
     expect(BackboneElementEnum.APPOINTMENT_PARTICIPANT).toEqual('AppointmentParticipant');
     expect(BackboneElementEnum.AUDIT_EVENT_AGENT).toEqual('AuditEventAgent');
     expect(BackboneElementEnum.AUDIT_EVENT_ENTITY).toEqual('AuditEventEntity');

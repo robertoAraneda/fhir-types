@@ -2,6 +2,7 @@ export { AccountStatusType } from './AccountStatusType';
 export { AddressTypeType } from './AddressTypeType';
 export { AddressUseType } from './AddressUseType';
 export { AdministrativeGenderType } from './AdministrativeGenderType';
+export { AdverseEventActualityType } from './AdverseEventActualityType';
 export { AllergyIntoleranceCategoryType } from './AllergyIntoleranceCategoryType';
 export { AllergyIntoleranceCriticalityType } from './AllergyIntoleranceCriticalityType';
 export { AllergyIntoleranceSeverityType } from './AllergyIntoleranceSeverityType';

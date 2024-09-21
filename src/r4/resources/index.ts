@@ -1,4 +1,5 @@
 export { IAccount } from './IAccount';
+export { IAdverseEvent } from './IAdverseEvent';
 export { IAllergyIntolerance } from './IAllergyIntolerance';
 export { IAuditEvent } from './IAuditEvent';
 export { IBundle } from './IBundle';
