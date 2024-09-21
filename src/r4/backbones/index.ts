@@ -10,6 +10,8 @@ export { IBundleSearch } from './IBundleSearch';
 export { IBundleRequest } from './IBundleRequest';
 export { IBundleResponse } from './IBundleResponse';
 export { IBundleLink } from './IBundleLink';
+export { IClinicalImpressionFinding } from './IClinicalImpressionFinding';
+export { IClinicalImpressionInvestigation } from './IClinicalImpressionInvestigation';
 export { ICompositionAttester } from './ICompositionAttester';
 export { ICompositionEvent } from './ICompositionEvent';
 export { ICompositionRelatesTo } from './ICompositionRelatesTo';

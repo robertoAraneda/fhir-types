@@ -16,6 +16,7 @@ import { CarePlanActivityKindEnum } from '../CarePlanActivityKindEnum';
 import { CarePlanActivityStatusEnum } from '../CarePlanActivityStatusEnum';
 import { CarePlanIntentEnum } from '../CarePlanIntentEnum';
 import { CareTeamStatusEnum } from '../CareTeamStatusEnum';
+import { ClinicalImpressionStatusEnum } from '../ClinicalImpressionStatusEnum';
 import { CompositionAttestationModeEnum } from '../CompositionAttestationModeEnum';
 import { CompositionStatusEnum } from '../CompositionStatusEnum';
 import { ConfidentialityClassificationEnum } from '../ConfidentialityClassificationEnum';
@@ -199,6 +200,8 @@ describe('BackboneElementEnum', () => {
     expect(BackboneElementEnum.BUNDLE_RESPONSE).toEqual('BundleResponse');
     expect(BackboneElementEnum.BUNDLE_SEARCH).toEqual('BundleSearch');
     expect(BackboneElementEnum.BUNDLE_LINK).toEqual('BundleLink');
+    expect(BackboneElementEnum.CLINICAL_IMPRESSION_FINDING).toEqual('ClinicalImpressionFinding');
+    expect(BackboneElementEnum.CLINICAL_IMPRESSION_INVESTIGATION).toEqual('ClinicalImpressionInvestigation');
     expect(BackboneElementEnum.CARE_PLAN_ACTIVITY).toEqual('CarePlanActivity');
     expect(BackboneElementEnum.CARE_PLAN_ACTIVITY_DETAIL).toEqual('CarePlanActivityDetail');
     expect(BackboneElementEnum.CARE_TEAM_PARTICIPANT).toEqual('CareTeamParticipant');
@@ -303,6 +306,14 @@ describe('CareTeamStatusEnum', () => {
     expect(CareTeamStatusEnum.SUSPENDED).toEqual('suspended');
     expect(CareTeamStatusEnum.INACTIVE).toEqual('inactive');
     expect(CareTeamStatusEnum.ENTERED_IN_ERROR).toEqual('entered-in-error');
+  });
+});
+
+describe('ClinicalImpressionStatusEnum', () => {
+  it('should have the correct values', () => {
+    expect(ClinicalImpressionStatusEnum.IN_PROGRESS).toEqual('in-progress');
+    expect(ClinicalImpressionStatusEnum.COMPLETED).toEqual('completed');
+    expect(ClinicalImpressionStatusEnum.ENTERED_IN_ERROR).toEqual('entered-in-error');
   });
 });
 

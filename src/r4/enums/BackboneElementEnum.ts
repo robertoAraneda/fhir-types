@@ -20,6 +20,8 @@ export enum BackboneElementEnum {
   CARE_PLAN_ACTIVITY = 'CarePlanActivity',
   CARE_PLAN_ACTIVITY_DETAIL = 'CarePlanActivityDetail',
   CARE_TEAM_PARTICIPANT = 'CareTeamParticipant',
+  CLINICAL_IMPRESSION_FINDING = 'ClinicalImpressionFinding',
+  CLINICAL_IMPRESSION_INVESTIGATION = 'ClinicalImpressionInvestigation',
   COMPOSITION_ATTESTER = 'CompositionAttester',
   COMPOSITION_EVENT = 'CompositionEvent',
   COMPOSITION_RELATES_TO = 'CompositionRelatesTo',

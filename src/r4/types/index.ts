@@ -16,6 +16,7 @@ export { CarePlanActivityKindType } from './CarePlanActivityKindType';
 export { CarePlanActivityStatusType } from './CarePlanActivityStatusType';
 export { CarePlanIntentType } from './CarePlanIntentType';
 export { CareTeamStatusType } from './CareTeamStatusType';
+export { ClinicalImpressionStatusType } from './ClinicalImpressionStatusType';
 export { CompositionAttestationModeType } from './CompositionAttestationModeType';
 export { CompositionStatusType } from './CompositionStatusType';
 export { ConfidentialityClassificationType } from './ConfidentialityClassificationType';
