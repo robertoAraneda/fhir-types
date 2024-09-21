@@ -1,3 +1,12 @@
+# [1.22.0](https://github.com/robertoAraneda/fhir-types/compare/v1.21.0...v1.22.0) (2024-09-21)
+
+
+### Features
+
+* add AdverseEvent resource ([561cbc6](https://github.com/robertoAraneda/fhir-types/commit/561cbc64941c9b98c0f31a72727325249f0c1f5b))
+* add DetectedIssue resource ([75a7f9f](https://github.com/robertoAraneda/fhir-types/commit/75a7f9f09e19e27fa6403c009e2cf632abc3500a))
+* add RiskAssessment resource ([ddc9d69](https://github.com/robertoAraneda/fhir-types/commit/ddc9d698f87fb6abf0ab417218209fd71e7818ec))
+
 # [1.21.0](https://github.com/robertoAraneda/fhir-types/compare/v1.20.2...v1.21.0) (2024-09-21)
 
 
