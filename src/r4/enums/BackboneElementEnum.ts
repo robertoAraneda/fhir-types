@@ -78,6 +78,7 @@ export enum BackboneElementEnum {
   PROCEDURE_FOCAL_DEVICE = 'ProcedureFocalDevice',
   PROCEDURE_PERFORMER = 'ProcedurePerformer',
   RELATED_PERSON_COMMUNICATION = 'RelatedPersonCommunication',
+  RISK_ASSESSMENT_PREDICTION = 'RiskAssessmentPrediction',
   SUBSTANCE_INGREDIENT = 'SubstanceIngredient',
   SUBSTANCE_INSTANCE = 'SubstanceInstance',
   TASK_INPUT = 'TaskInput',

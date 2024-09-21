@@ -27,6 +27,7 @@ export { IPractitioner } from './IPractitioner';
 export { IPractitionerRole } from './IPractitionerRole';
 export { IProcedure } from './IProcedure';
 export { IRelatedPerson } from './IRelatedPerson';
+export { IRiskAssessment } from './IRiskAssessment';
 export { ISchedule } from './ISchedule';
 export { IServiceRequest } from './IServiceRequest';
 export { ISlot } from './ISlot';

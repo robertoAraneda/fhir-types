@@ -259,6 +259,7 @@ describe('BackboneElementEnum', () => {
     expect(BackboneElementEnum.PROCEDURE_FOCAL_DEVICE).toEqual('ProcedureFocalDevice');
     expect(BackboneElementEnum.PROCEDURE_PERFORMER).toEqual('ProcedurePerformer');
     expect(BackboneElementEnum.RELATED_PERSON_COMMUNICATION).toEqual('RelatedPersonCommunication');
+    expect(BackboneElementEnum.RISK_ASSESSMENT_PREDICTION).toEqual('RiskAssessmentPrediction');
     expect(BackboneElementEnum.TASK_INPUT).toEqual('TaskInput');
     expect(BackboneElementEnum.TASK_OUTPUT).toEqual('TaskOutput');
     expect(BackboneElementEnum.TASK_RESTRICTION).toEqual('TaskRestriction');
