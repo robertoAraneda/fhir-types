@@ -35,6 +35,7 @@ export { DiagnosticReportStatusEnum } from './DiagnosticReportStatusEnum';
 export { DocumentRelationshipTypeEnum } from './DocumentRelationshipTypeEnum';
 export { EncounterLocationStatusEnum } from './EncounterLocationStatusEnum';
 export { EncounterStatusEnum } from './EncounterStatusEnum';
+export { EndpointStatusEnum } from './EndpointStatusEnum';
 export { EpisodeOfCareStatusEnum } from './EpisodeOfCareStatusEnum';
 export { EventStatusEnum } from './EventStatusEnum';
 export { EventTimingEnum } from './EventTimingEnum';

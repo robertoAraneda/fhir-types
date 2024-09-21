@@ -35,6 +35,7 @@ import { DiagnosticReportStatusEnum } from '../DiagnosticReportStatusEnum';
 import { DocumentRelationshipTypeEnum } from '../DocumentRelationshipTypeEnum';
 import { EncounterLocationStatusEnum } from '../EncounterLocationStatusEnum';
 import { EncounterStatusEnum } from '../EncounterStatusEnum';
+import { EndpointStatusEnum } from '../EndpointStatusEnum';
 import { EpisodeOfCareStatusEnum } from '../EpisodeOfCareStatusEnum';
 import { EventStatusEnum } from '../EventStatusEnum';
 import { EventTimingEnum } from '../EventTimingEnum';
@@ -739,6 +740,17 @@ describe('EncounterStatusEnum', () => {
     expect(EncounterStatusEnum.CANCELLED).toEqual('cancelled');
     expect(EncounterStatusEnum.ENTERED_IN_ERROR).toEqual('entered-in-error');
     expect(EncounterStatusEnum.UNKNOWN).toEqual('unknown');
+  });
+});
+
+describe('EndpointStatusEnum', () => {
+  it('should have the correct values', () => {
+    expect(EndpointStatusEnum.ACTIVE).toEqual('active');
+    expect(EndpointStatusEnum.SUSPENDED).toEqual('suspended');
+    expect(EndpointStatusEnum.ERROR).toEqual('error');
+    expect(EndpointStatusEnum.OFF).toEqual('off');
+    expect(EndpointStatusEnum.ENTERED_IN_ERROR).toEqual('entered-in-error');
+    expect(EndpointStatusEnum.TEST).toEqual('test');
   });
 });
 

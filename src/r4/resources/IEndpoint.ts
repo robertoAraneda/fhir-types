@@ -11,7 +11,7 @@ export interface IEndpoint extends IDomainResource {
    */
   identifier?: IIdentifier[];
   /**
-   * active | suspended | error | off | test.
+   * active | suspended | error | off | entered-in-error | test.
    * @summary Required field
    */
   status?: EndpointStatusType;
