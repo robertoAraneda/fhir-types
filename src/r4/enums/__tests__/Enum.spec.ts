@@ -2,6 +2,7 @@ import { AccountStatusEnum } from '../AccountStatusEnum';
 import { AddressTypeEnum } from '../AddressTypeEnum';
 import { AddressUseEnum } from '../AddressUseEnum';
 import { AdministrativeGenderEnum } from '../AdministrativeGenderEnum';
+import { AdverseEventActualityEnum } from '../AdverseEventActualityEnum';
 import { AllergyIntoleranceCategoryEnum } from '../AllergyIntoleranceCategoryEnum';
 import { AllergyIntoleranceCriticalityEnum } from '../AllergyIntoleranceCriticalityEnum';
 import { AllergyIntoleranceSeverityEnum } from '../AllergyIntoleranceSeverityEnum';
@@ -25,6 +26,7 @@ import { ContactPointUseEnum } from '../ContactPointUseEnum';
 import { CurrencyCodeEnum } from '../CurrencyCodeEnum';
 import { DataTypeEnum } from '../DataTypeEnum';
 import { DaysOfWeekEnum } from '../DaysOfWeekEnum';
+import { DetectedIssueSeverityEnum } from '../DetectedIssueSeverityEnum';
 import { DeviceMetricCalibrationStateEnum } from '../DeviceMetricCalibrationStateEnum';
 import { DeviceMetricCalibrationTypeEnum } from '../DeviceMetricCalibrationTypeEnum';
 import { DeviceMetricCategoryEnum } from '../DeviceMetricCategoryEnum';
@@ -106,6 +108,13 @@ describe('AdministrativeGenderEnum', () => {
     expect(AdministrativeGenderEnum.MALE).toEqual('male');
     expect(AdministrativeGenderEnum.OTHER).toEqual('other');
     expect(AdministrativeGenderEnum.UNKNOWN).toEqual('unknown');
+  });
+});
+
+describe('AdverseEventActualityEnum', () => {
+  it('should have the correct values', () => {
+    expect(AdverseEventActualityEnum.ACTUAL).toEqual('actual');
+    expect(AdverseEventActualityEnum.POTENTIAL).toEqual('potential');
   });
 });
 
@@ -192,6 +201,8 @@ describe('BackboneElementEnum', () => {
     expect(BackboneElementEnum.ACCOUNT_COVERAGE).toEqual('AccountCoverage');
     expect(BackboneElementEnum.ACCOUNT_GUARANTOR).toEqual('AccountGuarantor');
     expect(BackboneElementEnum.ALLERGY_INTOLERANCE_REACTION).toEqual('AllergyIntoleranceReaction');
+    expect(BackboneElementEnum.ADVERSE_EVENT_CAUSALITY).toEqual('AdverseEventCausality');
+    expect(BackboneElementEnum.ADVERSE_EVENT_SUSPECT_ENTITY).toEqual('AdverseEventSuspectEntity');
     expect(BackboneElementEnum.APPOINTMENT_PARTICIPANT).toEqual('AppointmentParticipant');
     expect(BackboneElementEnum.AUDIT_EVENT_AGENT).toEqual('AuditEventAgent');
     expect(BackboneElementEnum.AUDIT_EVENT_ENTITY).toEqual('AuditEventEntity');
@@ -215,6 +226,8 @@ describe('BackboneElementEnum', () => {
     expect(BackboneElementEnum.COVERAGE_CLASS).toEqual('CoverageClass');
     expect(BackboneElementEnum.COVERAGE_COST_TO_BENEFICIARY).toEqual('CoverageCostToBeneficiary');
     expect(BackboneElementEnum.COVERAGE_EXCEPTION).toEqual('CoverageException');
+    expect(BackboneElementEnum.DETECTED_ISSUE_EVIDENCE).toEqual('DetectedIssueEvidence');
+    expect(BackboneElementEnum.DETECTED_ISSUE_MITIGATION).toEqual('DetectedIssueMitigation');
     expect(BackboneElementEnum.DIAGNOSTIC_REPORT_MEDIA).toEqual('DiagnosticReportMedia');
     expect(BackboneElementEnum.ENCOUNTER_CLASS_HISTORY).toEqual('EncounterClassHistory');
     expect(BackboneElementEnum.ENCOUNTER_DIAGNOSIS).toEqual('EncounterDiagnosis');
@@ -246,6 +259,7 @@ describe('BackboneElementEnum', () => {
     expect(BackboneElementEnum.PROCEDURE_FOCAL_DEVICE).toEqual('ProcedureFocalDevice');
     expect(BackboneElementEnum.PROCEDURE_PERFORMER).toEqual('ProcedurePerformer');
     expect(BackboneElementEnum.RELATED_PERSON_COMMUNICATION).toEqual('RelatedPersonCommunication');
+    expect(BackboneElementEnum.RISK_ASSESSMENT_PREDICTION).toEqual('RiskAssessmentPrediction');
     expect(BackboneElementEnum.TASK_INPUT).toEqual('TaskInput');
     expect(BackboneElementEnum.TASK_OUTPUT).toEqual('TaskOutput');
     expect(BackboneElementEnum.TASK_RESTRICTION).toEqual('TaskRestriction');
@@ -633,6 +647,14 @@ describe('DaysOfWeekEnum', () => {
     expect(DaysOfWeekEnum.FRIDAY).toEqual('fri');
     expect(DaysOfWeekEnum.SATURDAY).toEqual('sat');
     expect(DaysOfWeekEnum.SUNDAY).toEqual('sun');
+  });
+});
+
+describe('DetectedIssueSeverityEnum', () => {
+  it('should have the correct values', () => {
+    expect(DetectedIssueSeverityEnum.HIGH).toEqual('high');
+    expect(DetectedIssueSeverityEnum.MODERATE).toEqual('moderate');
+    expect(DetectedIssueSeverityEnum.LOW).toEqual('low');
   });
 });
 
