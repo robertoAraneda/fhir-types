@@ -26,6 +26,7 @@ export { ContactPointUseType } from './ContactPointUseType';
 export { CurrencyCodeType } from './CurrencyCodeType';
 export { DataTypeType } from './DataTypeType';
 export { DaysOfWeekType } from './DaysOfWeekType';
+export { DetectedIssueSeverityType } from './DetectedIssueSeverityType';
 export { DeviceMetricCalibrationStateType } from './DeviceMetricCalibrationStateType';
 export { DeviceMetricCalibrationTypeType } from './DeviceMetricCalibrationTypeType';
 export { DeviceMetricCategoryType } from './DeviceMetricCategoryType';

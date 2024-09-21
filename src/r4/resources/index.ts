@@ -8,6 +8,7 @@ export { ICareTeam } from './ICareTeam';
 export { IClinicalImpression } from './IClinicalImpression';
 export { IComposition } from './IComposition';
 export { ICoverage } from './ICoverage';
+export { IDetectedIssue } from './IDetectedIssue';
 export { IDevice } from './IDevice';
 export { IDeviceDefinition } from './IDeviceDifinition';
 export { IDeviceMetric } from './IDeviceMetric';

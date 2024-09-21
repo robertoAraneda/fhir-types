@@ -33,6 +33,8 @@ export enum BackboneElementEnum {
   COVERAGE_CLASS = 'CoverageClass',
   COVERAGE_COST_TO_BENEFICIARY = 'CoverageCostToBeneficiary',
   COVERAGE_EXCEPTION = 'CoverageException',
+  DETECTED_ISSUE_EVIDENCE = 'DetectedIssueEvidence',
+  DETECTED_ISSUE_MITIGATION = 'DetectedIssueMitigation',
   DEVICE_DEFINITION_CAPABILITY = 'DeviceDefinitionCapability',
   DEVICE_DEFINITION_DEVICE_NAME = 'DeviceDefinitionDeviceName',
   DEVICE_DEFINITION_MATERIAL = 'DeviceDefinitionMaterial',

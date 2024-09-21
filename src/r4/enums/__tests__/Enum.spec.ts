@@ -26,6 +26,7 @@ import { ContactPointUseEnum } from '../ContactPointUseEnum';
 import { CurrencyCodeEnum } from '../CurrencyCodeEnum';
 import { DataTypeEnum } from '../DataTypeEnum';
 import { DaysOfWeekEnum } from '../DaysOfWeekEnum';
+import { DetectedIssueSeverityEnum } from '../DetectedIssueSeverityEnum';
 import { DeviceMetricCalibrationStateEnum } from '../DeviceMetricCalibrationStateEnum';
 import { DeviceMetricCalibrationTypeEnum } from '../DeviceMetricCalibrationTypeEnum';
 import { DeviceMetricCategoryEnum } from '../DeviceMetricCategoryEnum';
@@ -225,6 +226,8 @@ describe('BackboneElementEnum', () => {
     expect(BackboneElementEnum.COVERAGE_CLASS).toEqual('CoverageClass');
     expect(BackboneElementEnum.COVERAGE_COST_TO_BENEFICIARY).toEqual('CoverageCostToBeneficiary');
     expect(BackboneElementEnum.COVERAGE_EXCEPTION).toEqual('CoverageException');
+    expect(BackboneElementEnum.DETECTED_ISSUE_EVIDENCE).toEqual('DetectedIssueEvidence');
+    expect(BackboneElementEnum.DETECTED_ISSUE_MITIGATION).toEqual('DetectedIssueMitigation');
     expect(BackboneElementEnum.DIAGNOSTIC_REPORT_MEDIA).toEqual('DiagnosticReportMedia');
     expect(BackboneElementEnum.ENCOUNTER_CLASS_HISTORY).toEqual('EncounterClassHistory');
     expect(BackboneElementEnum.ENCOUNTER_DIAGNOSIS).toEqual('EncounterDiagnosis');
@@ -643,6 +646,14 @@ describe('DaysOfWeekEnum', () => {
     expect(DaysOfWeekEnum.FRIDAY).toEqual('fri');
     expect(DaysOfWeekEnum.SATURDAY).toEqual('sat');
     expect(DaysOfWeekEnum.SUNDAY).toEqual('sun');
+  });
+});
+
+describe('DetectedIssueSeverityEnum', () => {
+  it('should have the correct values', () => {
+    expect(DetectedIssueSeverityEnum.HIGH).toEqual('high');
+    expect(DetectedIssueSeverityEnum.MODERATE).toEqual('moderate');
+    expect(DetectedIssueSeverityEnum.LOW).toEqual('low');
   });
 });
 

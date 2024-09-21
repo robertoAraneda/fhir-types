@@ -26,6 +26,7 @@ export { ContactPointUseEnum } from './ContactPointUseEnum';
 export { CurrencyCodeEnum } from './CurrencyCodeEnum';
 export { DataTypeEnum } from './DataTypeEnum';
 export { DaysOfWeekEnum } from './DaysOfWeekEnum';
+export { DetectedIssueSeverityEnum } from './DetectedIssueSeverityEnum';
 export { DeviceMetricCalibrationStateEnum } from './DeviceMetricCalibrationStateEnum';
 export { DeviceMetricCalibrationTypeEnum } from './DeviceMetricCalibrationTypeEnum';
 export { DeviceMetricCategoryEnum } from './DeviceMetricCategoryEnum';
