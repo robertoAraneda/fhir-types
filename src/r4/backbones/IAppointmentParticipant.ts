@@ -1,6 +1,6 @@
 import { IBackboneElement, IElement } from '../base';
 import { ICodeableConcept, IPeriod, IReference } from '../datatypes';
-import { ParticipantRequiredType, ParticipantStatusType } from '../types';
+import { ParticipantRequiredType, ParticipationStatusType } from '../types';
 
 export interface IAppointmentParticipant extends IBackboneElement {
   /**
@@ -23,9 +23,9 @@ export interface IAppointmentParticipant extends IBackboneElement {
   /**
    * @description Participation status of the actor.
    * @description accepted | declined | tentative | needs-action
-   * @see <a href="https://hl7.org/fhir/R4/valueset-participationstatus.html">ParticipantStatus</a>
+   * @see <a href="https://hl7.org/fhir/R4/valueset-participationstatus.html">ParticipationStatus</a>
    */
-  status: ParticipantStatusType;
+  status: ParticipationStatusType;
 
   /**
    * @description Participation period of the actor.

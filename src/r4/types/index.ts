@@ -35,6 +35,7 @@ export { DiagnosticReportStatusType } from './DiagnosticReportStatusType';
 export { DocumentRelationshipTypeType } from './DocumentRelationshipTypeType';
 export { EncounterLocationStatusType } from './EncounterLocationStatusType';
 export { EncounterStatusType } from './EncounterStatusType';
+export { EndpointStatusType } from './EndpointStatusType';
 export { EpisodeOfCareStatusType } from './EpisodeOfCareStatusType';
 export { EventStatusType } from './EventStatusType';
 export { EventTimingType } from './EventTimingType';
