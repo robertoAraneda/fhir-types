@@ -20,6 +20,7 @@ export { IHealthcareService } from './IHealthcareService';
 export { IImagingStudy } from './IImagingStudy';
 export { ILocation } from './ILocation';
 export { IMedia } from './IMedia';
+export { IMolecularSequence } from './IMolecularSequence';
 export { IObservation } from './IObservation';
 export { IOperationOutcome } from './IOperationOutcome';
 export { IOrganization } from './IOrganization';

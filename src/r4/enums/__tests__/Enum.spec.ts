@@ -61,15 +61,20 @@ import { LocationStatusEnum } from '../LocationStatusEnum';
 import { NameUseEnum } from '../NameUseEnum';
 import { NarrativeStatusEnum } from '../NarrativeStatusEnum';
 import { ObservationStatusEnum } from '../ObservationStatusEnum';
+import { OrientationTypeEnum } from '../OrientationTypeEnum';
 import { ParticipantRequiredEnum } from '../ParticipantRequiredEnum';
 import { ParticipationStatusEnum } from '../ParticipationStatusEnum';
+import { QualityTypeEnum } from '../QualityTypeEnum';
 import { QuantityComparatorEnum } from '../QuantityComparatorEnum';
+import { RepositoryTypeEnum } from '../RepositoryTypeEnum';
 import { RequestIntentEnum } from '../RequestIntentEnum';
 import { RequestPriorityEnum } from '../RequestPriorityEnum';
 import { RequestStatusEnum } from '../RequestStatusEnum';
 import { ResourceEnum } from '../ResourceEnum';
 import { SearchEntryModeEnum } from '../SearchEntryModeEnum';
+import { SequenceTypeEnum } from '../SequenceTypeEnum';
 import { SlotStatusEnum } from '../SlotStatusEnum';
+import { StrandTypeEnum } from '../StrandTypeEnum';
 import { TaskIntentEnum } from '../TaskIntentEnum';
 import { TaskStatusEnum } from '../TaskStatusEnum';
 import { UDIEntryTypeEnum } from '../UDIEntryTypeEnum';
@@ -249,6 +254,14 @@ describe('BackboneElementEnum', () => {
     expect(BackboneElementEnum.IMAGING_STUDY_PERFORMER).toEqual('ImagingStudyPerformer');
     expect(BackboneElementEnum.IMAGING_STUDY_SERIES).toEqual('ImagingStudySeries');
     expect(BackboneElementEnum.LOCATION_POSITION).toEqual('LocationPosition');
+    expect(BackboneElementEnum.MOLECULAR_SEQUENCE_INNER).toEqual('MolecularSequenceInner');
+    expect(BackboneElementEnum.MOLECULAR_SEQUENCE_OUTER).toEqual('MolecularSequenceOuter');
+    expect(BackboneElementEnum.MOLECULAR_SEQUENCE_QUALITY).toEqual('MolecularSequenceQuality');
+    expect(BackboneElementEnum.MOLECULAR_SEQUENCE_REFERENCE_SEQ).toEqual('MolecularSequenceReferenceSeq');
+    expect(BackboneElementEnum.MOLECULAR_SEQUENCE_REPOSITORY).toEqual('MolecularSequenceRepository');
+    expect(BackboneElementEnum.MOLECULAR_SEQUENCE_ROC).toEqual('MolecularSequenceRoc');
+    expect(BackboneElementEnum.MOLECULAR_SEQUENCE_STRUCTURE_VARIANT).toEqual('MolecularSequenceStructureVariant');
+    expect(BackboneElementEnum.MOLECULAR_SEQUENCE_VARIANT).toEqual('MolecularSequenceVariant');
     expect(BackboneElementEnum.OBSERVATION_COMPONENT).toEqual('ObservationComponent');
     expect(BackboneElementEnum.OBSERVATION_REFERENCE_RANGE).toEqual('ObservationReferenceRange');
     expect(BackboneElementEnum.OPERATION_OUTCOME_ISSUE).toEqual('OperationOutcomeIssue');
@@ -1054,6 +1067,13 @@ describe('ObservationStatusEnum', () => {
   });
 });
 
+describe('OrientationTypeEnum', () => {
+  it('should have the correct values', () => {
+    expect(OrientationTypeEnum.SENSE).toEqual('sense');
+    expect(OrientationTypeEnum.ANTISENSE).toEqual('antisense');
+  });
+});
+
 describe('ParticipantRequiredEnum', () => {
   it('should have the correct values', () => {
     expect(ParticipantRequiredEnum.REQUIRED).toEqual('required');
@@ -1071,12 +1091,30 @@ describe('ParticipationStatusEnum', () => {
   });
 });
 
+describe('QualityTypeEnum', () => {
+  it('should have the correct values', () => {
+    expect(QualityTypeEnum.INDEL).toEqual('indel');
+    expect(QualityTypeEnum.SNP).toEqual('snp');
+    expect(QualityTypeEnum.UNKNOWN).toEqual('unknown');
+  });
+});
+
 describe('QuantityComparatorEnum', () => {
   it('should have the correct values', () => {
     expect(QuantityComparatorEnum.LESS_THAN).toEqual('<');
     expect(QuantityComparatorEnum.LESS_OR_EQUAL_TO).toEqual('<=');
     expect(QuantityComparatorEnum.GREATER_OR_EQUAL_TO).toEqual('>=');
     expect(QuantityComparatorEnum.GREATER_THAN).toEqual('>');
+  });
+});
+
+describe('RepositoryTypeEnum', () => {
+  it('should have the correct values', () => {
+    expect(RepositoryTypeEnum.DIRECTLINK).toEqual('directlink');
+    expect(RepositoryTypeEnum.OPENAPI).toEqual('openapi');
+    expect(RepositoryTypeEnum.LOGIN).toEqual('login');
+    expect(RepositoryTypeEnum.OAUTH).toEqual('oauth');
+    expect(RepositoryTypeEnum.OTHER).toEqual('other');
   });
 });
 
@@ -1274,6 +1312,14 @@ describe('SearchEntryModeEnum', () => {
   });
 });
 
+describe('SequenceTypeEnum', () => {
+  it('should have the correct values', () => {
+    expect(SequenceTypeEnum.AA_SEQUENCE).toEqual('aa');
+    expect(SequenceTypeEnum.DNA_SEQUENCE).toEqual('dna');
+    expect(SequenceTypeEnum.RNA_SEQUENCE).toEqual('rna');
+  });
+});
+
 describe('SlotStatusEnum', () => {
   it('should have the correct values', () => {
     expect(SlotStatusEnum.BUSY).toEqual('busy');
@@ -1281,6 +1327,13 @@ describe('SlotStatusEnum', () => {
     expect(SlotStatusEnum.BUSY_UNAVAILABLE).toEqual('busy-unavailable');
     expect(SlotStatusEnum.BUSY_TENTATIVE).toEqual('busy-tentative');
     expect(SlotStatusEnum.ENTERED_IN_ERROR).toEqual('entered-in-error');
+  });
+});
+
+describe('StrandTypeEnum', () => {
+  it('should have the correct values', () => {
+    expect(StrandTypeEnum.WATSON).toEqual('watson');
+    expect(StrandTypeEnum.CRICK).toEqual('crick');
   });
 });
 
