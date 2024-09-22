@@ -17,6 +17,7 @@ export { IEndpoint } from './IEndpoint';
 export { IEpisodeOfCare } from './IEpisodeOfCare';
 export { IGroup } from './IGroup';
 export { IHealthcareService } from './IHealthcareService';
+export { IImagingStudy } from './IImagingStudy';
 export { ILocation } from './ILocation';
 export { IMedia } from './IMedia';
 export { IObservation } from './IObservation';

@@ -28,6 +28,8 @@ export interface IMedia extends IDomainResource {
 
   /**
    * @description The current state of the Media resource.
+   * @description preparation | in-progress | not-done | on-hold | stopped | completed | entered-in-error | unknown
+   * @see <a href="https://hl7.org/fhir/R4/valueset-event-status.html">EventStatus</a>
    */
   status: EventStatusType;
 

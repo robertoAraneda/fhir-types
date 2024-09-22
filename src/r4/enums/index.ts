@@ -51,6 +51,7 @@ export { GroupTypeEnum } from './GroupTypeEnum';
 export { HTTPVerbEnum } from './HTTPVerbEnum';
 export { IdentifierUseEnum } from './IdentifierUseEnum';
 export { IdentityAssuranceLevelEnum } from './IdentityAssuranceLevelEnum';
+export { ImagingStudyStatusEnum } from './ImagingStudyStatusEnum';
 export { IssueSeverityEnum } from './IssueSeverityEnum';
 export { IssueTypeEnum } from './IssueTypeEnum';
 export { LinkTypeEnum } from './LinkTypeEnum';

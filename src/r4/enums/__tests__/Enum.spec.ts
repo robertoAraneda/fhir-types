@@ -51,6 +51,7 @@ import { GroupTypeEnum } from '../GroupTypeEnum';
 import { HTTPVerbEnum } from '../HTTPVerbEnum';
 import { IdentifierUseEnum } from '../IdentifierUseEnum';
 import { IdentityAssuranceLevelEnum } from '../IdentityAssuranceLevelEnum';
+import { ImagingStudyStatusEnum } from '../ImagingStudyStatusEnum';
 import { IssueSeverityEnum } from '../IssueSeverityEnum';
 import { IssueTypeEnum } from '../IssueTypeEnum';
 import { LinkTypeEnum } from '../LinkTypeEnum';
@@ -244,6 +245,9 @@ describe('BackboneElementEnum', () => {
     expect(BackboneElementEnum.HEALTHCARE_SERVICE_AVAILABLE_TIME).toEqual('HealthcareServiceAvailableTime');
     expect(BackboneElementEnum.HEALTHCARE_SERVICE_ELIGIBILITY).toEqual('HealthcareServiceEligibility');
     expect(BackboneElementEnum.HEALTHCARE_SERVICE_NOT_AVAILABLE).toEqual('HealthcareServiceNotAvailable');
+    expect(BackboneElementEnum.IMAGING_STUDY_INSTANCE).toEqual('ImagingStudyInstance');
+    expect(BackboneElementEnum.IMAGING_STUDY_PERFORMER).toEqual('ImagingStudyPerformer');
+    expect(BackboneElementEnum.IMAGING_STUDY_SERIES).toEqual('ImagingStudySeries');
     expect(BackboneElementEnum.LOCATION_POSITION).toEqual('LocationPosition');
     expect(BackboneElementEnum.OBSERVATION_COMPONENT).toEqual('ObservationComponent');
     expect(BackboneElementEnum.OBSERVATION_REFERENCE_RANGE).toEqual('ObservationReferenceRange');
@@ -926,6 +930,16 @@ describe('IdentityAssuranceLevelEnum', () => {
     expect(IdentityAssuranceLevelEnum.LEVEL2).toEqual('level2');
     expect(IdentityAssuranceLevelEnum.LEVEL3).toEqual('level3');
     expect(IdentityAssuranceLevelEnum.LEVEL4).toEqual('level4');
+  });
+});
+
+describe('ImagingStudyStatusEnum', () => {
+  it('should have the correct values', () => {
+    expect(ImagingStudyStatusEnum.REGISTERED).toEqual('registered');
+    expect(ImagingStudyStatusEnum.AVAILABLE).toEqual('available');
+    expect(ImagingStudyStatusEnum.CANCELLED).toEqual('cancelled');
+    expect(ImagingStudyStatusEnum.ENTERED_IN_ERROR).toEqual('entered-in-error');
+    expect(ImagingStudyStatusEnum.UNKNOWN).toEqual('unknown');
   });
 });
 

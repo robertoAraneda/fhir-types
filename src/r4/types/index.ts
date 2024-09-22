@@ -51,6 +51,7 @@ export { GroupTypeType } from './GroupTypeType';
 export { HTTPVerbType } from './HTTPVerbType';
 export { IdentifierUseType } from './IdentifierUseType';
 export { IdentityAssuranceLevelType } from './IdentityAssuranceLevelType';
+export { ImagingStudyStatusType } from './ImagingStudyStatusType';
 export { IssueSeverityType } from './IssueSeverityType';
 export { IssueTypeType } from './IssueTypeType';
 export { LinkTypeType } from './LinkTypeType';
