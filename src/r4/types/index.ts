@@ -74,6 +74,7 @@ export { ResourceType } from './ResourceType';
 export { SearchEntryModeType } from './SearchEntryModeType';
 export { SequenceTypeType } from './SequenceTypeType';
 export { SlotStatusType } from './SlotStatusType';
+export { SpecimenStatusType } from './SpecimenStatusType';
 export { StrandTypeType } from './StrandTypeType';
 export { TaskIntentType } from './TaskIntentType';
 export { TaskStatusType } from './TaskStatusType';

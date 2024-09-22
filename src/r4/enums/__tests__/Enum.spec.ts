@@ -74,6 +74,7 @@ import { ResourceEnum } from '../ResourceEnum';
 import { SearchEntryModeEnum } from '../SearchEntryModeEnum';
 import { SequenceTypeEnum } from '../SequenceTypeEnum';
 import { SlotStatusEnum } from '../SlotStatusEnum';
+import { SpecimenStatusEnum } from '../SpecimenStatusEnum';
 import { StrandTypeEnum } from '../StrandTypeEnum';
 import { TaskIntentEnum } from '../TaskIntentEnum';
 import { TaskStatusEnum } from '../TaskStatusEnum';
@@ -277,6 +278,9 @@ describe('BackboneElementEnum', () => {
     expect(BackboneElementEnum.PROCEDURE_PERFORMER).toEqual('ProcedurePerformer');
     expect(BackboneElementEnum.RELATED_PERSON_COMMUNICATION).toEqual('RelatedPersonCommunication');
     expect(BackboneElementEnum.RISK_ASSESSMENT_PREDICTION).toEqual('RiskAssessmentPrediction');
+    expect(BackboneElementEnum.SPECIMEN_COLLECTION).toEqual('SpecimenCollection');
+    expect(BackboneElementEnum.SPECIMEN_CONTAINER).toEqual('SpecimenContainer');
+    expect(BackboneElementEnum.SPECIMEN_PROCESSING).toEqual('SpecimenProcessing');
     expect(BackboneElementEnum.TASK_INPUT).toEqual('TaskInput');
     expect(BackboneElementEnum.TASK_OUTPUT).toEqual('TaskOutput');
     expect(BackboneElementEnum.TASK_RESTRICTION).toEqual('TaskRestriction');
@@ -1327,6 +1331,15 @@ describe('SlotStatusEnum', () => {
     expect(SlotStatusEnum.BUSY_UNAVAILABLE).toEqual('busy-unavailable');
     expect(SlotStatusEnum.BUSY_TENTATIVE).toEqual('busy-tentative');
     expect(SlotStatusEnum.ENTERED_IN_ERROR).toEqual('entered-in-error');
+  });
+});
+
+describe('SpecimenStatusEnum', () => {
+  it('should have the correct values', () => {
+    expect(SpecimenStatusEnum.AVAILABLE).toEqual('available');
+    expect(SpecimenStatusEnum.UNAVAILABLE).toEqual('unavailable');
+    expect(SpecimenStatusEnum.UNSATISFACTORY).toEqual('unsatisfactory');
+    expect(SpecimenStatusEnum.ENTERED_IN_ERROR).toEqual('entered-in-error');
   });
 });
 

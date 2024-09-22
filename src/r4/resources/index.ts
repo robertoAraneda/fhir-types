@@ -34,5 +34,6 @@ export { IRiskAssessment } from './IRiskAssessment';
 export { ISchedule } from './ISchedule';
 export { IServiceRequest } from './IServiceRequest';
 export { ISlot } from './ISlot';
+export { ISpecimen } from './ISpecimen';
 export { ISubstance } from './ISubstance';
 export { ITask } from './ITask';

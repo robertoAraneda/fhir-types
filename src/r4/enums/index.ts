@@ -74,6 +74,7 @@ export { ResourceEnum } from './ResourceEnum';
 export { SearchEntryModeEnum } from './SearchEntryModeEnum';
 export { SequenceTypeEnum } from './SequenceTypeEnum';
 export { SlotStatusEnum } from './SlotStatusEnum';
+export { SpecimenStatusEnum } from './SpecimenStatusEnum';
 export { StrandTypeEnum } from './StrandTypeEnum';
 export { TaskIntentEnum } from './TaskIntentEnum';
 export { TaskStatusEnum } from './TaskStatusEnum';
