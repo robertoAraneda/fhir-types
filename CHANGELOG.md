@@ -1,3 +1,14 @@
+# [1.23.0](https://github.com/robertoAraneda/fhir-types/compare/v1.22.0...v1.23.0) (2024-09-22)
+
+
+### Features
+
+* add BodyStructure resource ([0e4ee73](https://github.com/robertoAraneda/fhir-types/commit/0e4ee73ad38fcac2e2eae32e4a0f760224710a6c))
+* add ImagingStudy resource ([fa32e69](https://github.com/robertoAraneda/fhir-types/commit/fa32e69ca24780298c54d792d68c84233b2c9bf2))
+* add Media resource ([5beebc7](https://github.com/robertoAraneda/fhir-types/commit/5beebc7c288664abcb5db95a6b1da7484adc83a8))
+* add MolecuarSequence resource ([dded1bb](https://github.com/robertoAraneda/fhir-types/commit/dded1bb0f09791a9dd29fd39c847b7e3e232eb3f))
+* add Specimen resource ([a307cf3](https://github.com/robertoAraneda/fhir-types/commit/a307cf35ccb57921dfdf05c0591308c7064ed6a8))
+
 # [1.22.0](https://github.com/robertoAraneda/fhir-types/compare/v1.21.0...v1.22.0) (2024-09-21)
 
 
