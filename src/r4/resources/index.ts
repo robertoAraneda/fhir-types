@@ -21,6 +21,7 @@ export { IHealthcareService } from './IHealthcareService';
 export { IImagingStudy } from './IImagingStudy';
 export { ILocation } from './ILocation';
 export { IMedia } from './IMedia';
+export { IMedicationDispense } from './IMedicationDispense';
 export { IMedicationRequest } from './IMedicationRequest';
 export { IMolecularSequence } from './IMolecularSequence';
 export { IObservation } from './IObservation';

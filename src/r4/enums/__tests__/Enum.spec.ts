@@ -58,6 +58,7 @@ import { LinkTypeEnum } from '../LinkTypeEnum';
 import { ListModeEnum } from '../ListModeEnum';
 import { LocationModeEnum } from '../LocationModeEnum';
 import { LocationStatusEnum } from '../LocationStatusEnum';
+import { MedicationDispenseStatusCodesEnum } from '../MedicationDispenseStatusCodesEnum';
 import { MedicationRequestIntentEnum } from '../MedicationRequestIntentEnum';
 import { MedicationRequestStatusEnum } from '../MedicationRequestStatusEnum';
 import { NameUseEnum } from '../NameUseEnum';
@@ -258,6 +259,8 @@ describe('BackboneElementEnum', () => {
     expect(BackboneElementEnum.IMAGING_STUDY_PERFORMER).toEqual('ImagingStudyPerformer');
     expect(BackboneElementEnum.IMAGING_STUDY_SERIES).toEqual('ImagingStudySeries');
     expect(BackboneElementEnum.LOCATION_POSITION).toEqual('LocationPosition');
+    expect(BackboneElementEnum.MEDICATION_DISPENSE_PERFORMER).toEqual('MedicationDispensePerformer');
+    expect(BackboneElementEnum.MEDICATION_DISPENSE_SUBSTITUTION).toEqual('MedicationDispenseSubstitution');
     expect(BackboneElementEnum.MEDICATION_REQUEST_DISPENSE_REQUEST).toEqual('MedicationRequestDispenseRequest');
     expect(BackboneElementEnum.MEDICATION_REQUEST_INITIAL_FILL).toEqual('MedicationRequestInitialFill');
     expect(BackboneElementEnum.MEDICATION_REQUEST_SUBSTITUTION).toEqual('MedicationRequestSubstitution');
@@ -1040,6 +1043,20 @@ describe('LocationStatusEnum', () => {
     expect(LocationStatusEnum.ACTIVE).toEqual('active');
     expect(LocationStatusEnum.SUSPENDED).toEqual('suspended');
     expect(LocationStatusEnum.INACTIVE).toEqual('inactive');
+  });
+});
+
+describe('MedicationDispenseStatusCodesEnum', () => {
+  it('should have the correct values', () => {
+    expect(MedicationDispenseStatusCodesEnum.PREPARATION).toEqual('preparation');
+    expect(MedicationDispenseStatusCodesEnum.IN_PROGRESS).toEqual('in-progress');
+    expect(MedicationDispenseStatusCodesEnum.CANCELLED).toEqual('cancelled');
+    expect(MedicationDispenseStatusCodesEnum.ON_HOLD).toEqual('on-hold');
+    expect(MedicationDispenseStatusCodesEnum.COMPLETED).toEqual('completed');
+    expect(MedicationDispenseStatusCodesEnum.ENTERED_IN_ERROR).toEqual('entered-in-error');
+    expect(MedicationDispenseStatusCodesEnum.STOPPED).toEqual('stopped');
+    expect(MedicationDispenseStatusCodesEnum.DECLINED).toEqual('declined');
+    expect(MedicationDispenseStatusCodesEnum.UNKNOWN).toEqual('unknown');
   });
 });
 

@@ -58,6 +58,7 @@ export { LinkTypeEnum } from './LinkTypeEnum';
 export { ListModeEnum } from './ListModeEnum';
 export { LocationModeEnum } from './LocationModeEnum';
 export { LocationStatusEnum } from './LocationStatusEnum';
+export { MedicationDispenseStatusCodesEnum } from './MedicationDispenseStatusCodesEnum';
 export { MedicationRequestIntentEnum } from './MedicationRequestIntentEnum';
 export { MedicationRequestStatusEnum } from './MedicationRequestStatusEnum';
 export { NameUseEnum } from './NameUseEnum';

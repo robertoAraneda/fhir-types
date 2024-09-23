@@ -68,6 +68,8 @@ export enum BackboneElementEnum {
   IMAGING_STUDY_PERFORMER = 'ImagingStudyPerformer',
   IMAGING_STUDY_SERIES = 'ImagingStudySeries',
   LOCATION_POSITION = 'LocationPosition',
+  MEDICATION_DISPENSE_PERFORMER = 'MedicationDispensePerformer',
+  MEDICATION_DISPENSE_SUBSTITUTION = 'MedicationDispenseSubstitution',
   MEDICATION_REQUEST_DISPENSE_REQUEST = 'MedicationRequestDispenseRequest',
   MEDICATION_REQUEST_INITIAL_FILL = 'MedicationRequestInitialFill',
   MEDICATION_REQUEST_SUBSTITUTION = 'MedicationRequestSubstitution',
