@@ -58,6 +58,7 @@ export { LinkTypeType } from './LinkTypeType';
 export { ListModeType } from './ListModeType';
 export { LocationModeType } from './LocationModeType';
 export { LocationStatusType } from './LocationStatusType';
+export { MedicationAdministrationStatusCodesType } from './MedicationAdministrationStatusCodesType';
 export { MedicationDispenseStatusCodesType } from './MedicationDispenseStatusCodesType';
 export { MedicationRequestIntentType } from './MedicationRequestIntentType';
 export { MedicationRequestStatusType } from './MedicationRequestStatusType';

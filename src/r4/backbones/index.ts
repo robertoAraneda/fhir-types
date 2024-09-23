@@ -55,6 +55,8 @@ export { IImagingStudyPerformer } from './IImagingStudyPerformer';
 export { IImagingStudySeries } from './IImagingStudySeries';
 export { ILocationHoursOfOperation } from './ILocationHoursOfOperation';
 export { ILocationPosition } from './ILocationPosition';
+export { IMedicationAdministrationDosage } from './IMedicationAdministrationDosage';
+export { IMedicationAdministrationPerformer } from './IMedicationAdministrationPerformer';
 export { IMedicationDispensePerformer } from './IMedicationDispensePerformer';
 export { IMedicationDispenseSubstitution } from './IMedicationDispenseSubstitution';
 export { IMedicationRequestDispenseRequest } from './IMedicationRequestDispenseRequest';
