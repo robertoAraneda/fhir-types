@@ -4,6 +4,7 @@ export { IAttachment } from './IAttachment';
 export { ICodeableConcept } from './ICodeableConcept';
 export { ICoding } from './ICoding';
 export { IContactPoint } from './IContactPoint';
+export { IDoseAndRate } from './IDoseAndRate';
 export { IDuration } from './IDuration';
 export { IHumanName } from './IHumanName';
 export { IIdentifier } from './IIdentifier';
