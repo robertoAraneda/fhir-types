@@ -1,3 +1,12 @@
+# [1.24.0](https://github.com/robertoAraneda/fhir-types/compare/v1.23.0...v1.24.0) (2024-09-23)
+
+
+### Features
+
+* add MedicationAdministration resource ([2c6754c](https://github.com/robertoAraneda/fhir-types/commit/2c6754cd2ff8f9b676c1a4d2637191a68977bf13))
+* add MedicationDispense resource ([de3454e](https://github.com/robertoAraneda/fhir-types/commit/de3454e79674e13ce07261925f6f19f888efe3b8))
+* add MedicationRequest resource ([ebc865c](https://github.com/robertoAraneda/fhir-types/commit/ebc865ceb0037c67dd315202c66812678274b921))
+
 # [1.23.0](https://github.com/robertoAraneda/fhir-types/compare/v1.22.0...v1.23.0) (2024-09-22)
 
 
