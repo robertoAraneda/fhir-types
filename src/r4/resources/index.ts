@@ -24,6 +24,7 @@ export { IMedia } from './IMedia';
 export { IMedicationAdministration } from './IMedicationAdministration';
 export { IMedicationDispense } from './IMedicationDispense';
 export { IMedicationRequest } from './IMedicationRequest';
+export { IMedicationStatement } from './IMedicationStatement';
 export { IMolecularSequence } from './IMolecularSequence';
 export { IObservation } from './IObservation';
 export { IOperationOutcome } from './IOperationOutcome';

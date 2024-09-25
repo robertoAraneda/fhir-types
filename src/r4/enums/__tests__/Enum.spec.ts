@@ -62,6 +62,7 @@ import { MedicationAdministrationStatusCodesEnum } from '../MedicationAdministra
 import { MedicationDispenseStatusCodesEnum } from '../MedicationDispenseStatusCodesEnum';
 import { MedicationRequestIntentEnum } from '../MedicationRequestIntentEnum';
 import { MedicationRequestStatusEnum } from '../MedicationRequestStatusEnum';
+import { MedicationStatusCodesEnum } from '../MedicationStatusCodesEnum';
 import { NameUseEnum } from '../NameUseEnum';
 import { NarrativeStatusEnum } from '../NarrativeStatusEnum';
 import { ObservationStatusEnum } from '../ObservationStatusEnum';
@@ -1098,6 +1099,19 @@ describe('MedicationRequestStatusEnum', () => {
     expect(MedicationRequestStatusEnum.STOPPED).toEqual('stopped');
     expect(MedicationRequestStatusEnum.DRAFT).toEqual('draft');
     expect(MedicationRequestStatusEnum.UNKNOWN).toEqual('unknown');
+  });
+});
+
+describe('MedicationStatusCodesEnum', () => {
+  it('should have the correct values', () => {
+    expect(MedicationStatusCodesEnum.ACTIVE).toEqual('active');
+    expect(MedicationStatusCodesEnum.COMPLETED).toEqual('completed');
+    expect(MedicationStatusCodesEnum.ENTERED_IN_ERROR).toEqual('entered-in-error');
+    expect(MedicationStatusCodesEnum.INTENDED).toEqual('intended');
+    expect(MedicationStatusCodesEnum.STOPPED).toEqual('stopped');
+    expect(MedicationStatusCodesEnum.ON_HOLD).toEqual('on-hold');
+    expect(MedicationStatusCodesEnum.UNKNOWN).toEqual('unknown');
+    expect(MedicationStatusCodesEnum.NOT_TAKEN).toEqual('not-taken');
   });
 });
 

@@ -62,6 +62,7 @@ export { MedicationAdministrationStatusCodesType } from './MedicationAdministrat
 export { MedicationDispenseStatusCodesType } from './MedicationDispenseStatusCodesType';
 export { MedicationRequestIntentType } from './MedicationRequestIntentType';
 export { MedicationRequestStatusType } from './MedicationRequestStatusType';
+export { MedicationStatusCodesType } from './MedicationStatusCodesType';
 export { NameUseType } from './NameUseType';
 export { NarrativeStatusType } from './NarrativeStatusType';
 export { ObservationStatusType } from './ObservationStatusType';
