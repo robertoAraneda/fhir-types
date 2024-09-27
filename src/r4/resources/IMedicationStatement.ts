@@ -1,7 +1,7 @@
 import { IDosage } from '../backbones';
 import { IDomainResource, IElement } from '../base';
 import { IAnnotation, ICodeableConcept, IIdentifier, IPeriod, IReference } from '../datatypes';
-import { MedicationStatusCodesType } from '../types';
+import { MedicationStatementStatusCodesType } from '../types';
 
 /**
  * @name IMedicationStatement
@@ -32,7 +32,7 @@ export interface IMedicationStatement extends IDomainResource {
    * @description active | completed | entered-in-error | intended | stopped | on-hold | unknown | not-taken
    * @see <a href="https://hl7.org/fhir/R4/valueset-medication-statement-status.html">MedicationStatementStatusCodes</a>
    */
-  status: MedicationStatusCodesType;
+  status: MedicationStatementStatusCodesType;
 
   /**
    * @description Extensions for status

@@ -1,18 +1,13 @@
 /**
  * @name MedicationStatusCodes
  * @description Medication Status Codes.
- * @description active | completed | entered-in-error | intended | stopped | on-hold | unknown | not-taken
- * @see <a href="https://hl7.org/fhir/R4/valueset-medication-statement-status.html">MedicationStatementStatusCodes</a>
+ * @description active | inactive | entered-in-error
+ * @see <a href="https://hl7.org/fhir/R4/valueset-medication-status.html">MedicationStatusCodes</a>
  * @version R4
  * @author Claudia Alarcón Lazo
  */
 export enum MedicationStatusCodesEnum {
   ACTIVE = 'active',
-  COMPLETED = 'completed',
+  INACTIVE = 'inactive',
   ENTERED_IN_ERROR = 'entered-in-error',
-  INTENDED = 'intended',
-  STOPPED = 'stopped',
-  ON_HOLD = 'on-hold',
-  UNKNOWN = 'unknown',
-  NOT_TAKEN = 'not-taken',
 }

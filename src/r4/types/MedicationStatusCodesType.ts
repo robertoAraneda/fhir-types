@@ -1,17 +1,9 @@
 /**
  * @name MedicationStatusCodes
  * @description Medication Status Codes.
- * @description active | completed | entered-in-error | intended | stopped | on-hold | unknown | not-taken
- * @see <a href="https://hl7.org/fhir/R4/valueset-medication-statement-status.html">MedicationStatementStatusCodes</a>
+ * @description active | inactive | entered-in-error
+ * @see <a href="https://hl7.org/fhir/R4/valueset-medication-status.html">MedicationStatusCodes</a>
  * @version R4
  * @author Claudia Alarcón Lazo
  */
-export type MedicationStatusCodesType =
-  | 'active'
-  | 'completed'
-  | 'entered-in-error'
-  | 'intended'
-  | 'stopped'
-  | 'on-hold'
-  | 'unknown'
-  | 'not-taken';
+export type MedicationStatusCodesType = 'active' | 'inactive' | 'entered-in-error';

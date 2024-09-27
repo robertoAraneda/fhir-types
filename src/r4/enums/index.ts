@@ -62,6 +62,7 @@ export { MedicationAdministrationStatusCodesEnum } from './MedicationAdministrat
 export { MedicationDispenseStatusCodesEnum } from './MedicationDispenseStatusCodesEnum';
 export { MedicationRequestIntentEnum } from './MedicationRequestIntentEnum';
 export { MedicationRequestStatusEnum } from './MedicationRequestStatusEnum';
+export { MedicationStatementStatusCodesEnum } from './MedicationStatementStatusCodesEnum';
 export { MedicationStatusCodesEnum } from './MedicationStatusCodesEnum';
 export { NameUseEnum } from './NameUseEnum';
 export { NarrativeStatusEnum } from './NarrativeStatusEnum';

@@ -62,6 +62,7 @@ import { MedicationAdministrationStatusCodesEnum } from '../MedicationAdministra
 import { MedicationDispenseStatusCodesEnum } from '../MedicationDispenseStatusCodesEnum';
 import { MedicationRequestIntentEnum } from '../MedicationRequestIntentEnum';
 import { MedicationRequestStatusEnum } from '../MedicationRequestStatusEnum';
+import { MedicationStatementStatusCodesEnum } from '../MedicationStatementStatusCodesEnum';
 import { MedicationStatusCodesEnum } from '../MedicationStatusCodesEnum';
 import { NameUseEnum } from '../NameUseEnum';
 import { NarrativeStatusEnum } from '../NarrativeStatusEnum';
@@ -263,8 +264,10 @@ describe('BackboneElementEnum', () => {
     expect(BackboneElementEnum.LOCATION_POSITION).toEqual('LocationPosition');
     expect(BackboneElementEnum.MEDICATION_ADMINISTRATION_DOSAGE).toEqual('MedicationAdministrationDosage');
     expect(BackboneElementEnum.MEDICATION_ADMINISTRATION_PERFORMER).toEqual('MedicationAdministrationPerformer');
+    expect(BackboneElementEnum.MEDICATION_BATCH).toEqual('MedicationBatch');
     expect(BackboneElementEnum.MEDICATION_DISPENSE_PERFORMER).toEqual('MedicationDispensePerformer');
     expect(BackboneElementEnum.MEDICATION_DISPENSE_SUBSTITUTION).toEqual('MedicationDispenseSubstitution');
+    expect(BackboneElementEnum.MEDICATION_INGREDIENT).toEqual('MedicationIngredient');
     expect(BackboneElementEnum.MEDICATION_REQUEST_DISPENSE_REQUEST).toEqual('MedicationRequestDispenseRequest');
     expect(BackboneElementEnum.MEDICATION_REQUEST_INITIAL_FILL).toEqual('MedicationRequestInitialFill');
     expect(BackboneElementEnum.MEDICATION_REQUEST_SUBSTITUTION).toEqual('MedicationRequestSubstitution');
@@ -1102,16 +1105,24 @@ describe('MedicationRequestStatusEnum', () => {
   });
 });
 
+describe('MedicationStatementStatusCodesEnum', () => {
+  it('should have the correct values', () => {
+    expect(MedicationStatementStatusCodesEnum.ACTIVE).toEqual('active');
+    expect(MedicationStatementStatusCodesEnum.COMPLETED).toEqual('completed');
+    expect(MedicationStatementStatusCodesEnum.ENTERED_IN_ERROR).toEqual('entered-in-error');
+    expect(MedicationStatementStatusCodesEnum.INTENDED).toEqual('intended');
+    expect(MedicationStatementStatusCodesEnum.STOPPED).toEqual('stopped');
+    expect(MedicationStatementStatusCodesEnum.ON_HOLD).toEqual('on-hold');
+    expect(MedicationStatementStatusCodesEnum.UNKNOWN).toEqual('unknown');
+    expect(MedicationStatementStatusCodesEnum.NOT_TAKEN).toEqual('not-taken');
+  });
+});
+
 describe('MedicationStatusCodesEnum', () => {
   it('should have the correct values', () => {
     expect(MedicationStatusCodesEnum.ACTIVE).toEqual('active');
-    expect(MedicationStatusCodesEnum.COMPLETED).toEqual('completed');
+    expect(MedicationStatusCodesEnum.INACTIVE).toEqual('inactive');
     expect(MedicationStatusCodesEnum.ENTERED_IN_ERROR).toEqual('entered-in-error');
-    expect(MedicationStatusCodesEnum.INTENDED).toEqual('intended');
-    expect(MedicationStatusCodesEnum.STOPPED).toEqual('stopped');
-    expect(MedicationStatusCodesEnum.ON_HOLD).toEqual('on-hold');
-    expect(MedicationStatusCodesEnum.UNKNOWN).toEqual('unknown');
-    expect(MedicationStatusCodesEnum.NOT_TAKEN).toEqual('not-taken');
   });
 });
 
