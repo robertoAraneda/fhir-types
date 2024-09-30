@@ -1,3 +1,17 @@
+# [1.25.0](https://github.com/robertoAraneda/fhir-types/compare/v1.24.0...v1.25.0) (2024-09-30)
+
+
+### Bug Fixes
+
+* subject attribute changes to optional ([faf7637](https://github.com/robertoAraneda/fhir-types/commit/faf76375206ffa66a35a8b0eee95221f152db393))
+
+
+### Features
+
+* add Medication resource ([2f653cd](https://github.com/robertoAraneda/fhir-types/commit/2f653cd6c66af12df314c059682088063173db6d))
+* add MedicationKnowledge resource ([9a8631b](https://github.com/robertoAraneda/fhir-types/commit/9a8631b7aa2a122da0c27ff2beed53788fd696a7))
+* add MedicationStatement resource ([80d35fe](https://github.com/robertoAraneda/fhir-types/commit/80d35fe1b811a253c2de9a10adc93658a0faef35))
+
 # [1.24.0](https://github.com/robertoAraneda/fhir-types/compare/v1.23.0...v1.24.0) (2024-09-23)
 
 
