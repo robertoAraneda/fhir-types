@@ -60,6 +60,7 @@ export { LocationModeType } from './LocationModeType';
 export { LocationStatusType } from './LocationStatusType';
 export { MedicationAdministrationStatusCodesType } from './MedicationAdministrationStatusCodesType';
 export { MedicationDispenseStatusCodesType } from './MedicationDispenseStatusCodesType';
+export { MedicationKnowledgeStatusCodesType } from './MedicationKnowledgeStatusCodesType';
 export { MedicationRequestIntentType } from './MedicationRequestIntentType';
 export { MedicationRequestStatusType } from './MedicationRequestStatusType';
 export { MedicationStatementStatusCodesType } from './MedicationStatementStatusCodesType';

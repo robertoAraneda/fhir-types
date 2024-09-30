@@ -60,6 +60,7 @@ export { LocationModeEnum } from './LocationModeEnum';
 export { LocationStatusEnum } from './LocationStatusEnum';
 export { MedicationAdministrationStatusCodesEnum } from './MedicationAdministrationStatusCodesEnum';
 export { MedicationDispenseStatusCodesEnum } from './MedicationDispenseStatusCodesEnum';
+export { MedicationKnowledgeStatusCodesEnum } from './MedicationKnowledgeStatusCodesEnum';
 export { MedicationRequestIntentEnum } from './MedicationRequestIntentEnum';
 export { MedicationRequestStatusEnum } from './MedicationRequestStatusEnum';
 export { MedicationStatementStatusCodesEnum } from './MedicationStatementStatusCodesEnum';
