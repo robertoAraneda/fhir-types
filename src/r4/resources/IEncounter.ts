@@ -10,6 +10,14 @@ import { IDomainResource, IElement } from '../base';
 import { ICodeableConcept, ICoding, IDuration, IIdentifier, IPeriod, IReference } from '../datatypes';
 import { EncounterStatusType } from '../types';
 
+/**
+ * @name IEncounter
+ * @description An interaction between a patient and healthcare provider(s) for the purpose of providing healthcare service(s) or assessing the health status of a patient.
+ * @see <a href="https://hl7.org/fhir/R4/encounter.html">Encounter</a>
+ * @version R4
+ * @extends {IDomainResource}
+ * @author Roberto Araneda Espinoza
+ */
 export interface IEncounter extends IDomainResource {
   /**
    * @description Identifier(s) by which this encounter is known.
@@ -17,10 +25,16 @@ export interface IEncounter extends IDomainResource {
   identifier?: IIdentifier[];
 
   /**
+   * @description Current state of the encounter.
    * @description planned | arrived | triaged | in-progress | onleave | finished | cancelled
    * @see <a href="https://hl7.org/fhir/R4/valueset-encounter-status.html">EncounterStatus</a>
    */
   status: EncounterStatusType;
+
+  /**
+   * @description Extensions for status
+   */
+  _status?: IElement;
 
   /**
    * @description The status history permits the encounter resource to contain the status history without needing to read through the historical versions of the resource, or even have the server store them.
@@ -55,7 +69,7 @@ export interface IEncounter extends IDomainResource {
   /**
    * @description The patient or group present at the encounter.
    */
-  subject: IReference;
+  subject?: IReference;
 
   /**
    * @description Where a specific encounter should be classified as a part of a specific episode(s) of care this field should be used.
@@ -126,10 +140,4 @@ export interface IEncounter extends IDomainResource {
    * @description Another Encounter of which this encounter is a part of (administratively or in time).
    */
   partOf?: IReference;
-
-  // Extensions attributes
-  /**
-   * @description Extensions for status
-   */
-  _status?: IElement;
 }
