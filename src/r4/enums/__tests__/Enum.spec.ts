@@ -52,6 +52,7 @@ import { HTTPVerbEnum } from '../HTTPVerbEnum';
 import { IdentifierUseEnum } from '../IdentifierUseEnum';
 import { IdentityAssuranceLevelEnum } from '../IdentityAssuranceLevelEnum';
 import { ImagingStudyStatusEnum } from '../ImagingStudyStatusEnum';
+import { ImmunizationStatusEnum } from '../ImmunizationStatusEnum';
 import { IssueSeverityEnum } from '../IssueSeverityEnum';
 import { IssueTypeEnum } from '../IssueTypeEnum';
 import { LinkTypeEnum } from '../LinkTypeEnum';
@@ -259,6 +260,10 @@ describe('BackboneElementEnum', () => {
     expect(BackboneElementEnum.HEALTHCARE_SERVICE_AVAILABLE_TIME).toEqual('HealthcareServiceAvailableTime');
     expect(BackboneElementEnum.HEALTHCARE_SERVICE_ELIGIBILITY).toEqual('HealthcareServiceEligibility');
     expect(BackboneElementEnum.HEALTHCARE_SERVICE_NOT_AVAILABLE).toEqual('HealthcareServiceNotAvailable');
+    expect(BackboneElementEnum.IMMUNIZATION_EDUCATION).toEqual('ImmunizationEducation');
+    expect(BackboneElementEnum.IMMUNIZATION_PERFORMER).toEqual('ImmunizationPerformer');
+    expect(BackboneElementEnum.IMMUNIZATION_PROTOCOL_APPLIED).toEqual('ImmunizationProtocolApplied');
+    expect(BackboneElementEnum.IMMUNIZATION_REACTION).toEqual('ImmunizationReaction');
     expect(BackboneElementEnum.IMAGING_STUDY_INSTANCE).toEqual('ImagingStudyInstance');
     expect(BackboneElementEnum.IMAGING_STUDY_PERFORMER).toEqual('ImagingStudyPerformer');
     expect(BackboneElementEnum.IMAGING_STUDY_SERIES).toEqual('ImagingStudySeries');
@@ -995,6 +1000,14 @@ describe('ImagingStudyStatusEnum', () => {
     expect(ImagingStudyStatusEnum.CANCELLED).toEqual('cancelled');
     expect(ImagingStudyStatusEnum.ENTERED_IN_ERROR).toEqual('entered-in-error');
     expect(ImagingStudyStatusEnum.UNKNOWN).toEqual('unknown');
+  });
+});
+
+describe('ImmunizationStatusEnum', () => {
+  it('should have the correct values', () => {
+    expect(ImmunizationStatusEnum.COMPLETED).toEqual('completed');
+    expect(ImmunizationStatusEnum.ENTERED_IN_ERROR).toEqual('entered-in-error');
+    expect(ImmunizationStatusEnum.NOT_DONE).toEqual('not-done');
   });
 });
 
