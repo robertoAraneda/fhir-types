@@ -1,3 +1,12 @@
+# [1.26.0](https://github.com/robertoAraneda/fhir-types/compare/v1.25.0...v1.26.0) (2024-10-06)
+
+
+### Features
+
+* add Immunization resource ([fd8306c](https://github.com/robertoAraneda/fhir-types/commit/fd8306c1b2b0383ca4a604931763c2e00b62c2f0))
+* add ImmunizationEvaluation resource ([2749c20](https://github.com/robertoAraneda/fhir-types/commit/2749c208998cc1c4ba4b1ddfdbe56a8b499c1a56))
+* add ImmunizationRecommendation resource ([3ca883e](https://github.com/robertoAraneda/fhir-types/commit/3ca883e9a477a3d7c3437a0fbd4e2d2d4024205e))
+
 # [1.25.0](https://github.com/robertoAraneda/fhir-types/compare/v1.24.0...v1.25.0) (2024-09-30)
 
 
