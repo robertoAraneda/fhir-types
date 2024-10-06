@@ -52,6 +52,8 @@ export { HTTPVerbEnum } from './HTTPVerbEnum';
 export { IdentifierUseEnum } from './IdentifierUseEnum';
 export { IdentityAssuranceLevelEnum } from './IdentityAssuranceLevelEnum';
 export { ImagingStudyStatusEnum } from './ImagingStudyStatusEnum';
+export { ImmunizationEvaluationStatusEnum } from './ImmunizationEvaluationStatusEnum';
+export { ImmunizationStatusEnum } from './ImmunizationStatusEnum';
 export { IssueSeverityEnum } from './IssueSeverityEnum';
 export { IssueTypeEnum } from './IssueTypeEnum';
 export { LinkTypeEnum } from './LinkTypeEnum';
