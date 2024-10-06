@@ -68,6 +68,8 @@ export enum BackboneElementEnum {
   IMMUNIZATION_PERFORMER = 'ImmunizationPerformer',
   IMMUNIZATION_PROTOCOL_APPLIED = 'ImmunizationProtocolApplied',
   IMMUNIZATION_REACTION = 'ImmunizationReaction',
+  IMMUNIZATION_RECOMMENDATION_DATE_CRITERION = 'ImmunizationRecommendationDateCriterion',
+  IMMUNIZATION_RECOMMENDATION_RECOMMENDATION = 'ImmunizationRecommendationRecommendation',
   IMAGING_STUDY_INSTANCE = 'ImagingStudyInstance',
   IMAGING_STUDY_PERFORMER = 'ImagingStudyPerformer',
   IMAGING_STUDY_SERIES = 'ImagingStudySeries',

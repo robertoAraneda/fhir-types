@@ -265,6 +265,12 @@ describe('BackboneElementEnum', () => {
     expect(BackboneElementEnum.IMMUNIZATION_PERFORMER).toEqual('ImmunizationPerformer');
     expect(BackboneElementEnum.IMMUNIZATION_PROTOCOL_APPLIED).toEqual('ImmunizationProtocolApplied');
     expect(BackboneElementEnum.IMMUNIZATION_REACTION).toEqual('ImmunizationReaction');
+    expect(BackboneElementEnum.IMMUNIZATION_RECOMMENDATION_DATE_CRITERION).toEqual(
+      'ImmunizationRecommendationDateCriterion',
+    );
+    expect(BackboneElementEnum.IMMUNIZATION_RECOMMENDATION_RECOMMENDATION).toEqual(
+      'ImmunizationRecommendationRecommendation',
+    );
     expect(BackboneElementEnum.IMAGING_STUDY_INSTANCE).toEqual('ImagingStudyInstance');
     expect(BackboneElementEnum.IMAGING_STUDY_PERFORMER).toEqual('ImagingStudyPerformer');
     expect(BackboneElementEnum.IMAGING_STUDY_SERIES).toEqual('ImagingStudySeries');

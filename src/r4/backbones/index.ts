@@ -54,6 +54,8 @@ export { IImmunizationEducation } from './IImmunizationEducation';
 export { IImmunizationPerformer } from './IImmunizationPerformer';
 export { IImmunizationProtocolApplied } from './IImmunizationProtocolApplied';
 export { IImmunizationReaction } from './IImmunizationReaction';
+export { IImmunizationRecommendationDateCriterion } from './IImmunizationRecommendationDateCriterion';
+export { IImmunizationRecommendationRecommendation } from './IImmunizationRecommendationRecommendation';
 export { IImagingStudyInstance } from './IImagingStudyInstance';
 export { IImagingStudyPerformer } from './IImagingStudyPerformer';
 export { IImagingStudySeries } from './IImagingStudySeries';
