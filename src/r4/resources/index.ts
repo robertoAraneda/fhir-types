@@ -20,6 +20,7 @@ export { IGroup } from './IGroup';
 export { IHealthcareService } from './IHealthcareService';
 export { IImagingStudy } from './IImagingStudy';
 export { IImmunization } from './IImmunization';
+export { IImmunizationEvaluation } from './IImmunizationEvaluation';
 export { ILocation } from './ILocation';
 export { IMedia } from './IMedia';
 export { IMedication } from './IMedication';

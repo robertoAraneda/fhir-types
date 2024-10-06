@@ -52,6 +52,7 @@ import { HTTPVerbEnum } from '../HTTPVerbEnum';
 import { IdentifierUseEnum } from '../IdentifierUseEnum';
 import { IdentityAssuranceLevelEnum } from '../IdentityAssuranceLevelEnum';
 import { ImagingStudyStatusEnum } from '../ImagingStudyStatusEnum';
+import { ImmunizationEvaluationStatusEnum } from '../ImmunizationEvaluationStatusEnum';
 import { ImmunizationStatusEnum } from '../ImmunizationStatusEnum';
 import { IssueSeverityEnum } from '../IssueSeverityEnum';
 import { IssueTypeEnum } from '../IssueTypeEnum';
@@ -1000,6 +1001,13 @@ describe('ImagingStudyStatusEnum', () => {
     expect(ImagingStudyStatusEnum.CANCELLED).toEqual('cancelled');
     expect(ImagingStudyStatusEnum.ENTERED_IN_ERROR).toEqual('entered-in-error');
     expect(ImagingStudyStatusEnum.UNKNOWN).toEqual('unknown');
+  });
+});
+
+describe('ImmunizationEvaluationStatusEnum', () => {
+  it('should have the correct values', () => {
+    expect(ImmunizationEvaluationStatusEnum.COMPLETED).toEqual('completed');
+    expect(ImmunizationEvaluationStatusEnum.ENTERED_IN_ERROR).toEqual('entered-in-error');
   });
 });
 

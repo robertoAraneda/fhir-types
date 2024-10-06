@@ -52,6 +52,7 @@ export { HTTPVerbType } from './HTTPVerbType';
 export { IdentifierUseType } from './IdentifierUseType';
 export { IdentityAssuranceLevelType } from './IdentityAssuranceLevelType';
 export { ImagingStudyStatusType } from './ImagingStudyStatusType';
+export { ImmunizationEvaluationStatusType } from './ImmunizationEvaluationStatusType';
 export { ImmunizationStatusType } from './ImmunizationStatusType';
 export { IssueSeverityType } from './IssueSeverityType';
 export { IssueTypeType } from './IssueTypeType';
