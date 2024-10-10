@@ -77,6 +77,7 @@ export { ParticipationStatusType } from './ParticipationStatusType';
 export { PublicationStatusType } from './PublicationStatusType';
 export { QualityTypeType } from './QualityTypeType';
 export { QuantityComparatorType } from './QuantityComparatorType';
+export { QuestionnaireAnswersStatusType } from './QuestionnaireAnswersStatusType';
 export { QuestionnaireEnableBehaviorType } from './QuestionnaireEnableBehaviorType';
 export { QuestionnaireEnableOperatorType } from './QuestionnaireEnableOperatorType';
 export { RepositoryTypeType } from './RepositoryTypeType';

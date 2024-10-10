@@ -77,6 +77,7 @@ export { ParticipationStatusEnum } from './ParticipationStatusEnum';
 export { PublicationStatusEnum } from './PublicationStatusEnum';
 export { QualityTypeEnum } from './QualityTypeEnum';
 export { QuantityComparatorEnum } from './QuantityComparatorEnum';
+export { QuestionnaireAnswersStatusEnum } from './QuestionnaireAnswersStatusEnum';
 export { QuestionnaireEnableBehaviorEnum } from './QuestionnaireEnableBehaviorEnum';
 export { QuestionnaireEnableOperatorEnum } from './QuestionnaireEnableOperatorEnum';
 export { RepositoryTypeEnum } from './RepositoryTypeEnum';

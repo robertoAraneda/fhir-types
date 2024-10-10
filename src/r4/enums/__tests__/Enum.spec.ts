@@ -77,6 +77,7 @@ import { ParticipationStatusEnum } from '../ParticipationStatusEnum';
 import { PublicationStatusEnum } from '../PublicationStatusEnum';
 import { QualityTypeEnum } from '../QualityTypeEnum';
 import { QuantityComparatorEnum } from '../QuantityComparatorEnum';
+import { QuestionnaireAnswersStatusEnum } from '../QuestionnaireAnswersStatusEnum';
 import { QuestionnaireEnableBehaviorEnum } from '../QuestionnaireEnableBehaviorEnum';
 import { QuestionnaireEnableOperatorEnum } from '../QuestionnaireEnableOperatorEnum';
 import { RepositoryTypeEnum } from '../RepositoryTypeEnum';
@@ -334,6 +335,8 @@ describe('BackboneElementEnum', () => {
     expect(BackboneElementEnum.QUESTIONNAIRE_ENABLE_WHEN).toEqual('QuestionnaireEnableWhen');
     expect(BackboneElementEnum.QUESTIONNAIRE_INITIAL).toEqual('QuestionnaireInitial');
     expect(BackboneElementEnum.QUESTIONNAIRE_ITEM).toEqual('QuestionnaireItem');
+    expect(BackboneElementEnum.QUESTIONNAIRE_RESPONSE_ANSWER).toEqual('QuestionnaireResponseAnswer');
+    expect(BackboneElementEnum.QUESTIONNAIRE_RESPONSE_ITEM).toEqual('QuestionnaireResponseItem');
     expect(BackboneElementEnum.RELATED_PERSON_COMMUNICATION).toEqual('RelatedPersonCommunication');
     expect(BackboneElementEnum.RISK_ASSESSMENT_PREDICTION).toEqual('RiskAssessmentPrediction');
     expect(BackboneElementEnum.SPECIMEN_COLLECTION).toEqual('SpecimenCollection');
@@ -1294,6 +1297,16 @@ describe('QuantityComparatorEnum', () => {
     expect(QuantityComparatorEnum.LESS_OR_EQUAL_TO).toEqual('<=');
     expect(QuantityComparatorEnum.GREATER_OR_EQUAL_TO).toEqual('>=');
     expect(QuantityComparatorEnum.GREATER_THAN).toEqual('>');
+  });
+});
+
+describe('QuestionnaireAnswersStatusEnum', () => {
+  it('should have the correct values', () => {
+    expect(QuestionnaireAnswersStatusEnum.IN_PROGRESS).toEqual('in-progress');
+    expect(QuestionnaireAnswersStatusEnum.COMPLETED).toEqual('completed');
+    expect(QuestionnaireAnswersStatusEnum.AMENDED).toEqual('amended');
+    expect(QuestionnaireAnswersStatusEnum.ENTERED_IN_ERROR).toEqual('entered-in-error');
+    expect(QuestionnaireAnswersStatusEnum.STOPPED).toEqual('stopped');
   });
 });
 

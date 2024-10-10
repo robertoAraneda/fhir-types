@@ -124,6 +124,8 @@ export enum BackboneElementEnum {
   QUESTIONNAIRE_ENABLE_WHEN = 'QuestionnaireEnableWhen',
   QUESTIONNAIRE_INITIAL = 'QuestionnaireInitial',
   QUESTIONNAIRE_ITEM = 'QuestionnaireItem',
+  QUESTIONNAIRE_RESPONSE_ANSWER = 'QuestionnaireResponseAnswer',
+  QUESTIONNAIRE_RESPONSE_ITEM = 'QuestionnaireResponseItem',
   RELATED_PERSON_COMMUNICATION = 'RelatedPersonCommunication',
   RISK_ASSESSMENT_PREDICTION = 'RiskAssessmentPrediction',
   SPECIMEN_COLLECTION = 'SpecimenCollection',

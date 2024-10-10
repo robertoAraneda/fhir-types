@@ -111,6 +111,8 @@ export { IQuestionnaireAnswerOption } from './IQuestionnaireAnswerOption';
 export { IQuestionnaireEnableWhen } from './IQuestionnaireEnableWhen';
 export { IQuestionnaireInitial } from './IQuestionnaireInitial';
 export { IQuestionnaireItem } from './IQuestionnaireItem';
+export { IQuestionnaireResponseAnswer } from './IQuestionnaireResponseAnswer';
+export { IQuestionnaireResponseItem } from './IQuestionnaireResponseItem';
 export { IRelatedPersonCommunication } from './IRelatedPersonCommunication';
 export { IRiskAssessmentPrediction } from './IRiskAssessmentPrediction';
 export { ISpecimenCollection } from './ISpecimenCollection';
