@@ -39,6 +39,7 @@ export { IPerson } from './IPerson';
 export { IPractitioner } from './IPractitioner';
 export { IPractitionerRole } from './IPractitionerRole';
 export { IProcedure } from './IProcedure';
+export { IQuestionnaire } from './IQuestionnaire';
 export { IRelatedPerson } from './IRelatedPerson';
 export { IRiskAssessment } from './IRiskAssessment';
 export { ISchedule } from './ISchedule';
