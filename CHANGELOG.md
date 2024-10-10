@@ -1,3 +1,11 @@
+# [1.27.0](https://github.com/robertoAraneda/fhir-types/compare/v1.26.0...v1.27.0) (2024-10-10)
+
+
+### Features
+
+* add Questionnaire resource ([a921e7d](https://github.com/robertoAraneda/fhir-types/commit/a921e7d0a87c735b33fbcc86823f4c3391be29e5))
+* add QuestionnaireResponse resource ([a2fba92](https://github.com/robertoAraneda/fhir-types/commit/a2fba92f88866e19e1e694de0bb3e496e728c3d8))
+
 # [1.26.0](https://github.com/robertoAraneda/fhir-types/compare/v1.25.0...v1.26.0) (2024-10-06)
 
 
