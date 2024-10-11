@@ -1,3 +1,10 @@
+## [1.27.1](https://github.com/robertoAraneda/fhir-types/compare/v1.27.0...v1.27.1) (2024-10-11)
+
+
+### Bug Fixes
+
+* add missing backbones in BackboneElementType ([636d509](https://github.com/robertoAraneda/fhir-types/commit/636d5095e91e56544c8057b330a6207ffafd4d5a))
+
 # [1.27.0](https://github.com/robertoAraneda/fhir-types/compare/v1.26.0...v1.27.0) (2024-10-10)
 
 
