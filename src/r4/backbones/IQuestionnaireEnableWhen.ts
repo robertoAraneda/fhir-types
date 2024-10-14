@@ -86,6 +86,16 @@ export interface IQuestionnaireEnableWhen extends IBackboneElement {
   /**
    * @description A value that the referenced question is tested using the specified operator in order for the item to be enabled.
    */
+  answerTime?: string;
+
+  /**
+   * @description Extensions for answerTime
+   */
+  _answerTime?: IElement;
+
+  /**
+   * @description A value that the referenced question is tested using the specified operator in order for the item to be enabled.
+   */
   answerString?: string;
 
   /**
