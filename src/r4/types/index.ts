@@ -23,6 +23,8 @@ export { CompositionStatusType } from './CompositionStatusType';
 export { ConfidentialityClassificationType } from './ConfidentialityClassificationType';
 export { ContactPointSystemType } from './ContactPointSystemType';
 export { ContactPointUseType } from './ContactPointUseType';
+export { ContractLegalstateType } from './ContractLegalstateType';
+export { ContractPublicationstatusType } from './ContractPublicationstatusType';
 export { CurrencyCodeType } from './CurrencyCodeType';
 export { DataTypeType } from './DataTypeType';
 export { DaysOfWeekType } from './DaysOfWeekType';

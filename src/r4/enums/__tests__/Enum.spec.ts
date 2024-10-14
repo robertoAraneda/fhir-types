@@ -23,6 +23,8 @@ import { CompositionStatusEnum } from '../CompositionStatusEnum';
 import { ConfidentialityClassificationEnum } from '../ConfidentialityClassificationEnum';
 import { ContactPointSystemEnum } from '../ContactPointSystemEnum';
 import { ContactPointUseEnum } from '../ContactPointUseEnum';
+import { ContractLegalstateEnum } from '../ContractLegalstateEnum';
+import { ContractPublicationstatusEnum } from '../ContractPublicationstatusEnum';
 import { CurrencyCodeEnum } from '../CurrencyCodeEnum';
 import { DataTypeEnum } from '../DataTypeEnum';
 import { DaysOfWeekEnum } from '../DaysOfWeekEnum';
@@ -244,6 +246,21 @@ describe('BackboneElementEnum', () => {
     expect(BackboneElementEnum.COMPOSITION_SECTION).toEqual('CompositionSection');
     expect(BackboneElementEnum.CONDITION_EVIDENCE).toEqual('ConditionEvidence');
     expect(BackboneElementEnum.CONDITION_STAGE).toEqual('ConditionStage');
+    expect(BackboneElementEnum.CONTRACT_ACTION).toEqual('ContractAction');
+    expect(BackboneElementEnum.CONTRACT_ANSWER).toEqual('ContractAnswer');
+    expect(BackboneElementEnum.CONTRACT_ASSET).toEqual('ContractAsset');
+    expect(BackboneElementEnum.CONTRACT_CONTENT_DEFINITION).toEqual('ContractContentDefinition');
+    expect(BackboneElementEnum.CONTRACT_CONTEXT).toEqual('ContractContext');
+    expect(BackboneElementEnum.CONTRACT_FRIENDLY).toEqual('ContractFriendly');
+    expect(BackboneElementEnum.CONTRACT_LEGAL).toEqual('ContractLegal');
+    expect(BackboneElementEnum.CONTRACT_OFFER).toEqual('ContractOffer');
+    expect(BackboneElementEnum.CONTRACT_PARTY).toEqual('ContractParty');
+    expect(BackboneElementEnum.CONTRACT_RULE).toEqual('ContractRule');
+    expect(BackboneElementEnum.CONTRACT_SECURITY_LABEL).toEqual('ContractSecurityLabel');
+    expect(BackboneElementEnum.CONTRACT_SIGNER).toEqual('ContractSigner');
+    expect(BackboneElementEnum.CONTRACT_SUBJECT).toEqual('ContractSubject');
+    expect(BackboneElementEnum.CONTRACT_TERM).toEqual('ContractTerm');
+    expect(BackboneElementEnum.CONTRACT_VALUED_ITEM).toEqual('ContractValuedItem');
     expect(BackboneElementEnum.COVERAGE_CLASS).toEqual('CoverageClass');
     expect(BackboneElementEnum.COVERAGE_COST_TO_BENEFICIARY).toEqual('CoverageCostToBeneficiary');
     expect(BackboneElementEnum.COVERAGE_EXCEPTION).toEqual('CoverageException');
@@ -462,6 +479,46 @@ describe('ContactPointUseEnum', () => {
     expect(ContactPointUseEnum.TEMP).toEqual('temp');
     expect(ContactPointUseEnum.OLD).toEqual('old');
     expect(ContactPointUseEnum.MOBILE).toEqual('mobile');
+  });
+});
+
+describe('ContractLegalstateEnum', () => {
+  it('should have the correct values', () => {
+    expect(ContractLegalstateEnum.AMENDED).toEqual('amended');
+    expect(ContractLegalstateEnum.APPENDED).toEqual('appended');
+    expect(ContractLegalstateEnum.CANCELLED).toEqual('cancelled');
+    expect(ContractLegalstateEnum.DISPUTED).toEqual('disputed');
+    expect(ContractLegalstateEnum.ENTERED_IN_ERROR).toEqual('entered-in-error');
+    expect(ContractLegalstateEnum.EXECUTABLE).toEqual('executable');
+    expect(ContractLegalstateEnum.EXECUTED).toEqual('executed');
+    expect(ContractLegalstateEnum.NEGOTIABLE).toEqual('negotiable');
+    expect(ContractLegalstateEnum.OFFERED).toEqual('offered');
+    expect(ContractLegalstateEnum.POLICY).toEqual('policy');
+    expect(ContractLegalstateEnum.REJECTED).toEqual('rejected');
+    expect(ContractLegalstateEnum.RENEWED).toEqual('renewed');
+    expect(ContractLegalstateEnum.REVOKED).toEqual('revoked');
+    expect(ContractLegalstateEnum.RESOLVED).toEqual('resolved');
+    expect(ContractLegalstateEnum.TERMINATED).toEqual('terminated');
+  });
+});
+
+describe('ContractPublicationstatusEnum', () => {
+  it('should have the correct values', () => {
+    expect(ContractPublicationstatusEnum.AMENDED).toEqual('amended');
+    expect(ContractPublicationstatusEnum.APPENDED).toEqual('appended');
+    expect(ContractPublicationstatusEnum.CANCELLED).toEqual('cancelled');
+    expect(ContractPublicationstatusEnum.DISPUTED).toEqual('disputed');
+    expect(ContractPublicationstatusEnum.ENTERED_IN_ERROR).toEqual('entered-in-error');
+    expect(ContractPublicationstatusEnum.EXECUTABLE).toEqual('executable');
+    expect(ContractPublicationstatusEnum.EXECUTED).toEqual('executed');
+    expect(ContractPublicationstatusEnum.NEGOTIABLE).toEqual('negotiable');
+    expect(ContractPublicationstatusEnum.OFFERED).toEqual('offered');
+    expect(ContractPublicationstatusEnum.POLICY).toEqual('policy');
+    expect(ContractPublicationstatusEnum.REJECTED).toEqual('rejected');
+    expect(ContractPublicationstatusEnum.RENEWED).toEqual('renewed');
+    expect(ContractPublicationstatusEnum.REVOKED).toEqual('revoked');
+    expect(ContractPublicationstatusEnum.RESOLVED).toEqual('resolved');
+    expect(ContractPublicationstatusEnum.TERMINATED).toEqual('terminated');
   });
 });
 
