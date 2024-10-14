@@ -1,3 +1,15 @@
+# [1.28.0](https://github.com/robertoAraneda/fhir-types/compare/v1.27.1...v1.28.0) (2024-10-14)
+
+
+### Bug Fixes
+
+* add missing attribute in IQuestionnaireEnableWhen ([9fed690](https://github.com/robertoAraneda/fhir-types/commit/9fed690125022e7088dd8433596d7330fe8c4f78))
+
+
+### Features
+
+* add Contract resource ([32d7fa1](https://github.com/robertoAraneda/fhir-types/commit/32d7fa1b47b9bf6fb8de39790553cfa71e9274a8))
+
 ## [1.27.1](https://github.com/robertoAraneda/fhir-types/compare/v1.27.0...v1.27.1) (2024-10-11)
 
 
