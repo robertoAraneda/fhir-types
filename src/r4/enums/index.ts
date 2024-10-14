@@ -37,6 +37,7 @@ export { DeviceMetricOperationalStatusEnum } from './DeviceMetricOperationalStat
 export { DeviceNameTypeEnum } from './DeviceNameTypeEnum';
 export { DiagnosticReportStatusEnum } from './DiagnosticReportStatusEnum';
 export { DocumentRelationshipTypeEnum } from './DocumentRelationshipTypeEnum';
+export { EligibilityrequestPurposeEnum } from './EligibilityrequestPurposeEnum';
 export { EncounterLocationStatusEnum } from './EncounterLocationStatusEnum';
 export { EncounterStatusEnum } from './EncounterStatusEnum';
 export { EndpointStatusEnum } from './EndpointStatusEnum';
@@ -48,6 +49,7 @@ export { FHIRDeviceStatusEnum } from './FHIRDeviceStatusEnum';
 export { FHIRSubstanceStatusEnum } from './FHIRSubstanceStatusEnum';
 export { FinancialResourceStatusCodesEnum } from './FinancialResourceStatusCodesEnum';
 export { FlagStatusEnum } from './FlagStatusEnum';
+export { FmStatusEnum } from './FmStatusEnum';
 export { GoalLifecycleStatusEnum } from './GoalLifecycleStatusEnum';
 export { GroupTypeEnum } from './GroupTypeEnum';
 export { HTTPVerbEnum } from './HTTPVerbEnum';

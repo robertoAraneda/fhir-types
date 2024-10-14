@@ -37,6 +37,7 @@ export { DeviceMetricOperationalStatusType } from './DeviceMetricOperationalStat
 export { DeviceNameTypeType } from './DeviceNameTypeType';
 export { DiagnosticReportStatusType } from './DiagnosticReportStatusType';
 export { DocumentRelationshipTypeType } from './DocumentRelationshipTypeType';
+export { EligibilityrequestPurposeType } from './EligibilityrequestPurposeType';
 export { EncounterLocationStatusType } from './EncounterLocationStatusType';
 export { EncounterStatusType } from './EncounterStatusType';
 export { EndpointStatusType } from './EndpointStatusType';
@@ -48,6 +49,7 @@ export { FHIRDeviceStatusType } from './FHIRDeviceStatusType';
 export { FHIRSubstanceStatusType } from './FHIRSubstanceStatusType';
 export { FinancialResourceStatusCodesType } from './FinancialResourceStatusCodesType';
 export { FlagStatusType } from './FlagStatusType';
+export { FmStatusType } from './FmStatusType';
 export { GoalLifecycleStatusType } from './GoalLifecycleStatusType';
 export { GroupTypeType } from './GroupTypeType';
 export { HTTPVerbType } from './HTTPVerbType';

@@ -37,6 +37,7 @@ import { DeviceMetricOperationalStatusEnum } from '../DeviceMetricOperationalSta
 import { DeviceNameTypeEnum } from '../DeviceNameTypeEnum';
 import { DiagnosticReportStatusEnum } from '../DiagnosticReportStatusEnum';
 import { DocumentRelationshipTypeEnum } from '../DocumentRelationshipTypeEnum';
+import { EligibilityrequestPurposeEnum } from '../EligibilityrequestPurposeEnum';
 import { EncounterLocationStatusEnum } from '../EncounterLocationStatusEnum';
 import { EncounterStatusEnum } from '../EncounterStatusEnum';
 import { EndpointStatusEnum } from '../EndpointStatusEnum';
@@ -48,6 +49,7 @@ import { FHIRDeviceStatusEnum } from '../FHIRDeviceStatusEnum';
 import { FHIRSubstanceStatusEnum } from '../FHIRSubstanceStatusEnum';
 import { FinancialResourceStatusCodesEnum } from '../FinancialResourceStatusCodesEnum';
 import { FlagStatusEnum } from '../FlagStatusEnum';
+import { FmStatusEnum } from '../FmStatusEnum';
 import { GoalLifecycleStatusEnum } from '../GoalLifecycleStatusEnum';
 import { GroupTypeEnum } from '../GroupTypeEnum';
 import { HTTPVerbEnum } from '../HTTPVerbEnum';
@@ -263,6 +265,12 @@ describe('BackboneElementEnum', () => {
     expect(BackboneElementEnum.CONTRACT_VALUED_ITEM).toEqual('ContractValuedItem');
     expect(BackboneElementEnum.COVERAGE_CLASS).toEqual('CoverageClass');
     expect(BackboneElementEnum.COVERAGE_COST_TO_BENEFICIARY).toEqual('CoverageCostToBeneficiary');
+    expect(BackboneElementEnum.COVERAGE_ELIGIBILITY_REQUEST_DIAGNOSIS).toEqual('CoverageEligibilityRequestDiagnosis');
+    expect(BackboneElementEnum.COVERAGE_ELIGIBILITY_REQUEST_SUPPORTING_INFO).toEqual(
+      'CoverageEligibilityRequestSupportingInfo',
+    );
+    expect(BackboneElementEnum.COVERAGE_ELIGIBILITY_REQUEST_INSURANCE).toEqual('CoverageEligibilityRequestInsurance');
+    expect(BackboneElementEnum.COVERAGE_ELIGIBILITY_REQUEST_ITEM).toEqual('CoverageEligibilityRequestItem');
     expect(BackboneElementEnum.COVERAGE_EXCEPTION).toEqual('CoverageException');
     expect(BackboneElementEnum.DETECTED_ISSUE_EVIDENCE).toEqual('DetectedIssueEvidence');
     expect(BackboneElementEnum.DETECTED_ISSUE_MITIGATION).toEqual('DetectedIssueMitigation');
@@ -881,6 +889,15 @@ describe('DocumentRelationshipTypeEnum', () => {
   });
 });
 
+describe('EligibilityrequestPurposeEnum', () => {
+  it('should have the correct values', () => {
+    expect(EligibilityrequestPurposeEnum.AUTH_REQUIREMENTS).toEqual('auth-requirements');
+    expect(EligibilityrequestPurposeEnum.BENEFITS).toEqual('benefits');
+    expect(EligibilityrequestPurposeEnum.DISCOVERY).toEqual('discovery');
+    expect(EligibilityrequestPurposeEnum.VALIDATION).toEqual('validation');
+  });
+});
+
 describe('EncounterLocationStatusEnum', () => {
   it('should have the correct values', () => {
     expect(EncounterLocationStatusEnum.PLANNED).toEqual('planned');
@@ -1010,6 +1027,15 @@ describe('FlagStatusEnum', () => {
     expect(FlagStatusEnum.ACTIVE).toEqual('active');
     expect(FlagStatusEnum.INACTIVE).toEqual('inactive');
     expect(FlagStatusEnum.ENTERED_IN_ERROR).toEqual('entered-in-error');
+  });
+});
+
+describe('FmStatusEnum', () => {
+  it('should have the correct values', () => {
+    expect(FmStatusEnum.ACTIVE).toEqual('active');
+    expect(FmStatusEnum.CANCELLED).toEqual('cancelled');
+    expect(FmStatusEnum.DRAFT).toEqual('draft');
+    expect(FmStatusEnum.ENTERED_IN_ERROR).toEqual('entered-in-error');
   });
 });
 
