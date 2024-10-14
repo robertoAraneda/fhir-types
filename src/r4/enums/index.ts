@@ -23,6 +23,8 @@ export { CompositionStatusEnum } from './CompositionStatusEnum';
 export { ConfidentialityClassificationEnum } from './ConfidentialityClassificationEnum';
 export { ContactPointSystemEnum } from './ContactPointSystemEnum';
 export { ContactPointUseEnum } from './ContactPointUseEnum';
+export { ContractLegalstateEnum } from './ContractLegalstateEnum';
+export { ContractPublicationstatusEnum } from './ContractPublicationstatusEnum';
 export { CurrencyCodeEnum } from './CurrencyCodeEnum';
 export { DataTypeEnum } from './DataTypeEnum';
 export { DaysOfWeekEnum } from './DaysOfWeekEnum';
