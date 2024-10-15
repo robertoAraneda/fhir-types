@@ -37,7 +37,8 @@ export { DeviceMetricOperationalStatusEnum } from './DeviceMetricOperationalStat
 export { DeviceNameTypeEnum } from './DeviceNameTypeEnum';
 export { DiagnosticReportStatusEnum } from './DiagnosticReportStatusEnum';
 export { DocumentRelationshipTypeEnum } from './DocumentRelationshipTypeEnum';
-export { EligibilityrequestPurposeEnum } from './EligibilityrequestPurposeEnum';
+export { EligibilityRequestPurposeEnum } from './EligibilityRequestPurposeEnum';
+export { EligibilityResponsePurposeEnum } from './EligibilityResponsePurposeEnum';
 export { EncounterLocationStatusEnum } from './EncounterLocationStatusEnum';
 export { EncounterStatusEnum } from './EncounterStatusEnum';
 export { EndpointStatusEnum } from './EndpointStatusEnum';
@@ -84,6 +85,7 @@ export { QuantityComparatorEnum } from './QuantityComparatorEnum';
 export { QuestionnaireAnswersStatusEnum } from './QuestionnaireAnswersStatusEnum';
 export { QuestionnaireEnableBehaviorEnum } from './QuestionnaireEnableBehaviorEnum';
 export { QuestionnaireEnableOperatorEnum } from './QuestionnaireEnableOperatorEnum';
+export { RemittanceOutcomeEnum } from './RemittanceOutcomeEnum';
 export { RepositoryTypeEnum } from './RepositoryTypeEnum';
 export { RequestIntentEnum } from './RequestIntentEnum';
 export { RequestPriorityEnum } from './RequestPriorityEnum';

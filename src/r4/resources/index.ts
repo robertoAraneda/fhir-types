@@ -14,6 +14,7 @@ export { ICondition } from './ICondition';
 export { IContract } from './IContract';
 export { ICoverage } from './ICoverage';
 export { ICoverageEligibilityRequest } from './ICoverageEligibilityRequest';
+export { ICoverageEligibilityResponse } from './ICoverageEligibilityResponse';
 export { IDetectedIssue } from './IDetectedIssue';
 export { IDevice } from './IDevice';
 export { IDeviceDefinition } from './IDeviceDifinition';

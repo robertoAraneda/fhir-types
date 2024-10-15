@@ -37,7 +37,8 @@ export { DeviceMetricOperationalStatusType } from './DeviceMetricOperationalStat
 export { DeviceNameTypeType } from './DeviceNameTypeType';
 export { DiagnosticReportStatusType } from './DiagnosticReportStatusType';
 export { DocumentRelationshipTypeType } from './DocumentRelationshipTypeType';
-export { EligibilityrequestPurposeType } from './EligibilityrequestPurposeType';
+export { EligibilityRequestPurposeType } from './EligibilityRequestPurposeType';
+export { EligibilityResponsePurposeType } from './EligibilityResponsePurposeType';
 export { EncounterLocationStatusType } from './EncounterLocationStatusType';
 export { EncounterStatusType } from './EncounterStatusType';
 export { EndpointStatusType } from './EndpointStatusType';
@@ -84,6 +85,7 @@ export { QuantityComparatorType } from './QuantityComparatorType';
 export { QuestionnaireAnswersStatusType } from './QuestionnaireAnswersStatusType';
 export { QuestionnaireEnableBehaviorType } from './QuestionnaireEnableBehaviorType';
 export { QuestionnaireEnableOperatorType } from './QuestionnaireEnableOperatorType';
+export { RemittanceOutcomeType } from './RemittanceOutcomeType';
 export { RepositoryTypeType } from './RepositoryTypeType';
 export { RequestIntentType } from './RequestIntentType';
 export { RequestPriorityType } from './RequestPriorityType';

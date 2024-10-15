@@ -37,7 +37,8 @@ import { DeviceMetricOperationalStatusEnum } from '../DeviceMetricOperationalSta
 import { DeviceNameTypeEnum } from '../DeviceNameTypeEnum';
 import { DiagnosticReportStatusEnum } from '../DiagnosticReportStatusEnum';
 import { DocumentRelationshipTypeEnum } from '../DocumentRelationshipTypeEnum';
-import { EligibilityrequestPurposeEnum } from '../EligibilityrequestPurposeEnum';
+import { EligibilityRequestPurposeEnum } from '../EligibilityRequestPurposeEnum';
+import { EligibilityResponsePurposeEnum } from '../EligibilityResponsePurposeEnum';
 import { EncounterLocationStatusEnum } from '../EncounterLocationStatusEnum';
 import { EncounterStatusEnum } from '../EncounterStatusEnum';
 import { EndpointStatusEnum } from '../EndpointStatusEnum';
@@ -84,6 +85,7 @@ import { QuantityComparatorEnum } from '../QuantityComparatorEnum';
 import { QuestionnaireAnswersStatusEnum } from '../QuestionnaireAnswersStatusEnum';
 import { QuestionnaireEnableBehaviorEnum } from '../QuestionnaireEnableBehaviorEnum';
 import { QuestionnaireEnableOperatorEnum } from '../QuestionnaireEnableOperatorEnum';
+import { RemittanceOutcomeEnum } from '../RemittanceOutcomeEnum';
 import { RepositoryTypeEnum } from '../RepositoryTypeEnum';
 import { RequestIntentEnum } from '../RequestIntentEnum';
 import { RequestPriorityEnum } from '../RequestPriorityEnum';
@@ -271,6 +273,10 @@ describe('BackboneElementEnum', () => {
     );
     expect(BackboneElementEnum.COVERAGE_ELIGIBILITY_REQUEST_INSURANCE).toEqual('CoverageEligibilityRequestInsurance');
     expect(BackboneElementEnum.COVERAGE_ELIGIBILITY_REQUEST_ITEM).toEqual('CoverageEligibilityRequestItem');
+    expect(BackboneElementEnum.COVERAGE_ELIGIBILITY_RESPONSE_BENEFIT).toEqual('CoverageEligibilityResponseBenefit');
+    expect(BackboneElementEnum.COVERAGE_ELIGIBILITY_RESPONSE_ERROR).toEqual('CoverageEligibilityResponseError');
+    expect(BackboneElementEnum.COVERAGE_ELIGIBILITY_RESPONSE_INSURANCE).toEqual('CoverageEligibilityResponseInsurance');
+    expect(BackboneElementEnum.COVERAGE_ELIGIBILITY_RESPONSE_ITEM).toEqual('CoverageEligibilityResponseItem');
     expect(BackboneElementEnum.COVERAGE_EXCEPTION).toEqual('CoverageException');
     expect(BackboneElementEnum.DETECTED_ISSUE_EVIDENCE).toEqual('DetectedIssueEvidence');
     expect(BackboneElementEnum.DETECTED_ISSUE_MITIGATION).toEqual('DetectedIssueMitigation');
@@ -891,10 +897,19 @@ describe('DocumentRelationshipTypeEnum', () => {
 
 describe('EligibilityrequestPurposeEnum', () => {
   it('should have the correct values', () => {
-    expect(EligibilityrequestPurposeEnum.AUTH_REQUIREMENTS).toEqual('auth-requirements');
-    expect(EligibilityrequestPurposeEnum.BENEFITS).toEqual('benefits');
-    expect(EligibilityrequestPurposeEnum.DISCOVERY).toEqual('discovery');
-    expect(EligibilityrequestPurposeEnum.VALIDATION).toEqual('validation');
+    expect(EligibilityRequestPurposeEnum.AUTH_REQUIREMENTS).toEqual('auth-requirements');
+    expect(EligibilityRequestPurposeEnum.BENEFITS).toEqual('benefits');
+    expect(EligibilityRequestPurposeEnum.DISCOVERY).toEqual('discovery');
+    expect(EligibilityRequestPurposeEnum.VALIDATION).toEqual('validation');
+  });
+});
+
+describe('EligibilityResponsePurposeEnum', () => {
+  it('should have the correct values', () => {
+    expect(EligibilityResponsePurposeEnum.AUTH_REQUIREMENTS).toEqual('auth-requirements');
+    expect(EligibilityResponsePurposeEnum.BENEFITS).toEqual('benefits');
+    expect(EligibilityResponsePurposeEnum.DISCOVERY).toEqual('discovery');
+    expect(EligibilityResponsePurposeEnum.VALIDATION).toEqual('validation');
   });
 });
 
@@ -1409,6 +1424,15 @@ describe('QuestionnaireEnableOperatorEnum', () => {
     expect(QuestionnaireEnableOperatorEnum.LESS_THAN).toEqual('<');
     expect(QuestionnaireEnableOperatorEnum.GREATER_OR_EQUALS).toEqual('>=');
     expect(QuestionnaireEnableOperatorEnum.LESS_OR_EQUALS).toEqual('<=');
+  });
+});
+
+describe('RemittanceOutcomeEnum', () => {
+  it('should have the correct values', () => {
+    expect(RemittanceOutcomeEnum.QUEUED).toEqual('queued');
+    expect(RemittanceOutcomeEnum.COMPLETE).toEqual('complete');
+    expect(RemittanceOutcomeEnum.ERROR).toEqual('error');
+    expect(RemittanceOutcomeEnum.PARTIAL).toEqual('partial');
   });
 });
 

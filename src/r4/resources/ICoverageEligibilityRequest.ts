@@ -5,7 +5,7 @@ import {
 } from '../backbones';
 import { IDomainResource, IElement } from '../base';
 import { ICodeableConcept, IIdentifier, IPeriod, IReference } from '../datatypes';
-import { EligibilityrequestPurposeType, FmStatusType } from '../types';
+import { EligibilityRequestPurposeType, FmStatusType } from '../types';
 
 /**
  * @name ICoverageEligibilityRequest
@@ -40,8 +40,10 @@ export interface ICoverageEligibilityRequest extends IDomainResource {
 
   /**
    * @description Code to specify whether requesting: prior authorization requirements for some service categories or billing codes; benefits for coverages specified or discovered; discovery and return of coverages for the patient; and/or validation that the specified coverage is in-force at the date/period specified or \u0027now\u0027 if not specified.
+   * @description auth-requirements | benefits | discovery | validation
+   * @see <a href="https://hl7.org/fhir/R4/valueset-eligibilityrequest-purpose.html">EligibilityRequestPurpose</a>
    */
-  purpose?: EligibilityrequestPurposeType[];
+  purpose?: EligibilityRequestPurposeType[];
 
   /**
    * @description Extensions for purpose

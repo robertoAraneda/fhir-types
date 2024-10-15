@@ -46,6 +46,10 @@ export { ICoverageEligibilityRequestDiagnosis } from './ICoverageEligibilityRequ
 export { ICoverageEligibilityRequestSupportingInfo } from './ICoverageEligibilityRequestSupportingInfo';
 export { ICoverageEligibilityRequestInsurance } from './ICoverageEligibilityRequestInsurance';
 export { ICoverageEligibilityRequestItem } from './ICoverageEligibilityRequestItem';
+export { ICoverageEligibilityResponseBenefit } from './ICoverageEligibilityResponseBenefit';
+export { ICoverageEligibilityResponseError } from './ICoverageEligibilityResponseError';
+export { ICoverageEligibilityResponseInsurance } from './ICoverageEligibilityResponseInsurance';
+export { ICoverageEligibilityResponseItem } from './ICoverageEligibilityResponseItem';
 export { ICoverageException } from './ICoverageException';
 export { IDetectedIssueEvidence } from './IDetectedIssueEvidence';
 export { IDetectedIssueMitigation } from './IDetectedIssueMitigation';
