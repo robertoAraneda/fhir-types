@@ -37,6 +37,8 @@ import { DeviceMetricOperationalStatusEnum } from '../DeviceMetricOperationalSta
 import { DeviceNameTypeEnum } from '../DeviceNameTypeEnum';
 import { DiagnosticReportStatusEnum } from '../DiagnosticReportStatusEnum';
 import { DocumentRelationshipTypeEnum } from '../DocumentRelationshipTypeEnum';
+import { EligibilityRequestPurposeEnum } from '../EligibilityRequestPurposeEnum';
+import { EligibilityResponsePurposeEnum } from '../EligibilityResponsePurposeEnum';
 import { EncounterLocationStatusEnum } from '../EncounterLocationStatusEnum';
 import { EncounterStatusEnum } from '../EncounterStatusEnum';
 import { EndpointStatusEnum } from '../EndpointStatusEnum';
@@ -48,6 +50,7 @@ import { FHIRDeviceStatusEnum } from '../FHIRDeviceStatusEnum';
 import { FHIRSubstanceStatusEnum } from '../FHIRSubstanceStatusEnum';
 import { FinancialResourceStatusCodesEnum } from '../FinancialResourceStatusCodesEnum';
 import { FlagStatusEnum } from '../FlagStatusEnum';
+import { FmStatusEnum } from '../FmStatusEnum';
 import { GoalLifecycleStatusEnum } from '../GoalLifecycleStatusEnum';
 import { GroupTypeEnum } from '../GroupTypeEnum';
 import { HTTPVerbEnum } from '../HTTPVerbEnum';
@@ -82,6 +85,7 @@ import { QuantityComparatorEnum } from '../QuantityComparatorEnum';
 import { QuestionnaireAnswersStatusEnum } from '../QuestionnaireAnswersStatusEnum';
 import { QuestionnaireEnableBehaviorEnum } from '../QuestionnaireEnableBehaviorEnum';
 import { QuestionnaireEnableOperatorEnum } from '../QuestionnaireEnableOperatorEnum';
+import { RemittanceOutcomeEnum } from '../RemittanceOutcomeEnum';
 import { RepositoryTypeEnum } from '../RepositoryTypeEnum';
 import { RequestIntentEnum } from '../RequestIntentEnum';
 import { RequestPriorityEnum } from '../RequestPriorityEnum';
@@ -263,6 +267,16 @@ describe('BackboneElementEnum', () => {
     expect(BackboneElementEnum.CONTRACT_VALUED_ITEM).toEqual('ContractValuedItem');
     expect(BackboneElementEnum.COVERAGE_CLASS).toEqual('CoverageClass');
     expect(BackboneElementEnum.COVERAGE_COST_TO_BENEFICIARY).toEqual('CoverageCostToBeneficiary');
+    expect(BackboneElementEnum.COVERAGE_ELIGIBILITY_REQUEST_DIAGNOSIS).toEqual('CoverageEligibilityRequestDiagnosis');
+    expect(BackboneElementEnum.COVERAGE_ELIGIBILITY_REQUEST_SUPPORTING_INFO).toEqual(
+      'CoverageEligibilityRequestSupportingInfo',
+    );
+    expect(BackboneElementEnum.COVERAGE_ELIGIBILITY_REQUEST_INSURANCE).toEqual('CoverageEligibilityRequestInsurance');
+    expect(BackboneElementEnum.COVERAGE_ELIGIBILITY_REQUEST_ITEM).toEqual('CoverageEligibilityRequestItem');
+    expect(BackboneElementEnum.COVERAGE_ELIGIBILITY_RESPONSE_BENEFIT).toEqual('CoverageEligibilityResponseBenefit');
+    expect(BackboneElementEnum.COVERAGE_ELIGIBILITY_RESPONSE_ERROR).toEqual('CoverageEligibilityResponseError');
+    expect(BackboneElementEnum.COVERAGE_ELIGIBILITY_RESPONSE_INSURANCE).toEqual('CoverageEligibilityResponseInsurance');
+    expect(BackboneElementEnum.COVERAGE_ELIGIBILITY_RESPONSE_ITEM).toEqual('CoverageEligibilityResponseItem');
     expect(BackboneElementEnum.COVERAGE_EXCEPTION).toEqual('CoverageException');
     expect(BackboneElementEnum.DETECTED_ISSUE_EVIDENCE).toEqual('DetectedIssueEvidence');
     expect(BackboneElementEnum.DETECTED_ISSUE_MITIGATION).toEqual('DetectedIssueMitigation');
@@ -881,6 +895,24 @@ describe('DocumentRelationshipTypeEnum', () => {
   });
 });
 
+describe('EligibilityrequestPurposeEnum', () => {
+  it('should have the correct values', () => {
+    expect(EligibilityRequestPurposeEnum.AUTH_REQUIREMENTS).toEqual('auth-requirements');
+    expect(EligibilityRequestPurposeEnum.BENEFITS).toEqual('benefits');
+    expect(EligibilityRequestPurposeEnum.DISCOVERY).toEqual('discovery');
+    expect(EligibilityRequestPurposeEnum.VALIDATION).toEqual('validation');
+  });
+});
+
+describe('EligibilityResponsePurposeEnum', () => {
+  it('should have the correct values', () => {
+    expect(EligibilityResponsePurposeEnum.AUTH_REQUIREMENTS).toEqual('auth-requirements');
+    expect(EligibilityResponsePurposeEnum.BENEFITS).toEqual('benefits');
+    expect(EligibilityResponsePurposeEnum.DISCOVERY).toEqual('discovery');
+    expect(EligibilityResponsePurposeEnum.VALIDATION).toEqual('validation');
+  });
+});
+
 describe('EncounterLocationStatusEnum', () => {
   it('should have the correct values', () => {
     expect(EncounterLocationStatusEnum.PLANNED).toEqual('planned');
@@ -1010,6 +1042,15 @@ describe('FlagStatusEnum', () => {
     expect(FlagStatusEnum.ACTIVE).toEqual('active');
     expect(FlagStatusEnum.INACTIVE).toEqual('inactive');
     expect(FlagStatusEnum.ENTERED_IN_ERROR).toEqual('entered-in-error');
+  });
+});
+
+describe('FmStatusEnum', () => {
+  it('should have the correct values', () => {
+    expect(FmStatusEnum.ACTIVE).toEqual('active');
+    expect(FmStatusEnum.CANCELLED).toEqual('cancelled');
+    expect(FmStatusEnum.DRAFT).toEqual('draft');
+    expect(FmStatusEnum.ENTERED_IN_ERROR).toEqual('entered-in-error');
   });
 });
 
@@ -1383,6 +1424,15 @@ describe('QuestionnaireEnableOperatorEnum', () => {
     expect(QuestionnaireEnableOperatorEnum.LESS_THAN).toEqual('<');
     expect(QuestionnaireEnableOperatorEnum.GREATER_OR_EQUALS).toEqual('>=');
     expect(QuestionnaireEnableOperatorEnum.LESS_OR_EQUALS).toEqual('<=');
+  });
+});
+
+describe('RemittanceOutcomeEnum', () => {
+  it('should have the correct values', () => {
+    expect(RemittanceOutcomeEnum.QUEUED).toEqual('queued');
+    expect(RemittanceOutcomeEnum.COMPLETE).toEqual('complete');
+    expect(RemittanceOutcomeEnum.ERROR).toEqual('error');
+    expect(RemittanceOutcomeEnum.PARTIAL).toEqual('partial');
   });
 });
 
