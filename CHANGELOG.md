@@ -1,3 +1,11 @@
+# [1.29.0](https://github.com/robertoAraneda/fhir-types/compare/v1.28.0...v1.29.0) (2024-10-16)
+
+
+### Features
+
+* add CoverageEligibilityRequest resource ([69cfc92](https://github.com/robertoAraneda/fhir-types/commit/69cfc92820881d06ad9aad6478b1a49f0ecfb828))
+* add CoverageEligibilityResponse resource ([47b038b](https://github.com/robertoAraneda/fhir-types/commit/47b038bcc61c52a769bd88b49ee942a7e2e9ad57))
+
 # [1.28.0](https://github.com/robertoAraneda/fhir-types/compare/v1.27.1...v1.28.0) (2024-10-14)
 
 
