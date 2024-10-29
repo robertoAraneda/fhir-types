@@ -22,6 +22,7 @@ export { IDeviceMetric } from './IDeviceMetric';
 export { IEncounter } from './IEncounter';
 export { IEndpoint } from './IEndpoint';
 export { IEnrollmentRequest } from './IEnrollmentRequest';
+export { IEnrollmentResponse } from './IEnrollmentResponse';
 export { IEpisodeOfCare } from './IEpisodeOfCare';
 export { IFamilyMemberHistory } from './IFamilyMemberHistory';
 export { IFlag } from './IFlag';
