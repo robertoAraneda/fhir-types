@@ -60,3 +60,4 @@ export { ISlot } from './ISlot';
 export { ISpecimen } from './ISpecimen';
 export { ISubstance } from './ISubstance';
 export { ITask } from './ITask';
+export { IVisionPrescription } from './IVisionPrescription';

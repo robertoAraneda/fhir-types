@@ -100,6 +100,8 @@ import { TaskIntentEnum } from '../TaskIntentEnum';
 import { TaskStatusEnum } from '../TaskStatusEnum';
 import { UDIEntryTypeEnum } from '../UDIEntryTypeEnum';
 import { UnitsOfTimeEnum } from '../UnitsOfTimeEnum';
+import { VisionBaseCodesEnum } from '../VisionBaseCodesEnum';
+import { VisionEyeCodesEnum } from '../VisionEyeCodesEnum';
 
 describe('AccountStatusEnum', () => {
   it('should have the correct values', () => {
@@ -377,6 +379,8 @@ describe('BackboneElementEnum', () => {
     expect(BackboneElementEnum.TASK_OUTPUT).toEqual('TaskOutput');
     expect(BackboneElementEnum.TASK_RESTRICTION).toEqual('TaskRestriction');
     expect(BackboneElementEnum.TIMING).toEqual('Timing');
+    expect(BackboneElementEnum.VISION_PRESCRIPTION_LENS_SPECIFICATION).toEqual('VisionPrescriptionLensSpecification');
+    expect(BackboneElementEnum.VISION_PRESCRIPTION_PRISM).toEqual('VisionPrescriptionPrism');
   });
 });
 
@@ -1725,5 +1729,21 @@ describe('UnitsOfTimeEnum', () => {
     expect(UnitsOfTimeEnum.WEEK).toEqual('wk');
     expect(UnitsOfTimeEnum.MONTH).toEqual('mo');
     expect(UnitsOfTimeEnum.YEAR).toEqual('a');
+  });
+});
+
+describe('VisionBaseCodesEnum', () => {
+  it('should have the correct values', () => {
+    expect(VisionBaseCodesEnum.UP).toEqual('up');
+    expect(VisionBaseCodesEnum.DOWN).toEqual('down');
+    expect(VisionBaseCodesEnum.IN).toEqual('in');
+    expect(VisionBaseCodesEnum.OUT).toEqual('out');
+  });
+});
+
+describe('VisionEyeCodesEnum', () => {
+  it('should have the correct values', () => {
+    expect(VisionEyeCodesEnum.RIGHT).toEqual('right');
+    expect(VisionEyeCodesEnum.LEFT).toEqual('left');
   });
 });

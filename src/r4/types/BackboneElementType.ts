@@ -161,4 +161,6 @@ export type BackboneElementType =
   | 'TaskInput'
   | 'TaskOutput'
   | 'TaskRestriction'
-  | 'Timing';
+  | 'Timing'
+  | 'VisionPrescriptionLensSpecification'
+  | 'VisionPrescriptionPrism';

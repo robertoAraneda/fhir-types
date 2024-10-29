@@ -100,3 +100,5 @@ export { TaskIntentType } from './TaskIntentType';
 export { TaskStatusType } from './TaskStatusType';
 export { UDIEntryTypeType } from './UDIEntryTypeType';
 export { UnitsOfTimeType } from './UnitsOfTimeType';
+export { VisionBaseCodesType } from './VisionBaseCodesType';
+export { VisionEyeCodesType } from './VisionEyeCodesType';
