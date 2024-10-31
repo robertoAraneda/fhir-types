@@ -156,3 +156,5 @@ export { ITaskInput } from './ITaskInput';
 export { ITaskOutput } from './ITaskOutput';
 export { ITaskRestriction } from './ITaskRestriction';
 export { ITiming } from './ITiming';
+export { IVisionPrescriptionLensSpecification } from './IVisionPrescriptionLensSpecification';
+export { IVisionPrescriptionPrism } from './IVisionPrescriptionPrism';

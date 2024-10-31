@@ -100,3 +100,5 @@ export { TaskIntentEnum } from './TaskIntentEnum';
 export { TaskStatusEnum } from './TaskStatusEnum';
 export { UDIEntryTypeEnum } from './UDIEntryTypeEnum';
 export { UnitsOfTimeEnum } from './UnitsOfTimeEnum';
+export { VisionBaseCodesEnum } from './VisionBaseCodesEnum';
+export { VisionEyeCodesEnum } from './VisionEyeCodesEnum';

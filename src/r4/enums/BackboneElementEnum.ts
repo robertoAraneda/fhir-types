@@ -160,4 +160,6 @@ export enum BackboneElementEnum {
   TASK_OUTPUT = 'TaskOutput',
   TASK_RESTRICTION = 'TaskRestriction',
   TIMING = 'Timing',
+  VISION_PRESCRIPTION_LENS_SPECIFICATION = 'VisionPrescriptionLensSpecification',
+  VISION_PRESCRIPTION_PRISM = 'VisionPrescriptionPrism',
 }
