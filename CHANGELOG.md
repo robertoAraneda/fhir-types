@@ -1,3 +1,12 @@
+# [1.30.0](https://github.com/robertoAraneda/fhir-types/compare/v1.29.0...v1.30.0) (2024-10-31)
+
+
+### Features
+
+* add EnrollmentRequest resource ([af1911b](https://github.com/robertoAraneda/fhir-types/commit/af1911b50201f8af576157b3e673d278bc51e3e3))
+* add EnrollmentResponse resource ([c4c0524](https://github.com/robertoAraneda/fhir-types/commit/c4c05248f9d55e7bc40b65a5d37c98d0537475ac))
+* add VisionPrescription resource ([5ff1c8d](https://github.com/robertoAraneda/fhir-types/commit/5ff1c8df345430b5631322a977fbfbd582d86b0c))
+
 # [1.29.0](https://github.com/robertoAraneda/fhir-types/compare/v1.28.0...v1.29.0) (2024-10-16)
 
 
