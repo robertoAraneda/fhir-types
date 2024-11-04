@@ -17,6 +17,7 @@ export { CarePlanActivityKindEnum } from './CarePlanActivityKindEnum';
 export { CarePlanActivityStatusEnum } from './CarePlanActivityStatusEnum';
 export { CarePlanIntentEnum } from './CarePlanIntentEnum';
 export { CareTeamStatusEnum } from './CareTeamStatusEnum';
+export { ClaimUseEnum } from './ClaimUseEnum';
 export { ClinicalImpressionStatusEnum } from './ClinicalImpressionStatusEnum';
 export { CompositionAttestationModeEnum } from './CompositionAttestationModeEnum';
 export { CompositionStatusEnum } from './CompositionStatusEnum';

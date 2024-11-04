@@ -17,6 +17,7 @@ import { CarePlanActivityKindEnum } from '../CarePlanActivityKindEnum';
 import { CarePlanActivityStatusEnum } from '../CarePlanActivityStatusEnum';
 import { CarePlanIntentEnum } from '../CarePlanIntentEnum';
 import { CareTeamStatusEnum } from '../CareTeamStatusEnum';
+import { ClaimUseEnum } from '../ClaimUseEnum';
 import { ClinicalImpressionStatusEnum } from '../ClinicalImpressionStatusEnum';
 import { CompositionAttestationModeEnum } from '../CompositionAttestationModeEnum';
 import { CompositionStatusEnum } from '../CompositionStatusEnum';
@@ -246,6 +247,19 @@ describe('BackboneElementEnum', () => {
     expect(BackboneElementEnum.CARE_PLAN_ACTIVITY).toEqual('CarePlanActivity');
     expect(BackboneElementEnum.CARE_PLAN_ACTIVITY_DETAIL).toEqual('CarePlanActivityDetail');
     expect(BackboneElementEnum.CARE_TEAM_PARTICIPANT).toEqual('CareTeamParticipant');
+    expect(BackboneElementEnum.CLAIM_ACCIDENT).toEqual('ClaimAccident');
+    expect(BackboneElementEnum.CLAIM_CARE_TEAM).toEqual('ClaimCareTeam');
+    expect(BackboneElementEnum.CLAIM_DETAIL).toEqual('ClaimDetail');
+    expect(BackboneElementEnum.CLAIM_DIAGNOSIS).toEqual('ClaimDiagnosis');
+    expect(BackboneElementEnum.CLAIM_INSURANCE).toEqual('ClaimInsurance');
+    expect(BackboneElementEnum.CLAIM_ITEM).toEqual('ClaimItem');
+    expect(BackboneElementEnum.CLAIM_PAYEE).toEqual('ClaimPayee');
+    expect(BackboneElementEnum.CLAIM_PROCEDURE).toEqual('ClaimProcedure');
+    expect(BackboneElementEnum.CLAIM_RELATED).toEqual('ClaimRelated');
+    expect(BackboneElementEnum.CLAIM_SUB_DETAIL).toEqual('ClaimSubDetail');
+    expect(BackboneElementEnum.CLAIM_SUPPORTING_INFO).toEqual('ClaimSupportingInfo');
+    expect(BackboneElementEnum.CLINICAL_IMPRESSION_FINDING).toEqual('ClinicalImpressionFinding');
+    expect(BackboneElementEnum.CLINICAL_IMPRESSION_INVESTIGATION).toEqual('ClinicalImpressionInvestigation');
     expect(BackboneElementEnum.COMPOSITION_ATTESTER).toEqual('CompositionAttester');
     expect(BackboneElementEnum.COMPOSITION_EVENT).toEqual('CompositionEvent');
     expect(BackboneElementEnum.COMPOSITION_RELATES_TO).toEqual('CompositionRelatesTo');
@@ -438,6 +452,14 @@ describe('CareTeamStatusEnum', () => {
     expect(CareTeamStatusEnum.SUSPENDED).toEqual('suspended');
     expect(CareTeamStatusEnum.INACTIVE).toEqual('inactive');
     expect(CareTeamStatusEnum.ENTERED_IN_ERROR).toEqual('entered-in-error');
+  });
+});
+
+describe('ClaimUseEnum', () => {
+  it('should have the correct values', () => {
+    expect(ClaimUseEnum.CLAIM).toEqual('claim');
+    expect(ClaimUseEnum.PREAUTHORIZATION).toEqual('preauthorization');
+    expect(ClaimUseEnum.PREDETERMINATION).toEqual('predetermination');
   });
 });
 

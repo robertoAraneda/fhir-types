@@ -8,6 +8,7 @@ export { IBodyStructure } from './IBodyStructure';
 export { IBundle } from './IBundle';
 export { ICarePlan } from './ICarePlan';
 export { ICareTeam } from './ICareTeam';
+export { IClaim } from './IClaim';
 export { IClinicalImpression } from './IClinicalImpression';
 export { IComposition } from './IComposition';
 export { ICondition } from './ICondition';
