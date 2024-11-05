@@ -18,7 +18,7 @@ import { ClaimUseType, FmStatusType } from '../types';
  * @description A provider issued list of professional services and products which have been provided, or are to be provided, to a patient which is sent to an insurer for reimbursement.
  * @see <a href="https://hl7.org/fhir/R4/claim.html">Claim</a>
  * @version R4
- * @extends {DomainResource}
+ * @extends {IDomainResource}
  * @author Claudia Alarcón Lazo
  */
 export interface IClaim extends IDomainResource {

@@ -76,6 +76,7 @@ export { MedicationStatementStatusCodesEnum } from './MedicationStatementStatusC
 export { MedicationStatusCodesEnum } from './MedicationStatusCodesEnum';
 export { NameUseEnum } from './NameUseEnum';
 export { NarrativeStatusEnum } from './NarrativeStatusEnum';
+export { NoteTypeEnum } from './NoteTypeEnum';
 export { ObservationStatusEnum } from './ObservationStatusEnum';
 export { OrientationTypeEnum } from './OrientationTypeEnum';
 export { ParticipantRequiredEnum } from './ParticipantRequiredEnum';

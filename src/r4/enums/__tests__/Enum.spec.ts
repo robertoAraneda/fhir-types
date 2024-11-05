@@ -76,6 +76,7 @@ import { MedicationStatementStatusCodesEnum } from '../MedicationStatementStatus
 import { MedicationStatusCodesEnum } from '../MedicationStatusCodesEnum';
 import { NameUseEnum } from '../NameUseEnum';
 import { NarrativeStatusEnum } from '../NarrativeStatusEnum';
+import { NoteTypeEnum } from '../NoteTypeEnum';
 import { ObservationStatusEnum } from '../ObservationStatusEnum';
 import { OrientationTypeEnum } from '../OrientationTypeEnum';
 import { ParticipantRequiredEnum } from '../ParticipantRequiredEnum';
@@ -256,6 +257,18 @@ describe('BackboneElementEnum', () => {
     expect(BackboneElementEnum.CLAIM_PAYEE).toEqual('ClaimPayee');
     expect(BackboneElementEnum.CLAIM_PROCEDURE).toEqual('ClaimProcedure');
     expect(BackboneElementEnum.CLAIM_RELATED).toEqual('ClaimRelated');
+    expect(BackboneElementEnum.CLAIM_RESPONSE_ADD_ITEM).toEqual('ClaimResponseAddItem');
+    expect(BackboneElementEnum.CLAIM_RESPONSE_ADD_ITEM_DETAIL).toEqual('ClaimResponseAddItemDetail');
+    expect(BackboneElementEnum.CLAIM_RESPONSE_ADD_ITEM_SUB_DETAIL).toEqual('ClaimResponseAddItemSubDetail');
+    expect(BackboneElementEnum.CLAIM_RESPONSE_ADJUDICATION).toEqual('ClaimResponseAdjudication');
+    expect(BackboneElementEnum.CLAIM_RESPONSE_DETAIL).toEqual('ClaimResponseDetail');
+    expect(BackboneElementEnum.CLAIM_RESPONSE_ERROR).toEqual('ClaimResponseError');
+    expect(BackboneElementEnum.CLAIM_RESPONSE_INSURANCE).toEqual('ClaimResponseInsurance');
+    expect(BackboneElementEnum.CLAIM_RESPONSE_ITEM).toEqual('ClaimResponseItem');
+    expect(BackboneElementEnum.CLAIM_RESPONSE_PAYMENT).toEqual('ClaimResponsePayment');
+    expect(BackboneElementEnum.CLAIM_RESPONSE_PROCESS_NOTE).toEqual('ClaimResponseProcessNote');
+    expect(BackboneElementEnum.CLAIM_RESPONSE_SUB_DETAIL).toEqual('ClaimResponseSubDetail');
+    expect(BackboneElementEnum.CLAIM_RESPONSE_TOTAL).toEqual('ClaimResponseTotal');
     expect(BackboneElementEnum.CLAIM_SUB_DETAIL).toEqual('ClaimSubDetail');
     expect(BackboneElementEnum.CLAIM_SUPPORTING_INFO).toEqual('ClaimSupportingInfo');
     expect(BackboneElementEnum.CLINICAL_IMPRESSION_FINDING).toEqual('ClinicalImpressionFinding');
@@ -1358,6 +1371,14 @@ describe('NarrativeStatusEnum', () => {
     expect(NarrativeStatusEnum.EXTENSIONS).toEqual('extensions');
     expect(NarrativeStatusEnum.ADDITIONAL).toEqual('additional');
     expect(NarrativeStatusEnum.EMPTY).toEqual('empty');
+  });
+});
+
+describe('NoteTypeEnum', () => {
+  it('should have the correct values', () => {
+    expect(NoteTypeEnum.DISPLAY).toEqual('display');
+    expect(NoteTypeEnum.PRINT).toEqual('print');
+    expect(NoteTypeEnum.PRINTOPER).toEqual('printoper');
   });
 });
 

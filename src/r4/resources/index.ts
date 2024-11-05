@@ -9,6 +9,7 @@ export { IBundle } from './IBundle';
 export { ICarePlan } from './ICarePlan';
 export { ICareTeam } from './ICareTeam';
 export { IClaim } from './IClaim';
+export { IClaimResponse } from './IClaimResponse';
 export { IClinicalImpression } from './IClinicalImpression';
 export { IComposition } from './IComposition';
 export { ICondition } from './ICondition';

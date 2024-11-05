@@ -76,6 +76,7 @@ export { MedicationStatementStatusCodesType } from './MedicationStatementStatusC
 export { MedicationStatusCodesType } from './MedicationStatusCodesType';
 export { NameUseType } from './NameUseType';
 export { NarrativeStatusType } from './NarrativeStatusType';
+export { NoteTypeType } from './NoteTypeType';
 export { ObservationStatusType } from './ObservationStatusType';
 export { OrientationTypeType } from './OrientationTypeType';
 export { ParticipantRequiredType } from './ParticipantRequiredType';
