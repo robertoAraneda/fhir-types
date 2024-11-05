@@ -48,6 +48,7 @@ export { IObservation } from './IObservation';
 export { IOperationOutcome } from './IOperationOutcome';
 export { IOrganization } from './IOrganization';
 export { IPatient } from './IPatient';
+export { IPaymentNotice } from './IPaymentNotice';
 export { IPerson } from './IPerson';
 export { IPractitioner } from './IPractitioner';
 export { IPractitionerRole } from './IPractitionerRole';
