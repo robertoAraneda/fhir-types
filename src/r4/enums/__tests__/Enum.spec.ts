@@ -385,6 +385,8 @@ describe('BackboneElementEnum', () => {
     expect(BackboneElementEnum.PATIENT_COMMUNICATION).toEqual('PatientCommunication');
     expect(BackboneElementEnum.PATIENT_CONTACT).toEqual('PatientContact');
     expect(BackboneElementEnum.PATIENT_LINK).toEqual('PatientLink');
+    expect(BackboneElementEnum.PAYMENT_RECONCILIATION_DETAIL).toEqual('PaymentReconciliationDetail');
+    expect(BackboneElementEnum.PAYMENT_RECONCILIATION_PROCESS_NOTE).toEqual('PaymentReconciliationProcessNote');
     expect(BackboneElementEnum.PERSON_LINK).toEqual('PersonLink');
     expect(BackboneElementEnum.PRACTITIONER_QUALIFICATION).toEqual('PractitionerQualification');
     expect(BackboneElementEnum.PRACTITIONER_ROLE_AVAILABLE_TIME).toEqual('PractitionerRoleAvailableTime');

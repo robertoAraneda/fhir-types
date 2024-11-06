@@ -160,6 +160,8 @@ export enum BackboneElementEnum {
   PATIENT_COMMUNICATION = 'PatientCommunication',
   PATIENT_CONTACT = 'PatientContact',
   PATIENT_LINK = 'PatientLink',
+  PAYMENT_RECONCILIATION_DETAIL = 'PaymentReconciliationDetail',
+  PAYMENT_RECONCILIATION_PROCESS_NOTE = 'PaymentReconciliationProcessNote',
   PERSON_LINK = 'PersonLink',
   PRACTITIONER_QUALIFICATION = 'PractitionerQualification',
   PRACTITIONER_ROLE_AVAILABLE_TIME = 'PractitionerRoleAvailableTime',

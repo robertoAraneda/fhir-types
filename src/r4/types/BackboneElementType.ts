@@ -162,6 +162,8 @@ export type BackboneElementType =
   | 'PatientCommunication'
   | 'PatientContact'
   | 'PatientLink'
+  | 'PaymentReconciliationDetail'
+  | 'PaymentReconciliationProcessNote'
   | 'PersonLink'
   | 'PractitionerQualification'
   | 'PractitionerRoleAvailableTime'

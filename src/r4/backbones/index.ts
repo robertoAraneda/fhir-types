@@ -156,6 +156,8 @@ export { IOrganizationContact } from './IOrganizationContact';
 export { IPatientCommunication } from './IPatientCommunication';
 export { IPatientContact } from './IPatientContact';
 export { IPatientLink } from './IPatientLink';
+export { IPaymentReconciliationDetail } from './IPaymentReconciliationDetail';
+export { IPaymentReconciliationProcessNote } from './IPaymentReconciliationProcessNote';
 export { IPersonLink } from './IPersonLink';
 export { IPractitionerQualification } from './IPractitionerQualification';
 export { IPractitionerRoleAvailableTime } from './IPractitionerRoleAvailableTime';

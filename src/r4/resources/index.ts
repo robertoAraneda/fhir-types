@@ -49,6 +49,7 @@ export { IOperationOutcome } from './IOperationOutcome';
 export { IOrganization } from './IOrganization';
 export { IPatient } from './IPatient';
 export { IPaymentNotice } from './IPaymentNotice';
+export { IPaymentReconciliation } from './IPaymentReconciliation';
 export { IPerson } from './IPerson';
 export { IPractitioner } from './IPractitioner';
 export { IPractitionerRole } from './IPractitionerRole';
