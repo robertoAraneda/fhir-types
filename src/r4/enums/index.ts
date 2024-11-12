@@ -46,6 +46,7 @@ export { EndpointStatusEnum } from './EndpointStatusEnum';
 export { EpisodeOfCareStatusEnum } from './EpisodeOfCareStatusEnum';
 export { EventStatusEnum } from './EventStatusEnum';
 export { EventTimingEnum } from './EventTimingEnum';
+export { ExplanationOfBenefitStatusEnum } from './ExplanationOfBenefitStatusEnum';
 export { FamilyHistoryStatusEnum } from './FamilyHistoryStatusEnum';
 export { FHIRDeviceStatusEnum } from './FHIRDeviceStatusEnum';
 export { FHIRSubstanceStatusEnum } from './FHIRSubstanceStatusEnum';

@@ -46,6 +46,7 @@ export { EndpointStatusType } from './EndpointStatusType';
 export { EpisodeOfCareStatusType } from './EpisodeOfCareStatusType';
 export { EventStatusType } from './EventStatusType';
 export { EventTimingType } from './EventTimingType';
+export { ExplanationOfBenefitStatusType } from './ExplanationOfBenefitStatusType';
 export { FamilyHistoryStatusType } from './FamilyHistoryStatusType';
 export { FHIRDeviceStatusType } from './FHIRDeviceStatusType';
 export { FHIRSubstanceStatusType } from './FHIRSubstanceStatusType';

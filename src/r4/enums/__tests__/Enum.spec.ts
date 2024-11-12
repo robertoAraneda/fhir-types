@@ -46,6 +46,7 @@ import { EndpointStatusEnum } from '../EndpointStatusEnum';
 import { EpisodeOfCareStatusEnum } from '../EpisodeOfCareStatusEnum';
 import { EventStatusEnum } from '../EventStatusEnum';
 import { EventTimingEnum } from '../EventTimingEnum';
+import { ExplanationOfBenefitStatusEnum } from '../ExplanationOfBenefitStatusEnum';
 import { FamilyHistoryStatusEnum } from '../FamilyHistoryStatusEnum';
 import { FHIRDeviceStatusEnum } from '../FHIRDeviceStatusEnum';
 import { FHIRSubstanceStatusEnum } from '../FHIRSubstanceStatusEnum';
@@ -318,7 +319,29 @@ describe('BackboneElementEnum', () => {
     expect(BackboneElementEnum.ENCOUNTER_PARTICIPANT).toEqual('EncounterParticipant');
     expect(BackboneElementEnum.ENCOUNTER_STATUS_HISTORY).toEqual('EncounterStatusHistory');
     expect(BackboneElementEnum.EPISODE_OF_CARE_DIAGNOSIS).toEqual('EpisodeOfCareDiagnosis');
-    expect(BackboneElementEnum.EPISODE_OF_CARE_STATUS).toEqual('EpisodeOfCareStatus');
+    expect(BackboneElementEnum.EPISODE_OF_CARE_STATUS_HISTORY).toEqual('EpisodeOfCareStatusHistory');
+    expect(BackboneElementEnum.EXPLANATION_OF_BENEFIT_ACCIDENT).toEqual('ExplanationOfBenefitAccident');
+    expect(BackboneElementEnum.EXPLANATION_OF_BENEFIT_ADD_ITEM).toEqual('ExplanationOfBenefitAddItem');
+    expect(BackboneElementEnum.EXPLANATION_OF_BENEFIT_ADD_ITEM_DETAIL).toEqual('ExplanationOfBenefitAddItemDetail');
+    expect(BackboneElementEnum.EXPLANATION_OF_BENEFIT_ADD_ITEM_SUB_DETAIL).toEqual(
+      'ExplanationOfBenefitAddItemSubDetail',
+    );
+    expect(BackboneElementEnum.EXPLANATION_OF_BENEFIT_ADJUDICATION).toEqual('ExplanationOfBenefitAdjudication');
+    expect(BackboneElementEnum.EXPLANATION_OF_BENEFIT_BENEFIT_BALANCE).toEqual('ExplanationOfBenefitBenefitBalance');
+    expect(BackboneElementEnum.EXPLANATION_OF_BENEFIT_CARE_TEAM).toEqual('ExplanationOfBenefitCareTeam');
+    expect(BackboneElementEnum.EXPLANATION_OF_BENEFIT_DETAIL).toEqual('ExplanationOfBenefitDetail');
+    expect(BackboneElementEnum.EXPLANATION_OF_BENEFIT_DIAGNOSIS).toEqual('ExplanationOfBenefitDiagnosis');
+    expect(BackboneElementEnum.EXPLANATION_OF_BENEFIT_FINANCIAL).toEqual('ExplanationOfBenefitFinancial');
+    expect(BackboneElementEnum.EXPLANATION_OF_BENEFIT_INSURANCE).toEqual('ExplanationOfBenefitInsurance');
+    expect(BackboneElementEnum.EXPLANATION_OF_BENEFIT_ITEM).toEqual('ExplanationOfBenefitItem');
+    expect(BackboneElementEnum.EXPLANATION_OF_BENEFIT_PAYEE).toEqual('ExplanationOfBenefitPayee');
+    expect(BackboneElementEnum.EXPLANATION_OF_BENEFIT_PAYMENT).toEqual('ExplanationOfBenefitPayment');
+    expect(BackboneElementEnum.EXPLANATION_OF_BENEFIT_PROCEDURE).toEqual('ExplanationOfBenefitProcedure');
+    expect(BackboneElementEnum.EXPLANATION_OF_BENEFIT_PROCESS_NOTE).toEqual('ExplanationOfBenefitProcessNote');
+    expect(BackboneElementEnum.EXPLANATION_OF_BENEFIT_RELATED).toEqual('ExplanationOfBenefitRelated');
+    expect(BackboneElementEnum.EXPLANATION_OF_BENEFIT_SUB_DETAIL).toEqual('ExplanationOfBenefitSubDetail');
+    expect(BackboneElementEnum.EXPLANATION_OF_BENEFIT_SUPPORTING_INFO).toEqual('ExplanationOfBenefitSupportingInfo');
+    expect(BackboneElementEnum.EXPLANATION_OF_BENEFIT_TOTAL).toEqual('ExplanationOfBenefitTotal');
     expect(BackboneElementEnum.FAMILY_MEMBER_HISTORY_CONDITION).toEqual('FamilyMemberHistoryCondition');
     expect(BackboneElementEnum.GOAL_TARGET).toEqual('GoalTarget');
     expect(BackboneElementEnum.GROUP_CHARACTERISTIC).toEqual('GroupCharacteristic');
@@ -1040,6 +1063,15 @@ describe('EventTimingEnum', () => {
     expect(EventTimingEnum.PCM).toEqual('PCM');
     expect(EventTimingEnum.PCD).toEqual('PCD');
     expect(EventTimingEnum.PCV).toEqual('PCV');
+  });
+});
+
+describe('ExplanationOfBenefitStatusEnum', () => {
+  it('should have the correct values', () => {
+    expect(ExplanationOfBenefitStatusEnum.ACTIVE).toEqual('active');
+    expect(ExplanationOfBenefitStatusEnum.CANCELLED).toEqual('cancelled');
+    expect(ExplanationOfBenefitStatusEnum.DRAFT).toEqual('draft');
+    expect(ExplanationOfBenefitStatusEnum.ENTERED_IN_ERROR).toEqual('entered-in-error');
   });
 });
 

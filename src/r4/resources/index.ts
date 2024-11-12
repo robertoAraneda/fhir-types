@@ -26,6 +26,7 @@ export { IEndpoint } from './IEndpoint';
 export { IEnrollmentRequest } from './IEnrollmentRequest';
 export { IEnrollmentResponse } from './IEnrollmentResponse';
 export { IEpisodeOfCare } from './IEpisodeOfCare';
+export { IExplanationOfBenefit } from './IExplanationOfBenefit';
 export { IFamilyMemberHistory } from './IFamilyMemberHistory';
 export { IFlag } from './IFlag';
 export { IGoal } from './IGoal';
