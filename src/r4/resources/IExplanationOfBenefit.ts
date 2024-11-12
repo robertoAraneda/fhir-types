@@ -5,6 +5,7 @@ import {
   IExplanationOfBenefitBenefitBalance,
   IExplanationOfBenefitCareTeam,
   IExplanationOfBenefitDiagnosis,
+  IExplanationOfBenefitInsurance,
   IExplanationOfBenefitItem,
   IExplanationOfBenefitPayee,
   IExplanationOfBenefitPayment,
@@ -14,7 +15,6 @@ import {
   IExplanationOfBenefitSupportingInfo,
   IExplanationOfBenefitTotal,
 } from '../backbones';
-import { IExplanationOfBenefitInsurance } from '../backbones/IExplanationOfBenefitInsurance';
 import { IDomainResource, IElement } from '../base';
 import { IAttachment, ICodeableConcept, IIdentifier, IPeriod, IReference } from '../datatypes';
 import { ClaimUseType, ExplanationOfBenefitStatusType, RemittanceOutcomeType } from '../types';
