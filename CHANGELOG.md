@@ -1,3 +1,15 @@
+# [1.31.0](https://github.com/robertoAraneda/fhir-types/compare/v1.30.0...v1.31.0) (2024-11-25)
+
+
+### Features
+
+* add Claim resource ([c4670ab](https://github.com/robertoAraneda/fhir-types/commit/c4670abb9e2d0b8c141b718b007361d9371f54b1))
+* add ClaimResponse resource ([d739051](https://github.com/robertoAraneda/fhir-types/commit/d7390513a896b889350f57282074ebee4d8f6044))
+* add ExplanationOfBenefit resource ([12572e5](https://github.com/robertoAraneda/fhir-types/commit/12572e5c2c16352897acb565dafb5d3cb60ab317))
+* add ExplanationOfBenefit resource ([b999bda](https://github.com/robertoAraneda/fhir-types/commit/b999bda9ea88be0c39925790d16cf5b53ecb7cf7))
+* add PaymentNotice resource ([a5a3f41](https://github.com/robertoAraneda/fhir-types/commit/a5a3f411a3ea367a6d3774875945198a63f894f6))
+* add PaymentReconciliation resource ([6690c0d](https://github.com/robertoAraneda/fhir-types/commit/6690c0d481805a6d423a1018dde2ba58a19f91fe))
+
 # [1.30.0](https://github.com/robertoAraneda/fhir-types/compare/v1.29.0...v1.30.0) (2024-10-31)
 
 
