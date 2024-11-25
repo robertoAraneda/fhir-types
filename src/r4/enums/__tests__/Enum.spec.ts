@@ -17,6 +17,7 @@ import { CarePlanActivityKindEnum } from '../CarePlanActivityKindEnum';
 import { CarePlanActivityStatusEnum } from '../CarePlanActivityStatusEnum';
 import { CarePlanIntentEnum } from '../CarePlanIntentEnum';
 import { CareTeamStatusEnum } from '../CareTeamStatusEnum';
+import { ClaimUseEnum } from '../ClaimUseEnum';
 import { ClinicalImpressionStatusEnum } from '../ClinicalImpressionStatusEnum';
 import { CompositionAttestationModeEnum } from '../CompositionAttestationModeEnum';
 import { CompositionStatusEnum } from '../CompositionStatusEnum';
@@ -45,6 +46,7 @@ import { EndpointStatusEnum } from '../EndpointStatusEnum';
 import { EpisodeOfCareStatusEnum } from '../EpisodeOfCareStatusEnum';
 import { EventStatusEnum } from '../EventStatusEnum';
 import { EventTimingEnum } from '../EventTimingEnum';
+import { ExplanationOfBenefitStatusEnum } from '../ExplanationOfBenefitStatusEnum';
 import { FamilyHistoryStatusEnum } from '../FamilyHistoryStatusEnum';
 import { FHIRDeviceStatusEnum } from '../FHIRDeviceStatusEnum';
 import { FHIRSubstanceStatusEnum } from '../FHIRSubstanceStatusEnum';
@@ -75,6 +77,7 @@ import { MedicationStatementStatusCodesEnum } from '../MedicationStatementStatus
 import { MedicationStatusCodesEnum } from '../MedicationStatusCodesEnum';
 import { NameUseEnum } from '../NameUseEnum';
 import { NarrativeStatusEnum } from '../NarrativeStatusEnum';
+import { NoteTypeEnum } from '../NoteTypeEnum';
 import { ObservationStatusEnum } from '../ObservationStatusEnum';
 import { OrientationTypeEnum } from '../OrientationTypeEnum';
 import { ParticipantRequiredEnum } from '../ParticipantRequiredEnum';
@@ -246,6 +249,31 @@ describe('BackboneElementEnum', () => {
     expect(BackboneElementEnum.CARE_PLAN_ACTIVITY).toEqual('CarePlanActivity');
     expect(BackboneElementEnum.CARE_PLAN_ACTIVITY_DETAIL).toEqual('CarePlanActivityDetail');
     expect(BackboneElementEnum.CARE_TEAM_PARTICIPANT).toEqual('CareTeamParticipant');
+    expect(BackboneElementEnum.CLAIM_ACCIDENT).toEqual('ClaimAccident');
+    expect(BackboneElementEnum.CLAIM_CARE_TEAM).toEqual('ClaimCareTeam');
+    expect(BackboneElementEnum.CLAIM_DETAIL).toEqual('ClaimDetail');
+    expect(BackboneElementEnum.CLAIM_DIAGNOSIS).toEqual('ClaimDiagnosis');
+    expect(BackboneElementEnum.CLAIM_INSURANCE).toEqual('ClaimInsurance');
+    expect(BackboneElementEnum.CLAIM_ITEM).toEqual('ClaimItem');
+    expect(BackboneElementEnum.CLAIM_PAYEE).toEqual('ClaimPayee');
+    expect(BackboneElementEnum.CLAIM_PROCEDURE).toEqual('ClaimProcedure');
+    expect(BackboneElementEnum.CLAIM_RELATED).toEqual('ClaimRelated');
+    expect(BackboneElementEnum.CLAIM_RESPONSE_ADD_ITEM).toEqual('ClaimResponseAddItem');
+    expect(BackboneElementEnum.CLAIM_RESPONSE_ADD_ITEM_DETAIL).toEqual('ClaimResponseAddItemDetail');
+    expect(BackboneElementEnum.CLAIM_RESPONSE_ADD_ITEM_SUB_DETAIL).toEqual('ClaimResponseAddItemSubDetail');
+    expect(BackboneElementEnum.CLAIM_RESPONSE_ADJUDICATION).toEqual('ClaimResponseAdjudication');
+    expect(BackboneElementEnum.CLAIM_RESPONSE_DETAIL).toEqual('ClaimResponseDetail');
+    expect(BackboneElementEnum.CLAIM_RESPONSE_ERROR).toEqual('ClaimResponseError');
+    expect(BackboneElementEnum.CLAIM_RESPONSE_INSURANCE).toEqual('ClaimResponseInsurance');
+    expect(BackboneElementEnum.CLAIM_RESPONSE_ITEM).toEqual('ClaimResponseItem');
+    expect(BackboneElementEnum.CLAIM_RESPONSE_PAYMENT).toEqual('ClaimResponsePayment');
+    expect(BackboneElementEnum.CLAIM_RESPONSE_PROCESS_NOTE).toEqual('ClaimResponseProcessNote');
+    expect(BackboneElementEnum.CLAIM_RESPONSE_SUB_DETAIL).toEqual('ClaimResponseSubDetail');
+    expect(BackboneElementEnum.CLAIM_RESPONSE_TOTAL).toEqual('ClaimResponseTotal');
+    expect(BackboneElementEnum.CLAIM_SUB_DETAIL).toEqual('ClaimSubDetail');
+    expect(BackboneElementEnum.CLAIM_SUPPORTING_INFO).toEqual('ClaimSupportingInfo');
+    expect(BackboneElementEnum.CLINICAL_IMPRESSION_FINDING).toEqual('ClinicalImpressionFinding');
+    expect(BackboneElementEnum.CLINICAL_IMPRESSION_INVESTIGATION).toEqual('ClinicalImpressionInvestigation');
     expect(BackboneElementEnum.COMPOSITION_ATTESTER).toEqual('CompositionAttester');
     expect(BackboneElementEnum.COMPOSITION_EVENT).toEqual('CompositionEvent');
     expect(BackboneElementEnum.COMPOSITION_RELATES_TO).toEqual('CompositionRelatesTo');
@@ -291,7 +319,29 @@ describe('BackboneElementEnum', () => {
     expect(BackboneElementEnum.ENCOUNTER_PARTICIPANT).toEqual('EncounterParticipant');
     expect(BackboneElementEnum.ENCOUNTER_STATUS_HISTORY).toEqual('EncounterStatusHistory');
     expect(BackboneElementEnum.EPISODE_OF_CARE_DIAGNOSIS).toEqual('EpisodeOfCareDiagnosis');
-    expect(BackboneElementEnum.EPISODE_OF_CARE_STATUS).toEqual('EpisodeOfCareStatus');
+    expect(BackboneElementEnum.EPISODE_OF_CARE_STATUS_HISTORY).toEqual('EpisodeOfCareStatusHistory');
+    expect(BackboneElementEnum.EXPLANATION_OF_BENEFIT_ACCIDENT).toEqual('ExplanationOfBenefitAccident');
+    expect(BackboneElementEnum.EXPLANATION_OF_BENEFIT_ADD_ITEM).toEqual('ExplanationOfBenefitAddItem');
+    expect(BackboneElementEnum.EXPLANATION_OF_BENEFIT_ADD_ITEM_DETAIL).toEqual('ExplanationOfBenefitAddItemDetail');
+    expect(BackboneElementEnum.EXPLANATION_OF_BENEFIT_ADD_ITEM_SUB_DETAIL).toEqual(
+      'ExplanationOfBenefitAddItemSubDetail',
+    );
+    expect(BackboneElementEnum.EXPLANATION_OF_BENEFIT_ADJUDICATION).toEqual('ExplanationOfBenefitAdjudication');
+    expect(BackboneElementEnum.EXPLANATION_OF_BENEFIT_BENEFIT_BALANCE).toEqual('ExplanationOfBenefitBenefitBalance');
+    expect(BackboneElementEnum.EXPLANATION_OF_BENEFIT_CARE_TEAM).toEqual('ExplanationOfBenefitCareTeam');
+    expect(BackboneElementEnum.EXPLANATION_OF_BENEFIT_DETAIL).toEqual('ExplanationOfBenefitDetail');
+    expect(BackboneElementEnum.EXPLANATION_OF_BENEFIT_DIAGNOSIS).toEqual('ExplanationOfBenefitDiagnosis');
+    expect(BackboneElementEnum.EXPLANATION_OF_BENEFIT_FINANCIAL).toEqual('ExplanationOfBenefitFinancial');
+    expect(BackboneElementEnum.EXPLANATION_OF_BENEFIT_INSURANCE).toEqual('ExplanationOfBenefitInsurance');
+    expect(BackboneElementEnum.EXPLANATION_OF_BENEFIT_ITEM).toEqual('ExplanationOfBenefitItem');
+    expect(BackboneElementEnum.EXPLANATION_OF_BENEFIT_PAYEE).toEqual('ExplanationOfBenefitPayee');
+    expect(BackboneElementEnum.EXPLANATION_OF_BENEFIT_PAYMENT).toEqual('ExplanationOfBenefitPayment');
+    expect(BackboneElementEnum.EXPLANATION_OF_BENEFIT_PROCEDURE).toEqual('ExplanationOfBenefitProcedure');
+    expect(BackboneElementEnum.EXPLANATION_OF_BENEFIT_PROCESS_NOTE).toEqual('ExplanationOfBenefitProcessNote');
+    expect(BackboneElementEnum.EXPLANATION_OF_BENEFIT_RELATED).toEqual('ExplanationOfBenefitRelated');
+    expect(BackboneElementEnum.EXPLANATION_OF_BENEFIT_SUB_DETAIL).toEqual('ExplanationOfBenefitSubDetail');
+    expect(BackboneElementEnum.EXPLANATION_OF_BENEFIT_SUPPORTING_INFO).toEqual('ExplanationOfBenefitSupportingInfo');
+    expect(BackboneElementEnum.EXPLANATION_OF_BENEFIT_TOTAL).toEqual('ExplanationOfBenefitTotal');
     expect(BackboneElementEnum.FAMILY_MEMBER_HISTORY_CONDITION).toEqual('FamilyMemberHistoryCondition');
     expect(BackboneElementEnum.GOAL_TARGET).toEqual('GoalTarget');
     expect(BackboneElementEnum.GROUP_CHARACTERISTIC).toEqual('GroupCharacteristic');
@@ -358,6 +408,8 @@ describe('BackboneElementEnum', () => {
     expect(BackboneElementEnum.PATIENT_COMMUNICATION).toEqual('PatientCommunication');
     expect(BackboneElementEnum.PATIENT_CONTACT).toEqual('PatientContact');
     expect(BackboneElementEnum.PATIENT_LINK).toEqual('PatientLink');
+    expect(BackboneElementEnum.PAYMENT_RECONCILIATION_DETAIL).toEqual('PaymentReconciliationDetail');
+    expect(BackboneElementEnum.PAYMENT_RECONCILIATION_PROCESS_NOTE).toEqual('PaymentReconciliationProcessNote');
     expect(BackboneElementEnum.PERSON_LINK).toEqual('PersonLink');
     expect(BackboneElementEnum.PRACTITIONER_QUALIFICATION).toEqual('PractitionerQualification');
     expect(BackboneElementEnum.PRACTITIONER_ROLE_AVAILABLE_TIME).toEqual('PractitionerRoleAvailableTime');
@@ -438,6 +490,14 @@ describe('CareTeamStatusEnum', () => {
     expect(CareTeamStatusEnum.SUSPENDED).toEqual('suspended');
     expect(CareTeamStatusEnum.INACTIVE).toEqual('inactive');
     expect(CareTeamStatusEnum.ENTERED_IN_ERROR).toEqual('entered-in-error');
+  });
+});
+
+describe('ClaimUseEnum', () => {
+  it('should have the correct values', () => {
+    expect(ClaimUseEnum.CLAIM).toEqual('claim');
+    expect(ClaimUseEnum.PREAUTHORIZATION).toEqual('preauthorization');
+    expect(ClaimUseEnum.PREDETERMINATION).toEqual('predetermination');
   });
 });
 
@@ -1006,6 +1066,15 @@ describe('EventTimingEnum', () => {
   });
 });
 
+describe('ExplanationOfBenefitStatusEnum', () => {
+  it('should have the correct values', () => {
+    expect(ExplanationOfBenefitStatusEnum.ACTIVE).toEqual('active');
+    expect(ExplanationOfBenefitStatusEnum.CANCELLED).toEqual('cancelled');
+    expect(ExplanationOfBenefitStatusEnum.DRAFT).toEqual('draft');
+    expect(ExplanationOfBenefitStatusEnum.ENTERED_IN_ERROR).toEqual('entered-in-error');
+  });
+});
+
 describe('FamilyHistoryStatusEnum', () => {
   it('should have the correct values', () => {
     expect(FamilyHistoryStatusEnum.PARTIAL).toEqual('partial');
@@ -1336,6 +1405,14 @@ describe('NarrativeStatusEnum', () => {
     expect(NarrativeStatusEnum.EXTENSIONS).toEqual('extensions');
     expect(NarrativeStatusEnum.ADDITIONAL).toEqual('additional');
     expect(NarrativeStatusEnum.EMPTY).toEqual('empty');
+  });
+});
+
+describe('NoteTypeEnum', () => {
+  it('should have the correct values', () => {
+    expect(NoteTypeEnum.DISPLAY).toEqual('display');
+    expect(NoteTypeEnum.PRINT).toEqual('print');
+    expect(NoteTypeEnum.PRINTOPER).toEqual('printoper');
   });
 });
 
