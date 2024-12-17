@@ -1,3 +1,18 @@
+# [1.33.0](https://github.com/robertoAraneda/fhir-types/compare/v1.32.0...v1.33.0) (2024-12-17)
+
+
+### Bug Fixes
+
+* conflict ([42398e0](https://github.com/robertoAraneda/fhir-types/commit/42398e0b29061ba1553e3c9f3ff12a7b5957b09c))
+* conflict ([5cb2d19](https://github.com/robertoAraneda/fhir-types/commit/5cb2d190b048a422e39829fe20847657974e1a10))
+* conflict ([7b21a59](https://github.com/robertoAraneda/fhir-types/commit/7b21a59ca6aa31d69dcfe209572f008b77191fc0))
+* remove export enums folder into index file ([7fdb839](https://github.com/robertoAraneda/fhir-types/commit/7fdb8391e6b91c2505acf0cca99c14a2d4d6b6fe))
+
+
+### Features
+
+* remove export enums folder into index file ([36426a0](https://github.com/robertoAraneda/fhir-types/commit/36426a0aa6c6258249bdbd50641f503172187516))
+
 # [1.32.0](https://github.com/robertoAraneda/fhir-types/compare/v1.31.0...v1.32.0) (2024-12-17)
 
 
