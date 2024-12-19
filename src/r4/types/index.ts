@@ -21,6 +21,7 @@ export { ClaimUseType } from './ClaimUseType';
 export { ClinicalImpressionStatusType } from './ClinicalImpressionStatusType';
 export { CompositionAttestationModeType } from './CompositionAttestationModeType';
 export { CompositionStatusType } from './CompositionStatusType';
+export { ConditionClinicalType } from './ConditionClinicalType';
 export { ConditionVerStatusType } from './ConditionVerStatusType';
 export { ConfidentialityClassificationType } from './ConfidentialityClassificationType';
 export { ContactPointSystemType } from './ContactPointSystemType';
