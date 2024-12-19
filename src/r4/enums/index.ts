@@ -21,6 +21,7 @@ export { ClaimUseEnum } from './ClaimUseEnum';
 export { ClinicalImpressionStatusEnum } from './ClinicalImpressionStatusEnum';
 export { CompositionAttestationModeEnum } from './CompositionAttestationModeEnum';
 export { CompositionStatusEnum } from './CompositionStatusEnum';
+export { ConditionVerStatusEnum } from './ConditionVerStatusEnum';
 export { ConfidentialityClassificationEnum } from './ConfidentialityClassificationEnum';
 export { ContactPointSystemEnum } from './ContactPointSystemEnum';
 export { ContactPointUseEnum } from './ContactPointUseEnum';
