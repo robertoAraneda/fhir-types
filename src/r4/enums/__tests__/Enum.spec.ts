@@ -21,6 +21,8 @@ import { ClaimUseEnum } from '../ClaimUseEnum';
 import { ClinicalImpressionStatusEnum } from '../ClinicalImpressionStatusEnum';
 import { CompositionAttestationModeEnum } from '../CompositionAttestationModeEnum';
 import { CompositionStatusEnum } from '../CompositionStatusEnum';
+import { ConditionClinicalEnum } from '../ConditionClinicalEnum';
+import { ConditionVerStatusEnum } from '../ConditionVerStatusEnum';
 import { ConfidentialityClassificationEnum } from '../ConfidentialityClassificationEnum';
 import { ContactPointSystemEnum } from '../ContactPointSystemEnum';
 import { ContactPointUseEnum } from '../ContactPointUseEnum';
@@ -524,6 +526,28 @@ describe('CompositionStatusEnum', () => {
     expect(CompositionStatusEnum.FINAL).toEqual('final');
     expect(CompositionStatusEnum.AMENDED).toEqual('amended');
     expect(CompositionStatusEnum.ENTERED_IN_ERROR).toEqual('entered-in-error');
+  });
+});
+
+describe('ConditionClinicalEnum', () => {
+  it('should have the correct values', () => {
+    expect(ConditionClinicalEnum.ACTIVE).toEqual('active');
+    expect(ConditionClinicalEnum.RECURRENCE).toEqual('recurrence');
+    expect(ConditionClinicalEnum.RELAPSE).toEqual('relapse');
+    expect(ConditionClinicalEnum.INACTIVE).toEqual('inactive');
+    expect(ConditionClinicalEnum.REMISSION).toEqual('remission');
+    expect(ConditionClinicalEnum.RESOLVED).toEqual('resolved');
+  });
+});
+
+describe('ConditionVerStatusEnum', () => {
+  it('should have the correct values', () => {
+    expect(ConditionVerStatusEnum.UNCONFIRMED).toEqual('unconfirmed');
+    expect(ConditionVerStatusEnum.PROVISIONAL).toEqual('provisional');
+    expect(ConditionVerStatusEnum.DIFFERENTIAL).toEqual('differential');
+    expect(ConditionVerStatusEnum.CONFIRMED).toEqual('confirmed');
+    expect(ConditionVerStatusEnum.REFUTED).toEqual('refuted');
+    expect(ConditionVerStatusEnum.ENTERED_IN_ERROR).toEqual('entered-in-error');
   });
 });
 
