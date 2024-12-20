@@ -1,3 +1,11 @@
+# [1.34.0](https://github.com/robertoAraneda/fhir-types/compare/v1.33.0...v1.34.0) (2024-12-20)
+
+
+### Features
+
+* add enum for ConditionClinical ([f0ca432](https://github.com/robertoAraneda/fhir-types/commit/f0ca43267100bb75b44b76196d274fbc4421b2bf))
+* add enum for ConditionVerStatus ([b2f3565](https://github.com/robertoAraneda/fhir-types/commit/b2f3565a54cf8ff545824024d2c06f381acd5383))
+
 # [1.33.0](https://github.com/robertoAraneda/fhir-types/compare/v1.32.0...v1.33.0) (2024-12-17)
 
 
