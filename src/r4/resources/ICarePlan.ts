@@ -3,6 +3,14 @@ import { IDomainResource, IElement } from '../base';
 import { ICodeableConcept, IIdentifier, IPeriod, IReference } from '../datatypes';
 import { CarePlanIntentType, RequestStatusType } from '../types';
 
+/**
+ * @name ICarePlan
+ * @description Describes the intention of how one or more practitioners intend to deliver care for a particular patient, group or community for a period of time, possibly limited to care for a specific condition or set of conditions.
+ * @see <a href="https://hl7.org/fhir/careplan.html">CarePlan</a>
+ * @version R4
+ * @extends {IDomainResource}
+ * @author Roberto Araneda Espinoza
+ */
 export interface ICarePlan extends IDomainResource {
   /**
    * @description Business identifiers assigned to this care plan by the performer or other systems which remain constant as the resource is updated and propagates from server to server.
@@ -15,9 +23,19 @@ export interface ICarePlan extends IDomainResource {
   instantiatesCanonical?: string[];
 
   /**
+   * @description Extensions for instantiatesCanonical
+   */
+  _instantiatesCanonical?: IElement;
+
+  /**
    * @description The URL pointing to an externally maintained protocol, guideline, questionnaire or other definition that is adhered to in whole or in part by this CarePlan.
    */
   instantiatesUri?: string[];
+
+  /**
+   * @description Extensions for instantiatesUri
+   */
+  _instantiatesUri?: IElement[];
 
   /**
    * @description A care plan that is fulfilled in whole or in part by this care plan.
@@ -42,11 +60,21 @@ export interface ICarePlan extends IDomainResource {
   status: RequestStatusType;
 
   /**
+   * @description Extensions for status
+   */
+  _status?: IElement;
+
+  /**
    * @description Indicates the level of authority/intentionality associated with the care plan and where the care plan fits into the workflow chain.
    * @description proposal | plan | order | option
    * @see <a href="https://hl7.org/fhir/R4/valueset-care-plan-intent.html">CarePlanIntent</a>
    */
   intent: CarePlanIntentType;
+
+  /**
+   * @description Extensions for intent
+   */
+  _intent?: IElement;
 
   /**
    * @description Identifies what "kind" of plan this is to support differentiation between multiple co-existing plans; e.g. "Home health", "psychiatric", "asthma", "disease management", "wellness plan", etc.
@@ -59,9 +87,19 @@ export interface ICarePlan extends IDomainResource {
   title?: string;
 
   /**
+   * @description Extensions for title
+   */
+  _title?: IElement;
+
+  /**
    * @description A description of the scope and nature of the plan.
    */
   description?: string;
+
+  /**
+   * @description Extensions for description
+   */
+  _description?: IElement;
 
   /**
    * @description Identifies the patient or group whose intended care is described by the plan.
@@ -82,6 +120,11 @@ export interface ICarePlan extends IDomainResource {
    * @description Represents when this particular CarePlan record was created in the system, which is often a system-generated date.
    */
   created?: string;
+
+  /**
+   * @description Extensions for created
+   */
+  _created?: IElement;
 
   /**
    * @description When populated, the author is responsible for the care plan. The care plan is attributed to the author.
@@ -117,40 +160,4 @@ export interface ICarePlan extends IDomainResource {
    * @description Identifies a planned action to occur as part of the plan. For example, a medication to be used, lab tests to perform, self-monitoring, education, etc.
    */
   activity?: ICarePlanActivity[];
-
-  // Extensions attributes
-  /**
-   * @description Extensions for instantiatesCanonical
-   */
-  _instantiatesCanonical?: IElement;
-
-  /**
-   * @description Extensions for instantiatesUri
-   */
-  _instantiatesUri?: IElement;
-
-  /**
-   * @description Extensions for status
-   */
-  _status?: IElement;
-
-  /**
-   * @description Extensions for intent
-   */
-  _intent?: IElement;
-
-  /**
-   * @description Extensions for title
-   */
-  _title?: IElement;
-
-  /**
-   * @description Extensions for description
-   */
-  _description?: IElement;
-
-  /**
-   * @description Extensions for created
-   */
-  _created?: IElement;
 }
