@@ -3,7 +3,7 @@ import { ICodeableConcept, IPeriod, IReference, ISimpleQuantity } from '../datat
 import { CarePlanActivityKindType, CarePlanActivityStatusType } from '../types';
 import { ITiming } from './ITiming';
 
-export interface ICarePlanActivityDetail extends IBackboneElement {
+export interface ICarePlanDetail extends IBackboneElement {
   /**
    * @description Appointment | CommunicationRequest | DeviceRequest | MedicationRequest | NutritionOrder | Task | ServiceRequest | VisionPrescription
    * @see <a href="https://hl7.org/fhir/R4/valueset-care-plan-activity-kind.html">CarePlanActivityDetail</a>

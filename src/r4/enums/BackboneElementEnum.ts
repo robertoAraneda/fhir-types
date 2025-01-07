@@ -20,7 +20,7 @@ export enum BackboneElementEnum {
   BUNDLE_SEARCH = 'BundleSearch',
   BUNDLE_LINK = 'BundleLink',
   CARE_PLAN_ACTIVITY = 'CarePlanActivity',
-  CARE_PLAN_ACTIVITY_DETAIL = 'CarePlanActivityDetail',
+  CARE_PLAN_DETAIL = 'CarePlanDetail',
   CARE_TEAM_PARTICIPANT = 'CareTeamParticipant',
   CLAIM_ACCIDENT = 'ClaimAccident',
   CLAIM_CARE_TEAM = 'ClaimCareTeam',
