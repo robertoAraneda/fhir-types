@@ -1,6 +1,6 @@
 import { ICarePlanActivity } from '../backbones';
 import { IDomainResource, IElement } from '../base';
-import { ICodeableConcept, IIdentifier, IPeriod, IReference } from '../datatypes';
+import { IAnnotation, ICodeableConcept, IIdentifier, IPeriod, IReference } from '../datatypes';
 import { CarePlanIntentType, RequestStatusType } from '../types';
 
 /**
@@ -160,4 +160,9 @@ export interface ICarePlan extends IDomainResource {
    * @description Identifies a planned action to occur as part of the plan. For example, a medication to be used, lab tests to perform, self-monitoring, education, etc.
    */
   activity?: ICarePlanActivity[];
+
+  /**
+   * @description General notes about the care plan not covered elsewhere.
+   */
+  note?: IAnnotation[];
 }
