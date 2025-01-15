@@ -21,7 +21,7 @@ export type BackboneElementType =
   | 'BundleResponse'
   | 'BundleSearch'
   | 'CarePlanActivity'
-  | 'CarePlanActivityDetail'
+  | 'CarePlanDetail'
   | 'CareTeamParticipant'
   | 'ClaimAccident'
   | 'ClaimCareTeam'

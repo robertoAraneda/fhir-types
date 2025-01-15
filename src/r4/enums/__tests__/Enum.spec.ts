@@ -249,7 +249,7 @@ describe('BackboneElementEnum', () => {
     expect(BackboneElementEnum.CLINICAL_IMPRESSION_FINDING).toEqual('ClinicalImpressionFinding');
     expect(BackboneElementEnum.CLINICAL_IMPRESSION_INVESTIGATION).toEqual('ClinicalImpressionInvestigation');
     expect(BackboneElementEnum.CARE_PLAN_ACTIVITY).toEqual('CarePlanActivity');
-    expect(BackboneElementEnum.CARE_PLAN_ACTIVITY_DETAIL).toEqual('CarePlanActivityDetail');
+    expect(BackboneElementEnum.CARE_PLAN_DETAIL).toEqual('CarePlanDetail');
     expect(BackboneElementEnum.CARE_TEAM_PARTICIPANT).toEqual('CareTeamParticipant');
     expect(BackboneElementEnum.CLAIM_ACCIDENT).toEqual('ClaimAccident');
     expect(BackboneElementEnum.CLAIM_CARE_TEAM).toEqual('ClaimCareTeam');

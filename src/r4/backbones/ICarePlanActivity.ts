@@ -1,6 +1,6 @@
 import { IBackboneElement } from '../base';
 import { IAnnotation, ICodeableConcept, IReference } from '../datatypes';
-import { ICarePlanActivityDetail } from './ICarePlanActivityDetail';
+import { ICarePlanDetail } from './ICarePlanDetail';
 
 export interface ICarePlanActivity extends IBackboneElement {
   /**
@@ -26,5 +26,5 @@ export interface ICarePlanActivity extends IBackboneElement {
   /**
    * @description A simple summary of a planned activity suitable for a general care plan system (e.g. form driven) that doesn't know about specific resources such as procedure etc.
    */
-  detail?: ICarePlanActivityDetail;
+  detail?: ICarePlanDetail;
 }

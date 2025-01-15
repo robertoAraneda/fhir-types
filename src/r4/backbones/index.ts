@@ -15,7 +15,7 @@ export { IBundleRequest } from './IBundleRequest';
 export { IBundleResponse } from './IBundleResponse';
 export { IBundleSearch } from './IBundleSearch';
 export { ICarePlanActivity } from './ICarePlanActivity';
-export { ICarePlanActivityDetail } from './ICarePlanActivityDetail';
+export { ICarePlanDetail } from './ICarePlanDetail';
 export { ICareTeamParticipant } from './ICareTeamParticipant';
 export { IClaimAccident } from './IClaimAccident';
 export { IClaimCareTeam } from './IClaimCareTeam';
