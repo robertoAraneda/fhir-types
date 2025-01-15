@@ -1,3 +1,12 @@
+## [1.34.1](https://github.com/robertoAraneda/fhir-types/compare/v1.34.0...v1.34.1) (2025-01-15)
+
+
+### Bug Fixes
+
+* _instantiatesuri field is changed to array ([834c9b3](https://github.com/robertoAraneda/fhir-types/commit/834c9b3e0cdb60ec2f9a70a0e25fad4d61f80065))
+* added note field to ICarePlan interface ([4ee093d](https://github.com/robertoAraneda/fhir-types/commit/4ee093d8d1a8c252134c67828519087843ba5795))
+* rename interface from ICarePlanActivityDetail to ICarePlanDetail ([901356c](https://github.com/robertoAraneda/fhir-types/commit/901356c3886b26ecf28c1b5021ff7e2958fadc84))
+
 # [1.34.0](https://github.com/robertoAraneda/fhir-types/compare/v1.33.0...v1.34.0) (2024-12-20)
 
 
