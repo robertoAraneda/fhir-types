@@ -1,3 +1,11 @@
+## [1.34.2](https://github.com/robertoAraneda/fhir-types/compare/v1.34.1...v1.34.2) (2025-01-16)
+
+
+### Bug Fixes
+
+* delete extension for instantiatesCanonical field ([b72bf62](https://github.com/robertoAraneda/fhir-types/commit/b72bf6297c6659630e863bbb47a323042ce58780))
+* fix name of statusReason field ([6fffe3f](https://github.com/robertoAraneda/fhir-types/commit/6fffe3fce264424b959425bb5316ab462bdfa54e))
+
 ## [1.34.1](https://github.com/robertoAraneda/fhir-types/compare/v1.34.0...v1.34.1) (2025-01-15)
 
 
