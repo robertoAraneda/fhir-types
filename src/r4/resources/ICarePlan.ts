@@ -23,11 +23,6 @@ export interface ICarePlan extends IDomainResource {
   instantiatesCanonical?: string[];
 
   /**
-   * @description Extensions for instantiatesCanonical
-   */
-  _instantiatesCanonical?: IElement;
-
-  /**
    * @description The URL pointing to an externally maintained protocol, guideline, questionnaire or other definition that is adhered to in whole or in part by this CarePlan.
    */
   instantiatesUri?: string[];
