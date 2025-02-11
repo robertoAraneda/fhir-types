@@ -1,4 +1,5 @@
 import { AccountStatusEnum } from '../AccountStatusEnum';
+import { ActionParticipantTypeEnum } from '../ActionParticipantTypeEnum';
 import { AddressTypeEnum } from '../AddressTypeEnum';
 import { AddressUseEnum } from '../AddressUseEnum';
 import { AdministrativeGenderEnum } from '../AdministrativeGenderEnum';
@@ -90,10 +91,12 @@ import { QuantityComparatorEnum } from '../QuantityComparatorEnum';
 import { QuestionnaireAnswersStatusEnum } from '../QuestionnaireAnswersStatusEnum';
 import { QuestionnaireEnableBehaviorEnum } from '../QuestionnaireEnableBehaviorEnum';
 import { QuestionnaireEnableOperatorEnum } from '../QuestionnaireEnableOperatorEnum';
+import { RelatedArtifactTypeEnum } from '../RelatedArtifactTypeEnum';
 import { RemittanceOutcomeEnum } from '../RemittanceOutcomeEnum';
 import { RepositoryTypeEnum } from '../RepositoryTypeEnum';
 import { RequestIntentEnum } from '../RequestIntentEnum';
 import { RequestPriorityEnum } from '../RequestPriorityEnum';
+import { RequestResourceTypesEnum } from '../RequestResourceTypesEnum';
 import { RequestStatusEnum } from '../RequestStatusEnum';
 import { ResourceTypesEnum } from '../ResourceTypesEnum';
 import { SearchEntryModeEnum } from '../SearchEntryModeEnum';
@@ -115,6 +118,15 @@ describe('AccountStatusEnum', () => {
     expect(AccountStatusEnum.ENTERED_IN_ERROR).toEqual('entered-in-error');
     expect(AccountStatusEnum.ON_HOLD).toEqual('on-hold');
     expect(AccountStatusEnum.UNKNOWN).toEqual('unknown');
+  });
+});
+
+describe('ActionParticipantTypeEnum', () => {
+  it('should have the correct values', () => {
+    expect(ActionParticipantTypeEnum.PATIENT).toEqual('patient');
+    expect(ActionParticipantTypeEnum.PRACTITIONER).toEqual('practitioner');
+    expect(ActionParticipantTypeEnum.RELATED_PERSON).toEqual('related-person');
+    expect(ActionParticipantTypeEnum.DEVICE).toEqual('device');
   });
 });
 
@@ -234,6 +246,8 @@ describe('BackboneElementEnum', () => {
   it('should have the correct values', () => {
     expect(BackboneElementEnum.ACCOUNT_COVERAGE).toEqual('AccountCoverage');
     expect(BackboneElementEnum.ACCOUNT_GUARANTOR).toEqual('AccountGuarantor');
+    expect(BackboneElementEnum.ACTIVITY_DEFINITION_DYNAMIC_VALUE).toEqual('ActivityDefinitionDynamicValue');
+    expect(BackboneElementEnum.ACTIVITY_DEFINITION_PARTICIPANT).toEqual('ActivityDefinitionParticipant');
     expect(BackboneElementEnum.ALLERGY_INTOLERANCE_REACTION).toEqual('AllergyIntoleranceReaction');
     expect(BackboneElementEnum.ADVERSE_EVENT_CAUSALITY).toEqual('AdverseEventCausality');
     expect(BackboneElementEnum.ADVERSE_EVENT_SUSPECT_ENTITY).toEqual('AdverseEventSuspectEntity');
@@ -1532,6 +1546,19 @@ describe('QuestionnaireEnableOperatorEnum', () => {
   });
 });
 
+describe('RelatedArtifactTypeEnum', () => {
+  it('should have the correct values', () => {
+    expect(RelatedArtifactTypeEnum.DOCUMENTATION).toEqual('documentation');
+    expect(RelatedArtifactTypeEnum.JUSTIFICATION).toEqual('justification');
+    expect(RelatedArtifactTypeEnum.CITATION).toEqual('citation');
+    expect(RelatedArtifactTypeEnum.PREDECESSOR).toEqual('predecessor');
+    expect(RelatedArtifactTypeEnum.SUCCESSOR).toEqual('successor');
+    expect(RelatedArtifactTypeEnum.DERIVED_FROM).toEqual('derived-from');
+    expect(RelatedArtifactTypeEnum.DEPENDS_ON).toEqual('depends-on');
+    expect(RelatedArtifactTypeEnum.COMPOSED_OF).toEqual('composed-of');
+  });
+});
+
 describe('RemittanceOutcomeEnum', () => {
   it('should have the correct values', () => {
     expect(RemittanceOutcomeEnum.QUEUED).toEqual('queued');
@@ -1570,6 +1597,26 @@ describe('RequestPriorityEnum', () => {
     expect(RequestPriorityEnum.URGENT).toEqual('urgent');
     expect(RequestPriorityEnum.ASAP).toEqual('asap');
     expect(RequestPriorityEnum.STAT).toEqual('stat');
+  });
+});
+
+describe('RequestResourceTypesEnum', () => {
+  it('should have the correct values', () => {
+    expect(RequestResourceTypesEnum.APPOINTMENT).toEqual('Appointment');
+    expect(RequestResourceTypesEnum.APPOINTMENT_RESPONSE).toEqual('AppointmentResponse');
+    expect(RequestResourceTypesEnum.CARE_PLAN).toEqual('CarePlan');
+    expect(RequestResourceTypesEnum.CLAIM).toEqual('Claim');
+    expect(RequestResourceTypesEnum.COMMUNICATION_REQUEST).toEqual('CommunicationRequest');
+    expect(RequestResourceTypesEnum.CONTRACT).toEqual('Contract');
+    expect(RequestResourceTypesEnum.DEVICE_REQUEST).toEqual('DeviceRequest');
+    expect(RequestResourceTypesEnum.ENROLLMENT_REQUEST).toEqual('EnrollmentRequest');
+    expect(RequestResourceTypesEnum.IMMUNIZATION_RECOMMENDATION).toEqual('ImmunizationRecommendation');
+    expect(RequestResourceTypesEnum.MEDICATION_REQUEST).toEqual('MedicationRequest');
+    expect(RequestResourceTypesEnum.NUTRITION_ORDER).toEqual('NutritionOrder');
+    expect(RequestResourceTypesEnum.SERVICE_REQUEST).toEqual('ServiceRequest');
+    expect(RequestResourceTypesEnum.SUPPLY_REQUEST).toEqual('SupplyRequest');
+    expect(RequestResourceTypesEnum.TASK).toEqual('Task');
+    expect(RequestResourceTypesEnum.VISION_PRESCRIPTION).toEqual('VisionPrescription');
   });
 });
 

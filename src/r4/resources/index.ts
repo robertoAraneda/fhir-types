@@ -1,4 +1,5 @@
 export { IAccount } from './IAccount';
+export { IActivityDefinition } from './IActivityDefinition';
 export { IAdverseEvent } from './IAdverseEvent';
 export { IAllergyIntolerance } from './IAllergyIntolerance';
 export { IAppointment } from './IAppointment';

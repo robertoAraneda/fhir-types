@@ -6,6 +6,8 @@
 export enum BackboneElementEnum {
   ACCOUNT_COVERAGE = 'AccountCoverage',
   ACCOUNT_GUARANTOR = 'AccountGuarantor',
+  ACTIVITY_DEFINITION_DYNAMIC_VALUE = 'ActivityDefinitionDynamicValue',
+  ACTIVITY_DEFINITION_PARTICIPANT = 'ActivityDefinitionParticipant',
   ADVERSE_EVENT_CAUSALITY = 'AdverseEventCausality',
   ADVERSE_EVENT_SUSPECT_ENTITY = 'AdverseEventSuspectEntity',
   ALLERGY_INTOLERANCE_REACTION = 'AllergyIntoleranceReaction',

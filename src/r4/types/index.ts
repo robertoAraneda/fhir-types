@@ -1,4 +1,5 @@
 export { AccountStatusType } from './AccountStatusType';
+export { ActionParticipantTypeType } from './ActionParticipantTypeType';
 export { AddressTypeType } from './AddressTypeType';
 export { AddressUseType } from './AddressUseType';
 export { AdministrativeGenderType } from './AdministrativeGenderType';
@@ -90,10 +91,12 @@ export { QuantityComparatorType } from './QuantityComparatorType';
 export { QuestionnaireAnswersStatusType } from './QuestionnaireAnswersStatusType';
 export { QuestionnaireEnableBehaviorType } from './QuestionnaireEnableBehaviorType';
 export { QuestionnaireEnableOperatorType } from './QuestionnaireEnableOperatorType';
+export { RelatedArtifactTypeType } from './RelatedArtifactTypeType';
 export { RemittanceOutcomeType } from './RemittanceOutcomeType';
 export { RepositoryTypeType } from './RepositoryTypeType';
 export { RequestIntentType } from './RequestIntentType';
 export { RequestPriorityType } from './RequestPriorityType';
+export { RequestResourceTypesType } from './RequestResourceTypesType';
 export { RequestStatusType } from './RequestStatusType';
 export { ResourceTypesType } from './ResourceTypesType';
 export { SearchEntryModeType } from './SearchEntryModeType';
