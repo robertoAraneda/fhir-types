@@ -1,3 +1,12 @@
+# [1.35.0](https://github.com/robertoAraneda/fhir-types/compare/v1.34.2...v1.35.0) (2025-02-14)
+
+
+### Features
+
+* add ActivityDefinition resource ([5d047cd](https://github.com/robertoAraneda/fhir-types/commit/5d047cd291ba0766a9660e478809941bb2eb0e80))
+* add Basic resource ([758bced](https://github.com/robertoAraneda/fhir-types/commit/758bcedd6798dd33eaee46d79f15bea71bbef82c))
+* add Binary resource ([e29f548](https://github.com/robertoAraneda/fhir-types/commit/e29f54828a226e2282dd18cb5fa99d5bceb706d4))
+
 ## [1.34.2](https://github.com/robertoAraneda/fhir-types/compare/v1.34.1...v1.34.2) (2025-01-16)
 
 
