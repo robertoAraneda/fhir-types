@@ -1,9 +1,11 @@
 export { IAccount } from './IAccount';
+export { IActivityDefinition } from './IActivityDefinition';
 export { IAdverseEvent } from './IAdverseEvent';
 export { IAllergyIntolerance } from './IAllergyIntolerance';
 export { IAppointment } from './IAppointment';
 export { IAppointmentResponse } from './IAppointmentResponse';
 export { IAuditEvent } from './IAuditEvent';
+export { IBasic } from './IBasic';
 export { IBodyStructure } from './IBodyStructure';
 export { IBundle } from './IBundle';
 export { ICarePlan } from './ICarePlan';

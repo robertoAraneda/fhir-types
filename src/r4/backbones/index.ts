@@ -1,5 +1,7 @@
 export { IAccountCoverage } from './IAccountCoverage';
 export { IAccountGuarantor } from './IAccountGuarantor';
+export { IActivityDefinitionDynamicValue } from './IActivityDefinitionDynamicValue';
+export { IActivityDefinitionParticipant } from './IActivityDefinitionParticipant';
 export { IAdverseEventCausality } from './IAdverseEventCausality';
 export { IAdverseEventSuspectEntity } from './IAdverseEventSuspectEntity';
 export { IAllergyIntoleranceReaction } from './IAllergyIntoleranceReaction';

@@ -1,4 +1,5 @@
 export { AccountStatusEnum } from './AccountStatusEnum';
+export { ActionParticipantTypeEnum } from './ActionParticipantTypeEnum';
 export { AddressTypeEnum } from './AddressTypeEnum';
 export { AddressUseEnum } from './AddressUseEnum';
 export { AdministrativeGenderEnum } from './AdministrativeGenderEnum';
@@ -90,10 +91,12 @@ export { QuantityComparatorEnum } from './QuantityComparatorEnum';
 export { QuestionnaireAnswersStatusEnum } from './QuestionnaireAnswersStatusEnum';
 export { QuestionnaireEnableBehaviorEnum } from './QuestionnaireEnableBehaviorEnum';
 export { QuestionnaireEnableOperatorEnum } from './QuestionnaireEnableOperatorEnum';
+export { RelatedArtifactTypeEnum } from './RelatedArtifactTypeEnum';
 export { RemittanceOutcomeEnum } from './RemittanceOutcomeEnum';
 export { RepositoryTypeEnum } from './RepositoryTypeEnum';
 export { RequestIntentEnum } from './RequestIntentEnum';
 export { RequestPriorityEnum } from './RequestPriorityEnum';
+export { RequestResourceTypesEnum } from './RequestResourceTypesEnum';
 export { RequestStatusEnum } from './RequestStatusEnum';
 export { ResourceTypesEnum } from './ResourceTypesEnum';
 export { SearchEntryModeEnum } from './SearchEntryModeEnum';

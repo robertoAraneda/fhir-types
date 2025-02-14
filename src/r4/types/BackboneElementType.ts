@@ -6,6 +6,8 @@
 export type BackboneElementType =
   | 'AccountCoverage'
   | 'AccountGuarantor'
+  | 'ActivityDefinitionDynamicValue'
+  | 'ActivityDefinitionParticipant'
   | 'AdverseEventCausality'
   | 'AdverseEventSuspectEntity'
   | 'AllergyIntoleranceReaction'
