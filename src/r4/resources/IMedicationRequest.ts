@@ -216,7 +216,7 @@ export interface IMedicationRequest extends IDomainResource {
   /**
    * @description A link to a resource representing an earlier order related order or prescription.
    */
-  priorAuthorization?: IReference;
+  priorPrescription?: IReference;
 
   /**
    * @description Indicates an actual or potential clinical issue with or between one or more active or proposed clinical actions for a patient; e.g. Drug-drug interaction, duplicate therapy, dosage alert etc.
