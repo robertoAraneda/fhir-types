@@ -1,3 +1,10 @@
+## [1.36.1](https://github.com/robertoAraneda/fhir-types/compare/v1.36.0...v1.36.1) (2025-09-26)
+
+
+### Bug Fixes
+
+* field priorPrescription in MedicationRequest ([bb43507](https://github.com/robertoAraneda/fhir-types/commit/bb43507c8c4fe4e77c9fa7afcb41726185617c99))
+
 # [1.36.0](https://github.com/robertoAraneda/fhir-types/compare/v1.35.0...v1.36.0) (2025-09-26)
 
 
