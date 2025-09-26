@@ -1,3 +1,11 @@
+# [1.36.0](https://github.com/robertoAraneda/fhir-types/compare/v1.35.0...v1.36.0) (2025-09-26)
+
+
+### Features
+
+* add MedicationRequestPriority types and enum ([447d95b](https://github.com/robertoAraneda/fhir-types/commit/447d95b6baeda165e9d9b68d6fb4160886844186))
+* add MedicationRequestPriority types and enum ([20cd3e2](https://github.com/robertoAraneda/fhir-types/commit/20cd3e284a2fa37231b3663fdd61814f3405b395))
+
 # [1.35.0](https://github.com/robertoAraneda/fhir-types/compare/v1.34.2...v1.35.0) (2025-02-14)
 
 
