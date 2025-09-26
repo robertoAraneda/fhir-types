@@ -75,6 +75,7 @@ import { MedicationAdministrationStatusCodesEnum } from '../MedicationAdministra
 import { MedicationDispenseStatusCodesEnum } from '../MedicationDispenseStatusCodesEnum';
 import { MedicationKnowledgeStatusCodesEnum } from '../MedicationKnowledgeStatusCodesEnum';
 import { MedicationRequestIntentEnum } from '../MedicationRequestIntentEnum';
+import { MedicationRequestPriorityEnum } from '../MedicationRequestPriorityEnum';
 import { MedicationRequestStatusEnum } from '../MedicationRequestStatusEnum';
 import { MedicationStatementStatusCodesEnum } from '../MedicationStatementStatusCodesEnum';
 import { MedicationStatusCodesEnum } from '../MedicationStatusCodesEnum';
@@ -1401,6 +1402,15 @@ describe('MedicationRequestStatusEnum', () => {
     expect(MedicationRequestStatusEnum.STOPPED).toEqual('stopped');
     expect(MedicationRequestStatusEnum.DRAFT).toEqual('draft');
     expect(MedicationRequestStatusEnum.UNKNOWN).toEqual('unknown');
+  });
+});
+
+describe('MedicationRequestPriorityEnum', () => {
+  it('should have the correct values', () => {
+    expect(MedicationRequestPriorityEnum.ROUTINE).toEqual('routine');
+    expect(MedicationRequestPriorityEnum.URGENT).toEqual('urgent');
+    expect(MedicationRequestPriorityEnum.ASAP).toEqual('asap');
+    expect(MedicationRequestPriorityEnum.STAT).toEqual('stat');
   });
 });
 

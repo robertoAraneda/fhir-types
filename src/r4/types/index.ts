@@ -76,6 +76,7 @@ export { MedicationDispenseStatusCodesType } from './MedicationDispenseStatusCod
 export { MedicationKnowledgeStatusCodesType } from './MedicationKnowledgeStatusCodesType';
 export { MedicationRequestIntentType } from './MedicationRequestIntentType';
 export { MedicationRequestStatusType } from './MedicationRequestStatusType';
+export { MedicationRequestPriorityType } from './MedicationRequestPriorityType';
 export { MedicationStatementStatusCodesType } from './MedicationStatementStatusCodesType';
 export { MedicationStatusCodesType } from './MedicationStatusCodesType';
 export { NameUseType } from './NameUseType';
